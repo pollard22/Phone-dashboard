@@ -34,6 +34,19 @@ cp "$SRC"/Missed_ownership_*.csv "$SRC"/open_loops_super.csv \
 cd "$SRC/site" && npm run build
 ```
 
+## Drill-down contract
+
+The site filters these files in the browser. Do not add placeholder rows.
+
+- Unique no-callback and never-dialed lists come from `callback_hygiene_ultatel.csv` (Action list, then Never dialed).
+- Dialed-earlier-only and dialed-later-than-24h are verification counts only, unless a future export adds a per-caller bucket column. The UI will not guess the split. Callers on the action list who are absent from never-dialed are shown only as that untagged union.
+- Cleaned NO ANSWER events are the two Missed ownership CSVs. `Who should have taken it` must match `miss_by_extension` keys.
+- Raw inbound, answered inbound, outbound, and HireSuper reporting totals stay aggregates in `latest.json` / `Overview.csv` until call-level rows exist.
+- Open loops, overlap, and Super-only are `open_loops_super.csv` filtered by `In Ultatel no-callback list?`.
+- Excluded From numbers stay summary rows in `exclusions_method.csv` (event count, not each leg).
+
+`node scripts/check-drills.mjs` checks those row counts against `latest.json` after a data refresh.
+
 ## Caveats to keep in meta
 
 - Ultatel has no VOICEMAIL flag (ANSWERED / NO ANSWER only).

@@ -55,6 +55,25 @@ An unanswered / missed inbound counts as **no-callback** if there is no matching
 | Callback hygiene | KPI strip + callback CSV |
 | Method & exclusions | `exclusions_method.csv` + `meta.caveats` |
 
+## Drill-downs
+
+Click a headline number to open a detail panel. On Missed ownership, a chart bar or extension row filters the event table. On Open loops, the total / overlap / Super-only pills filter that list. Close, Esc, the backdrop, or **Back to overview** leaves the panel.
+
+Row lists are filtered from the files already in `public/data/`. If a metric is only an aggregate, the panel says **Detail not in this export** and shows the overview summary line. It does not invent callers.
+
+| Block | What opens |
+|-------|------------|
+| No-callback 141 | Action list in `callback_hygiene_ultatel.csv` |
+| Never dialed 98 | Never-dialed section of that CSV |
+| Dialed earlier only 28, dialed after 24h 15 | Count only. The file does not tag callers. A related view lists the 43 action-list callers who are not in the never-dialed set (the union, not either bucket). |
+| Cleaned inbound NO ANSWER 447 | `Missed_ownership_A_no_callback.csv` (347) + `Missed_ownership_B_called_back.csv` (100) |
+| IN no answer 472 | Those 447 cleaned events, plus the note that 25 company/self From legs are excluded and not listed call by call |
+| Misses by extension | Same missed rows, filtered on `Who should have taken it` (keys match `miss_by_extension`) |
+| Open loops 15 / overlap 7 / Super-only 8 | `open_loops_super.csv`, split on `In Ultatel no-callback list?` |
+| IN-Bound 860, IN answered 388, OUT-Bound 300 / 266 / 34 | Aggregates in `latest.json` `kpis` and `overview_rows` only |
+| AI inbound 135, transferred 40, needs human help 71, talk time, actions 179, SMS 20 | HireSuper Reporting aggregates in `overview_rows` only |
+| Self-number event counts | The exclusion total row in `exclusions_method.csv`. Call legs for that From number are not in the pack. |
+
 ## Stack
 
 - Vite 8, vanilla ES modules
