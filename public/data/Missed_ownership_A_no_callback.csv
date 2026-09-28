@@ -1,348 +1,347 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
-(618) 823-2480,2026-09-26 06:17 PM,76001 — 76001,(314) 690-1210 / Emergency-Main Line,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790471824.132756
-(636) 466-1456,2026-09-25 03:27 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790375240.132150
-(317) 384-5773,2026-09-25 03:08 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790374065.132121
-(317) 384-5773,2026-09-25 03:07 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790374065.132121
-(314) 687-8073,2026-09-25 03:04 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373840.132088
-(314) 687-8073,2026-09-25 03:04 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373840.132088
-(636) 775-0710,2026-09-25 03:03 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373832.132085
-(636) 262-0594,2026-09-25 03:01 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373646.132056
-(636) 262-0594,2026-09-25 03:00 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373646.132056
-(636) 887-1977,2026-09-25 02:43 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790372627.132044
-(636) 359-8284,2026-09-25 02:28 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790371715.131909
-(573) 476-5334,2026-09-25 02:13 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790370811.131901
-(317) 384-5773,2026-09-25 01:42 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368921.131836
-(317) 384-5773,2026-09-25 01:42 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368921.131836
-(817) 343-3722,2026-09-25 01:32 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368282.131751
-(817) 343-3722,2026-09-25 01:31 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368282.131751
-(817) 343-3722,2026-09-25 01:30 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368190.131720
-(817) 343-3722,2026-09-25 01:29 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368190.131720
-(314) 706-2886,2026-09-25 01:21 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790367679.131623
-(314) 706-2886,2026-09-25 01:21 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790367679.131623
-(314) 657-5309,2026-09-25 12:48 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790365726.131611
-(314) 657-5309,2026-09-25 12:47 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790365676.131606
-(636) 746-4173,2026-09-25 12:27 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790364468.131572
-(636) 875-9696,2026-09-25 12:10 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,Yes,1790363406.131448
-(636) 875-9696,2026-09-25 12:10 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,Yes,1790363406.131448
-(636) 875-9696,2026-09-25 12:09 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790363381.131443
-(636) 875-9696,2026-09-25 12:09 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790363347.131438
-(636) 875-9696,2026-09-25 12:08 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790363302.131433
-(573) 822-9232,2026-09-25 12:03 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362978.131400
-(573) 822-9232,2026-09-25 12:02 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362978.131400
-(573) 822-9232,2026-09-25 12:02 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362931.131395
-(573) 516-6444,2026-09-25 11:35 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790361272.131352
-(573) 516-6444,2026-09-25 11:34 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790361272.131352
-(913) 349-9910,2026-09-25 11:05 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790359461.131310
-(913) 349-9910,2026-09-25 11:04 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790359461.131310
-(314) 791-5247,2026-09-25 10:27 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790357242.131301
-(573) 666-2983,2026-09-25 10:20 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356822.131270
-(612) 968-2783,2026-09-25 10:17 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356589.131239
-(612) 968-2783,2026-09-25 10:16 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356589.131239
-(573) 754-2307,2026-09-25 09:57 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790355389.131136
-(636) 290-8717,2026-09-25 09:57 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355380.131134
-(573) 754-2307,2026-09-25 09:56 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790355389.131136
-(636) 290-8717,2026-09-25 09:56 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355380.131134
-(865) 212-0491,2026-09-25 09:54 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355293.131116
-(314) 791-5247,2026-09-25 09:49 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354939.131081
-(314) 791-5247,2026-09-25 09:48 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354939.131081
-(636) 293-8353,2026-09-25 09:46 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354755.131050
-(636) 293-8353,2026-09-25 09:45 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354755.131050
-(636) 236-3999,2026-09-25 09:21 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790353277.131035
-(636) 236-3999,2026-09-25 09:20 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790353255.131032
-(636) 236-3999,2026-09-25 09:19 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790353122.130996
-(636) 236-3999,2026-09-25 09:18 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790353122.130996
-(636) 235-8786,2026-09-25 09:16 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790352960.130973
-(636) 466-1456,2026-09-25 09:13 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
-(636) 466-1456,2026-09-25 09:12 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
-(817) 946-2697,2026-09-25 09:10 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790352607.130914
-(636) 297-6395,2026-09-25 08:55 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351743.130881
-(702) 349-0335,2026-09-25 08:49 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
-(702) 349-0335,2026-09-25 08:48 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
-(573) 426-7019,2026-09-25 08:47 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351276.130843
-(636) 297-3248,2026-09-25 08:46 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351194.130838
-(636) 297-6395,2026-09-25 08:27 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790350046.130804
-(314) 201-1346,2026-09-25 08:25 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
-(314) 201-1346,2026-09-25 08:24 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
-(636) 887-1977,2026-09-25 08:10 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790349010.130728
-(636) 887-1977,2026-09-25 08:10 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790349010.130728
-(314) 201-1346,2026-09-25 08:02 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790348507.130625
-(314) 201-1346,2026-09-25 08:01 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790348507.130625
-(919) 714-9147,2026-09-25 07:47 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790347667.130620
-(314) 598-3656,2026-09-25 07:26 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790346365.130587
-(314) 687-8073,2026-09-25 07:01 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790344862.130518
-(636) 891-2647,2026-09-24 03:18 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288336.130462
-(636) 891-2647,2026-09-24 03:17 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288271.130457
-(636) 290-5354,2026-09-24 03:15 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,No,1790288074.130450
-(636) 290-5354,2026-09-24 03:14 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,No,1790288074.130450
-(636) 290-5354,2026-09-24 03:07 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,No,1790287622.130443
-(636) 290-5354,2026-09-24 03:07 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,No,1790287622.130443
-(636) 290-5354,2026-09-24 02:59 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,Yes,1790287122.130429
-(636) 290-5354,2026-09-24 02:58 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,Yes,1790287122.130429
-(636) 290-5354,2026-09-24 02:57 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Irene — trailer park question,No,1790287024.130424
-(907) 799-9503,2026-09-24 02:53 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790286835.130417
-(314) 498-9514,2026-09-24 02:03 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
-(314) 498-9514,2026-09-24 02:03 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
-(636) 373-4644,2026-09-24 01:49 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Gary Siewicki — application emergency → Stacy,Yes,1790282943.130350
-(636) 373-4644,2026-09-24 01:49 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Gary Siewicki — application emergency → Stacy,Yes,1790282943.130350
-(636) 293-8353,2026-09-24 01:30 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281813.130294
-(636) 887-1695,2026-09-24 01:27 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
-(636) 887-1695,2026-09-24 01:27 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
-(605) 252-2843,2026-09-24 01:26 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281570.130256
-(855) 755-4024,2026-09-24 01:21 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281259.130227
-(855) 755-4024,2026-09-24 01:20 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281259.130227
-(636) 466-3636,2026-09-24 01:17 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281049.130219
-(317) 909-2493,2026-09-24 01:12 PM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790280725.130200
-(314) 706-2886,2026-09-24 01:07 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790280478.130181
-(580) 889-0867,2026-09-24 12:59 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279909.130152
-(580) 889-0867,2026-09-24 12:58 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279909.130152
-(580) 889-0867,2026-09-24 12:57 PM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279854.130142
-(557) 232-1221,2026-09-24 12:20 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277618.130084
-(557) 232-1221,2026-09-24 12:20 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277618.130084
-(636) 297-6493,2026-09-24 12:11 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277044.130075
-(636) 297-6493,2026-09-24 12:10 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277044.130075
-(636) 293-8353,2026-09-24 12:08 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276857.130066
-(636) 293-8353,2026-09-24 12:07 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276857.130066
-(636) 293-8353,2026-09-24 12:06 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276794.130061
-(815) 557-8449,2026-09-24 11:55 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,Yes,1790276111.130047
-(815) 557-8449,2026-09-24 11:55 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,Yes,1790276111.130047
-(815) 557-8449,2026-09-24 11:54 AM,601 — AI Agent Number Ring Group,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,Yes,1790275999.130031
-(815) 557-8449,2026-09-24 11:53 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,Yes,1790275999.130031
-(815) 557-8449,2026-09-24 11:53 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,Yes,1790275999.130031
-(636) 297-6493,2026-09-24 11:43 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275384.129984
-(636) 297-6493,2026-09-24 11:43 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275384.129984
-(636) 542-1926,2026-09-24 10:24 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270618.129937
-(636) 542-1926,2026-09-24 10:23 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270618.129937
-(636) 542-1926,2026-09-24 10:20 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270412.129928
-(636) 542-1926,2026-09-24 10:20 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270412.129928
-(417) 487-6752,2026-09-24 09:56 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790268987.129915
-(409) 782-0075,2026-09-24 09:37 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267828.129869
-(907) 799-9503,2026-09-24 09:36 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267793.129864
-(907) 799-9503,2026-09-24 09:36 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267728.129855
-(907) 799-9503,2026-09-24 09:35 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267728.129855
-(636) 456-2084,2026-09-24 09:34 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267678.129843
-(573) 380-1907,2026-09-24 09:33 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Berta Parker — 1BR Vista Park,Yes,1790267589.129830
-(573) 380-1907,2026-09-24 09:33 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Berta Parker — 1BR Vista Park,Yes,1790267589.129830
-(314) 782-0454,2026-09-24 08:55 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790265348.129783
-(573) 591-6084,2026-09-24 08:30 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Tristan Charlton — transfer to Tiffany,No,1790263791.129757
-(573) 591-6084,2026-09-24 08:29 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Tristan Charlton — transfer to Tiffany,No,1790263791.129757
-(314) 201-4414,2026-09-24 08:27 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790263606.129738
-(314) 201-4414,2026-09-24 08:26 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790263606.129738
-(763) 335-3103,2026-09-24 08:17 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263023.129713
-(763) 335-3103,2026-09-24 08:17 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263023.129713
-(314) 201-4414,2026-09-24 08:16 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263004.129710
-(573) 825-4950,2026-09-24 08:12 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262762.129703
-(573) 941-9941,2026-09-24 08:07 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262380.129654
-(314) 914-4339,2026-09-24 08:06 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Steven Patnod — message for Stacy,Yes,1790262349.129651
-(573) 941-9941,2026-09-24 08:06 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262380.129654
-(314) 914-4339,2026-09-24 08:05 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Steven Patnod — message for Stacy,Yes,1790262349.129651
-(314) 201-4414,2026-09-24 08:03 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
-(314) 201-4414,2026-09-24 08:02 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
-(573) 489-3422,2026-09-24 08:01 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262074.129610
-(573) 489-3422,2026-09-24 08:01 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262074.129610
-(573) 825-4950,2026-09-24 08:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262058.129602
-(573) 489-3422,2026-09-24 07:53 AM,100 — Tiffany Recktenwald,(314) 690-1018 / Tiffany Recktenwald,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790261606.129572
-(636) 456-4347,2026-09-24 07:06 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
-(636) 456-4347,2026-09-24 07:05 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
-(636) 456-4347,2026-09-24 07:05 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258677.129517
-(636) 456-4347,2026-09-24 07:04 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258677.129517
-(636) 575-5957,2026-09-24 07:04 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258601.129508
-(636) 575-5957,2026-09-24 07:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258601.129508
-(573) 846-6702,2026-09-23 03:05 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790201112.129462
-(314) 917-5726,2026-09-23 02:41 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790199701.129389
-(314) 866-9056,2026-09-23 02:21 PM,7600 — 7600,(314) 690-1175 / Lindsay Smith,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198506.129374
-(414) 204-3024,2026-09-23 02:21 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198480.129353
-(814) 280-3385,2026-09-23 02:20 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198419.129336
-(814) 280-3385,2026-09-23 02:20 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198419.129336
-(636) 204-7698,2026-09-23 02:01 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197225.129296
-(636) 204-7698,2026-09-23 02:00 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197225.129296
-(636) 204-7698,2026-09-23 01:59 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197180.129291
-(636) 896-6968,2026-09-23 01:41 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790196104.129245
-(314) 917-5726,2026-09-23 01:40 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790195972.129212
-(314) 917-5726,2026-09-23 01:39 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790195972.129212
-(315) 512-3205,2026-09-23 12:43 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790192625.129154
-(314) 917-5726,2026-09-23 11:36 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790188563.129033
-(314) 917-5726,2026-09-23 11:36 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790188563.129033
-(636) 251-0654,2026-09-23 11:33 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188362.128930
-(636) 251-0654,2026-09-23 11:32 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188362.128930
-(636) 251-0654,2026-09-23 11:30 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188192.128792
-(636) 290-2500,2026-09-23 11:30 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188182.128789
-(636) 251-0654,2026-09-23 11:29 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188192.128792
-(636) 290-2500,2026-09-23 11:29 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188182.128789
-(314) 598-3656,2026-09-23 11:11 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790187079.128777
-(319) 850-5368,2026-09-23 11:07 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186809.128741
-(319) 850-5368,2026-09-23 11:06 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186809.128741
-(314) 201-4414,2026-09-23 10:54 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186002.128708
-(314) 201-4414,2026-09-23 10:53 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186002.128708
-(314) 541-9506,2026-09-23 10:47 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790185587.128675
-(314) 541-9506,2026-09-23 10:46 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790185587.128675
-(636) 359-4097,2026-09-23 10:02 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790182932.128588
-(636) 204-9664,2026-09-23 10:02 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790182926.128585
-(314) 201-4414,2026-09-23 09:43 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790181829.128559
-(314) 791-5247,2026-09-23 09:39 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790181565.128511
-(567) 415-0408,2026-09-23 09:26 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790180725.128450
-(567) 415-0408,2026-09-23 09:25 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790180725.128450
-(815) 557-8449,2026-09-23 09:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Deborah Mandjack — application/credit ASAP,No,1790179430.128367
-(636) 297-8578,2026-09-23 08:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790175819.128209
-(314) 598-3656,2026-09-23 07:43 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790174633.128167
-(636) 297-8578,2026-09-23 07:31 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790173852.128121
-(636) 297-8578,2026-09-23 07:30 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790173852.128121
-(817) 946-2697,2026-09-22 03:20 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790115604.127925
-(314) 791-5247,2026-09-22 02:52 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113972.127914
-(618) 701-8549,2026-09-22 02:45 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113524.127901
-(618) 701-8549,2026-09-22 02:45 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113475.127886
-(318) 787-4006,2026-09-22 02:44 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113489.127892
-(618) 701-8549,2026-09-22 02:44 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113475.127886
-(318) 787-4006,2026-09-22 02:44 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113460.127883
-(636) 235-8655,2026-09-22 02:19 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111943.127831
-(636) 235-8655,2026-09-22 02:19 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111943.127831
-(636) 456-8191,2026-09-22 02:16 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111784.127814
-(217) 652-8895,2026-09-22 02:11 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111496.127801
-(636) 875-9696,2026-09-22 02:08 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,Yes,1790111297.127789
-(636) 875-9696,2026-09-22 02:08 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,Yes,1790111297.127789
-(636) 875-9696,2026-09-22 02:05 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790111145.127782
-(636) 875-9696,2026-09-22 02:05 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790111075.127775
-(636) 875-9696,2026-09-22 02:04 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Yes — Super Action Required,Jacob Harrison — leasing callback,No,1790111075.127775
-(702) 219-9239,2026-09-22 01:38 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790109485.127751
-(702) 219-9239,2026-09-22 01:38 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790109485.127751
-(636) 297-1766,2026-09-22 01:04 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790107412.127646
-(636) 297-1766,2026-09-22 01:03 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790107412.127646
-(702) 373-6213,2026-09-22 01:02 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790107338.127636
-(636) 359-1420,2026-09-22 12:37 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105861.127580
-(314) 680-3033,2026-09-22 12:27 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105197.127533
-(314) 680-3033,2026-09-22 12:26 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105197.127533
-(702) 373-6213,2026-09-22 12:22 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104952.127522
-(702) 373-6213,2026-09-22 12:22 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104924.127516
-(702) 373-6213,2026-09-22 12:19 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104791.127504
-(636) 655-7096,2026-09-22 12:16 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104608.127491
-(636) 655-7096,2026-09-22 12:13 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104345.127469
-(636) 655-7096,2026-09-22 12:12 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104345.127469
-(732) 902-1045,2026-09-22 12:07 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104020.127450
-(732) 902-1045,2026-09-22 12:07 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104020.127450
-(314) 299-7691,2026-09-22 11:29 AM,601 — AI Agent Number Ring Group,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
-(314) 299-7691,2026-09-22 11:29 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
-(314) 299-7691,2026-09-22 11:28 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
-(314) 299-7691,2026-09-22 11:27 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101627.127329
-(309) 531-8218,2026-09-22 11:24 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101458.127305
-(309) 531-8218,2026-09-22 11:24 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101458.127305
-(636) 466-4552,2026-09-22 11:21 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101304.127300
-(636) 466-4552,2026-09-22 11:20 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101189.127280
-(636) 466-4552,2026-09-22 11:19 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101189.127280
-(636) 295-8042,2026-09-22 11:13 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100783.127249
-(314) 799-8231,2026-09-22 11:01 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100048.127208
-(314) 799-8231,2026-09-22 11:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100048.127208
-(636) 466-3636,2026-09-22 10:54 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099653.127178
-(314) 791-5247,2026-09-22 10:52 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099529.127173
-(314) 791-5247,2026-09-22 10:51 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099444.127152
-(314) 791-5247,2026-09-22 10:50 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099444.127152
-(636) 295-8042,2026-09-22 10:49 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099306.127130
-(636) 295-8042,2026-09-22 10:48 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099306.127130
-(636) 383-7840,2026-09-22 10:39 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098737.127110
-(636) 383-7840,2026-09-22 10:38 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098737.127110
-(314) 570-6629,2026-09-22 10:35 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098506.127101
-(314) 706-2886,2026-09-22 10:33 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098414.127082
-(314) 680-3033,2026-09-22 10:05 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790096670.126968
-(314) 680-3033,2026-09-22 10:04 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790096670.126968
-(949) 633-5449,2026-09-22 09:42 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790095306.126930
-(949) 633-5449,2026-09-22 09:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790095306.126930
-(239) 699-2818,2026-09-22 09:15 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790093750.126815
-(314) 619-9964,2026-09-22 09:07 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790093254.126793
-(636) 450-9734,2026-09-22 09:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092998.126774
-(636) 655-7096,2026-09-22 09:00 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092819.126748
-(636) 655-7096,2026-09-22 09:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092819.126748
-(314) 791-5247,2026-09-22 09:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092814.126745
-(636) 655-7096,2026-09-22 08:59 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092751.126729
-(330) 256-9083,2026-09-22 08:57 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092617.126700
-(636) 432-6633,2026-09-22 08:57 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092587.126697
-(330) 256-9083,2026-09-22 08:56 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092617.126700
-(636) 432-6633,2026-09-22 08:56 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092587.126697
-(636) 450-9734,2026-09-22 08:49 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092196.126677
-(330) 256-9083,2026-09-22 08:49 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092144.126665
-(330) 256-9083,2026-09-22 08:49 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092144.126665
-(636) 359-4748,2026-09-22 08:48 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092133.126662
-(660) 650-1326,2026-09-22 08:46 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091992.126655
-(636) 515-7155,2026-09-22 08:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091702.126647
-(636) 235-8786,2026-09-22 08:33 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091154.126625
-(636) 235-8786,2026-09-22 08:32 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091154.126625
-(636) 295-5314,2026-09-22 08:21 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790090466.126598
-(636) 295-5314,2026-09-22 08:21 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790090466.126598
-(314) 265-0758,2026-09-22 08:10 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089840.126579
-(314) 619-9964,2026-09-22 08:02 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089334.126548
-(314) 619-9964,2026-09-22 08:02 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089334.126548
-(314) 619-9964,2026-09-22 08:01 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089243.126529
-(314) 619-9964,2026-09-22 08:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089243.126529
-(314) 704-8870,2026-09-22 07:47 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088415.126489
-(314) 704-8870,2026-09-22 07:46 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088415.126489
-(636) 235-8786,2026-09-22 07:46 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088396.126486
-(314) 704-8870,2026-09-22 07:45 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088330.126481
-(636) 312-9815,2026-09-22 07:28 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087287.126428
-(636) 235-8786,2026-09-22 07:27 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087195.126396
-(636) 312-9815,2026-09-22 07:27 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087223.126401
-(636) 235-8786,2026-09-22 07:26 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087195.126396
-(636) 251-9380,2026-09-22 07:25 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087141.126388
-(636) 251-9380,2026-09-22 07:24 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087056.126363
-(636) 312-9815,2026-09-22 07:19 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790086757.126358
-(217) 316-1707,2026-09-21 02:48 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790027240.126203
-(217) 316-1707,2026-09-21 02:47 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790027240.126203
-(636) 384-6639,2026-09-21 02:45 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027091.126187
-(636) 384-6639,2026-09-21 02:44 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027091.126187
-(636) 384-6639,2026-09-21 02:44 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027023.126178
-(636) 384-6639,2026-09-21 02:43 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027023.126178
-(636) 362-8487,2026-09-21 02:38 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790026680.126170
-(916) 616-1021,2026-09-21 02:34 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790026469.126154
-(812) 578-5303,2026-09-21 02:28 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790026079.126132
-(812) 578-5303,2026-09-21 02:27 PM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790026079.126132
-(725) 465-0022,2026-09-21 01:53 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790024010.126093
-(725) 465-0022,2026-09-21 01:52 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790023919.126074
-(725) 465-0022,2026-09-21 01:51 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790023919.126074
-(636) 466-4964,2026-09-21 01:29 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790022517.126041
-(636) 466-4964,2026-09-21 01:28 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790022517.126041
-(314) 578-0041,2026-09-21 12:48 PM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790020067.125988
-(314) 578-0041,2026-09-21 12:47 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790020067.125988
-(314) 624-7674,2026-09-21 12:35 PM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790019326.125967
-(469) 935-1579,2026-09-21 11:56 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790017000.125935
-(954) 624-2997,2026-09-21 11:38 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790015914.125926
-(636) 288-3358,2026-09-21 11:22 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790014939.125891
-(636) 288-3358,2026-09-21 11:22 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790014939.125891
-(314) 793-1160,2026-09-21 11:17 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790014595.125866
-(314) 793-1160,2026-09-21 11:16 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790014595.125866
-(636) 297-2587,2026-09-21 11:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013822.125828
-(817) 343-3722,2026-09-21 11:03 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013791.125824
-(817) 343-3722,2026-09-21 11:01 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013671.125809
-(817) 946-2697,2026-09-21 10:51 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013045.125762
-(817) 946-2697,2026-09-21 10:50 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013045.125762
-(573) 941-9941,2026-09-21 10:17 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010996.125708
-(573) 941-9941,2026-09-21 10:16 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010996.125708
-(573) 941-9941,2026-09-21 10:15 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010916.125699
-(573) 941-9941,2026-09-21 10:15 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010916.125699
-(573) 537-0981,2026-09-21 10:14 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010848.125690
-(573) 537-0981,2026-09-21 10:14 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010848.125690
-(573) 229-3362,2026-09-21 10:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010193.125674
-(573) 537-0981,2026-09-21 09:35 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790008509.125649
-(573) 537-0981,2026-09-21 09:35 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790008509.125649
-(636) 290-6380,2026-09-21 09:17 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790007466.125626
-(314) 791-5247,2026-09-21 09:09 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006993.125619
-(573) 406-8776,2026-09-21 09:07 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006862.125611
-(573) 406-8776,2026-09-21 09:07 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006828.125606
-(573) 406-8776,2026-09-21 09:06 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006765.125597
-(573) 406-8776,2026-09-21 09:06 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006765.125597
-(636) 439-8778,2026-09-21 08:17 AM,102 — Stacey Demos,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003820.125560
-(636) 439-8778,2026-09-21 08:16 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003740.125542
-(785) 806-4940,2026-09-21 08:15 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003708.125539
-(636) 439-8778,2026-09-21 08:15 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003740.125542
-(785) 806-4940,2026-09-21 08:15 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003708.125539
-(636) 290-2500,2026-09-21 08:05 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003143.125519
-(314) 313-7497,2026-09-21 08:05 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003123.125516
-(636) 357-4630,2026-09-21 08:00 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790002827.125507
-(636) 235-8786,2026-09-21 07:43 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001820.125497
-(636) 498-1279,2026-09-21 07:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001718.125492
-(636) 498-1279,2026-09-21 07:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001705.125481
-(636) 679-8561,2026-09-21 07:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001688.125478
-(660) 650-0246,2026-09-21 07:41 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001682.125474
-(501) 747-0040,2026-09-21 07:36 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001359.125460
-(501) 747-0040,2026-09-21 07:35 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001359.125460
-(636) 679-8561,2026-09-21 07:35 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001357.125457
-(636) 515-7155,2026-09-21 07:08 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1789999699.125437
-(618) 554-5918,2026-09-21 07:06 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1789999578.125426
-(407) 453-6944,2026-09-21 07:04 AM,110 — Mara Pongayan Priagas,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1789999433.125418
-(407) 453-6944,2026-09-21 07:03 AM,101 — Lindsay Smith,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1789999433.125418
-(573) 944-9377,2026-09-20 09:13 AM,601 — AI Agent Number Ring Group,(314) 690-8561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1789920827.125338
+(618) 823-2480,2026-09-26 6:17 PM,76001 — 76001,3146901210 / Emergency-Main Line,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790471824.132756
+(636) 466-1456,2026-09-25 3:27 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790375240.132150
+(317) 384-5773,2026-09-25 3:08 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790374065.132121
+(317) 384-5773,2026-09-25 3:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790374065.132121
+(314) 687-8073,2026-09-25 3:04 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373840.132088
+(314) 687-8073,2026-09-25 3:04 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373840.132088
+(636) 775-0710,2026-09-25 3:03 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373832.132085
+(636) 262-0594,2026-09-25 3:01 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373646.132056
+(636) 262-0594,2026-09-25 3:00 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790373646.132056
+(636) 887-1977,2026-09-25 2:43 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790372627.132044
+(636) 359-8284,2026-09-25 2:28 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790371715.131909
+(573) 476-5334,2026-09-25 2:13 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790370811.131901
+(317) 384-5773,2026-09-25 1:42 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368921.131836
+(317) 384-5773,2026-09-25 1:42 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368921.131836
+(817) 343-3722,2026-09-25 1:32 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368282.131751
+(817) 343-3722,2026-09-25 1:31 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368282.131751
+(817) 343-3722,2026-09-25 1:30 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368190.131720
+(817) 343-3722,2026-09-25 1:29 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790368190.131720
+(314) 706-2886,2026-09-25 1:21 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790367679.131623
+(314) 706-2886,2026-09-25 1:21 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790367679.131623
+(314) 657-5309,2026-09-25 12:48 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790365726.131611
+(314) 657-5309,2026-09-25 12:47 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790365676.131606
+(636) 746-4173,2026-09-25 12:27 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790364468.131572
+(636) 875-9696,2026-09-25 12:10 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790363406.131448
+(636) 875-9696,2026-09-25 12:10 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790363406.131448
+(636) 875-9696,2026-09-25 12:09 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790363381.131443
+(636) 875-9696,2026-09-25 12:09 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790363347.131438
+(636) 875-9696,2026-09-25 12:08 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790363302.131433
+(573) 822-9232,2026-09-25 12:03 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362978.131400
+(573) 822-9232,2026-09-25 12:02 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362978.131400
+(573) 822-9232,2026-09-25 12:02 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790362931.131395
+(573) 516-6444,2026-09-25 11:35 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790361272.131352
+(573) 516-6444,2026-09-25 11:34 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790361272.131352
+(913) 349-9910,2026-09-25 11:05 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790359461.131310
+(913) 349-9910,2026-09-25 11:04 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790359461.131310
+(314) 791-5247,2026-09-25 10:27 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790357242.131301
+(573) 666-2983,2026-09-25 10:20 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356822.131270
+(612) 968-2783,2026-09-25 10:17 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356589.131239
+(612) 968-2783,2026-09-25 10:16 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790356589.131239
+(573) 754-2307,2026-09-25 9:57 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790355389.131136
+(636) 290-8717,2026-09-25 9:57 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355380.131134
+(573) 754-2307,2026-09-25 9:56 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790355389.131136
+(636) 290-8717,2026-09-25 9:56 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355380.131134
+(865) 212-0491,2026-09-25 9:54 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790355293.131116
+(314) 791-5247,2026-09-25 9:49 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354939.131081
+(314) 791-5247,2026-09-25 9:48 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354939.131081
+(636) 293-8353,2026-09-25 9:46 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354755.131050
+(636) 293-8353,2026-09-25 9:45 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790354755.131050
+(636) 236-3999,2026-09-25 9:21 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790353277.131035
+(636) 236-3999,2026-09-25 9:20 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790353255.131032
+(636) 236-3999,2026-09-25 9:19 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790353122.130996
+(636) 236-3999,2026-09-25 9:18 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790353122.130996
+(636) 235-8786,2026-09-25 9:16 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790352960.130973
+(636) 466-1456,2026-09-25 9:13 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
+(636) 466-1456,2026-09-25 9:12 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
+(817) 946-2697,2026-09-25 9:10 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790352607.130914
+(636) 297-6395,2026-09-25 8:55 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351743.130881
+(702) 349-0335,2026-09-25 8:49 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
+(702) 349-0335,2026-09-25 8:48 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
+(573) 426-7019,2026-09-25 8:47 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351276.130843
+(636) 297-3248,2026-09-25 8:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351194.130838
+(636) 297-6395,2026-09-25 8:27 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790350046.130804
+(314) 201-1346,2026-09-25 8:25 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
+(314) 201-1346,2026-09-25 8:24 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
+(636) 887-1977,2026-09-25 8:10 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790349010.130728
+(636) 887-1977,2026-09-25 8:10 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790349010.130728
+(314) 201-1346,2026-09-25 8:02 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790348507.130625
+(314) 201-1346,2026-09-25 8:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790348507.130625
+(919) 714-9147,2026-09-25 7:47 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790347667.130620
+(314) 598-3656,2026-09-25 7:26 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790346365.130587
+(314) 687-8073,2026-09-25 7:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790344862.130518
+(636) 891-2647,2026-09-24 3:18 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288336.130462
+(636) 891-2647,2026-09-24 3:17 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288271.130457
+(636) 290-5354,2026-09-24 3:15 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790288074.130450
+(636) 290-5354,2026-09-24 3:14 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790288074.130450
+(636) 290-5354,2026-09-24 3:07 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287622.130443
+(636) 290-5354,2026-09-24 3:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287622.130443
+(636) 290-5354,2026-09-24 2:59 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Yes,1790287122.130429
+(636) 290-5354,2026-09-24 2:58 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Yes,1790287122.130429
+(636) 290-5354,2026-09-24 2:57 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287024.130424
+(907) 799-9503,2026-09-24 2:53 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790286835.130417
+(314) 498-9514,2026-09-24 2:03 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
+(314) 498-9514,2026-09-24 2:03 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
+(636) 373-4644,2026-09-24 1:49 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Yes,1790282943.130350
+(636) 373-4644,2026-09-24 1:49 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Yes,1790282943.130350
+(636) 293-8353,2026-09-24 1:30 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281813.130294
+(636) 887-1695,2026-09-24 1:27 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
+(636) 887-1695,2026-09-24 1:27 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
+(605) 252-2843,2026-09-24 1:26 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281570.130256
+(855) 755-4024,2026-09-24 1:21 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281259.130227
+(855) 755-4024,2026-09-24 1:20 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281259.130227
+(636) 466-3636,2026-09-24 1:17 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281049.130219
+(317) 909-2493,2026-09-24 1:12 PM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790280725.130200
+(314) 706-2886,2026-09-24 1:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790280478.130181
+(580) 889-0867,2026-09-24 12:59 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279909.130152
+(580) 889-0867,2026-09-24 12:58 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279909.130152
+(580) 889-0867,2026-09-24 12:57 PM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790279854.130142
+(557) 232-1221,2026-09-24 12:20 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277618.130084
+(557) 232-1221,2026-09-24 12:20 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277618.130084
+(636) 297-6493,2026-09-24 12:11 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277044.130075
+(636) 297-6493,2026-09-24 12:10 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790277044.130075
+(636) 293-8353,2026-09-24 12:08 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276857.130066
+(636) 293-8353,2026-09-24 12:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276857.130066
+(636) 293-8353,2026-09-24 12:06 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790276794.130061
+(815) 557-8449,2026-09-24 11:55 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790276111.130047
+(815) 557-8449,2026-09-24 11:55 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790276111.130047
+(815) 557-8449,2026-09-24 11:54 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275999.130031
+(815) 557-8449,2026-09-24 11:53 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275999.130031
+(815) 557-8449,2026-09-24 11:53 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275999.130031
+(636) 297-6493,2026-09-24 11:43 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275384.129984
+(636) 297-6493,2026-09-24 11:43 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790275384.129984
+(636) 542-1926,2026-09-24 10:24 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270618.129937
+(636) 542-1926,2026-09-24 10:23 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270618.129937
+(636) 542-1926,2026-09-24 10:20 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270412.129928
+(636) 542-1926,2026-09-24 10:20 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790270412.129928
+(417) 487-6752,2026-09-24 9:56 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790268987.129915
+(409) 782-0075,2026-09-24 9:37 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267828.129869
+(907) 799-9503,2026-09-24 9:36 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267793.129864
+(907) 799-9503,2026-09-24 9:36 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267728.129855
+(907) 799-9503,2026-09-24 9:35 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267728.129855
+(636) 456-2084,2026-09-24 9:34 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790267678.129843
+(573) 380-1907,2026-09-24 9:33 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790267589.129830
+(573) 380-1907,2026-09-24 9:33 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790267589.129830
+(314) 782-0454,2026-09-24 8:55 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790265348.129783
+(573) 591-6084,2026-09-24 8:30 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263791.129757
+(573) 591-6084,2026-09-24 8:29 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263791.129757
+(314) 201-4414,2026-09-24 8:27 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790263606.129738
+(314) 201-4414,2026-09-24 8:26 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790263606.129738
+(763) 335-3103,2026-09-24 8:17 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263023.129713
+(763) 335-3103,2026-09-24 8:17 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263023.129713
+(314) 201-4414,2026-09-24 8:16 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790263004.129710
+(573) 825-4950,2026-09-24 8:12 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262762.129703
+(573) 941-9941,2026-09-24 8:07 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262380.129654
+(314) 914-4339,2026-09-24 8:06 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262349.129651
+(573) 941-9941,2026-09-24 8:06 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262380.129654
+(314) 914-4339,2026-09-24 8:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262349.129651
+(314) 201-4414,2026-09-24 8:03 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
+(314) 201-4414,2026-09-24 8:02 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
+(573) 489-3422,2026-09-24 8:01 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Yes,1790262074.129610
+(573) 489-3422,2026-09-24 8:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Yes,1790262074.129610
+(573) 825-4950,2026-09-24 8:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262058.129602
+(573) 489-3422,2026-09-24 7:53 AM,100 — Tiffany Recktenwald,3146901018 / Tiffany Recktenwald,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,No,1790261606.129572
+(636) 456-4347,2026-09-24 7:06 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
+(636) 456-4347,2026-09-24 7:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
+(636) 456-4347,2026-09-24 7:05 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258677.129517
+(636) 456-4347,2026-09-24 7:04 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258677.129517
+(636) 575-5957,2026-09-24 7:04 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258601.129508
+(636) 575-5957,2026-09-24 7:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258601.129508
+(573) 846-6702,2026-09-23 3:05 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790201112.129462
+(314) 917-5726,2026-09-23 2:41 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790199701.129389
+(314) 866-9056,2026-09-23 2:21 PM,7600 — 7600,3146901175 / Lindsay Smith,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198506.129374
+(414) 204-3024,2026-09-23 2:21 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198480.129353
+(814) 280-3385,2026-09-23 2:20 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198419.129336
+(814) 280-3385,2026-09-23 2:20 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790198419.129336
+(636) 204-7698,2026-09-23 2:01 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197225.129296
+(636) 204-7698,2026-09-23 2:00 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197225.129296
+(636) 204-7698,2026-09-23 1:59 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790197180.129291
+(636) 896-6968,2026-09-23 1:41 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790196104.129245
+(314) 917-5726,2026-09-23 1:40 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790195972.129212
+(314) 917-5726,2026-09-23 1:39 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790195972.129212
+(315) 512-3205,2026-09-23 12:43 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790192625.129154
+(314) 917-5726,2026-09-23 11:36 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790188563.129033
+(314) 917-5726,2026-09-23 11:36 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790188563.129033
+(636) 251-0654,2026-09-23 11:33 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188362.128930
+(636) 251-0654,2026-09-23 11:32 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188362.128930
+(636) 251-0654,2026-09-23 11:30 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188192.128792
+(636) 290-2500,2026-09-23 11:30 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188182.128789
+(636) 251-0654,2026-09-23 11:29 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188192.128792
+(636) 290-2500,2026-09-23 11:29 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790188182.128789
+(314) 598-3656,2026-09-23 11:11 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790187079.128777
+(319) 850-5368,2026-09-23 11:07 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186809.128741
+(319) 850-5368,2026-09-23 11:06 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186809.128741
+(314) 201-4414,2026-09-23 10:54 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186002.128708
+(314) 201-4414,2026-09-23 10:53 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790186002.128708
+(314) 541-9506,2026-09-23 10:47 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790185587.128675
+(314) 541-9506,2026-09-23 10:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790185587.128675
+(636) 359-4097,2026-09-23 10:02 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790182932.128588
+(636) 204-9664,2026-09-23 10:02 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790182926.128585
+(314) 201-4414,2026-09-23 9:43 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790181829.128559
+(314) 791-5247,2026-09-23 9:39 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790181565.128511
+(567) 415-0408,2026-09-23 9:26 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790180725.128450
+(567) 415-0408,2026-09-23 9:25 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790180725.128450
+(815) 557-8449,2026-09-23 9:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790179430.128367
+(636) 297-8578,2026-09-23 8:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790175819.128209
+(314) 598-3656,2026-09-23 7:43 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790174633.128167
+(636) 297-8578,2026-09-23 7:31 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790173852.128121
+(636) 297-8578,2026-09-23 7:30 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790173852.128121
+(817) 946-2697,2026-09-22 3:20 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790115604.127925
+(314) 791-5247,2026-09-22 2:52 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113972.127914
+(618) 701-8549,2026-09-22 2:45 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113524.127901
+(618) 701-8549,2026-09-22 2:45 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113475.127886
+(318) 787-4006,2026-09-22 2:44 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113489.127892
+(618) 701-8549,2026-09-22 2:44 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113475.127886
+(318) 787-4006,2026-09-22 2:44 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790113460.127883
+(636) 235-8655,2026-09-22 2:19 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111943.127831
+(636) 235-8655,2026-09-22 2:19 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111943.127831
+(636) 456-8191,2026-09-22 2:16 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111784.127814
+(217) 652-8895,2026-09-22 2:11 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111496.127801
+(636) 875-9696,2026-09-22 2:08 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111297.127789
+(636) 875-9696,2026-09-22 2:08 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790111297.127789
+(636) 875-9696,2026-09-22 2:05 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111145.127782
+(636) 875-9696,2026-09-22 2:05 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111075.127775
+(636) 875-9696,2026-09-22 2:04 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790111075.127775
+(702) 219-9239,2026-09-22 1:38 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790109485.127751
+(702) 219-9239,2026-09-22 1:38 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790109485.127751
+(636) 297-1766,2026-09-22 1:04 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790107412.127646
+(636) 297-1766,2026-09-22 1:03 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790107412.127646
+(702) 373-6213,2026-09-22 1:02 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790107338.127636
+(636) 359-1420,2026-09-22 12:37 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105861.127580
+(314) 680-3033,2026-09-22 12:27 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105197.127533
+(314) 680-3033,2026-09-22 12:26 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790105197.127533
+(702) 373-6213,2026-09-22 12:22 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104952.127522
+(702) 373-6213,2026-09-22 12:22 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104924.127516
+(702) 373-6213,2026-09-22 12:19 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104791.127504
+(636) 655-7096,2026-09-22 12:16 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104608.127491
+(636) 655-7096,2026-09-22 12:13 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104345.127469
+(636) 655-7096,2026-09-22 12:12 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104345.127469
+(732) 902-1045,2026-09-22 12:07 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104020.127450
+(732) 902-1045,2026-09-22 12:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790104020.127450
+(314) 299-7691,2026-09-22 11:29 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
+(314) 299-7691,2026-09-22 11:29 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
+(314) 299-7691,2026-09-22 11:28 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101700.127348
+(314) 299-7691,2026-09-22 11:27 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101627.127329
+(309) 531-8218,2026-09-22 11:24 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101458.127305
+(309) 531-8218,2026-09-22 11:24 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790101458.127305
+(636) 466-4552,2026-09-22 11:21 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101304.127300
+(636) 466-4552,2026-09-22 11:20 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101189.127280
+(636) 466-4552,2026-09-22 11:19 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790101189.127280
+(636) 295-8042,2026-09-22 11:13 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100783.127249
+(314) 799-8231,2026-09-22 11:01 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100048.127208
+(314) 799-8231,2026-09-22 11:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790100048.127208
+(636) 466-3636,2026-09-22 10:54 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099653.127178
+(314) 791-5247,2026-09-22 10:52 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099529.127173
+(314) 791-5247,2026-09-22 10:51 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099444.127152
+(314) 791-5247,2026-09-22 10:50 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099444.127152
+(636) 295-8042,2026-09-22 10:49 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099306.127130
+(636) 295-8042,2026-09-22 10:48 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790099306.127130
+(636) 383-7840,2026-09-22 10:39 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098737.127110
+(636) 383-7840,2026-09-22 10:38 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098737.127110
+(314) 570-6629,2026-09-22 10:35 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098506.127101
+(314) 706-2886,2026-09-22 10:33 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790098414.127082
+(314) 680-3033,2026-09-22 10:05 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790096670.126968
+(314) 680-3033,2026-09-22 10:04 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790096670.126968
+(949) 633-5449,2026-09-22 9:42 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790095306.126930
+(949) 633-5449,2026-09-22 9:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790095306.126930
+(239) 699-2818,2026-09-22 9:15 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790093750.126815
+(314) 619-9964,2026-09-22 9:07 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790093254.126793
+(636) 450-9734,2026-09-22 9:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092998.126774
+(636) 655-7096,2026-09-22 9:00 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092819.126748
+(636) 655-7096,2026-09-22 9:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092819.126748
+(314) 791-5247,2026-09-22 9:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092814.126745
+(636) 655-7096,2026-09-22 8:59 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092751.126729
+(330) 256-9083,2026-09-22 8:57 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092617.126700
+(636) 432-6633,2026-09-22 8:57 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092587.126697
+(330) 256-9083,2026-09-22 8:56 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790092617.126700
+(636) 432-6633,2026-09-22 8:56 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092587.126697
+(636) 450-9734,2026-09-22 8:49 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092196.126677
+(330) 256-9083,2026-09-22 8:49 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092144.126665
+(330) 256-9083,2026-09-22 8:49 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092144.126665
+(636) 359-4748,2026-09-22 8:48 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790092133.126662
+(660) 650-1326,2026-09-22 8:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091992.126655
+(636) 515-7155,2026-09-22 8:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091702.126647
+(636) 235-8786,2026-09-22 8:33 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091154.126625
+(636) 235-8786,2026-09-22 8:32 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790091154.126625
+(636) 295-5314,2026-09-22 8:21 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790090466.126598
+(636) 295-5314,2026-09-22 8:21 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790090466.126598
+(314) 265-0758,2026-09-22 8:10 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089840.126579
+(314) 619-9964,2026-09-22 8:02 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089334.126548
+(314) 619-9964,2026-09-22 8:02 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089334.126548
+(314) 619-9964,2026-09-22 8:01 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089243.126529
+(314) 619-9964,2026-09-22 8:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790089243.126529
+(314) 704-8870,2026-09-22 7:47 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088415.126489
+(314) 704-8870,2026-09-22 7:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088415.126489
+(636) 235-8786,2026-09-22 7:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088396.126486
+(314) 704-8870,2026-09-22 7:45 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790088330.126481
+(636) 312-9815,2026-09-22 7:28 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087287.126428
+(636) 235-8786,2026-09-22 7:27 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087195.126396
+(636) 312-9815,2026-09-22 7:27 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087223.126401
+(636) 235-8786,2026-09-22 7:26 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087195.126396
+(636) 251-9380,2026-09-22 7:25 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087141.126388
+(636) 251-9380,2026-09-22 7:24 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790087056.126363
+(636) 312-9815,2026-09-22 7:19 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790086757.126358
+(217) 316-1707,2026-09-21 2:48 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790027240.126203
+(217) 316-1707,2026-09-21 2:47 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790027240.126203
+(636) 384-6639,2026-09-21 2:45 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027091.126187
+(636) 384-6639,2026-09-21 2:44 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027091.126187
+(636) 384-6639,2026-09-21 2:44 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027023.126178
+(636) 384-6639,2026-09-21 2:43 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790027023.126178
+(636) 362-8487,2026-09-21 2:38 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790026680.126170
+(916) 616-1021,2026-09-21 2:34 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790026469.126154
+(812) 578-5303,2026-09-21 2:28 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790026079.126132
+(812) 578-5303,2026-09-21 2:27 PM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790026079.126132
+(725) 465-0022,2026-09-21 1:53 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790024010.126093
+(725) 465-0022,2026-09-21 1:52 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790023919.126074
+(725) 465-0022,2026-09-21 1:51 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790023919.126074
+(636) 466-4964,2026-09-21 1:29 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790022517.126041
+(636) 466-4964,2026-09-21 1:28 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790022517.126041
+(314) 578-0041,2026-09-21 12:48 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790020067.125988
+(314) 578-0041,2026-09-21 12:47 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790020067.125988
+(314) 624-7674,2026-09-21 12:35 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790019326.125967
+(469) 935-1579,2026-09-21 11:56 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790017000.125935
+(954) 624-2997,2026-09-21 11:38 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790015914.125926
+(636) 288-3358,2026-09-21 11:22 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790014939.125891
+(636) 288-3358,2026-09-21 11:22 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790014939.125891
+(314) 793-1160,2026-09-21 11:17 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790014595.125866
+(314) 793-1160,2026-09-21 11:16 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790014595.125866
+(636) 297-2587,2026-09-21 11:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013822.125828
+(817) 343-3722,2026-09-21 11:03 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013791.125824
+(817) 343-3722,2026-09-21 11:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013671.125809
+(817) 946-2697,2026-09-21 10:51 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013045.125762
+(817) 946-2697,2026-09-21 10:50 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790013045.125762
+(573) 941-9941,2026-09-21 10:17 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010996.125708
+(573) 941-9941,2026-09-21 10:16 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010996.125708
+(573) 941-9941,2026-09-21 10:15 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010916.125699
+(573) 941-9941,2026-09-21 10:15 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010916.125699
+(573) 537-0981,2026-09-21 10:14 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010848.125690
+(573) 537-0981,2026-09-21 10:14 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010848.125690
+(573) 229-3362,2026-09-21 10:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790010193.125674
+(573) 537-0981,2026-09-21 9:35 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790008509.125649
+(573) 537-0981,2026-09-21 9:35 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790008509.125649
+(636) 290-6380,2026-09-21 9:17 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790007466.125626
+(314) 791-5247,2026-09-21 9:09 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006993.125619
+(573) 406-8776,2026-09-21 9:07 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006862.125611
+(573) 406-8776,2026-09-21 9:07 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006828.125606
+(573) 406-8776,2026-09-21 9:06 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006765.125597
+(573) 406-8776,2026-09-21 9:06 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790006765.125597
+(636) 439-8778,2026-09-21 8:17 AM,102 — Stacey Demos,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003820.125560
+(636) 439-8778,2026-09-21 8:16 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003740.125542
+(785) 806-4940,2026-09-21 8:15 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003708.125539
+(636) 439-8778,2026-09-21 8:15 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003740.125542
+(785) 806-4940,2026-09-21 8:15 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003708.125539
+(636) 290-2500,2026-09-21 8:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003143.125519
+(314) 313-7497,2026-09-21 8:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790003123.125516
+(636) 357-4630,2026-09-21 8:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790002827.125507
+(636) 235-8786,2026-09-21 7:43 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001820.125497
+(636) 498-1279,2026-09-21 7:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001718.125492
+(636) 498-1279,2026-09-21 7:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001705.125481
+(636) 679-8561,2026-09-21 7:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001688.125478
+(660) 650-0246,2026-09-21 7:41 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001682.125474
+(501) 747-0040,2026-09-21 7:36 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001359.125460
+(501) 747-0040,2026-09-21 7:35 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001359.125460
+(636) 679-8561,2026-09-21 7:35 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790001357.125457
+(636) 515-7155,2026-09-21 7:08 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1789999699.125437
+(618) 554-5918,2026-09-21 7:06 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1789999578.125426
+(407) 453-6944,2026-09-21 7:04 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1789999433.125418
+(407) 453-6944,2026-09-21 7:03 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1789999433.125418

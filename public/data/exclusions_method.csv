@@ -1,6 +1,6 @@
 Exclusions & method,,
 Merged from Excluded company numbers + Flags & definitions + Verification caveats. Live source workbook only.,,
-,,
+
 Self-numbers / company From exclusions,,
 Number,Why excluded,Inbound NO ANSWER events in window
 (314) 665-2265,HireSuper / marketed main line,25
@@ -13,39 +13,13 @@ Number,Why excluded,Inbound NO ANSWER events in window
 (314) 690-1210,Emergency-Main Line DID,0
 (314) 690-1199,Alex Pollard DID,0
 (800) 930-9912,Ultatel support (seen in CDR),0
-,,
-,,
-Key numbering notes,,
-Ring group 601,AI Agent Number — Super/AI answers first on the main-line path.,
-Marketed main (HireSuper),(314) 665-2265 — Super main / marketed line; excluded as From (25 inbound NO ANSWER events in window were self/system).,
-Ultatel Main DID,(314) 690-8561 — Ultatel Main Number DID (distinct from marketed Super main).,
-No VOICEMAIL outcome,Ultatel Call Details has no separate VOICEMAIL status — only ANSWERED / NO ANSWER.,
-,,
+
 Flags & definitions,,
 Term,Meaning,
-Inbound NO ANSWER,Ultatel Call Details Outcome = NO ANSWER on an IN-Bound call. There is no separate VOICEMAIL status in Ultatel.,
+Inbound NO ANSWER,Ultatel Call Details Outcome = NO ANSWER on an IN-Bound call.,
 Callback / no-callback,"If any OUT-Bound to that caller’s number occurs within 24 hours after the miss, it counts as called back. Otherwise no-callback.",
-Unique caller (Action list),One row per 10-digit external number. Missed attempts = how many NO ANSWER inbounds that number had in the window with no 24h outbound after each (we list the caller once).,
-On Super open list?,Matched to the HireSuper Activity Action Required list pulled Sep 27 (threads spanning Sep 24–27 PT).,
-AI ring group in path?,Call Path / Extension mentions AI Agent Number ring group 601 — Super/AI was in the route.,
-Main number DID?,Inbound DID is Ultatel Main Number 314-690-8561 (not the marketed Super main 314-665-2265).,
-Window still open?,Last miss was so late that a full 24h of outbound data wasn’t in this export yet — treat as provisional.,
-Company/self excluded,"From numbers that are Pollard DIDs, Super main, or Ultatel support — removed so internal/system rows don’t look like customer callbacks.",
-Times (PT),Displayed in America/Los_Angeles. Source timestamps are Ultatel HQ TimeZone (UTC−5) from the export.,
-Priority sort,"1) On Super open list, 2) more missed attempts, 3) more recent last miss.",
-,,
-,,
+Unique caller (Action list),One row per 10-digit external number with ≥1 no-callback miss.,
+Times (PT),Displayed in America/Los_Angeles. Source timestamps are Ultatel HQ TimeZone (UTC−5).,
+
 24h callback join method,,
-"For each inbound NO ANSWER (after excluding company/self From numbers), scan the same Ultatel Call Details export for ANY company OUT-Bound to that caller’s 10-digit number (To field + numbers appearing in Call Path) within 24 hours after the miss. If none → no-callback. Unique Action list = one row per external number with ≥1 such miss. Re-check found 0 false positives among 141. Stricter “never dialed by company this week” = 98.",,
-,,
-Super vs Ultatel crosswalk notes,,
-"Super Action Required open loops come from HireSuper Activity pull 2026-09-27 (threads spanning Sep 24–27 PT). Matched to Ultatel no-callback callers by 10-digit number. A “No” on Ultatel does not mean the Super loop is closed — Super may hold the message/task while Ultatel shows ANSWERED on AI or a different outcome. Conversely, Ultatel-only no-callback callers may still be Super-handled outside the Sep 24–27 feed batch.",,
-,,
-Verification caveats / limits of proof,,
-• Only Ultatel Call Details in Sep 20–26 (HQ export window UTC−5; displayed PT where converted).,,
-• Cannot see callbacks from personal phones or non-Ultatel lines.,,
-• Super may have texted/emailed without an Ultatel OUT-Bound.,,
-• Voicemail is not a separate Ultatel outcome.,,
-• Person names only when CDR Extension provides them — do not invent.,,
-"• Super Reporting inbound/transfers not always present; none in this build (FILLED 2026-09-27). — now: Inbound 135, Transferred 40 (Sep 20–26 Super Reporting).",,
-• Super feed batch Sep 24–27 only — early-week Super loops absent.,,
+"For each inbound NO ANSWER (after excluding company/self From numbers), scan the same Ultatel Call Details export for ANY company OUT-Bound to that caller’s 10-digit number within 24 hours after the miss. If none → no-callback.",,
