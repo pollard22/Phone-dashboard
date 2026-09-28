@@ -86,6 +86,16 @@ function windowLabel() {
   return state.data?.meta?.window_label || '';
 }
 
+function windowShort() {
+  const label = windowLabel();
+  const cut = label.indexOf(' (');
+  return cut > 0 ? label.slice(0, cut) : label;
+}
+
+function hasKpi(value) {
+  return value !== undefined && value !== null && String(value).trim() !== '';
+}
+
 function windowYear() {
   return exportYear(windowLabel());
 }
@@ -138,6 +148,16 @@ function kpiCard(label, value, hint = '', tone = '', drill = '') {
     return `<div class="kpi ${tone}">${inner}</div>`;
   }
   return `<button type="button" class="kpi kpi-btn ${tone}" data-drill="${esc(drill)}" aria-haspopup="dialog" aria-label="View details for ${esc(label)}, ${esc(value)}">${inner}</button>`;
+}
+
+function needsHelpCard(kpis) {
+  if (!hasKpi(kpis.super_needs_human_help)) return '';
+  if (!hasKpi(kpis.super_needs_help_pct)) {
+    return kpiCard('Needs human help', kpis.super_needs_human_help, '', 'warn', 'super-help');
+  }
+  return kpiSplit('warn', { label: 'Needs human help', value: kpis.super_needs_human_help, drill: 'super-help' }, [
+    { label: `${kpis.super_needs_help_pct}% of AI inbound`, drill: 'super-help' },
+  ]);
 }
 
 function kpiSplit(tone, main, subs) {
@@ -301,9 +321,7 @@ function renderOverview() {
     <div class="kpi-grid">
       ${kpiCard('AI inbound', kpis.super_ai_inbound, 'Reporting Sep 20–26', 'accent', 'super-inbound')}
       ${kpiCard('Transferred', kpis.super_transferred, '', 'info', 'super-transferred')}
-      ${kpiSplit('warn', { label: 'Needs human help', value: kpis.super_needs_human_help, drill: 'super-help' }, [
-        { label: `${kpis.super_needs_help_pct}% of AI inbound`, drill: 'super-help' },
-      ])}
+      ${needsHelpCard(kpis)}
       ${kpiSplit('danger', { label: 'Open loops', value: kpis.super_open_loops, drill: 'open-loops' }, [
         { label: `Overlap ${kpis.super_ultatel_overlap}`, drill: 'open-overlap' },
         { label: `Super-only ${kpis.super_only_open_loops}`, drill: 'open-super-only' },
@@ -675,7 +693,7 @@ function renderCallback() {
     <div class="panel" id="cb-never">
       <h3>Never dialed (verified) <button type="button" class="count count-btn" data-drill="never-dialed" aria-haspopup="dialog">${state.callbackNever.length}</button></h3>
       <p style="margin:0 0 0.75rem;color:var(--text-muted);font-size:0.88rem;">
-        Stricter bar inside the ${k.no_callback_24h_unique}: zero company OUT-Bound in the Sep 20–26 Ultatel export.
+        Stricter bar inside the ${esc(k.no_callback_24h_unique)}: zero company OUT-Bound in the ${esc(windowShort() || 'this')} Ultatel export.
       </p>
       ${neverTableHtml(state.callbackNever, { maxHeight: '360px' })}
     </div>
