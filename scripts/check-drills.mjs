@@ -2,6 +2,16 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { parsePack } from '../src/data.js';
 import { buildDrill, dialedOtherRows } from '../src/drills.js';
+import {
+  NOT_IN_EXPORT,
+  callbackFields,
+  exportYear,
+  indexActionByCaller,
+  missedFields,
+  neverFields,
+  openLoopFields,
+  splitWhen,
+} from '../src/callFields.js';
 
 const read = (name) => readFileSync(new URL(`../public/data/${name}`, import.meta.url), 'utf8');
 const pack = parsePack({
@@ -82,5 +92,98 @@ for (const row of [...pack.missedA, ...pack.missedB]) {
   ext[key] = (ext[key] || 0) + 1;
 }
 assert.deepEqual(ext, pack.data.miss_by_extension);
+
+const year = exportYear(pack.data.meta.window_label);
+assert.equal(year, 2026);
+const byCaller = indexActionByCaller(pack.callbackAction);
+
+const firstMiss = missedFields(pack.missedA[0]);
+assert.deepEqual(firstMiss, {
+  caller: '(618) 823-2480',
+  who: '76001 — 76001',
+  date: 'Sat, Sep 26, 2026',
+  time: '6:17 PM',
+  yearInferred: false,
+});
+
+for (const row of [...pack.missedA, ...pack.missedB]) {
+  const fields = missedFields(row);
+  assert.ok(fields.caller.startsWith('('), row.Caller);
+  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
+  assert.equal(fields.who, row['Who should have taken it']);
+  assert.match(fields.date, /^[A-Z][a-z]{2}, [A-Z][a-z]{2} \d{1,2}, 2026$/, row['Miss datetime (PT)']);
+  assert.match(fields.time, /^\d{1,2}:\d{2} [AP]M$/, row['Miss datetime (PT)']);
+  assert.equal(fields.yearInferred, false);
+  const parsed = splitWhen(row['Miss datetime (PT)']);
+  const iso = row['Miss datetime (PT)'].match(/^(\d{4})-(\d{2})-(\d{2})/);
+  const utc = new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])));
+  const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][utc.getUTCDay()];
+  assert.equal(parsed.date.slice(0, 3), weekday, row['Miss datetime (PT)']);
+}
+
+const firstCallback = callbackFields(pack.callbackAction[0], year);
+assert.deepEqual(firstCallback, {
+  caller: '(636) 875-9696',
+  who: '110 — Mara Pongayan Priagas',
+  date: 'Fri, Sep 25, 2026',
+  time: '12:10 PM',
+  yearInferred: true,
+});
+
+for (const row of pack.callbackAction) {
+  const fields = callbackFields(row, year);
+  assert.equal(fields.who, row['Last extension tried'], row.Caller);
+  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
+  assert.equal(fields.date.slice(0, 3), row['Last miss (PT)'].slice(0, 3), row.Caller);
+  assert.equal(fields.yearInferred, true);
+  assert.match(fields.date, /, 2026$/);
+}
+
+for (const row of pack.callbackNever) {
+  const fields = neverFields(row, byCaller, year);
+  assert.equal(fields.who, byCaller.get(row.Caller)['Last extension tried'], row.Caller);
+  assert.equal(fields.date.slice(0, 3), row['Last miss (PT)'].slice(0, 3), row.Caller);
+  assert.notEqual(fields.time, NOT_IN_EXPORT, row.Caller);
+}
+
+for (const row of dialedOtherRows(pack)) {
+  const fields = callbackFields(row, year);
+  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
+  assert.equal(fields.yearInferred, true);
+}
+
+const loopFields = pack.openLoops.map((row) => openLoopFields(row, byCaller, year));
+const superOnly = loopFields.filter((fields) => fields.who === NOT_IN_EXPORT);
+const overlap = loopFields.filter((fields) => fields.who !== NOT_IN_EXPORT);
+assert.equal(superOnly.length, 8);
+assert.equal(overlap.length, 7);
+for (const fields of superOnly) {
+  assert.equal(fields.date, NOT_IN_EXPORT);
+  assert.equal(fields.time, NOT_IN_EXPORT);
+  assert.equal(fields.yearInferred, false);
+  assert.ok(fields.caller.startsWith('('));
+}
+for (const fields of overlap) {
+  assert.notEqual(fields.date, NOT_IN_EXPORT);
+  assert.notEqual(fields.time, NOT_IN_EXPORT);
+  assert.equal(fields.yearInferred, true);
+}
+
+const jacob = openLoopFields(
+  pack.openLoops.find((row) => row.Caller === '(636) 875-9696'),
+  byCaller,
+  year
+);
+assert.deepEqual(jacob, {
+  caller: '(636) 875-9696',
+  who: '110 — Mara Pongayan Priagas',
+  date: 'Fri, Sep 25, 2026',
+  time: '12:10 PM',
+  yearInferred: true,
+});
+
+assert.equal(splitWhen('Thu Sep 24 8:30 AM', year).date, 'Thu, Sep 24, 2026');
+assert.equal(splitWhen('Thu Sep 24 8:30 AM', year).time, '8:30 AM');
+assert.equal(splitWhen('—', year).date, NOT_IN_EXPORT);
 
 console.log('drill counts match the export');

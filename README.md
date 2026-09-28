@@ -61,6 +61,17 @@ Click a headline number to open a detail panel. On Missed ownership, a chart bar
 
 Row lists are filtered from the files already in `public/data/`. If a metric is only an aggregate, the panel says **Detail not in this export** and shows the overview summary line. It does not invent callers.
 
+Call and open-loop lists lead with **Caller**, **Who they called**, **Date**, and **Time**.
+
+| List | Who they called | Date and time |
+|------|-----------------|---------------|
+| Missed events, including extension filters | `Who should have taken it` | Split from `Miss datetime (PT)` |
+| No-callback 141 and the 43 untagged union | `Last extension tried` | Split from `Last miss (PT)` |
+| Never dialed 98 | Same extension, looked up from the action list | Split from `Last miss (PT)` |
+| Open loops | Action-list extension when the caller is on it | Last Ultatel miss, when present |
+
+Super-only open loops with no Ultatel destination or time show **Not in this export** in those cells. Cells that have month and day only use the year from the Ultatel export window, and the table says so.
+
 | Block | What opens |
 |-------|------------|
 | No-callback 141 | Action list in `callback_hygiene_ultatel.csv` |

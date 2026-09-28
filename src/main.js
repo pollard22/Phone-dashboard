@@ -1,7 +1,18 @@
 import './style.css';
 import { Chart, BarController, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
 import { parsePack } from './data.js';
-import { buildDrill, filterRows } from './drills.js';
+import { buildDrill } from './drills.js';
+import {
+  NOT_IN_EXPORT,
+  displayedCallFields,
+  exportYear,
+  indexActionByCaller,
+  missedFields,
+  callbackFields,
+  neverFields,
+  openLoopFields,
+  yearFillNote,
+} from './callFields.js';
 
 Chart.register(BarController, BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
@@ -69,6 +80,52 @@ function esc(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+function windowLabel() {
+  return state.data?.meta?.window_label || '';
+}
+
+function windowYear() {
+  return exportYear(windowLabel());
+}
+
+function actionIndex() {
+  return indexActionByCaller(state.callbackAction);
+}
+
+function leadHead() {
+  return `<th>Caller</th><th>Who they called</th><th>Date</th><th>Time</th>`;
+}
+
+function leadCells(fields) {
+  const cell = (value, mono) => {
+    const missing = value === NOT_IN_EXPORT;
+    const cls = [mono ? 'mono' : '', missing ? 'missing' : ''].filter(Boolean).join(' ');
+    return `<td${cls ? ` class="${cls}"` : ''}>${esc(value)}</td>`;
+  };
+  return `${cell(fields.caller, true)}${cell(fields.who, false)}${cell(fields.date, true)}${cell(fields.time, true)}`;
+}
+
+function yearNoteHtml(fields) {
+  if (!fields.some((f) => f.yearInferred)) return '';
+  return `<p class="table-note">${esc(yearFillNote(windowLabel()))}</p>`;
+}
+
+function tableFrame(note, table, opts = {}) {
+  const style = opts.maxHeight ? ` style="max-height:${opts.maxHeight}"` : '';
+  return `${note}<div class="table-scroll"${style}>${table}</div>`;
+}
+
+function rowMatches(row, query, extras) {
+  const q = String(query || '').trim().toLowerCase();
+  if (!q) return true;
+  const values = [...Object.values(row), ...Object.values(extras || {})];
+  return values.some((v) => String(v ?? '').toLowerCase().includes(q));
+}
+
+function fieldsFor(kind, row) {
+  return displayedCallFields(kind, row, actionIndex(), windowYear());
 }
 
 function kpiCard(label, value, hint = '', tone = '', drill = '') {
@@ -334,7 +391,7 @@ function renderMissed() {
           <button data-f="called-back" class="${state.missedFilter === 'called-back' ? 'active' : ''}">Called back</button>
         </div>
       </div>
-      <div class="table-scroll" id="missed-table-wrap">
+      <div id="missed-table-wrap">
         ${missedTableHtml(merged)}
       </div>
     </div>
@@ -350,9 +407,7 @@ function getMissedFiltered() {
   }
   const q = state.missedSearch.trim().toLowerCase();
   if (q) {
-    rows = rows.filter((r) =>
-      Object.values(r).some((v) => String(v).toLowerCase().includes(q))
-    );
+    rows = rows.filter((r) => rowMatches(r, q, missedFields(r)));
   }
   return rows;
 }
@@ -373,14 +428,13 @@ function missedFilterBannerHtml() {
 
 function missedTableHtml(rows) {
   if (!rows.length) return `<div class="empty">No matching rows.</div>`;
-  return `
+  const fields = rows.map((r) => missedFields(r));
+  const table = `
     <table class="data">
       <thead>
         <tr>
+          ${leadHead()}
           <th>Status</th>
-          <th>Caller</th>
-          <th>Miss (PT)</th>
-          <th>Who should have taken it</th>
           <th>Ring group / DID</th>
           <th>AI path?</th>
           <th>Super note</th>
@@ -389,16 +443,14 @@ function missedTableHtml(rows) {
       </thead>
       <tbody>
         ${rows
-          .map((r) => {
+          .map((r, i) => {
             const badge =
               r._status === 'no-callback'
                 ? `<span class="badge no-cb">No-callback</span>`
                 : `<span class="badge cb">Called back</span>`;
             return `<tr>
+              ${leadCells(fields[i])}
               <td>${badge}</td>
-              <td class="mono">${esc(r.Caller)}</td>
-              <td class="mono">${esc(r['Miss datetime (PT)'])}</td>
-              <td>${esc(r['Who should have taken it'])}</td>
               <td class="muted">${esc(r['Ring group / DID / Description'])}</td>
               <td>${esc(r['AI path?'])}</td>
               <td class="muted">${esc(r['Super handoff / open-loop note'])}</td>
@@ -408,6 +460,7 @@ function missedTableHtml(rows) {
           .join('')}
       </tbody>
     </table>`;
+  return tableFrame(yearNoteHtml(fields), table);
 }
 
 function bindMissed() {
@@ -537,9 +590,7 @@ function renderOpenLoops() {
     <div class="panel" id="loops-table">
       <h3>Action Required <span class="count">${rows.length} loops</span></h3>
       ${openLoopBannerHtml()}
-      <div class="table-scroll">
-        ${openLoopTableHtml(rows)}
-      </div>
+      ${openLoopTableHtml(rows)}
     </div>
   `;
 }
@@ -566,32 +617,34 @@ function openLoopBannerHtml() {
 
 function openLoopTableHtml(rows) {
   if (!rows.length) return `<div class="empty">No matching rows.</div>`;
-  return `
+  const byCaller = actionIndex();
+  const year = windowYear();
+  const fields = rows.map((r) => openLoopFields(r, byCaller, year));
+  const table = `
     <table class="data">
       <thead>
         <tr>
-          <th>Caller</th>
+          ${leadHead()}
           <th>Super open-loop note</th>
           <th>In Ultatel no-callback?</th>
           <th>Ultatel miss attempts</th>
-          <th>Last Ultatel miss (PT)</th>
         </tr>
       </thead>
       <tbody>
         ${rows
-          .map((r) => {
+          .map((r, i) => {
             const inList = (r['In Ultatel no-callback list?'] || '').toLowerCase() === 'yes';
             return `<tr>
-              <td class="mono">${esc(r.Caller)}</td>
+              ${leadCells(fields[i])}
               <td>${esc(r['Super open-loop note / handoff scenario'])}</td>
               <td>${inList ? '<span class="badge yes">Yes</span>' : '<span class="badge no">No</span>'}</td>
               <td class="mono">${esc(r['Ultatel miss attempts'])}</td>
-              <td class="mono muted">${esc(r['Last Ultatel miss (PT)'])}</td>
             </tr>`;
           })
           .join('')}
       </tbody>
     </table>`;
+  return tableFrame(yearNoteHtml(fields), table);
 }
 
 function renderCallback() {
@@ -618,7 +671,7 @@ function renderCallback() {
       <div class="toolbar">
         <input type="search" id="cb-search" placeholder="Search caller, note, extension…" value="${esc(state.callbackSearch)}" />
       </div>
-      <div class="table-scroll" id="cb-table-wrap">
+      <div id="cb-table-wrap">
         ${callbackTableHtml(filtered)}
       </div>
     </div>
@@ -628,34 +681,33 @@ function renderCallback() {
       <p style="margin:0 0 0.75rem;color:var(--text-muted);font-size:0.88rem;">
         Stricter bar inside the ${k.no_callback_24h_unique}: zero company OUT-Bound in the Sep 20–26 Ultatel export.
       </p>
-      <div class="table-scroll" style="max-height:360px">
-        ${neverTableHtml(state.callbackNever)}
-      </div>
+      ${neverTableHtml(state.callbackNever, { maxHeight: '360px' })}
     </div>
   `;
 }
 
-function neverTableHtml(rows) {
+function neverTableHtml(rows, opts = {}) {
   if (!rows.length) return `<div class="empty">No matching rows.</div>`;
-  return `
+  const byCaller = actionIndex();
+  const year = windowYear();
+  const fields = rows.map((r) => neverFields(r, byCaller, year));
+  const table = `
     <table class="data">
       <thead>
         <tr>
-          <th>Caller</th>
+          ${leadHead()}
           <th>Missed attempts</th>
-          <th>Last miss (PT)</th>
           <th>On Super open list?</th>
           <th>Verification</th>
         </tr>
       </thead>
       <tbody>
         ${rows
-          .map((r) => {
+          .map((r, i) => {
             const yes = (r['On Super open list?'] || '').toLowerCase() === 'yes';
             return `<tr>
-              <td class="mono">${esc(r.Caller)}</td>
+              ${leadCells(fields[i])}
               <td class="mono">${esc(r['Missed attempts'])}</td>
-              <td class="mono">${esc(r['Last miss (PT)'])}</td>
               <td>${yes ? '<span class="badge yes">Yes</span>' : '<span class="badge no">No</span>'}</td>
               <td class="muted">${esc(r.Verification)}</td>
             </tr>`;
@@ -663,45 +715,43 @@ function neverTableHtml(rows) {
           .join('')}
       </tbody>
     </table>`;
+  return tableFrame(yearNoteHtml(fields), table, opts);
 }
 
 function getCallbackFiltered() {
   const q = state.callbackSearch.trim().toLowerCase();
   if (!q) return state.callbackAction;
-  return state.callbackAction.filter((r) =>
-    Object.values(r).some((v) => String(v).toLowerCase().includes(q))
-  );
+  const year = windowYear();
+  return state.callbackAction.filter((r) => rowMatches(r, q, callbackFields(r, year)));
 }
 
 function callbackTableHtml(rows) {
   if (!rows.length) return `<div class="empty">No matching rows.</div>`;
-  return `
+  const year = windowYear();
+  const fields = rows.map((r) => callbackFields(r, year));
+  const table = `
     <table class="data">
       <thead>
         <tr>
+          ${leadHead()}
           <th>#</th>
-          <th>Caller</th>
           <th>Misses</th>
-          <th>Last miss (PT)</th>
           <th>Super?</th>
           <th>Super note</th>
-          <th>Last extension</th>
           <th>AI path?</th>
           <th>What to do</th>
         </tr>
       </thead>
       <tbody>
         ${rows
-          .map((r) => {
+          .map((r, i) => {
             const yes = (r['On Super open list?'] || '').toLowerCase() === 'yes';
             return `<tr>
+              ${leadCells(fields[i])}
               <td class="mono">${esc(r.Priority)}</td>
-              <td class="mono">${esc(r.Caller)}</td>
               <td class="mono">${esc(r['Missed attempts'])}</td>
-              <td class="mono">${esc(r['Last miss (PT)'])}</td>
               <td>${yes ? '<span class="badge yes">Yes</span>' : '<span class="badge no">No</span>'}</td>
               <td>${esc(r['Super note'])}</td>
-              <td class="muted">${esc(r['Last extension tried'])}</td>
               <td>${esc(r['AI ring group in path?'])}</td>
               <td class="muted">${esc(r['What to do'])}</td>
             </tr>`;
@@ -709,6 +759,7 @@ function callbackTableHtml(rows) {
           .join('')}
       </tbody>
     </table>`;
+  return tableFrame(yearNoteHtml(fields), table);
 }
 
 function bindCallback() {
@@ -889,7 +940,7 @@ function renderDrill() {
   const root = document.getElementById('drill-root');
   if (!spec || !root) return;
   const rows = spec.rows || [];
-  const shown = spec.table ? filterRows(rows, state.drillQuery) : [];
+  const shown = spec.table ? filterDrillRows(spec, rows, state.drillQuery) : [];
   const mismatch =
     spec.table &&
     spec.warnMismatch !== false &&
@@ -976,11 +1027,17 @@ function refreshDrillResults() {
   const spec = state.drill;
   if (!spec?.table) return;
   const rows = spec.rows || [];
-  const shown = filterRows(rows, state.drillQuery);
+  const shown = filterDrillRows(spec, rows, state.drillQuery);
   const el = document.getElementById('drill-results');
   const count = document.getElementById('drill-shown');
   if (el) el.innerHTML = tableHtml(spec.table, shown);
   if (count) count.textContent = shown.length === rows.length ? String(rows.length) : `${shown.length} of ${rows.length}`;
+}
+
+function filterDrillRows(spec, rows, query) {
+  const q = String(query || '').trim().toLowerCase();
+  if (!q) return rows;
+  return rows.filter((row) => rowMatches(row, q, fieldsFor(spec.table, row)));
 }
 
 function applyMissedExt(ext) {
