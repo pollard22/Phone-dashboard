@@ -627,8 +627,19 @@ table.data td.mono,
   font-variant-numeric: tabular-nums;
 }
 
-table.data td.muted {
+table.data td.muted,
+table.data td.missing {
   color: var(--text-muted);
+}
+
+table.data td.missing {
+  font-style: italic;
+}
+
+.table-note {
+  margin: 0 0 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
 /* —— Badges —— */
