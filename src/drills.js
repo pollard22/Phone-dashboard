@@ -29,6 +29,12 @@ function summary(overviewRows, names) {
   return names.map((name) => overviewMetric(overviewRows, name)).filter(Boolean);
 }
 
+function windowShort(pack) {
+  const label = String(pack.data?.meta?.window_label || '');
+  const cut = label.indexOf(' (');
+  return cut > 0 ? label.slice(0, cut) : label;
+}
+
 /**
  * @param {string} id
  * @param {object} pack parsed data pack
@@ -144,7 +150,7 @@ export function buildDrill(id, pack, context = {}) {
         route: 'callback',
         source: 'callback_hygiene_ultatel.csv → Never dialed (verified)',
         headline: k.never_company_dialed,
-        note: 'Stricter subset of the no-callback list: zero company OUT-Bound anywhere in the Sep 20–26 Ultatel export.',
+        note: `Stricter subset of the no-callback list: zero company OUT-Bound anywhere in the ${windowShort(pack) || 'this'} Ultatel export.`,
         table: 'never',
         rows: pack.callbackNever,
         jumps: [{ label: 'Show on Callback hygiene', kind: 'callback', anchor: 'cb-never' }],

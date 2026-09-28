@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
-    "window_label": "Sep 20\u201326, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Sep 24\u201327, 2026 PT (Activity feed batch)",
-    "generated_at": "2026-09-27",
+    "window_label": "Sep 21\u201327, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
+    "super_open_loops_window": "Activity feed visibly spans Monday, Sunday, Saturday, Friday, and Thursday (current list span: Thu Sep 24\u2013Mon Sep 28, 2026).",
+    "generated_at": "2026-09-28",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -14,47 +14,47 @@
       "Ultatel has no VOICEMAIL outcome flag (ANSWERED / NO ANSWER only).",
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
-      "Super Activity open loops cover Sep 24\u201327 PT only in this pack.",
-      "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours."
-    ]
+      "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
+      "Super Activity open loops: Activity feed visibly spans Monday, Sunday, Saturday, Friday, and Thursday (current list span: Thu Sep 24\u2013Mon Sep 28, 2026)."
+    ],
+    "ultatel_source_file": "call-details-2026-09-21_to_09-27.csv",
+    "window_slug": "2026-09-21_to_2026-09-27"
   },
   "kpis": {
-    "ultatel_inbound": 860,
-    "ultatel_inbound_answered": 388,
-    "ultatel_inbound_no_answer": 472,
-    "ultatel_inbound_no_answer_cleaned": 447,
-    "ultatel_outbound": 300,
-    "ultatel_outbound_answered": 266,
+    "ultatel_inbound": 856,
+    "ultatel_inbound_answered": 385,
+    "ultatel_inbound_no_answer": 471,
+    "ultatel_inbound_no_answer_cleaned": 446,
+    "ultatel_outbound": 299,
+    "ultatel_outbound_answered": 265,
     "ultatel_outbound_no_answer": 34,
-    "no_callback_24h_unique": 141,
-    "never_company_dialed": 98,
+    "no_callback_24h_unique": 140,
+    "never_company_dialed": 97,
     "dialed_earlier_only": 28,
     "dialed_later_after_24h": 15,
-    "super_ai_inbound": 135,
-    "super_transferred": 40,
-    "super_needs_human_help": 71,
-    "super_needs_help_pct": 53,
-    "super_actions": 179,
+    "super_open_loops": 11,
+    "super_ultatel_overlap": 3,
+    "super_only_open_loops": 8,
+    "super_ai_inbound": 133,
+    "super_transferred": 39,
+    "super_actions": 178,
     "super_sms_sessions": 20,
-    "super_ai_talk": "4h 22m",
-    "super_avg_talk": "1m 46s",
-    "super_open_loops": 15,
-    "super_ultatel_overlap": 7,
-    "super_only_open_loops": 8
+    "super_ai_talk": "4h 26m",
+    "super_avg_talk": "1m 48s"
   },
   "miss_by_extension": {
-    "76001 \u2014 76001": 3,
     "101 \u2014 Lindsay Smith": 268,
     "110 \u2014 Mara Pongayan Priagas": 145,
     "102 \u2014 Stacey Demos": 25,
-    "601 \u2014 AI Agent Number Ring Group": 3,
-    "100 \u2014 Tiffany Recktenwald": 1,
-    "7600 \u2014 7600": 2
+    "76001 \u2014 76001": 3,
+    "7600 \u2014 7600": 2,
+    "601 \u2014 AI Agent Number Ring Group": 2,
+    "100 \u2014 Tiffany Recktenwald": 1
   },
   "missed_sample": [
     {
       "caller": "(618) 823-2480",
-      "when": "2026-09-26 06:17 PM",
+      "when": "2026-09-26 6:17 PM",
       "who": "76001 \u2014 76001",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -63,7 +63,7 @@
     },
     {
       "caller": "(636) 466-1456",
-      "when": "2026-09-25 03:27 PM",
+      "when": "2026-09-25 3:27 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -72,7 +72,7 @@
     },
     {
       "caller": "(317) 384-5773",
-      "when": "2026-09-25 03:08 PM",
+      "when": "2026-09-25 3:08 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -81,7 +81,7 @@
     },
     {
       "caller": "(317) 384-5773",
-      "when": "2026-09-25 03:07 PM",
+      "when": "2026-09-25 3:07 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -90,7 +90,7 @@
     },
     {
       "caller": "(314) 687-8073",
-      "when": "2026-09-25 03:04 PM",
+      "when": "2026-09-25 3:04 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -99,7 +99,7 @@
     },
     {
       "caller": "(314) 687-8073",
-      "when": "2026-09-25 03:04 PM",
+      "when": "2026-09-25 3:04 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -108,7 +108,7 @@
     },
     {
       "caller": "(636) 775-0710",
-      "when": "2026-09-25 03:03 PM",
+      "when": "2026-09-25 3:03 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -117,7 +117,7 @@
     },
     {
       "caller": "(636) 262-0594",
-      "when": "2026-09-25 03:01 PM",
+      "when": "2026-09-25 3:01 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -126,7 +126,7 @@
     },
     {
       "caller": "(636) 262-0594",
-      "when": "2026-09-25 03:00 PM",
+      "when": "2026-09-25 3:00 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -135,7 +135,7 @@
     },
     {
       "caller": "(636) 887-1977",
-      "when": "2026-09-25 02:43 PM",
+      "when": "2026-09-25 2:43 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -144,7 +144,7 @@
     },
     {
       "caller": "(636) 359-8284",
-      "when": "2026-09-25 02:28 PM",
+      "when": "2026-09-25 2:28 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -153,7 +153,7 @@
     },
     {
       "caller": "(573) 476-5334",
-      "when": "2026-09-25 02:13 PM",
+      "when": "2026-09-25 2:13 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -162,7 +162,7 @@
     },
     {
       "caller": "(317) 384-5773",
-      "when": "2026-09-25 01:42 PM",
+      "when": "2026-09-25 1:42 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -171,7 +171,7 @@
     },
     {
       "caller": "(317) 384-5773",
-      "when": "2026-09-25 01:42 PM",
+      "when": "2026-09-25 1:42 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -180,7 +180,7 @@
     },
     {
       "caller": "(817) 343-3722",
-      "when": "2026-09-25 01:32 PM",
+      "when": "2026-09-25 1:32 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -189,7 +189,7 @@
     },
     {
       "caller": "(817) 343-3722",
-      "when": "2026-09-25 01:31 PM",
+      "when": "2026-09-25 1:31 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -198,7 +198,7 @@
     },
     {
       "caller": "(817) 343-3722",
-      "when": "2026-09-25 01:30 PM",
+      "when": "2026-09-25 1:30 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -207,7 +207,7 @@
     },
     {
       "caller": "(817) 343-3722",
-      "when": "2026-09-25 01:29 PM",
+      "when": "2026-09-25 1:29 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -216,7 +216,7 @@
     },
     {
       "caller": "(314) 706-2886",
-      "when": "2026-09-25 01:21 PM",
+      "when": "2026-09-25 1:21 PM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -225,7 +225,7 @@
     },
     {
       "caller": "(314) 706-2886",
-      "when": "2026-09-25 01:21 PM",
+      "when": "2026-09-25 1:21 PM",
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -265,8 +265,8 @@
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
-      "message_taken": "Yes \u2014 Super Action Required",
-      "super_note": "Jacob Harrison \u2014 leasing callback"
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
     },
     {
       "caller": "(636) 875-9696",
@@ -274,8 +274,8 @@
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
-      "message_taken": "Yes \u2014 Super Action Required",
-      "super_note": "Jacob Harrison \u2014 leasing callback"
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
     },
     {
       "caller": "(636) 875-9696",
@@ -283,8 +283,8 @@
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
-      "message_taken": "Yes \u2014 Super Action Required",
-      "super_note": "Jacob Harrison \u2014 leasing callback"
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
     },
     {
       "caller": "(636) 875-9696",
@@ -292,8 +292,8 @@
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
-      "message_taken": "Yes \u2014 Super Action Required",
-      "super_note": "Jacob Harrison \u2014 leasing callback"
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
     },
     {
       "caller": "(636) 875-9696",
@@ -301,8 +301,8 @@
       "who": "101 \u2014 Lindsay Smith",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
-      "message_taken": "Yes \u2014 Super Action Required",
-      "super_note": "Jacob Harrison \u2014 leasing callback"
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
     },
     {
       "caller": "(573) 822-9232",
@@ -405,567 +405,12 @@
     },
     {
       "caller": "(573) 754-2307",
-      "when": "2026-09-25 09:57 AM",
+      "when": "2026-09-25 9:57 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 290-8717",
-      "when": "2026-09-25 09:57 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 754-2307",
-      "when": "2026-09-25 09:56 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 290-8717",
-      "when": "2026-09-25 09:56 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(865) 212-0491",
-      "when": "2026-09-25 09:54 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 791-5247",
-      "when": "2026-09-25 09:49 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 791-5247",
-      "when": "2026-09-25 09:48 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 293-8353",
-      "when": "2026-09-25 09:46 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 293-8353",
-      "when": "2026-09-25 09:45 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 236-3999",
-      "when": "2026-09-25 09:21 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 236-3999",
-      "when": "2026-09-25 09:20 AM",
-      "who": "102 \u2014 Stacey Demos",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
       "super_note": ""
     }
-  ],
-  "missed_totals": {
-    "no_callback_24h": 347,
-    "called_back_24h": 100,
-    "total_cleaned_na": 447
-  },
-  "open_loops": [
-    {
-      "Open loops (Super) \u2014 Action Required": "Definition = unresolved Action Required after failed transfer or message-taken; exclude accepted live transfers & hang-ups with no message. Source: HireSuper Activity pull 2026-09-27 spanning Sep 24\u201327 PT. Sep 20\u201323 not in this batch. First section only (15 rows) \u2014 Ultatel-only appendix omitted here (see Callback hygiene).",
-      "c1": null,
-      "c2": null,
-      "c3": null,
-      "c4": null
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "Total: 15 | Overlap with Ultatel no-callback: 7 | Super-only: 8",
-      "c1": null,
-      "c2": null,
-      "c3": null,
-      "c4": null
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "Caller",
-      "c1": "Super open-loop note / handoff scenario",
-      "c2": "In Ultatel no-callback list?",
-      "c3": "Ultatel miss attempts",
-      "c4": "Last Ultatel miss (PT)"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(314) 283-0721",
-      "c1": "Byron Dunn \u2014 confirm Mon ~10:45 tour",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(573) 825-8921",
-      "c1": "Unknown \u2014 showing Sat @ 449 Woolf Rd",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(314) 707-8690",
-      "c1": "Roseanne \u2014 schedule tour",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(636) 383-0796",
-      "c1": "Unknown \u2014 lockbox/showing access",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(561) 635-3908",
-      "c1": "Unknown \u2014 confirm viewing 449 Woolf",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(231) 720-5345",
-      "c1": "Unknown \u2014 clarify issue/address",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(314) 365-7980",
-      "c1": "Jermaine & Samantha Hampton \u2014 2\u20133BR / townhouse",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(888) 918-3517",
-      "c1": "Joy McDowell \u2014 message for Anthony Johnson",
-      "c2": "No",
-      "c3": "\u2014",
-      "c4": "\u2014"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(636) 875-9696",
-      "c1": "Jacob Harrison \u2014 leasing callback",
-      "c2": "Yes",
-      "c3": 10,
-      "c4": "Fri Sep 25 12:10 PM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(573) 591-6084",
-      "c1": "Tristan Charlton \u2014 transfer to Tiffany",
-      "c2": "Yes",
-      "c3": 2,
-      "c4": "Thu Sep 24 8:30 AM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(636) 290-5354",
-      "c1": "Irene \u2014 trailer park question",
-      "c2": "Yes",
-      "c3": 7,
-      "c4": "Thu Sep 24 3:15 PM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(636) 373-4644",
-      "c1": "Gary Siewicki \u2014 application emergency \u2192 Stacy",
-      "c2": "Yes",
-      "c3": 2,
-      "c4": "Thu Sep 24 1:49 PM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(815) 557-8449",
-      "c1": "Deborah Mandjack \u2014 application/credit ASAP",
-      "c2": "Yes",
-      "c3": 6,
-      "c4": "Thu Sep 24 11:55 AM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(573) 380-1907",
-      "c1": "Berta Parker \u2014 1BR Vista Park",
-      "c2": "Yes",
-      "c3": 2,
-      "c4": "Thu Sep 24 9:33 AM"
-    },
-    {
-      "Open loops (Super) \u2014 Action Required": "(314) 914-4339",
-      "c1": "Steven Patnod \u2014 message for Stacy",
-      "c2": "Yes",
-      "c3": 2,
-      "c4": "Thu Sep 24 8:06 AM"
-    }
-  ],
-  "overview_rows": [
-    [
-      "Pollard Properties \u2014 Call Hygiene Dashboard",
-      null,
-      null,
-      null
-    ],
-    [
-      "LIVE data from Ultatel Call Details + HireSuper Reporting/Activity. No invented metrics.",
-      null,
-      null,
-      null
-    ],
-    [
-      "Date windows & sources",
-      null,
-      null,
-      null
-    ],
-    [
-      "Ultatel Call Details",
-      "Sep 20\u201326, 2026 (Last 7 Days export from aig.ultatel.com MyService Call Analytics). Source times HQ UTC\u22125; times in this workbook shown in PT where converted.",
-      null,
-      null
-    ],
-    [
-      "Super Activity open loops",
-      "Live confirm 2026-09-27: 15 Action Required on Activity (threads Thu Sep 24 10:08 AM \u2013 Sun Sep 27 12:12 PM PT). Sep 20\u201323 not in that feed batch.",
-      null,
-      null
-    ],
-    [
-      "Super Reporting",
-      "Custom window Sep 20\u201326, 2026 from ai.hiresuper.com/dashboard/reporting (+ CSV export).",
-      null,
-      null
-    ],
-    [
-      "Headline metrics (real data only)",
-      null,
-      null,
-      null
-    ],
-    [
-      "Metric",
-      "Count",
-      "Source / note",
-      null
-    ],
-    [
-      "Ultatel inbound total (IN-Bound)",
-      860,
-      "Call Details Type=IN-Bound",
-      null
-    ],
-    [
-      "Ultatel inbound ANSWERED",
-      388,
-      "Type\u00d7Outcome",
-      null
-    ],
-    [
-      "Ultatel inbound NO ANSWER",
-      472,
-      "Type\u00d7Outcome (includes 25 company/self From before cleanup)",
-      null
-    ],
-    [
-      "Ultatel inbound NO ANSWER after cleanup",
-      447,
-      "All missed events / Missed ownership (excludes company/self From)",
-      null
-    ],
-    [
-      "Ultatel OUT-Bound ANSWERED",
-      266,
-      "Type\u00d7Outcome",
-      null
-    ],
-    [
-      "Ultatel OUT-Bound NO ANSWER",
-      34,
-      "Type\u00d7Outcome",
-      null
-    ],
-    [
-      "Unique Ultatel no-callback callers (24h rule)",
-      141,
-      "Action list / Callback hygiene",
-      null
-    ],
-    [
-      "Never company-dialed in export",
-      98,
-      "Verification / Never dialed (verified)",
-      null
-    ],
-    [
-      "Dialed earlier in week only (not within 24h)",
-      28,
-      "Verification",
-      null
-    ],
-    [
-      "Dialed later than 24h after last miss",
-      15,
-      "Verification",
-      null
-    ],
-    [
-      "Super open loops (Action Required)",
-      15,
-      "Super Activity live confirm + Open loops sheet",
-      null
-    ],
-    [
-      "Overlap Super \u00d7 Ultatel no-callback",
-      7,
-      "Super crosswalk \"Yes\" count",
-      null
-    ],
-    [
-      "Super-only open loops",
-      8,
-      "Super crosswalk \"No\" count",
-      null
-    ],
-    [
-      "Super Reporting inbound calls (AI answered)",
-      135,
-      "HireSuper Reporting Calls tab + export Sep 20\u201326",
-      null
-    ],
-    [
-      "Super Reporting calls transferred",
-      40,
-      "HireSuper Reporting \u2014 Calls Transferred",
-      null
-    ],
-    [
-      "Super Reporting needs human help (calls)",
-      71,
-      "Export: Needs Human Help 71 (53% not resolved) of 135",
-      null
-    ],
-    [
-      "Super Reporting AI talk time",
-      "4h 22m",
-      "HireSuper Reporting Calls tab",
-      null
-    ],
-    [
-      "Super Reporting avg call length",
-      "1m 46s",
-      "HireSuper Reporting Calls tab",
-      null
-    ],
-    [
-      "Super Reporting actions (automated)",
-      179,
-      "Actions tab: Email 139 + Call Transfers 40",
-      null
-    ],
-    [
-      "Super Reporting SMS message sessions",
-      20,
-      "SMS tab; Needs Human Help (SMS) 16",
-      null
-    ],
-    [
-      "Super vs Ultatel volume note",
-      "See note",
-      "Super Inbound 135 = AI-answered fronts. Ultatel IN-Bound 860 = PBX CDR (all legs/extensions). Not 1:1 \u2014 use both.",
-      null
-    ],
-    [
-      "The 15 Super Action Required open loops",
-      null,
-      null,
-      null
-    ],
-    [
-      "#",
-      "Caller",
-      "Super open-loop note / handoff",
-      "In Ultatel no-callback?"
-    ],
-    [
-      1,
-      "(314) 283-0721",
-      "Byron Dunn \u2014 confirm Mon ~10:45 tour",
-      "No"
-    ],
-    [
-      2,
-      "(573) 825-8921",
-      "Unknown \u2014 showing Sat @ 449 Woolf Rd",
-      "No"
-    ],
-    [
-      3,
-      "(314) 707-8690",
-      "Roseanne \u2014 schedule tour",
-      "No"
-    ],
-    [
-      4,
-      "(636) 383-0796",
-      "Unknown \u2014 lockbox/showing access",
-      "No"
-    ],
-    [
-      5,
-      "(561) 635-3908",
-      "Unknown \u2014 confirm viewing 449 Woolf",
-      "No"
-    ],
-    [
-      6,
-      "(231) 720-5345",
-      "Unknown \u2014 clarify issue/address",
-      "No"
-    ],
-    [
-      7,
-      "(314) 365-7980",
-      "Jermaine & Samantha Hampton \u2014 2\u20133BR / townhouse",
-      "No"
-    ],
-    [
-      8,
-      "(888) 918-3517",
-      "Joy McDowell \u2014 message for Anthony Johnson",
-      "No"
-    ],
-    [
-      9,
-      "(636) 875-9696",
-      "Jacob Harrison \u2014 leasing callback",
-      "Yes"
-    ],
-    [
-      10,
-      "(573) 591-6084",
-      "Tristan Charlton \u2014 transfer to Tiffany",
-      "Yes"
-    ],
-    [
-      11,
-      "(636) 290-5354",
-      "Irene \u2014 trailer park question",
-      "Yes"
-    ],
-    [
-      12,
-      "(636) 373-4644",
-      "Gary Siewicki \u2014 application emergency \u2192 Stacy",
-      "Yes"
-    ],
-    [
-      13,
-      "(815) 557-8449",
-      "Deborah Mandjack \u2014 application/credit ASAP",
-      "Yes"
-    ],
-    [
-      14,
-      "(573) 380-1907",
-      "Berta Parker \u2014 1BR Vista Park",
-      "Yes"
-    ],
-    [
-      15,
-      "(314) 914-4339",
-      "Steven Patnod \u2014 message for Stacy",
-      "Yes"
-    ],
-    [
-      "How to use",
-      null,
-      null,
-      null
-    ],
-    [
-      "1) Start on Missed ownership \u2014 one row per Ultatel inbound NO ANSWER (447). Sorted: not called back first, then newest miss.\n2) Open loops (Super) \u2014 the 15 Action Required items from the Sep 24\u201327 PT pull; cross-check against Ultatel.\n3) Callback hygiene (Ultatel) \u2014 the 141 unique 24h no-callback Action list + the 98 never-dialed verified set.\n4) Exclusions & method \u2014 self-numbers, definitions, 24h join rule, known gaps.",
-      null,
-      null,
-      null
-    ],
-    [
-      "Known gaps",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 No Ultatel VOICEMAIL flag \u2014 Outcome is only ANSWERED / NO ANSWER.",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 Personal cell callbacks, AppFolio notes, and Super SMS without an Ultatel dial are not in Ultatel Call Details.",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 Super Activity feed batch covers Sep 24\u201327 PT only; Sep 20\u201323 Super open loops are not in this pull.",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 Super Reporting inbound (135 AI-answered) vs Ultatel IN-Bound (860 CDR legs) are different measures \u2014 do not treat as the same volume.",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 Person ownership names appear only when CDR Extension provides them (do not invent). Mel (104) and Mercedes (108) = 0 in Extension text on the 447 missed events.",
-      null,
-      null,
-      null
-    ],
-    [
-      "\u2022 Extension spelling: Ultatel uses \"Stacey Demos\"; Super notes often say \"Stacy\".",
-      null,
-      null,
-      null
-    ]
   ]
 }
