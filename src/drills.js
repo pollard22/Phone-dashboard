@@ -122,51 +122,6 @@ export function buildDrill(id, pack, context = {}) {
         ],
       };
 
-    case 'outbound':
-      return {
-        id,
-        title: 'OUT-Bound',
-        crumb: 'Ultatel volume',
-        route: 'overview',
-        source: 'latest.json → kpis, overview_rows (Overview.csv)',
-        headline: k.ultatel_outbound,
-        unavailable: true,
-        reason:
-          'Outbound call legs are not in this export. The headline is answered plus no-answer, both aggregates.',
-        summary: summary(overview, [
-          'Ultatel OUT-Bound ANSWERED',
-          'Ultatel OUT-Bound NO ANSWER',
-        ]),
-      };
-
-    case 'out-answered':
-      return {
-        id,
-        title: 'OUT-Bound answered',
-        crumb: 'Ultatel volume',
-        route: 'overview',
-        source: 'latest.json → kpis, overview_rows (Overview.csv)',
-        headline: k.ultatel_outbound_answered,
-        unavailable: true,
-        reason: 'Answered outbound legs are not in this export. The count is the Type×Outcome aggregate only.',
-        summary: summary(overview, ['Ultatel OUT-Bound ANSWERED']),
-        related: [{ id: 'outbound', label: `OUT-Bound total ${k.ultatel_outbound}` }],
-      };
-
-    case 'out-na':
-      return {
-        id,
-        title: 'OUT-Bound no answer',
-        crumb: 'Ultatel volume',
-        route: 'overview',
-        source: 'latest.json → kpis, overview_rows (Overview.csv)',
-        headline: k.ultatel_outbound_no_answer,
-        unavailable: true,
-        reason: 'Unanswered outbound legs are not in this export. The count is the Type×Outcome aggregate only.',
-        summary: summary(overview, ['Ultatel OUT-Bound NO ANSWER']),
-        related: [{ id: 'outbound', label: `OUT-Bound total ${k.ultatel_outbound}` }],
-      };
-
     case 'no-callback':
       return {
         id,

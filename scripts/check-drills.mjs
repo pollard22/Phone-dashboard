@@ -60,12 +60,13 @@ assert.equal(raw.rows.length, 447);
 assert.equal(raw.warnMismatch, false);
 assert.equal(Number(raw.headline), 472);
 
+for (const id of ['outbound', 'out-answered', 'out-na']) {
+  assert.equal(buildDrill(id, pack), null, id);
+}
+
 for (const id of [
   'in-bound',
   'in-answered',
-  'outbound',
-  'out-answered',
-  'out-na',
   'dialed-earlier',
   'dialed-later',
   'super-inbound',

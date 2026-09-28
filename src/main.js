@@ -287,10 +287,6 @@ function renderOverview() {
       ${kpiSplit('warn', { label: 'IN no answer', value: kpis.ultatel_inbound_no_answer, drill: 'in-no-answer' }, [
         { label: `Cleaned ${kpis.ultatel_inbound_no_answer_cleaned}`, drill: 'cleaned-na' },
       ])}
-      ${kpiSplit('', { label: 'OUT-Bound', value: kpis.ultatel_outbound, drill: 'outbound' }, [
-        { label: `${kpis.ultatel_outbound_answered} ans`, drill: 'out-answered' },
-        { label: `${kpis.ultatel_outbound_no_answer} NA`, drill: 'out-na' },
-      ])}
     </div>
 
     <h3 style="margin:1rem 0 0.65rem;font-size:0.85rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;">Callback hygiene (24h rule)</h3>
