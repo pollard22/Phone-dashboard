@@ -1,16 +1,10 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Activity feed visibly spans Monday, Sunday, Saturday, Friday, and Thursday (current list span: Thu Sep 24–Mon Sep 28, 2026)."
-Total: 11 | Overlap with Ultatel no-callback: 3 | Super-only: 8
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition: Feed-scan the visible recent Activity batch per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md; count unresolved Action Required (needs-callback) after failed transfer or message-taken; exclude accepted handoffs, hang-ups with no message, and ordinary completed recordings with no Action Required. Visible Activity feed date span: Monday, 9:03 AM–4:23 PM (as displayed in the Activity list; timezone not labeled). This-run open-loop count: 5. "
+Total: 5 | Overlap with Ultatel no-callback: 1 | Super-only: 4
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(231) 720-5345,Follow up with the caller to clarify the issue and full address.,No,—,—
-(314) 283-0721,Call Byron Dunn back to confirm and arrange the Monday 10:45 house tour.,No,—,—
-(314) 365-7980,Contact Samantha Hampton to discuss the 2-bedroom townhouse details.,No,—,—
-(561) 635-3908,"Confirm the caller’s preferred viewing time and schedule the appointment for 449 Woolf Road, Warrenton.",No,—,—
-(636) 295-7378,"Active washer flooding in the basement, Building B unit 201 at 201 Bedford Avenue; provide maintenance details and call 9-1-1 if there is immediate danger.",No,—,—
-(636) 589-1164,Return the caller’s call to discuss 1- or 2-bedroom rental availability.,No,—,—
-(870) 826-6859,"Caller should choose a tour time (10:40 AM or 11:00 AM) for 114 Roseanne Avenue, Moscow Mills.",No,—,—
-(888) 918-3517,Follow up with Joy McDowell or connect her to the representative she requested; confirm the purpose of the message.,No,—,—
-(636) 290-5354,Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Yes,7,Thu Sep 24 3:15 PM
-(636) 373-4644,Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Yes,2,Thu Sep 24 1:49 PM
-(573) 489-3422,Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Yes,3,Thu Sep 24 8:01 AM
+(251) 331-8288,(Super Action Required),No,—,—
+(312) 479-6245,(Super Action Required),No,—,—
+(636) 251-9593,(Super Action Required),No,—,—
+(888) 918-3517,(Super Action Required),No,—,—
+(636) 297-6395,(Super Action Required),Yes,2,Fri Sep 25 8:55 AM

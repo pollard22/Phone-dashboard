@@ -55,12 +55,12 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (636) 466-1456,2026-09-25 9:13 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
 (636) 466-1456,2026-09-25 9:12 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790352740.130931
 (817) 946-2697,2026-09-25 9:10 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790352607.130914
-(636) 297-6395,2026-09-25 8:55 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351743.130881
+(636) 297-6395,2026-09-25 8:55 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),(Super Action Required),No,1790351743.130881
 (702) 349-0335,2026-09-25 8:49 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
 (702) 349-0335,2026-09-25 8:48 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351311.130848
 (573) 426-7019,2026-09-25 8:47 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351276.130843
 (636) 297-3248,2026-09-25 8:46 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790351194.130838
-(636) 297-6395,2026-09-25 8:27 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790350046.130804
+(636) 297-6395,2026-09-25 8:27 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),(Super Action Required),No,1790350046.130804
 (314) 201-1346,2026-09-25 8:25 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
 (314) 201-1346,2026-09-25 8:24 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790349892.130761
 (636) 887-1977,2026-09-25 8:10 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790349010.130728
@@ -72,18 +72,18 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (314) 687-8073,2026-09-25 7:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790344862.130518
 (636) 891-2647,2026-09-24 3:18 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288336.130462
 (636) 891-2647,2026-09-24 3:17 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288271.130457
-(636) 290-5354,2026-09-24 3:15 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790288074.130450
-(636) 290-5354,2026-09-24 3:14 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790288074.130450
-(636) 290-5354,2026-09-24 3:07 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287622.130443
-(636) 290-5354,2026-09-24 3:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287622.130443
-(636) 290-5354,2026-09-24 2:59 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Yes,1790287122.130429
-(636) 290-5354,2026-09-24 2:58 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Yes,1790287122.130429
-(636) 290-5354,2026-09-24 2:57 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,No,1790287024.130424
+(636) 290-5354,2026-09-24 3:15 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288074.130450
+(636) 290-5354,2026-09-24 3:14 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790288074.130450
+(636) 290-5354,2026-09-24 3:07 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790287622.130443
+(636) 290-5354,2026-09-24 3:07 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790287622.130443
+(636) 290-5354,2026-09-24 2:59 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790287122.130429
+(636) 290-5354,2026-09-24 2:58 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790287122.130429
+(636) 290-5354,2026-09-24 2:57 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790287024.130424
 (907) 799-9503,2026-09-24 2:53 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790286835.130417
 (314) 498-9514,2026-09-24 2:03 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
 (314) 498-9514,2026-09-24 2:03 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790283788.130385
-(636) 373-4644,2026-09-24 1:49 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Yes,1790282943.130350
-(636) 373-4644,2026-09-24 1:49 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Yes,1790282943.130350
+(636) 373-4644,2026-09-24 1:49 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790282943.130350
+(636) 373-4644,2026-09-24 1:49 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790282943.130350
 (636) 293-8353,2026-09-24 1:30 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790281813.130294
 (636) 887-1695,2026-09-24 1:27 PM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
 (636) 887-1695,2026-09-24 1:27 PM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790281626.130265
@@ -137,10 +137,10 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (314) 914-4339,2026-09-24 8:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262349.129651
 (314) 201-4414,2026-09-24 8:03 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
 (314) 201-4414,2026-09-24 8:02 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262151.129623
-(573) 489-3422,2026-09-24 8:01 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Yes,1790262074.129610
-(573) 489-3422,2026-09-24 8:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Yes,1790262074.129610
+(573) 489-3422,2026-09-24 8:01 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262074.129610
+(573) 489-3422,2026-09-24 8:01 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790262074.129610
 (573) 825-4950,2026-09-24 8:00 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790262058.129602
-(573) 489-3422,2026-09-24 7:53 AM,100 — Tiffany Recktenwald,3146901018 / Tiffany Recktenwald,NO ANSWER,No,Unknown (Ultatel has no message flag),Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,No,1790261606.129572
+(573) 489-3422,2026-09-24 7:53 AM,100 — Tiffany Recktenwald,3146901018 / Tiffany Recktenwald,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790261606.129572
 (636) 456-4347,2026-09-24 7:06 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
 (636) 456-4347,2026-09-24 7:05 AM,101 — Lindsay Smith,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258754.129526
 (636) 456-4347,2026-09-24 7:05 AM,110 — Mara Pongayan Priagas,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790258677.129517

@@ -11,43 +11,43 @@ On 24h list but company dialed later than 24h after last miss,15
 
 Action list (140 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
-1,(636) 290-5354,7,Thu Sep 24 3:15 PM,Thu Sep 24 2:57 PM,Yes,Confirm whether Pollard Properties operates a trailer park and provide details to Irene.,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790288074.130450,Already on Super Action Required — confirm callback there first
-2,(573) 489-3422,3,Thu Sep 24 8:01 AM,Thu Sep 24 7:53 AM,Yes,Keep James Coyne’s application on file and share the caller’s thanks with Tiffany and Stacy.,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790262074.129610,Already on Super Action Required — confirm callback there first
-3,(636) 373-4644,2,Thu Sep 24 1:49 PM,Thu Sep 24 1:49 PM,Yes,Have Stacy or the appropriate team member call Gary Siewicki back regarding his application emergency.,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790282943.130350,Already on Super Action Required — confirm callback there first
-4,(636) 875-9696,10,Fri Sep 25 12:10 PM,Tue Sep 22 2:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790363406.131448,"Review whether Super already messaged; if not, return call"
-5,(314) 791-5247,10,Fri Sep 25 10:27 AM,Mon Sep 21 9:09 AM,No,,Main number DID,102 — Stacey Demos,Yes,No,No,1790357242.131301,Return call — no Ultatel outbound within 24h of last miss
-6,(314) 201-4414,8,Thu Sep 24 8:27 AM,Wed Sep 23 9:43 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790263606.129738,"Review whether Super already messaged; if not, return call"
-7,(636) 235-8786,7,Fri Sep 25 9:16 AM,Mon Sep 21 7:43 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790352960.130973,Return call — no Ultatel outbound within 24h of last miss
-8,(817) 343-3722,6,Fri Sep 25 1:32 PM,Mon Sep 21 11:01 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790368282.131751,Return call — no Ultatel outbound within 24h of last miss
-9,(636) 293-8353,6,Fri Sep 25 9:46 AM,Thu Sep 24 12:06 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790354755.131050,Return call — no Ultatel outbound within 24h of last miss
-10,(815) 557-8449,6,Thu Sep 24 11:55 AM,Wed Sep 23 9:03 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790276111.130047,"Review whether Super already messaged; if not, return call"
-11,(573) 941-9941,6,Thu Sep 24 8:07 AM,Mon Sep 21 10:15 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790262380.129654,Return call — no Ultatel outbound within 24h of last miss
-12,(636) 655-7096,6,Tue Sep 22 12:16 PM,Tue Sep 22 8:59 AM,No,,Main line → AI ring group 601 (then human miss or abandon),101 — Lindsay Smith,Yes,Yes,No,1790104608.127491,"Review whether Super already messaged; if not, return call"
-13,(314) 917-5726,5,Wed Sep 23 2:41 PM,Wed Sep 23 11:36 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790199701.129389,Return call — no Ultatel outbound within 24h of last miss
-14,(314) 619-9964,5,Tue Sep 22 9:07 AM,Tue Sep 22 8:00 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790093254.126793,Return call — no Ultatel outbound within 24h of last miss
-15,(317) 384-5773,4,Fri Sep 25 3:08 PM,Fri Sep 25 1:42 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790374065.132121,Return call — no Ultatel outbound within 24h of last miss
-16,(314) 706-2886,4,Fri Sep 25 1:21 PM,Tue Sep 22 10:33 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790367679.131623,"Review whether Super already messaged; if not, return call"
-17,(636) 236-3999,4,Fri Sep 25 9:21 AM,Fri Sep 25 9:18 AM,No,,Main line → AI ring group 601 (then human miss or abandon),102 — Stacey Demos,Yes,Yes,No,1790353277.131035,"Review whether Super already messaged; if not, return call"
-18,(817) 946-2697,4,Fri Sep 25 9:10 AM,Mon Sep 21 10:50 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790352607.130914,Return call — no Ultatel outbound within 24h of last miss
-19,(314) 201-1346,4,Fri Sep 25 8:25 AM,Fri Sep 25 8:01 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790349892.130761,"Review whether Super already messaged; if not, return call"
-20,(907) 799-9503,4,Thu Sep 24 2:53 PM,Thu Sep 24 9:35 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790286835.130417,Return call — no Ultatel outbound within 24h of last miss
-21,(636) 297-6493,4,Thu Sep 24 12:11 PM,Thu Sep 24 11:43 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790277044.130075,"Review whether Super already messaged; if not, return call"
-22,(636) 542-1926,4,Thu Sep 24 10:24 AM,Thu Sep 24 10:20 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790270618.129937,Return call — no Ultatel outbound within 24h of last miss
-23,(636) 456-4347,4,Thu Sep 24 7:06 AM,Thu Sep 24 7:04 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790258754.129526,Return call — no Ultatel outbound within 24h of last miss
-24,(636) 251-0654,4,Wed Sep 23 11:33 AM,Wed Sep 23 11:29 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790188362.128930,"Review whether Super already messaged; if not, return call"
-25,(702) 373-6213,4,Tue Sep 22 1:02 PM,Tue Sep 22 12:19 PM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790107338.127636,Return call — no Ultatel outbound within 24h of last miss
-26,(314) 680-3033,4,Tue Sep 22 12:27 PM,Tue Sep 22 10:04 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790105197.127533,Return call — no Ultatel outbound within 24h of last miss
-27,(314) 299-7691,4,Tue Sep 22 11:29 AM,Tue Sep 22 11:27 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1790101700.127348,"Review whether Super already messaged; if not, return call"
-28,(330) 256-9083,4,Tue Sep 22 8:57 AM,Tue Sep 22 8:49 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790092617.126700,"Review whether Super already messaged; if not, return call"
-29,(636) 384-6639,4,Mon Sep 21 2:45 PM,Mon Sep 21 2:43 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790027091.126187,Return call — no Ultatel outbound within 24h of last miss
-30,(573) 537-0981,4,Mon Sep 21 10:14 AM,Mon Sep 21 9:35 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790010848.125690,"Review whether Super already messaged; if not, return call"
-31,(573) 406-8776,4,Mon Sep 21 9:07 AM,Mon Sep 21 9:06 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790006862.125611,Return call — no Ultatel outbound within 24h of last miss
-32,(636) 466-1456,3,Fri Sep 25 3:27 PM,Fri Sep 25 9:12 AM,No,,Main line → AI ring group 601 (then human miss or abandon),101 — Lindsay Smith,Yes,Yes,No,1790375240.132150,"Review whether Super already messaged; if not, return call"
-33,(314) 687-8073,3,Fri Sep 25 3:04 PM,Fri Sep 25 7:01 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790373840.132088,Return call — no Ultatel outbound within 24h of last miss
-34,(636) 887-1977,3,Fri Sep 25 2:43 PM,Fri Sep 25 8:10 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790372627.132044,Return call — no Ultatel outbound within 24h of last miss
-35,(573) 822-9232,3,Fri Sep 25 12:03 PM,Fri Sep 25 12:02 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790362978.131400,Return call — no Ultatel outbound within 24h of last miss
-36,(314) 598-3656,3,Fri Sep 25 7:26 AM,Wed Sep 23 7:43 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790346365.130587,Return call — no Ultatel outbound within 24h of last miss
-37,(580) 889-0867,3,Thu Sep 24 12:59 PM,Thu Sep 24 12:57 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790279909.130152,Return call — no Ultatel outbound within 24h of last miss
+1,(636) 297-6395,2,Fri Sep 25 8:55 AM,Fri Sep 25 8:27 AM,Yes,(Super Action Required),Main number DID,101 — Lindsay Smith,Yes,No,No,1790351743.130881,Already on Super Action Required — confirm callback there first
+2,(636) 875-9696,10,Fri Sep 25 12:10 PM,Tue Sep 22 2:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790363406.131448,"Review whether Super already messaged; if not, return call"
+3,(314) 791-5247,10,Fri Sep 25 10:27 AM,Mon Sep 21 9:09 AM,No,,Main number DID,102 — Stacey Demos,Yes,No,No,1790357242.131301,Return call — no Ultatel outbound within 24h of last miss
+4,(314) 201-4414,8,Thu Sep 24 8:27 AM,Wed Sep 23 9:43 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790263606.129738,"Review whether Super already messaged; if not, return call"
+5,(636) 235-8786,7,Fri Sep 25 9:16 AM,Mon Sep 21 7:43 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790352960.130973,Return call — no Ultatel outbound within 24h of last miss
+6,(636) 290-5354,7,Thu Sep 24 3:15 PM,Thu Sep 24 2:57 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790288074.130450,"Review whether Super already messaged; if not, return call"
+7,(817) 343-3722,6,Fri Sep 25 1:32 PM,Mon Sep 21 11:01 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790368282.131751,Return call — no Ultatel outbound within 24h of last miss
+8,(636) 293-8353,6,Fri Sep 25 9:46 AM,Thu Sep 24 12:06 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790354755.131050,Return call — no Ultatel outbound within 24h of last miss
+9,(815) 557-8449,6,Thu Sep 24 11:55 AM,Wed Sep 23 9:03 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790276111.130047,"Review whether Super already messaged; if not, return call"
+10,(573) 941-9941,6,Thu Sep 24 8:07 AM,Mon Sep 21 10:15 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790262380.129654,Return call — no Ultatel outbound within 24h of last miss
+11,(636) 655-7096,6,Tue Sep 22 12:16 PM,Tue Sep 22 8:59 AM,No,,Main line → AI ring group 601 (then human miss or abandon),101 — Lindsay Smith,Yes,Yes,No,1790104608.127491,"Review whether Super already messaged; if not, return call"
+12,(314) 917-5726,5,Wed Sep 23 2:41 PM,Wed Sep 23 11:36 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790199701.129389,Return call — no Ultatel outbound within 24h of last miss
+13,(314) 619-9964,5,Tue Sep 22 9:07 AM,Tue Sep 22 8:00 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790093254.126793,Return call — no Ultatel outbound within 24h of last miss
+14,(317) 384-5773,4,Fri Sep 25 3:08 PM,Fri Sep 25 1:42 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790374065.132121,Return call — no Ultatel outbound within 24h of last miss
+15,(314) 706-2886,4,Fri Sep 25 1:21 PM,Tue Sep 22 10:33 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790367679.131623,"Review whether Super already messaged; if not, return call"
+16,(636) 236-3999,4,Fri Sep 25 9:21 AM,Fri Sep 25 9:18 AM,No,,Main line → AI ring group 601 (then human miss or abandon),102 — Stacey Demos,Yes,Yes,No,1790353277.131035,"Review whether Super already messaged; if not, return call"
+17,(817) 946-2697,4,Fri Sep 25 9:10 AM,Mon Sep 21 10:50 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790352607.130914,Return call — no Ultatel outbound within 24h of last miss
+18,(314) 201-1346,4,Fri Sep 25 8:25 AM,Fri Sep 25 8:01 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790349892.130761,"Review whether Super already messaged; if not, return call"
+19,(907) 799-9503,4,Thu Sep 24 2:53 PM,Thu Sep 24 9:35 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790286835.130417,Return call — no Ultatel outbound within 24h of last miss
+20,(636) 297-6493,4,Thu Sep 24 12:11 PM,Thu Sep 24 11:43 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790277044.130075,"Review whether Super already messaged; if not, return call"
+21,(636) 542-1926,4,Thu Sep 24 10:24 AM,Thu Sep 24 10:20 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790270618.129937,Return call — no Ultatel outbound within 24h of last miss
+22,(636) 456-4347,4,Thu Sep 24 7:06 AM,Thu Sep 24 7:04 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790258754.129526,Return call — no Ultatel outbound within 24h of last miss
+23,(636) 251-0654,4,Wed Sep 23 11:33 AM,Wed Sep 23 11:29 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790188362.128930,"Review whether Super already messaged; if not, return call"
+24,(702) 373-6213,4,Tue Sep 22 1:02 PM,Tue Sep 22 12:19 PM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790107338.127636,Return call — no Ultatel outbound within 24h of last miss
+25,(314) 680-3033,4,Tue Sep 22 12:27 PM,Tue Sep 22 10:04 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790105197.127533,Return call — no Ultatel outbound within 24h of last miss
+26,(314) 299-7691,4,Tue Sep 22 11:29 AM,Tue Sep 22 11:27 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1790101700.127348,"Review whether Super already messaged; if not, return call"
+27,(330) 256-9083,4,Tue Sep 22 8:57 AM,Tue Sep 22 8:49 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790092617.126700,"Review whether Super already messaged; if not, return call"
+28,(636) 384-6639,4,Mon Sep 21 2:45 PM,Mon Sep 21 2:43 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790027091.126187,Return call — no Ultatel outbound within 24h of last miss
+29,(573) 537-0981,4,Mon Sep 21 10:14 AM,Mon Sep 21 9:35 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790010848.125690,"Review whether Super already messaged; if not, return call"
+30,(573) 406-8776,4,Mon Sep 21 9:07 AM,Mon Sep 21 9:06 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790006862.125611,Return call — no Ultatel outbound within 24h of last miss
+31,(636) 466-1456,3,Fri Sep 25 3:27 PM,Fri Sep 25 9:12 AM,No,,Main line → AI ring group 601 (then human miss or abandon),101 — Lindsay Smith,Yes,Yes,No,1790375240.132150,"Review whether Super already messaged; if not, return call"
+32,(314) 687-8073,3,Fri Sep 25 3:04 PM,Fri Sep 25 7:01 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790373840.132088,Return call — no Ultatel outbound within 24h of last miss
+33,(636) 887-1977,3,Fri Sep 25 2:43 PM,Fri Sep 25 8:10 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790372627.132044,Return call — no Ultatel outbound within 24h of last miss
+34,(573) 822-9232,3,Fri Sep 25 12:03 PM,Fri Sep 25 12:02 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790362978.131400,Return call — no Ultatel outbound within 24h of last miss
+35,(314) 598-3656,3,Fri Sep 25 7:26 AM,Wed Sep 23 7:43 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790346365.130587,Return call — no Ultatel outbound within 24h of last miss
+36,(580) 889-0867,3,Thu Sep 24 12:59 PM,Thu Sep 24 12:57 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790279909.130152,Return call — no Ultatel outbound within 24h of last miss
+37,(573) 489-3422,3,Thu Sep 24 8:01 AM,Thu Sep 24 7:53 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790262074.129610,"Review whether Super already messaged; if not, return call"
 38,(636) 204-7698,3,Wed Sep 23 2:01 PM,Wed Sep 23 1:59 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790197225.129296,Return call — no Ultatel outbound within 24h of last miss
 39,(636) 290-2500,3,Wed Sep 23 11:30 AM,Mon Sep 21 8:05 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790188182.128789,"Review whether Super already messaged; if not, return call"
 40,(636) 297-8578,3,Wed Sep 23 8:03 AM,Wed Sep 23 7:30 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790175819.128209,Return call — no Ultatel outbound within 24h of last miss
@@ -65,10 +65,10 @@ Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open lis
 52,(612) 968-2783,2,Fri Sep 25 10:17 AM,Fri Sep 25 10:16 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790356589.131239,Return call — no Ultatel outbound within 24h of last miss
 53,(573) 754-2307,2,Fri Sep 25 9:57 AM,Fri Sep 25 9:56 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790355389.131136,"Review whether Super already messaged; if not, return call"
 54,(636) 290-8717,2,Fri Sep 25 9:57 AM,Fri Sep 25 9:56 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790355380.131134,Return call — no Ultatel outbound within 24h of last miss
-55,(636) 297-6395,2,Fri Sep 25 8:55 AM,Fri Sep 25 8:27 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790351743.130881,Return call — no Ultatel outbound within 24h of last miss
-56,(702) 349-0335,2,Fri Sep 25 8:49 AM,Fri Sep 25 8:48 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790351311.130848,Return call — no Ultatel outbound within 24h of last miss
-57,(636) 891-2647,2,Thu Sep 24 3:18 PM,Thu Sep 24 3:17 PM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790288336.130462,Return call — no Ultatel outbound within 24h of last miss
-58,(314) 498-9514,2,Thu Sep 24 2:03 PM,Thu Sep 24 2:03 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790283788.130385,"Review whether Super already messaged; if not, return call"
+55,(702) 349-0335,2,Fri Sep 25 8:49 AM,Fri Sep 25 8:48 AM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790351311.130848,Return call — no Ultatel outbound within 24h of last miss
+56,(636) 891-2647,2,Thu Sep 24 3:18 PM,Thu Sep 24 3:17 PM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790288336.130462,Return call — no Ultatel outbound within 24h of last miss
+57,(314) 498-9514,2,Thu Sep 24 2:03 PM,Thu Sep 24 2:03 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790283788.130385,"Review whether Super already messaged; if not, return call"
+58,(636) 373-4644,2,Thu Sep 24 1:49 PM,Thu Sep 24 1:49 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790282943.130350,"Review whether Super already messaged; if not, return call"
 59,(636) 887-1695,2,Thu Sep 24 1:27 PM,Thu Sep 24 1:27 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790281626.130265,"Review whether Super already messaged; if not, return call"
 60,(855) 755-4024,2,Thu Sep 24 1:21 PM,Thu Sep 24 1:20 PM,No,,Main number DID,110 — Mara Pongayan Priagas,Yes,No,No,1790281259.130227,Return call — no Ultatel outbound within 24h of last miss
 61,(636) 466-3636,2,Thu Sep 24 1:17 PM,Tue Sep 22 10:54 AM,No,,Main number DID,101 — Lindsay Smith,Yes,No,No,1790281049.130219,Return call — no Ultatel outbound within 24h of last miss
@@ -190,10 +190,10 @@ Caller,Missed attempts,Last miss (PT),On Super open list?,Verification
 (913) 349-9910,2,Fri Sep 25 11:05 AM,No,Verified never dialed in this export
 (612) 968-2783,2,Fri Sep 25 10:17 AM,No,Verified never dialed in this export
 (573) 754-2307,2,Fri Sep 25 9:57 AM,No,Verified never dialed in this export
-(636) 297-6395,2,Fri Sep 25 8:55 AM,No,Verified never dialed in this export
+(636) 297-6395,2,Fri Sep 25 8:55 AM,Yes,Verified never dialed in this export
 (636) 891-2647,2,Thu Sep 24 3:18 PM,No,Verified never dialed in this export
 (314) 498-9514,2,Thu Sep 24 2:03 PM,No,Verified never dialed in this export
-(636) 373-4644,2,Thu Sep 24 1:49 PM,Yes,Verified never dialed in this export
+(636) 373-4644,2,Thu Sep 24 1:49 PM,No,Verified never dialed in this export
 (855) 755-4024,2,Thu Sep 24 1:21 PM,No,Verified never dialed in this export
 (636) 466-3636,2,Thu Sep 24 1:17 PM,No,Verified never dialed in this export
 (557) 232-1221,2,Thu Sep 24 12:20 PM,No,Verified never dialed in this export
