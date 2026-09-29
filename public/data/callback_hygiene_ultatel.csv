@@ -11,7 +11,7 @@ On 24h list but company dialed later than 24h after last miss,15
 
 Action list (140 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
-1,(636) 297-6395,2,Fri Sep 25 8:55 AM,Fri Sep 25 8:27 AM,Yes,(Super Action Required),Main number DID,101 — Lindsay Smith,Yes,No,No,1790351743.130881,Already on Super Action Required — confirm callback there first
+1,(636) 297-6395,2,Fri Sep 25 8:55 AM,Fri Sep 25 8:27 AM,Yes,Customer plans to visit leasing office in Wright City; no further follow-up confirmed.,Main number DID,101 — Lindsay Smith,Yes,No,No,1790351743.130881,Already on Super Action Required — confirm callback there first
 2,(636) 875-9696,10,Fri Sep 25 12:10 PM,Tue Sep 22 2:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790363406.131448,"Review whether Super already messaged; if not, return call"
 3,(314) 791-5247,10,Fri Sep 25 10:27 AM,Mon Sep 21 9:09 AM,No,,Main number DID,102 — Stacey Demos,Yes,No,No,1790357242.131301,Return call — no Ultatel outbound within 24h of last miss
 4,(314) 201-4414,8,Thu Sep 24 8:27 AM,Wed Sep 23 9:43 AM,No,,Main line → AI ring group 601 (then human miss or abandon),110 — Mara Pongayan Priagas,Yes,Yes,No,1790263606.129738,"Review whether Super already messaged; if not, return call"
