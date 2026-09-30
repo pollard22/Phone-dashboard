@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 21\u201327, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Definition: Feed-scan the visible recent Activity batch per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md; count unresolved Action Required (needs-callback) after failed transfer or message-taken; exclude accepted handoffs, hang-ups with no message, and ordinary completed recordings with no Action Required. Visible Activity feed date span: Monday, 9:03 AM\u20134:23 PM (as displayed in the Activity list; timezone not labeled). This-run open-loop count: 5. ",
-    "generated_at": "2026-09-29",
+    "super_open_loops_window": "Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Mon 4:11 PM \u2192 Tue 4:04 PM | This-run open-loop count: 17",
+    "generated_at": "2026-09-30",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Definition: Feed-scan the visible recent Activity batch per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md; count unresolved Action Required (needs-callback) after failed transfer or message-taken; exclude accepted handoffs, hang-ups with no message, and ordinary completed recordings with no Action Required. Visible Activity feed date span: Monday, 9:03 AM\u20134:23 PM (as displayed in the Activity list; timezone not labeled). This-run open-loop count: 5. "
+      "Super Activity open loops: Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Mon 4:11 PM \u2192 Tue 4:04 PM | This-run open-loop count: 17"
     ],
     "ultatel_source_file": "/workspace/ultatel/call-details-2026-09-21_to_09-27.csv",
     "window_slug": "2026-09-21_to_2026-09-27"
@@ -32,15 +32,15 @@
     "never_company_dialed": 97,
     "dialed_earlier_only": 28,
     "dialed_later_after_24h": 15,
-    "super_open_loops": 5,
+    "super_open_loops": 17,
     "super_ultatel_overlap": 1,
     "super_only_open_loops": 4,
-    "super_ai_inbound": 218,
-    "super_transferred": 89,
-    "super_actions": 323,
-    "super_sms_sessions": 30,
-    "super_ai_talk": "8h 35m",
-    "super_avg_talk": "2m 11s"
+    "super_ai_inbound": 270,
+    "super_transferred": 133,
+    "super_actions": 429,
+    "super_sms_sessions": 36,
+    "super_ai_talk": "10h 14m",
+    "super_avg_talk": "2m 9s"
   },
   "miss_by_extension": {
     "101 \u2014 Lindsay Smith": 268,
@@ -185,7 +185,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Early lease signing and move-in funds follow-up"
     },
     {
       "caller": "(817) 343-3722",
@@ -194,7 +194,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Early lease signing and move-in funds follow-up"
     },
     {
       "caller": "(817) 343-3722",
@@ -203,7 +203,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Early lease signing and move-in funds follow-up"
     },
     {
       "caller": "(817) 343-3722",
@@ -212,7 +212,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Early lease signing and move-in funds follow-up"
     },
     {
       "caller": "(314) 706-2886",
