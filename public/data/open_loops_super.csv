@@ -1,10 +1,10 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition: Feed-scan the visible recent Activity batch per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md; count unresolved Action Required (needs-callback) after failed transfer or message-taken; exclude accepted handoffs, hang-ups with no message, and ordinary completed recordings with no Action Required. Visible Activity feed date span: Monday, 9:03 AM–4:23 PM (as displayed in the Activity list; timezone not labeled). This-run open-loop count: 5. "
-Total: 5 | Overlap with Ultatel no-callback: 1 | Super-only: 4
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Mon 4:11 PM → Tue 4:04 PM | This-run open-loop count: 17"
+Total: 17 | Overlap with Ultatel no-callback: 1 | Super-only: 4
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(251) 331-8288,Reschedule or follow up to confirm details and showing times after caller re-responds.,No,—,—
-(312) 479-6245,Confirm preferred contact method and send future responses by email only.,No,—,—
-(636) 251-9593,Wait for or confirm whether transfer to Lindsay Smith completed; no further steps confirmed.,No,—,—
-(888) 918-3517,Have the appropriate representative contact Joy McDowell or her Astrat team.,No,—,—
-(636) 297-6395,Customer plans to visit leasing office in Wright City; no further follow-up confirmed.,Yes,2,Fri Sep 25 8:55 AM
+(507) 508-8477,Move-in date request passed to leasing team,No,—,—
+(828) 775-3054,Income verification link follow-up,No,—,—
+(888) 918-3517,After-hours voicemail callback/message follow-up,No,—,—
+(903) 752-2110,Application status callback promised after handoff,No,—,—
+(817) 343-3722,Early lease signing and move-in funds follow-up,Yes,6,Fri Sep 25 1:32 PM
