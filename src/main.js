@@ -214,6 +214,7 @@ function renderShell() {
             <span class="dot"></span>${esc(n.label)}
           </button>`
         ).join('')}
+        <a class="nav-aux" href="demo.html">Layout demo</a>
       </nav>
       <div class="sidebar-meta">
         <strong>${esc(meta.window_label || '')}</strong>
