@@ -1,0 +1,37 @@
+{
+  "window_short": "Sep 21\u201327, 2026",
+  "window_slug": "2026-09-21_to_2026-09-27",
+  "dmin": "2026-09-21T08:31:04-05:00",
+  "dmax": "2026-09-27T19:37:58-05:00",
+  "kpis": {
+    "ultatel_inbound": 856,
+    "ultatel_inbound_answered": 385,
+    "ultatel_inbound_no_answer": 471,
+    "ultatel_inbound_no_answer_cleaned": 446,
+    "ultatel_outbound": 299,
+    "ultatel_outbound_answered": 265,
+    "ultatel_outbound_no_answer": 34,
+    "no_callback_24h_unique": 140,
+    "never_company_dialed": 97,
+    "dialed_earlier_only": 28,
+    "dialed_later_after_24h": 15,
+    "super_open_loops": 17,
+    "super_ultatel_overlap": 0,
+    "super_only_open_loops": 0,
+    "super_ai_inbound": 346,
+    "super_transferred": 185,
+    "super_actions": 557,
+    "super_sms_sessions": 34,
+    "super_ai_talk": "13h 18m",
+    "super_avg_talk": "2m 12s"
+  },
+  "paths": {
+    "json": "/workspace/ultatel/web-dashboard/data-latest.json",
+    "a": "/workspace/ultatel/web-dashboard/Missed_ownership_A_no_callback.csv",
+    "b": "/workspace/ultatel/web-dashboard/Missed_ownership_B_called_back.csv",
+    "callback": "/workspace/ultatel/web-dashboard/callback_hygiene_ultatel.csv",
+    "open_loops": "/workspace/ultatel/web-dashboard/open_loops_super.csv",
+    "exclusions": "/workspace/ultatel/web-dashboard/exclusions_method.csv",
+    "overview": "/workspace/ultatel/web-dashboard/Overview.csv"
+  }
+}

@@ -1,10 +1,5 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Mon 4:11 PM → Tue 4:04 PM | This-run open-loop count: 17"
-Total: 17 | Overlap with Ultatel no-callback: 1 | Super-only: 4
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Wed 6:32 AM–Wed 3:58 PM PT (date not shown in feed) | This-run open-loop count: 17"
+Total: 17 | Overlap with Ultatel no-callback: 0 | Super-only: 0
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(507) 508-8477,Move-in date request passed to leasing team,No,—,—
-(828) 775-3054,Income verification link follow-up,No,—,—
-(888) 918-3517,After-hours voicemail callback/message follow-up,No,—,—
-(903) 752-2110,Application status callback promised after handoff,No,—,—
-(817) 343-3722,Early lease signing and move-in funds follow-up,Yes,6,Fri Sep 25 1:32 PM
