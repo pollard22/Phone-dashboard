@@ -1,5 +1,5 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Feed-scan of the visible recent Activity batch (~50 threads); count only unresolved Action Required needing callback after failed transfer or message-taken, excluding accepted handoffs, hang-ups without a message, and ordinary completed recordings without Action Required. | Visible Activity feed date span: Wed 6:32 AM–Wed 3:58 PM PT (date not shown in feed) | This-run open-loop count: 17"
-Total: 17 | Overlap with Ultatel no-callback: 0 | Super-only: 0
+Definition = unresolved Action Required after failed transfer or message-taken. Source: pull timestamp PT: 2026-10-02 05:13:36 PDT session status: already signed in (AuthKit redirected to ai.hiresuper.com) definition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md visible Activity date span: Thu 5:43 PM – Wed 3:16 PM this-run open-loop count: 35 
+Total: 35 | Overlap with Ultatel no-callback: 0 | Super-only: 0
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
