@@ -15,13 +15,15 @@
     "never_company_dialed": 97,
     "dialed_earlier_only": 28,
     "dialed_later_after_24h": 15,
-    "super_open_loops": 35,
-    "super_ultatel_overlap": 0,
-    "super_only_open_loops": 0,
-    "super_ai_inbound": 0,
-    "super_transferred": 0,
-    "super_actions": 658,
-    "super_sms_sessions": 8
+    "super_open_loops": 19,
+    "super_ultatel_overlap": 3,
+    "super_only_open_loops": 16,
+    "super_ai_inbound": 124,
+    "super_transferred": 71,
+    "super_actions": 771,
+    "super_sms_sessions": 13,
+    "super_ai_talk": "2h 32m",
+    "super_avg_talk": "1m 14s"
   },
   "paths": {
     "json": "/workspace/ultatel/web-dashboard/data-latest.json",
