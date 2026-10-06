@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 21\u201327, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Feed-scan 2026-10-05 05:30 PT, span Fri 11:57 AM\u2013Sun 3:24 PM, 50/50 threads opened; 19 open loops (unresolved Action Required after failed transfer or message-taken; excl. accepted handoffs and no-message hang-ups)",
-    "generated_at": "2026-10-05",
+    "super_open_loops_window": "super-window-note.txt",
+    "generated_at": "2026-10-06",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Feed-scan 2026-10-05 05:30 PT, span Fri 11:57 AM\u2013Sun 3:24 PM, 50/50 threads opened; 19 open loops (unresolved Action Required after failed transfer or message-taken; excl. accepted handoffs and no-message hang-ups)"
+      "Super Activity open loops: super-window-note.txt"
     ],
     "ultatel_source_file": "call-details-2026-09-21_to_09-27.csv",
     "window_slug": "2026-09-21_to_2026-09-27"
@@ -32,15 +32,15 @@
     "never_company_dialed": 97,
     "dialed_earlier_only": 28,
     "dialed_later_after_24h": 15,
-    "super_open_loops": 19,
-    "super_ultatel_overlap": 3,
-    "super_only_open_loops": 16,
-    "super_ai_inbound": 124,
-    "super_transferred": 71,
-    "super_actions": 771,
-    "super_sms_sessions": 13,
-    "super_ai_talk": "2h 32m",
-    "super_avg_talk": "1m 14s"
+    "super_open_loops": 18,
+    "super_ultatel_overlap": 1,
+    "super_only_open_loops": 17,
+    "super_ai_inbound": 201,
+    "super_transferred": 116,
+    "super_actions": 742,
+    "super_sms_sessions": 21,
+    "super_ai_talk": "4h 9m",
+    "super_avg_talk": "1m 15s"
   },
   "miss_by_extension": {
     "101 \u2014 Lindsay Smith": 268,
@@ -77,7 +77,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
     },
     {
       "caller": "(317) 384-5773",
@@ -86,7 +86,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
     },
     {
       "caller": "(314) 687-8073",
@@ -167,7 +167,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
     },
     {
       "caller": "(317) 384-5773",
@@ -176,7 +176,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
     },
     {
       "caller": "(817) 343-3722",
