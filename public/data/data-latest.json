@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 21\u201327, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "super-window-note.txt",
-    "generated_at": "2026-10-06",
+    "super_open_loops_window": "pull timestamp PT: 2026-10-07 05:19 PDT\nsession status: already signed in (ai.hiresuper.com, Pollard Properties)\ndefinition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md\nvisible Activity date span: Tue 8:19 AM \u2013 Wed 5:03 AM (50 of 50 threads opened individually)\nthis-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)",
+    "generated_at": "2026-10-07",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: super-window-note.txt"
+      "Super Activity open loops: pull timestamp PT: 2026-10-07 05:19 PDT\nsession status: already signed in (ai.hiresuper.com, Pollard Properties)\ndefinition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md\nvisible Activity date span: Tue 8:19 AM \u2013 Wed 5:03 AM (50 of 50 threads opened individually)\nthis-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)"
     ],
     "ultatel_source_file": "call-details-2026-09-21_to_09-27.csv",
     "window_slug": "2026-09-21_to_2026-09-27"
@@ -32,15 +32,15 @@
     "never_company_dialed": 97,
     "dialed_earlier_only": 28,
     "dialed_later_after_24h": 15,
-    "super_open_loops": 18,
-    "super_ultatel_overlap": 1,
-    "super_only_open_loops": 17,
-    "super_ai_inbound": 201,
-    "super_transferred": 116,
-    "super_actions": 742,
-    "super_sms_sessions": 21,
-    "super_ai_talk": "4h 9m",
-    "super_avg_talk": "1m 15s"
+    "super_open_loops": 11,
+    "super_ultatel_overlap": 2,
+    "super_only_open_loops": 9,
+    "super_ai_inbound": 290,
+    "super_transferred": 164,
+    "super_actions": 757,
+    "super_sms_sessions": 24,
+    "super_ai_talk": "5h 47m",
+    "super_avg_talk": "1m 12s"
   },
   "miss_by_extension": {
     "101 \u2014 Lindsay Smith": 268,
@@ -77,7 +77,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
+      "super_note": ""
     },
     {
       "caller": "(317) 384-5773",
@@ -86,7 +86,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
+      "super_note": ""
     },
     {
       "caller": "(314) 687-8073",
@@ -167,7 +167,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
+      "super_note": ""
     },
     {
       "caller": "(317) 384-5773",
@@ -176,7 +176,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Asked for leasing (busy); not answered; message to leasing group"
+      "super_note": ""
     },
     {
       "caller": "(817) 343-3722",
@@ -185,7 +185,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Transfers declined then not answered; team to follow up on routing message"
     },
     {
       "caller": "(817) 343-3722",
@@ -194,7 +194,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Transfers declined then not answered; team to follow up on routing message"
     },
     {
       "caller": "(817) 343-3722",
@@ -203,7 +203,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Transfers declined then not answered; team to follow up on routing message"
     },
     {
       "caller": "(817) 343-3722",
@@ -212,7 +212,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
+      "super_note": "Transfers declined then not answered; team to follow up on routing message"
     },
     {
       "caller": "(314) 706-2886",
