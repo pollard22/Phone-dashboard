@@ -1,23 +1,20 @@
 Open loops (Super) — Action Required
-Definition = unresolved Action Required after failed transfer or message-taken. Source: super-window-note.txt
-Total: 18 | Overlap with Ultatel no-callback: 1 | Super-only: 17
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: pull timestamp PT: 2026-10-07 05:19 PDT
+session status: already signed in (ai.hiresuper.com, Pollard Properties)
+definition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md
+visible Activity date span: Tue 8:19 AM – Wed 5:03 AM (50 of 50 threads opened individually)
+this-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)"
+Total: 11 | Overlap with Ultatel no-callback: 2 | Super-only: 9
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 459-9275,Wants rental application emailed; after-hours message to leasing group,No,—,—
-(314) 479-8553,Corporate leases; not answered; message to leasing group,No,—,—
-(314) 813-7571,Chloe - townhome 106 Rose Ann Ave Moscow Mills; callback ASAP; not answered; message to leasing group,No,—,—
-(314) 904-0023,2-bed villa Moscow Mills; callback requested; not answered; message to leasing group,No,—,—
-(360) 789-6367,Asked for Stacy then front desk; not answered; message to Stacey@,No,—,—
-(557) 202-8532,Cheaper 1-bedroom ($300-500); callback requested; not answered; message to leasing group,No,—,—
-(618) 420-3813,New roofs through management; transfer to Tiffany not answered; message to jermale@,No,—,—
-(636) 213-8514,Leasing question; says Tiffany never called back; not answered; message to leasing group,No,—,—
-(636) 290-3247,Callback for Donna Marsh re key pickup; not answered; message to lindsay@,No,—,—
-(636) 384-0204,Rental inquiry 711 Parkview Wright City; not answered; message to leasing group,No,—,—
-(636) 485-5339,Apartment in Warrenton; wants a human; not answered; message to tiffany@,No,—,—
-(650) 463-6868,How to apply / $60 fee; transfer not answered; message to tiffany@,No,—,—
-(786) 598-9758,Kitiya Sylvain - at showing reporting a problem; not answered; message to leasing group,No,—,—
-(956) 955-0294,Scheduling at 210 Arlington Way Warrenton; not answered; message to leasing group,No,—,—
-Robert Hayes (no number shown),Rent balance from Mercedes urgently (waited a week); not answered; message taken (recipient not shown),Unknown (no number),—,—
-Pepsi Wilson (no number shown),Asked for leasing office (busy); not answered; message to leasing group,Unknown (no number),—,—
-Jaamari Mckee (no number shown),Late fees after delayed Flex rent payment (400 Arlington Way Apt 204); after-hours message to leasing group,Unknown (no number),—,—
-(317) 384-5773,Asked for leasing (busy); not answered; message to leasing group,Yes,4,Fri Sep 25 3:08 PM
+(314) 295-4217,Transfer not answered; message from Paige Schreiner for team review,No,—,—
+(314) 405-1384,Transfer not answered; caller request to be passed to leasing,No,—,—
+(314) 448-3641,Transfers declined then not answered; leasing to follow up on message,No,—,—
+(314) 629-9943,Transfer not answered; leasing to follow up on message,No,—,—
+(573) 647-1434,Julianna Waldvogel; transfer not answered; maintenance to follow up on message,No,—,—
+(636) 384-0159,Transfers declined then not answered; follow up with Beverly Gillette,No,—,—
+(636) 775-5687,Transfer not answered; call back with lease and deposit info,No,—,—
+(817) 219-6130,No transfer; team to call back about 58 Santo Domingo tour options,No,—,—
+(903) 752-2110,Transfer not answered; follow up with Johnny Mayo re request for Natalie,No,—,—
+(817) 343-3722,Transfers declined then not answered; team to follow up on routing message,Yes,6,Fri Sep 25 1:32 PM
+(573) 941-9941,Transfer not answered; leasing message passed for follow-up,Yes,6,Thu Sep 24 8:07 AM
