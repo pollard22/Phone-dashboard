@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
-    "window_label": "Sep 21\u201327, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "pull timestamp PT: 2026-10-07 05:19 PDT\nsession status: already signed in (ai.hiresuper.com, Pollard Properties)\ndefinition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md\nvisible Activity date span: Tue 8:19 AM \u2013 Wed 5:03 AM (50 of 50 threads opened individually)\nthis-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)",
+    "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
+    "super_open_loops_window": "/workspace/ultatel/super-window-note.txt",
     "generated_at": "2026-10-07",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
@@ -15,26 +15,26 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: pull timestamp PT: 2026-10-07 05:19 PDT\nsession status: already signed in (ai.hiresuper.com, Pollard Properties)\ndefinition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md\nvisible Activity date span: Tue 8:19 AM \u2013 Wed 5:03 AM (50 of 50 threads opened individually)\nthis-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)"
+      "Super Activity open loops: /workspace/ultatel/super-window-note.txt"
     ],
-    "ultatel_source_file": "call-details-2026-09-21_to_09-27.csv",
-    "window_slug": "2026-09-21_to_2026-09-27"
+    "ultatel_source_file": "/workspace/ultatel/call-details-2026-09-30_to_10-06.csv",
+    "window_slug": "2026-09-30_to_2026-10-06"
   },
   "kpis": {
-    "ultatel_inbound": 856,
-    "ultatel_inbound_answered": 385,
-    "ultatel_inbound_no_answer": 471,
-    "ultatel_inbound_no_answer_cleaned": 446,
-    "ultatel_outbound": 299,
-    "ultatel_outbound_answered": 265,
-    "ultatel_outbound_no_answer": 34,
-    "no_callback_24h_unique": 140,
-    "never_company_dialed": 97,
-    "dialed_earlier_only": 28,
-    "dialed_later_after_24h": 15,
+    "ultatel_inbound": 864,
+    "ultatel_inbound_answered": 667,
+    "ultatel_inbound_no_answer": 197,
+    "ultatel_inbound_no_answer_cleaned": 9,
+    "ultatel_outbound": 380,
+    "ultatel_outbound_answered": 337,
+    "ultatel_outbound_no_answer": 43,
+    "no_callback_24h_unique": 7,
+    "never_company_dialed": 3,
+    "dialed_earlier_only": 4,
+    "dialed_later_after_24h": 0,
     "super_open_loops": 11,
-    "super_ultatel_overlap": 2,
-    "super_only_open_loops": 9,
+    "super_ultatel_overlap": 0,
+    "super_only_open_loops": 11,
     "super_ai_inbound": 290,
     "super_transferred": 164,
     "super_actions": 757,
@@ -43,36 +43,14 @@
     "super_avg_talk": "1m 12s"
   },
   "miss_by_extension": {
-    "101 \u2014 Lindsay Smith": 268,
-    "110 \u2014 Mara Pongayan Priagas": 145,
-    "102 \u2014 Stacey Demos": 25,
-    "76001 \u2014 76001": 3,
-    "7600 \u2014 7600": 2,
-    "601 \u2014 AI Agent Number Ring Group": 2,
-    "100 \u2014 Tiffany Recktenwald": 1
+    "110 \u2014 Mara Pongayan Priagas": 5,
+    "108 \u2014 Mercedes Recio": 2,
+    "601 \u2014 AI Agent Number Ring Group": 2
   },
   "missed_sample": [
     {
-      "caller": "(618) 823-2480",
-      "when": "2026-09-26 6:17 PM",
-      "who": "76001 \u2014 76001",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 466-1456",
-      "when": "2026-09-25 3:27 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(317) 384-5773",
-      "when": "2026-09-25 3:08 PM",
+      "caller": "(650) 463-6868",
+      "when": "2026-10-06 11:42 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -80,17 +58,8 @@
       "super_note": ""
     },
     {
-      "caller": "(317) 384-5773",
-      "when": "2026-09-25 3:07 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 687-8073",
-      "when": "2026-09-25 3:04 PM",
+      "caller": "(650) 463-6868",
+      "when": "2026-10-06 11:41 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -98,26 +67,8 @@
       "super_note": ""
     },
     {
-      "caller": "(314) 687-8073",
-      "when": "2026-09-25 3:04 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 775-0710",
-      "when": "2026-09-25 3:03 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 262-0594",
-      "when": "2026-09-25 3:01 PM",
+      "caller": "(314) 412-6846",
+      "when": "2026-10-06 8:45 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -125,44 +76,8 @@
       "super_note": ""
     },
     {
-      "caller": "(636) 262-0594",
-      "when": "2026-09-25 3:00 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 887-1977",
-      "when": "2026-09-25 2:43 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 359-8284",
-      "when": "2026-09-25 2:28 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 476-5334",
-      "when": "2026-09-25 2:13 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(317) 384-5773",
-      "when": "2026-09-25 1:42 PM",
+      "caller": "(402) 429-1385",
+      "when": "2026-10-06 7:53 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -170,53 +85,8 @@
       "super_note": ""
     },
     {
-      "caller": "(317) 384-5773",
-      "when": "2026-09-25 1:42 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(817) 343-3722",
-      "when": "2026-09-25 1:32 PM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Transfers declined then not answered; team to follow up on routing message"
-    },
-    {
-      "caller": "(817) 343-3722",
-      "when": "2026-09-25 1:31 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Transfers declined then not answered; team to follow up on routing message"
-    },
-    {
-      "caller": "(817) 343-3722",
-      "when": "2026-09-25 1:30 PM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Transfers declined then not answered; team to follow up on routing message"
-    },
-    {
-      "caller": "(817) 343-3722",
-      "when": "2026-09-25 1:29 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "Transfers declined then not answered; team to follow up on routing message"
-    },
-    {
-      "caller": "(314) 706-2886",
-      "when": "2026-09-25 1:21 PM",
+      "caller": "(636) 367-1634",
+      "when": "2026-10-05 10:58 AM",
       "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -224,189 +94,27 @@
       "super_note": ""
     },
     {
-      "caller": "(314) 706-2886",
-      "when": "2026-09-25 1:21 PM",
-      "who": "101 \u2014 Lindsay Smith",
+      "caller": "(314) 445-1534",
+      "when": "2026-10-05 7:08 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
       "super_note": ""
     },
     {
-      "caller": "(314) 657-5309",
-      "when": "2026-09-25 12:48 PM",
-      "who": "101 \u2014 Lindsay Smith",
+      "caller": "(636) 383-8090",
+      "when": "2026-10-02 11:10 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
       "super_note": ""
     },
     {
-      "caller": "(314) 657-5309",
-      "when": "2026-09-25 12:47 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 746-4173",
-      "when": "2026-09-25 12:27 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 875-9696",
-      "when": "2026-09-25 12:10 PM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 875-9696",
-      "when": "2026-09-25 12:10 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 875-9696",
-      "when": "2026-09-25 12:09 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 875-9696",
-      "when": "2026-09-25 12:09 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 875-9696",
-      "when": "2026-09-25 12:08 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 822-9232",
-      "when": "2026-09-25 12:03 PM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 822-9232",
-      "when": "2026-09-25 12:02 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 822-9232",
-      "when": "2026-09-25 12:02 PM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 516-6444",
-      "when": "2026-09-25 11:35 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 516-6444",
-      "when": "2026-09-25 11:34 AM",
-      "who": "101 \u2014 Lindsay Smith",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(913) 349-9910",
-      "when": "2026-09-25 11:05 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(913) 349-9910",
-      "when": "2026-09-25 11:04 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 791-5247",
-      "when": "2026-09-25 10:27 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 666-2983",
-      "when": "2026-09-25 10:20 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(612) 968-2783",
-      "when": "2026-09-25 10:17 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(612) 968-2783",
-      "when": "2026-09-25 10:16 AM",
-      "who": "102 \u2014 Stacey Demos",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(573) 754-2307",
-      "when": "2026-09-25 9:57 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
+      "caller": "(518) 637-1388",
+      "when": "2026-09-30 1:14 PM",
+      "who": "108 \u2014 Mercedes Recio",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",

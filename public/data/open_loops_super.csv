@@ -1,10 +1,6 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: pull timestamp PT: 2026-10-07 05:19 PDT
-session status: already signed in (ai.hiresuper.com, Pollard Properties)
-definition: count unresolved Action Required after failed transfer or message-taken; exclude accepted handoffs and hang-ups with no message; feed-scan per /workspace/ultatel/SUPER-OPEN-LOOP-METHOD.md
-visible Activity date span: Tue 8:19 AM – Wed 5:03 AM (50 of 50 threads opened individually)
-this-run open-loop count: 11 (borderline excluded: 6 judged hang-up/no-message or Resolved=Yes - Anaya Muhammad, (636) 463-0547, (314) 486-3371, (636) 295-8042 [Resolved=Yes], (309) 920-8529, Lucas Gibb; plus 4 with no summary loaded so unjudged - (636) 213-8514, (557) 236-4028, (314) 397-5518, (314) 904-0023)"
-Total: 11 | Overlap with Ultatel no-callback: 2 | Super-only: 9
+Definition = unresolved Action Required after failed transfer or message-taken. Source: /workspace/ultatel/super-window-note.txt
+Total: 11 | Overlap with Ultatel no-callback: 0 | Super-only: 11
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
 (314) 295-4217,Transfer not answered; message from Paige Schreiner for team review,No,—,—
@@ -12,9 +8,9 @@ Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ulta
 (314) 448-3641,Transfers declined then not answered; leasing to follow up on message,No,—,—
 (314) 629-9943,Transfer not answered; leasing to follow up on message,No,—,—
 (573) 647-1434,Julianna Waldvogel; transfer not answered; maintenance to follow up on message,No,—,—
+(573) 941-9941,Transfer not answered; leasing message passed for follow-up,No,—,—
 (636) 384-0159,Transfers declined then not answered; follow up with Beverly Gillette,No,—,—
 (636) 775-5687,Transfer not answered; call back with lease and deposit info,No,—,—
 (817) 219-6130,No transfer; team to call back about 58 Santo Domingo tour options,No,—,—
+(817) 343-3722,Transfers declined then not answered; team to follow up on routing message,No,—,—
 (903) 752-2110,Transfer not answered; follow up with Johnny Mayo re request for Natalie,No,—,—
-(817) 343-3722,Transfers declined then not answered; team to follow up on routing message,Yes,6,Fri Sep 25 1:32 PM
-(573) 941-9941,Transfer not answered; leasing message passed for follow-up,Yes,6,Thu Sep 24 8:07 AM
