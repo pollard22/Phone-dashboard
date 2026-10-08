@@ -1,16 +1,24 @@
 Open loops (Super) — Action Required
-Definition = unresolved Action Required after failed transfer or message-taken. Source: /workspace/ultatel/super-window-note.txt
-Total: 11 | Overlap with Ultatel no-callback: 0 | Super-only: 11
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Super open-loop pull 2026-10-08 (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved after failed ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes). Visible feed span: Tue 5:40 PM (oldest) to Wed 6:36 PM (newest), 50 threads, all opened. This-run open-loop count: 19. pull timestamp PT: 2026-10-08 05:19 PDT; session already signed in (ai.hiresuper.com, Pollard Properties). Borderlines excluded: Resolved=Yes threads and hang-ups with no message; 3 recording-only threads with no summary ((314) 405-1384, (636) 213-8514, (816) 516-1274) excluded. "
+Total: 19 | Overlap with Ultatel no-callback: 0 | Super-only: 19
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 295-4217,Transfer not answered; message from Paige Schreiner for team review,No,—,—
-(314) 405-1384,Transfer not answered; caller request to be passed to leasing,No,—,—
-(314) 448-3641,Transfers declined then not answered; leasing to follow up on message,No,—,—
-(314) 629-9943,Transfer not answered; leasing to follow up on message,No,—,—
-(573) 647-1434,Julianna Waldvogel; transfer not answered; maintenance to follow up on message,No,—,—
-(573) 941-9941,Transfer not answered; leasing message passed for follow-up,No,—,—
-(636) 384-0159,Transfers declined then not answered; follow up with Beverly Gillette,No,—,—
-(636) 775-5687,Transfer not answered; call back with lease and deposit info,No,—,—
-(817) 219-6130,No transfer; team to call back about 58 Santo Domingo tour options,No,—,—
-(817) 343-3722,Transfers declined then not answered; team to follow up on routing message,No,—,—
-(903) 752-2110,Transfer not answered; follow up with Johnny Mayo re request for Natalie,No,—,—
+(217) 204-4127,Wed 1:22 PM: Wanted team; team busy; Super took message; Action: wait for team follow-up,No,—,—
+(219) 741-0435,Wed 1:31 PM: Application inquiry - ring not answered x2; caller hung up; Action: leasing follow-up,No,—,—
+(314) 215-1554,Wed 3:27 PM: Rental request - message to team; Action: callback to complete transfer,No,—,—
+(314) 296-2665,Wed 5:37 PM: Partial address '101 P.' - ring not answered; message sent to team; Action: confirm full address,No,—,—
+(314) 706-2886,Wed 3:17 PM: Payment amount confirmation - caller hung up; message sent; Action: Lindsay call back,No,—,—
+(636) 204-7488,Wed 3:53 PM: Spraying/flooding concern - ring not answered; message sent; Action: team follow-up,No,—,—
+(636) 213-1519,Wed 3:16 PM: Tour scheduling request - caller hung up; message sent; Action: leasing to call (flag: caller hung up),No,—,—
+(636) 279-0165,Wed 5:54 PM: Leasing office transfer request - ring not answered; caller hung up; Action: connect to leasing,No,—,—
+(636) 284-5818,Wed 4:39 PM: Rent inquiry - ring not answered; caller hung up; Action: leasing to respond,No,—,—
+(636) 312-2446,Wed 5:04 PM (call 10:00 AM): Apartment tour reschedule - transferred; voicemail left for Lindsay Smith; Action: wait for callback,No,—,—
+(636) 354-7969,Wed 3:04 PM: Connect to leasing - ring not answered; caller hung up; Action: confirm connection,No,—,—
+(636) 359-9818,Wed 2:47 PM: Wi-Fi equipment inquiry - ring not answered; caller hung up; Action: call back,No,—,—
+(636) 367-1234,Wed 5:04 PM: Payment question - ring not answered; caller hung up; message sent; Action: pass to payment team and follow up,No,—,—
+(636) 448-4696,Wed 5:54 PM: Walkthrough address request - ring not answered; caller hung up; Action: send tonight's walkthrough address,No,—,—
+(636) 485-5339,Wed 6:00 PM: Lease signing inquiry - ring to leasing not answered; caller hung up; Action: route to leasing/front desk,No,—,—
+(713) 493-5625,Wed 3:17 PM: Lease/guest questions - ring not answered; caller hung up; Action: Stacy/leasing call or text,No,—,—
+(816) 592-0816,Wed 4:19 PM: Rental requirements - ring not answered; message passed to leasing; Action: leasing follow-up,No,—,—
+(817) 219-6130,Tue 6:12 PM: Tour options after hours - caller hung up; message sent; Action: team call back,No,—,—
+(817) 343-3722,Wed 11:01 AM: Lease availability follow-up - message sent; Action: staff return call,No,—,—

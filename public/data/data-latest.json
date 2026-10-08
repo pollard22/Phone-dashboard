@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "/workspace/ultatel/super-window-note.txt",
-    "generated_at": "2026-10-07",
+    "super_open_loops_window": "Super open-loop pull 2026-10-08 (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved after failed ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes). Visible feed span: Tue 5:40 PM (oldest) to Wed 6:36 PM (newest), 50 threads, all opened. This-run open-loop count: 19. pull timestamp PT: 2026-10-08 05:19 PDT; session already signed in (ai.hiresuper.com, Pollard Properties). Borderlines excluded: Resolved=Yes threads and hang-ups with no message; 3 recording-only threads with no summary ((314) 405-1384, (636) 213-8514, (816) 516-1274) excluded. ",
+    "generated_at": "2026-10-08",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,9 +15,9 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: /workspace/ultatel/super-window-note.txt"
+      "Super Activity open loops: Super open-loop pull 2026-10-08 (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved after failed ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes). Visible feed span: Tue 5:40 PM (oldest) to Wed 6:36 PM (newest), 50 threads, all opened. This-run open-loop count: 19. pull timestamp PT: 2026-10-08 05:19 PDT; session already signed in (ai.hiresuper.com, Pollard Properties). Borderlines excluded: Resolved=Yes threads and hang-ups with no message; 3 recording-only threads with no summary ((314) 405-1384, (636) 213-8514, (816) 516-1274) excluded. "
     ],
-    "ultatel_source_file": "/workspace/ultatel/call-details-2026-09-30_to_10-06.csv",
+    "ultatel_source_file": "call-details-2026-09-30_to_10-06.csv",
     "window_slug": "2026-09-30_to_2026-10-06"
   },
   "kpis": {
@@ -32,15 +32,15 @@
     "never_company_dialed": 3,
     "dialed_earlier_only": 4,
     "dialed_later_after_24h": 0,
-    "super_open_loops": 11,
+    "super_open_loops": 19,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 11,
-    "super_ai_inbound": 290,
-    "super_transferred": 164,
-    "super_actions": 757,
-    "super_sms_sessions": 24,
-    "super_ai_talk": "5h 47m",
-    "super_avg_talk": "1m 12s"
+    "super_only_open_loops": 19,
+    "super_ai_inbound": 368,
+    "super_transferred": 213,
+    "super_actions": 746,
+    "super_sms_sessions": 36,
+    "super_ai_talk": "7h 27m",
+    "super_avg_talk": "1m 13s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 5,

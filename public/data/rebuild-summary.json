@@ -1,6 +1,8 @@
 {
   "window_short": "Sep 30\u20136, 2026",
   "window_slug": "2026-09-30_to_2026-10-06",
+  "dmin": "2026-09-30T08:16:06-05:00",
+  "dmax": "2026-10-06T19:41:54-05:00",
   "kpis": {
     "ultatel_inbound": 864,
     "ultatel_inbound_answered": 667,
@@ -13,15 +15,15 @@
     "never_company_dialed": 3,
     "dialed_earlier_only": 4,
     "dialed_later_after_24h": 0,
-    "super_open_loops": 11,
+    "super_open_loops": 19,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 11,
-    "super_ai_inbound": 290,
-    "super_transferred": 164,
-    "super_actions": 757,
-    "super_sms_sessions": 24,
-    "super_ai_talk": "5h 47m",
-    "super_avg_talk": "1m 12s"
+    "super_only_open_loops": 19,
+    "super_ai_inbound": 368,
+    "super_transferred": 213,
+    "super_actions": 746,
+    "super_sms_sessions": 36,
+    "super_ai_talk": "7h 27m",
+    "super_avg_talk": "1m 13s"
   },
   "paths": {
     "json": "/workspace/ultatel/web-dashboard/data-latest.json",
