@@ -1,16 +1,32 @@
 Open loops (Super) — Action Required
-Definition = unresolved Action Required after failed transfer or message-taken. Source: /workspace/ultatel/super-window-note.txt
-Total: 11 | Overlap with Ultatel no-callback: 0 | Super-only: 11
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Super open-loop pull 2026-10-12 05:33 PDT (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved (Resolved by AI agent = No) after failed transfer/ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes, no-AR recordings). Visible feed span: Fri Oct 9 10:07 AM (oldest) to Sun Oct 11 6:58 PM (newest) PT, 50 threads, all opened and read. This-run open-loop count: 27. "
+Total: 27 | Overlap with Ultatel no-callback: 0 | Super-only: 27
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 295-4217,Transfer not answered; message from Paige Schreiner for team review,No,—,—
-(314) 405-1384,Transfer not answered; caller request to be passed to leasing,No,—,—
-(314) 448-3641,Transfers declined then not answered; leasing to follow up on message,No,—,—
-(314) 629-9943,Transfer not answered; leasing to follow up on message,No,—,—
-(573) 647-1434,Julianna Waldvogel; transfer not answered; maintenance to follow up on message,No,—,—
-(573) 941-9941,Transfer not answered; leasing message passed for follow-up,No,—,—
-(636) 384-0159,Transfers declined then not answered; follow up with Beverly Gillette,No,—,—
-(636) 775-5687,Transfer not answered; call back with lease and deposit info,No,—,—
-(817) 219-6130,No transfer; team to call back about 58 Santo Domingo tour options,No,—,—
-(817) 343-3722,Transfers declined then not answered; team to follow up on routing message,No,—,—
-(903) 752-2110,Transfer not answered; follow up with Johnny Mayo re request for Natalie,No,—,—
+(270) 804-1404,(Super Action Required),No,—,—
+(314) 296-2665,(Super Action Required),No,—,—
+(314) 448-3641,(Super Action Required),No,—,—
+(314) 629-9943,(Super Action Required),No,—,—
+(469) 740-9579,(Super Action Required),No,—,—
+(573) 276-9632,(Super Action Required),No,—,—
+(573) 544-8923,(Super Action Required),No,—,—
+(573) 550-8921,(Super Action Required),No,—,—
+(573) 590-0466,(Super Action Required),No,—,—
+(618) 980-9073,(Super Action Required),No,—,—
+(636) 235-6540,(Super Action Required),No,—,—
+(636) 252-7352,(Super Action Required),No,—,—
+(636) 262-6357,(Super Action Required),No,—,—
+(636) 297-8972,(Super Action Required),No,—,—
+(636) 354-7969,(Super Action Required),No,—,—
+(636) 359-8904,(Super Action Required),No,—,—
+(636) 445-6222,(Super Action Required),No,—,—
+(636) 485-2990,(Super Action Required),No,—,—
+(636) 544-3320,(Super Action Required),No,—,—
+(636) 577-0939,(Super Action Required),No,—,—
+(636) 579-1620,(Super Action Required),No,—,—
+(660) 591-2346,(Super Action Required),No,—,—
+(713) 493-5625,(Super Action Required),No,—,—
+(832) 421-0447,(Super Action Required),No,—,—
+(973) 919-5258,(Super Action Required),No,—,—
+Brenda Kube,(Super Action Required),Unknown (no number),—,—
+Mariyah Long,(Super Action Required),Unknown (no number),—,—
