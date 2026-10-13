@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Super open-loop pull 2026-10-12 05:33 PDT (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved (Resolved by AI agent = No) after failed transfer/ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes, no-AR recordings). Visible feed span: Fri Oct 9 10:07 AM (oldest) to Sun Oct 11 6:58 PM (newest) PT, 50 threads, all opened and read. This-run open-loop count: 27. ",
-    "generated_at": "2026-10-12",
+    "super_open_loops_window": "Activity feed-scan 2026-10-13 05:31 PDT; span Mon Oct 12 9:16 AM-7:12 PM PT; 50 threads; count 28",
+    "generated_at": "2026-10-13",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,9 +15,9 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Super open-loop pull 2026-10-12 05:33 PDT (manual feed scan, Activity Anytime, no filters). Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved (Resolved by AI agent = No) after failed transfer/ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes, no-AR recordings). Visible feed span: Fri Oct 9 10:07 AM (oldest) to Sun Oct 11 6:58 PM (newest) PT, 50 threads, all opened and read. This-run open-loop count: 27. "
+      "Super Activity open loops: Activity feed-scan 2026-10-13 05:31 PDT; span Mon Oct 12 9:16 AM-7:12 PM PT; 50 threads; count 28"
     ],
-    "ultatel_source_file": "/workspace/ultatel/call-details-2026-09-30_to_10-06.csv",
+    "ultatel_source_file": "call-details-2026-09-30_to_10-06.csv",
     "window_slug": "2026-09-30_to_2026-10-06"
   },
   "kpis": {
@@ -32,15 +32,15 @@
     "never_company_dialed": 3,
     "dialed_earlier_only": 4,
     "dialed_later_after_24h": 0,
-    "super_open_loops": 27,
+    "super_open_loops": 28,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 27,
-    "super_ai_inbound": 478,
-    "super_transferred": 285,
-    "super_actions": 812,
+    "super_only_open_loops": 28,
+    "super_ai_inbound": 506,
+    "super_transferred": 302,
+    "super_actions": 860,
     "super_sms_sessions": 58,
-    "super_ai_talk": "9h 55m",
-    "super_avg_talk": "1m 16s"
+    "super_ai_talk": "10h 50m",
+    "super_avg_talk": "1m 18s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 5,
