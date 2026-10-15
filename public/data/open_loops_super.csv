@@ -1,22 +1,24 @@
 Open loops (Super) — Action Required
-Definition = unresolved Action Required after failed transfer or message-taken. Source: super-window-note.txt
-Total: 17 | Overlap with Ultatel no-callback: 0 | Super-only: 17
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved (Resolved by AI agent = No) after failed transfer/ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes, no-AR recordings; handoff-email-only threads with no ring treated as borderline/not counted, same as Oct 14). Visible feed span: Wed Oct 14 10:13 AM (oldest) to Wed Oct 14 6:03 PM (newest) PT, 50 threads scanned (no HTTP 429). This-run open-loop count: 19. "
+Total: 19 | Overlap with Ultatel no-callback: 0 | Super-only: 19
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 706-2886,(Super Action Required),No,—,—
-(314) 755-7779,(Super Action Required),No,—,—
+(314) 255-3949,(Super Action Required),No,—,—
+(314) 465-0565,(Super Action Required),No,—,—
 (314) 960-5276,(Super Action Required),No,—,—
-(317) 384-5773,(Super Action Required),No,—,—
-(469) 396-0115,(Super Action Required),No,—,—
-(636) 219-7208,(Super Action Required),No,—,—
-(636) 279-0832,(Super Action Required),No,—,—
-(636) 297-7412,(Super Action Required),No,—,—
-(636) 354-7969,(Super Action Required),No,—,—
+(414) 204-3024,(Super Action Required),No,—,—
+(417) 827-0411,(Super Action Required),No,—,—
+(561) 873-8326,(Super Action Required),No,—,—
+(636) 222-8627,(Super Action Required),No,—,—
+(636) 295-8042,(Super Action Required),No,—,—
 (636) 384-9179,(Super Action Required),No,—,—
-(636) 448-4696,(Super Action Required),No,—,—
-(636) 544-7149,(Super Action Required),No,—,—
-(636) 679-8061,(Super Action Required),No,—,—
-(773) 834-1483,(Super Action Required),No,—,—
-(805) 398-6200,(Super Action Required),No,—,—
-(817) 219-6130,(Super Action Required),No,—,—
-(850) 293-0624,(Super Action Required),No,—,—
+(636) 445-1290,(Super Action Required),No,—,—
+(636) 459-8935,(Super Action Required),No,—,—
+(636) 485-8002,(Super Action Required),No,—,—
+(636) 515-8905,(Super Action Required),No,—,—
+(636) 671-4838,(Super Action Required),No,—,—
+(713) 493-5625,(Super Action Required),No,—,—
+(816) 639-9332,(Super Action Required),No,—,—
+Sarah Morecock (no number shown),(Super Action Required),Unknown (no number),—,—
+Rayann Chasteen (no number shown),(Super Action Required),Unknown (no number),—,—
+Brenden Walker (no number shown),(Super Action Required),Unknown (no number),—,—
