@@ -300,7 +300,8 @@ function renderOverview() {
       </div>
     </div>
 
-    <h3 style="margin:0 0 0.65rem;font-size:0.85rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;">Ultatel volume</h3>
+    <h3 style="margin:0 0 0.2rem;font-size:0.85rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;">Ultatel volume</h3>
+    <p class="stale-note">Ultatel stale since Oct 6</p>
     <div class="kpi-grid">
       ${kpiCard('IN-Bound', kpis.ultatel_inbound, 'Total CDR legs', 'info', 'in-bound')}
       ${kpiCard('IN answered', kpis.ultatel_inbound_answered, '', 'ok', 'in-answered')}
