@@ -1,24 +1,31 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition: SUPER-OPEN-LOOP-METHOD.md feed-scan (Action Required unresolved (Resolved by AI agent = No) after failed transfer/ring or message taken for team; excludes accepted handoffs, hang-ups with no message, Resolved=Yes, no-AR recordings; handoff-email-only threads with no ring treated as borderline/not counted, same as Oct 14). Visible feed span: Wed Oct 14 10:13 AM (oldest) to Wed Oct 14 6:03 PM (newest) PT, 50 threads scanned (no HTTP 429). This-run open-loop count: 19. "
-Total: 19 | Overlap with Ultatel no-callback: 0 | Super-only: 19
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Activity feed-scan Thu Oct 15 10:44 AM-5:09 PM PT (50 threads), pulled 2026-10-16 ~05:15 PDT"
+Total: 26 | Overlap with Ultatel no-callback: 0 | Super-only: 26
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 255-3949,(Super Action Required),No,—,—
-(314) 465-0565,(Super Action Required),No,—,—
-(314) 960-5276,(Super Action Required),No,—,—
-(414) 204-3024,(Super Action Required),No,—,—
-(417) 827-0411,(Super Action Required),No,—,—
-(561) 873-8326,(Super Action Required),No,—,—
-(636) 222-8627,(Super Action Required),No,—,—
-(636) 295-8042,(Super Action Required),No,—,—
-(636) 384-9179,(Super Action Required),No,—,—
-(636) 445-1290,(Super Action Required),No,—,—
-(636) 459-8935,(Super Action Required),No,—,—
-(636) 485-8002,(Super Action Required),No,—,—
-(636) 515-8905,(Super Action Required),No,—,—
-(636) 671-4838,(Super Action Required),No,—,—
-(713) 493-5625,(Super Action Required),No,—,—
-(816) 639-9332,(Super Action Required),No,—,—
-Sarah Morecock (no number shown),(Super Action Required),Unknown (no number),—,—
-Rayann Chasteen (no number shown),(Super Action Required),Unknown (no number),—,—
-Brenden Walker (no number shown),(Super Action Required),Unknown (no number),—,—
+(314) 320-0078,Thu 2:42 PM: Bedroom/budget intake; not answered (1); message taken,No,—,—
+(314) 440-6041,Thu 1:57 PM: 901 Parkview Dr (Christopher Landry) wants rep callback; not answered (1); message taken,No,—,—
+(314) 755-9706,Thu 12:38 PM: Customer-service inquiry re 32 Westwood Dr; not answered (1); message taken,No,—,—
+(314) 849-0313,Thu 1:57 PM: 65 Nassau Dr application help; customer-service callback; message taken,No,—,—
+(314) 901-3986,Thu 3:26 PM: Lease question; asked for Nathan; not answered (5); message taken,No,—,—
+(314) 960-5276,Thu 11:58 AM: Jeremy; application status; not answered (9); message taken,No,—,—
+(314) 972-4290,Thu 11:50 AM: Leasing transfer; not answered (6); message taken,No,—,—
+(561) 873-8326,Thu 10:55 AM: Nicholas Locke; application status; not answered (4); message taken,No,—,—
+(573) 225-0686,Thu 1:10 PM: Power outage at 43 Santo Domingo Dr; maintenance follow-up; not answered (2); message taken,No,—,—
+(573) 473-7827,Thu 12:23 PM: 137 Rose Ann Ave tour; not answered (1); message taken,No,—,—
+(573) 590-0466,Thu 4:02 PM: Natalie; wanted Stacy; not answered (7); message passed,No,—,—
+(618) 977-7796,Thu 3:29 PM: Leasing follow-up after message; not answered (1),No,—,—
+(636) 279-0165,Thu 2:55 PM: Application/income-verification links not working; not answered (6); message taken,No,—,—
+(636) 354-7969,Thu 4:22 PM: Stacy line not answered (6 rings); message taken; callback number corrected to 636-354-7910,No,—,—
+(636) 359-6950,Thu 3:09 PM: Rental intake callback; message passed,No,—,—
+(636) 384-9179,Thu 1:34 PM: Stacy Damo; message for Nicholas Locke; not answered (3); message taken,No,—,—
+(636) 384-9564,Thu 3:09 PM: 3BR options St. Charles/Warren; not answered (1); message taken,No,—,—
+(636) 459-8935,Thu 1:28 PM: Application receipt/status; not answered (2); message taken,No,—,—
+(636) 671-4838,Thu 11:10 AM: Taylor; application status; not answered (3); message taken,No,—,—
+(815) 258-3662,Thu 11:50 AM: Bennington Place 2BR info; not answered (1); message taken,No,—,—
+(816) 392-6076,Thu 11:13 AM: 201 Richmond Dr showing; not answered (1); message taken,No,—,—
+Shirley Hamilton (no number shown),Thu 12:59 PM: Maintenance portal error (sink knob / dripping faucet); caller hung up; message taken,Unknown (no number),—,—
+Patricia Bertschmann (no number shown),Thu 11:44 AM: Asked for Tiffany; not answered (3); message taken,Unknown (no number),—,—
+Avery Walton (no number shown),Thu 11:20 AM: Walkthrough scheduling; not answered (1); message taken,Unknown (no number),—,—
+Sarah Morecock (no number shown),Thu 11:16 AM: Asked for operator/front desk; not answered (5); message taken,Unknown (no number),—,—
+Juanita Gutierrez (no number shown),Thu 10:48 AM: Resident lease questions; not answered (1); message taken,Unknown (no number),—,—
