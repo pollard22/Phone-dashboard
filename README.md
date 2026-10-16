@@ -22,6 +22,12 @@ npm run dev
 
 The Vite `base` is `/Phone-dashboard/` so asset URLs match the project Pages site.
 
+## Layout demo
+
+`demo.html` is a static mock of a volume-first Overview: calls received, answered, not picked up, callback rate, and no-callback rate, with a **Last 24 hours** / **Last 7 days** switch (default Last 7 days). Every metric card opens a drill list. Numbers are labeled placeholders. The page does not read `public/data/`.
+
+After a Pages deploy from `main`, it is served at `/Phone-dashboard/demo.html` (`https://pollard22.github.io/Phone-dashboard/demo.html`). Wiring those windows to a real Ultatel/Super rebuild is a follow-up once the layout is approved. The live dashboard pack is unchanged.
+
 ## Data refresh
 
 Until an Ultatel API exists, refresh is manual. Replace the files under `public/data/` and push to `main`. The next Actions run rebuilds and redeploys. No application code changes are required for a data-only refresh.
