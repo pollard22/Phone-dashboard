@@ -1,21 +1,19 @@
 Open loops (Super) — Action Required
-Definition = unresolved Action Required after failed transfer or message-taken. Source: super-window-note.txt
-Total: 16 | Overlap with Ultatel no-callback: 0 | Super-only: 16
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE). Visible feed span (PT): Mon Oct 19 9:47 AM (oldest of 50) to Mon Oct 19 9:29 PM (newest). Threads scanned: 50 (Anytime, no filters, no search). Open-loop count from this scan: 14 (see super-open-loops-2026-10-20.csv) "
+Total: 14 | Overlap with Ultatel no-callback: 0 | Super-only: 14
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 258-9541,Sat 11:09 AM: Leasing: confirm community/unit and schedule tour; ring to (314) 626-5228 not answered; Resolved No,No,—,—
-(314) 397-5921,Fri 3:23 PM: Message for Mercedes (callback re Tim Goddard); ring to (314) 439-1321 not answered; Resolved No,No,—,—
-(314) 626-9310,Fri 12:47 PM: Non-emergency maintenance; ring to maintenance (314) 690-1027 and 690-1018 not answered x2; Resolved No,No,—,—
-(314) 629-9943,Fri 1:44 PM: Leasing request forwarded; ring to (314) 626-5228 not answered; Resolved No,No,—,—
-(314) 901-3986,Fri 2:10 PM: Lease explanation; ring to (314) 626-5228 not answered; Resolved No,No,—,—
-(573) 544-8923,Sat 11:02 AM: Wants person (Alyssa Wilson); ring not answered; message passed for callback; Resolved No,No,—,—
-(618) 554-5918,Fri 12:26 PM: Apartment/house options follow-up; transfer declined; Resolved No,No,—,—
-(631) 552-1318,Fri 3:10 PM: 3-bedroom availability follow-up; ring to (314) 626-5228 not answered; Resolved No,No,—,—
-(636) 249-9454,Fri 1:06 PM: Message for team; ring not answered / declined; Resolved No,No,—,—
-(636) 279-0165,Sat 9:26 AM: Application status / prior application 458 Santo; ring to (314) 690-1018 not answered; Resolved No,No,—,—
-(636) 358-3285,Sat 1:08 PM: Leasing: tour reschedule/restore; ring to (314) 626-5228 not answered; message passed; Resolved No,No,—,—
-(805) 452-3122,Fri 12:30 PM: Co-signer follow-up; ring to (314) 626-5228 not answered; Resolved No,No,—,—
-(816) 982-3402,Sat 9:25 AM: Showing/listings follow-up; ring to (314) 626-5228 not answered; message passed; Resolved No,No,—,—
-(817) 343-3722,Fri 2:30 PM: Request for Lindsay; transfer declined (not accepted); Resolved No,No,—,—
-Zachary Wicks,Fri 2:59 PM: Renters insurance submission; Fri 2:58 PM ring to (314) 626-5228 not answered; latest handoff email-only; Resolved No,Unknown (no number),—,—
-Tristan Charlton,Fri 2:42 PM: Renters insurance question; ring to (314) 626-5228 not answered; Resolved No,Unknown (no number),—,—
+(252) 567-3793,(Super Action Required),No,—,—
+(314) 296-0637,(Super Action Required),No,—,—
+(314) 319-5210,(Super Action Required),No,—,—
+(314) 704-2982,(Super Action Required),No,—,—
+(417) 239-4832,(Super Action Required),No,—,—
+(505) 903-4123,(Super Action Required),No,—,—
+(620) 430-6831,(Super Action Required),No,—,—
+(636) 233-7975,(Super Action Required),No,—,—
+(636) 354-7969,(Super Action Required),No,—,—
+(636) 359-1417,(Super Action Required),No,—,—
+(636) 459-1686,(Super Action Required),No,—,—
+(636) 875-2328,(Super Action Required),No,—,—
+(815) 909-9334,(Super Action Required),No,—,—
+(954) 678-5380,(Super Action Required),No,—,—

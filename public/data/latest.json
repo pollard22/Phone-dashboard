@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "super-window-note.txt",
-    "generated_at": "2026-10-19",
+    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE). Visible feed span (PT): Mon Oct 19 9:47 AM (oldest of 50) to Mon Oct 19 9:29 PM (newest). Threads scanned: 50 (Anytime, no filters, no search). Open-loop count from this scan: 14 (see super-open-loops-2026-10-20.csv) ",
+    "generated_at": "2026-10-20",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: super-window-note.txt"
+      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE). Visible feed span (PT): Mon Oct 19 9:47 AM (oldest of 50) to Mon Oct 19 9:29 PM (newest). Threads scanned: 50 (Anytime, no filters, no search). Open-loop count from this scan: 14 (see super-open-loops-2026-10-20.csv) "
     ],
     "ultatel_source_file": "call-details-2026-09-30_to_10-06.csv",
     "window_slug": "2026-09-30_to_2026-10-06"
@@ -32,15 +32,15 @@
     "never_company_dialed": 3,
     "dialed_earlier_only": 4,
     "dialed_later_after_24h": 0,
-    "super_open_loops": 16,
+    "super_open_loops": 14,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 16,
-    "super_ai_inbound": 612,
-    "super_transferred": 366,
-    "super_actions": 1036,
-    "super_sms_sessions": 69,
-    "super_ai_talk": "12h 31m",
-    "super_avg_talk": "1m 14s"
+    "super_only_open_loops": 14,
+    "super_ai_inbound": 1122,
+    "super_transferred": 363,
+    "super_actions": 1536,
+    "super_sms_sessions": 65,
+    "super_ai_talk": "12h 48m",
+    "super_avg_talk": "43s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 5,
