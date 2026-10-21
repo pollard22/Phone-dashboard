@@ -18,12 +18,12 @@
     "super_open_loops": 14,
     "super_ultatel_overlap": 0,
     "super_only_open_loops": 14,
-    "super_ai_inbound": 1122,
-    "super_transferred": 363,
-    "super_actions": 1536,
-    "super_sms_sessions": 65,
-    "super_ai_talk": "12h 48m",
-    "super_avg_talk": "43s"
+    "super_ai_inbound": 1094,
+    "super_transferred": 356,
+    "super_actions": 1490,
+    "super_sms_sessions": 49,
+    "super_ai_talk": "12h 11m",
+    "super_avg_talk": "42s"
   },
   "paths": {
     "json": "/workspace/ultatel/web-dashboard/data-latest.json",

@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE). Visible feed span (PT): Mon Oct 19 9:47 AM (oldest of 50) to Mon Oct 19 9:29 PM (newest). Threads scanned: 50 (Anytime, no filters, no search). Open-loop count from this scan: 14 (see super-open-loops-2026-10-20.csv) ",
-    "generated_at": "2026-10-20",
+    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (PT): Tue Oct 20 8:02 AM (oldest of 50) to Tue Oct 20 5:14 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search).\nOpen-loop count from this scan: 14 (see super-open-loops-2026-10-21.csv)\nUncertain (not counted, 2): (832) 421-0447 (ring Not answered but Resolved Yes); (317) 384-5773 (Not answered then Accepted; outlets not working; Resolved No).\nBorderline (not counted, 9): (636) 295-8785; (816) 806-2881 (AI promised leasing callback re 6-month lease, no ring shown); (804) 256-8230; (229) 201-6309; (385) 406-4255; (636) 222-8627; (636) 297-7412; (636) 221-0812; (636) 578-8595.\nExcluded (~25): ~16 Resolved Yes or hang-up/no message; 5 accepted handoffs still Resolved No; 3 no AI summary; 1 no request.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 14-Oct 21.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; closest (317) 384-5773 Tue 8:35 AM five living-room outlets not working (Boulders townhome), human accepted, work order advised.\npull timestamp PT: 2026-10-21 ~05:15 PDT.",
+    "generated_at": "2026-10-21",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE). Visible feed span (PT): Mon Oct 19 9:47 AM (oldest of 50) to Mon Oct 19 9:29 PM (newest). Threads scanned: 50 (Anytime, no filters, no search). Open-loop count from this scan: 14 (see super-open-loops-2026-10-20.csv) "
+      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (PT): Tue Oct 20 8:02 AM (oldest of 50) to Tue Oct 20 5:14 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search).\nOpen-loop count from this scan: 14 (see super-open-loops-2026-10-21.csv)\nUncertain (not counted, 2): (832) 421-0447 (ring Not answered but Resolved Yes); (317) 384-5773 (Not answered then Accepted; outlets not working; Resolved No).\nBorderline (not counted, 9): (636) 295-8785; (816) 806-2881 (AI promised leasing callback re 6-month lease, no ring shown); (804) 256-8230; (229) 201-6309; (385) 406-4255; (636) 222-8627; (636) 297-7412; (636) 221-0812; (636) 578-8595.\nExcluded (~25): ~16 Resolved Yes or hang-up/no message; 5 accepted handoffs still Resolved No; 3 no AI summary; 1 no request.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 14-Oct 21.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; closest (317) 384-5773 Tue 8:35 AM five living-room outlets not working (Boulders townhome), human accepted, work order advised.\npull timestamp PT: 2026-10-21 ~05:15 PDT."
     ],
     "ultatel_source_file": "call-details-2026-09-30_to_10-06.csv",
     "window_slug": "2026-09-30_to_2026-10-06"
@@ -35,12 +35,12 @@
     "super_open_loops": 14,
     "super_ultatel_overlap": 0,
     "super_only_open_loops": 14,
-    "super_ai_inbound": 1122,
-    "super_transferred": 363,
-    "super_actions": 1536,
-    "super_sms_sessions": 65,
-    "super_ai_talk": "12h 48m",
-    "super_avg_talk": "43s"
+    "super_ai_inbound": 1094,
+    "super_transferred": 356,
+    "super_actions": 1490,
+    "super_sms_sessions": 49,
+    "super_ai_talk": "12h 11m",
+    "super_avg_talk": "42s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 5,
