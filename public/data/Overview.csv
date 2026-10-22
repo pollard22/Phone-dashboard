@@ -4,17 +4,17 @@ LIVE data from Ultatel Call Details + HireSuper Reporting/Activity. No invented 
 Date windows & sources,,,
 Ultatel Call Details,"Sep 30–6, 2026 (Last 7 Days / export). Source times HQ UTC−5; display PT where converted.",,
 Super Activity open loops,"Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).
-Visible feed span (PT): Tue Oct 20 8:02 AM (oldest of 50) to Tue Oct 20 5:14 PM (newest).
-Threads scanned: 50 (Anytime, no filters, no search).
-Open-loop count from this scan: 14 (see super-open-loops-2026-10-21.csv)
-Uncertain (not counted, 2): (832) 421-0447 (ring Not answered but Resolved Yes); (317) 384-5773 (Not answered then Accepted; outlets not working; Resolved No).
-Borderline (not counted, 9): (636) 295-8785; (816) 806-2881 (AI promised leasing callback re 6-month lease, no ring shown); (804) 256-8230; (229) 201-6309; (385) 406-4255; (636) 222-8627; (636) 297-7412; (636) 221-0812; (636) 578-8595.
-Excluded (~25): ~16 Resolved Yes or hang-up/no message; 5 accepted handoffs still Resolved No; 3 no AI summary; 1 no request.
-Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 14-Oct 21.
+Visible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).
+Threads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.
+Open-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)
+Uncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).
+Borderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours ""Campbell"" message, no issue given.
+Excluded (18): ~10 hang-ups with no message; 8 accepted handoffs.
+Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.
 Errors during scan: no 429/403 seen.
-Safety: none flagged; closest (317) 384-5773 Tue 8:35 AM five living-room outlets not working (Boulders townhome), human accepted, work order advised.
-pull timestamp PT: 2026-10-21 ~05:15 PDT.",,
-Super Reporting,"Last 7 days (Reporting badge: 'Data from Oct 2, 2026'; chart axis Oct 14-Oct 21, Oct 21 partial); Total view; Calls/SMS/Actions tabs",,
+Safety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).
+pull timestamp PT: 2026-10-22 ~05:15 PDT.",,
+Super Reporting,"Last 7 days (Reporting badge: 'Data from Oct 2, 2026'; chart axis Oct 13-Oct 22, Oct 22 partial); Total view; Calls/SMS/Actions tabs",,
 
 Headline metrics (real data only),,,
 Metric,Count,Source / note,
@@ -28,12 +28,12 @@ Unique Ultatel no-callback callers (24h rule),7,Callback hygiene,
 Never company-dialed in export,3,Verification,
 Dialed earlier in week only (not within 24h),4,Verification,
 Dialed later than 24h after last miss,0,Verification,
-Super open loops (Action Required),14,Super Activity,
+Super open loops (Action Required),17,Super Activity,
 Overlap Super × Ultatel no-callback,0,Crosswalk,
-Super-only open loops,14,Crosswalk (2 name-only callers with no phone),
-Super Reporting inbound calls (AI answered),1094,HireSuper Reporting this run,
-Super Reporting calls transferred,356,HireSuper Reporting this run,
-Super Reporting actions (automated),1490,HireSuper Reporting this run,
-Super Reporting SMS message sessions,49,HireSuper Reporting this run,
-Super Reporting AI talk time,12h 11m,HireSuper Reporting this run,
-Super Reporting avg call length,42s,HireSuper Reporting this run,
+Super-only open loops,17,Crosswalk,
+Super Reporting inbound calls (AI answered),1028,HireSuper Reporting this run,
+Super Reporting calls transferred,323,HireSuper Reporting this run,
+Super Reporting actions (automated),1388,HireSuper Reporting this run,
+Super Reporting SMS message sessions,47,HireSuper Reporting this run,
+Super Reporting AI talk time,10h 46m,HireSuper Reporting this run,
+Super Reporting avg call length,39s,HireSuper Reporting this run,

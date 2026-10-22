@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (PT): Tue Oct 20 8:02 AM (oldest of 50) to Tue Oct 20 5:14 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search).\nOpen-loop count from this scan: 14 (see super-open-loops-2026-10-21.csv)\nUncertain (not counted, 2): (832) 421-0447 (ring Not answered but Resolved Yes); (317) 384-5773 (Not answered then Accepted; outlets not working; Resolved No).\nBorderline (not counted, 9): (636) 295-8785; (816) 806-2881 (AI promised leasing callback re 6-month lease, no ring shown); (804) 256-8230; (229) 201-6309; (385) 406-4255; (636) 222-8627; (636) 297-7412; (636) 221-0812; (636) 578-8595.\nExcluded (~25): ~16 Resolved Yes or hang-up/no message; 5 accepted handoffs still Resolved No; 3 no AI summary; 1 no request.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 14-Oct 21.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; closest (317) 384-5773 Tue 8:35 AM five living-room outlets not working (Boulders townhome), human accepted, work order advised.\npull timestamp PT: 2026-10-21 ~05:15 PDT.",
-    "generated_at": "2026-10-21",
+    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)\nUncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).\nBorderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours \"Campbell\" message, no issue given.\nExcluded (18): ~10 hang-ups with no message; 8 accepted handoffs.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).\npull timestamp PT: 2026-10-22 ~05:15 PDT.",
+    "generated_at": "2026-10-22",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,9 +15,9 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (PT): Tue Oct 20 8:02 AM (oldest of 50) to Tue Oct 20 5:14 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search).\nOpen-loop count from this scan: 14 (see super-open-loops-2026-10-21.csv)\nUncertain (not counted, 2): (832) 421-0447 (ring Not answered but Resolved Yes); (317) 384-5773 (Not answered then Accepted; outlets not working; Resolved No).\nBorderline (not counted, 9): (636) 295-8785; (816) 806-2881 (AI promised leasing callback re 6-month lease, no ring shown); (804) 256-8230; (229) 201-6309; (385) 406-4255; (636) 222-8627; (636) 297-7412; (636) 221-0812; (636) 578-8595.\nExcluded (~25): ~16 Resolved Yes or hang-up/no message; 5 accepted handoffs still Resolved No; 3 no AI summary; 1 no request.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 14-Oct 21.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; closest (317) 384-5773 Tue 8:35 AM five living-room outlets not working (Boulders townhome), human accepted, work order advised.\npull timestamp PT: 2026-10-21 ~05:15 PDT."
+      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)\nUncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).\nBorderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours \"Campbell\" message, no issue given.\nExcluded (18): ~10 hang-ups with no message; 8 accepted handoffs.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).\npull timestamp PT: 2026-10-22 ~05:15 PDT."
     ],
-    "ultatel_source_file": "call-details-2026-09-30_to_10-06.csv",
+    "ultatel_source_file": "/home/box/Downloads/Call Details - 09-30-2026, 00-00 - 10-06-2026, 23-59.csv",
     "window_slug": "2026-09-30_to_2026-10-06"
   },
   "kpis": {
@@ -32,15 +32,15 @@
     "never_company_dialed": 3,
     "dialed_earlier_only": 4,
     "dialed_later_after_24h": 0,
-    "super_open_loops": 14,
+    "super_open_loops": 17,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 14,
-    "super_ai_inbound": 1094,
-    "super_transferred": 356,
-    "super_actions": 1490,
-    "super_sms_sessions": 49,
-    "super_ai_talk": "12h 11m",
-    "super_avg_talk": "42s"
+    "super_only_open_loops": 17,
+    "super_ai_inbound": 1028,
+    "super_transferred": 323,
+    "super_actions": 1388,
+    "super_sms_sessions": 47,
+    "super_ai_talk": "10h 46m",
+    "super_avg_talk": "39s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 5,
