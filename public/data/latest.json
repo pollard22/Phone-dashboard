@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
-    "window_label": "Sep 30\u20136, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)\nUncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).\nBorderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours \"Campbell\" message, no issue given.\nExcluded (18): ~10 hang-ups with no message; 8 accepted handoffs.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).\npull timestamp PT: 2026-10-22 ~05:15 PDT.",
-    "generated_at": "2026-10-22",
+    "window_label": "Oct 15\u201321, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
+    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Thu Oct 22 7:24 AM (oldest of 50) to Thu Oct 22 4:44 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 19 (see super-open-loops-2026-10-23.csv)\nUncertain (not counted, 10): (864) 382-7310 Steven Dowling; (314) 338-6534; (817) 929-0370; (573) 577-6597; (916) 616-1021; (810) 908-4670 smoke detector (non-emergency); (631) 552-1318; (573) 540-3895; (636) 493-5737; (314) 280-2206.\nBorderline (not counted, 2): (210) 334-9582; (573) 473-7827.\nExcluded (19): 4 accepted+resolved; 5 hang-ups no message; 3 resolved no ring; 6 no summary/data; 1 ordinary listings inquiry.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 16-Oct 23.\nErrors during scan: 429/403/401 rate limits while opening threads; slowed and re-read failed threads.\nSafety: none urgent; smoke-detector troubleshooting at 221 Yachtsman (non-emergency maintenance).\npull timestamp PT: 2026-10-23 ~05:15 PDT.",
+    "generated_at": "2026-10-23",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,87 +15,43 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)\nUncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).\nBorderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours \"Campbell\" message, no issue given.\nExcluded (18): ~10 hang-ups with no message; 8 accepted handoffs.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.\nErrors during scan: no 429/403 seen.\nSafety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).\npull timestamp PT: 2026-10-22 ~05:15 PDT."
+      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Thu Oct 22 7:24 AM (oldest of 50) to Thu Oct 22 4:44 PM (newest).\nThreads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.\nOpen-loop count from this scan: 19 (see super-open-loops-2026-10-23.csv)\nUncertain (not counted, 10): (864) 382-7310 Steven Dowling; (314) 338-6534; (817) 929-0370; (573) 577-6597; (916) 616-1021; (810) 908-4670 smoke detector (non-emergency); (631) 552-1318; (573) 540-3895; (636) 493-5737; (314) 280-2206.\nBorderline (not counted, 2): (210) 334-9582; (573) 473-7827.\nExcluded (19): 4 accepted+resolved; 5 hang-ups no message; 3 resolved no ring; 6 no summary/data; 1 ordinary listings inquiry.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 16-Oct 23.\nErrors during scan: 429/403/401 rate limits while opening threads; slowed and re-read failed threads.\nSafety: none urgent; smoke-detector troubleshooting at 221 Yachtsman (non-emergency maintenance).\npull timestamp PT: 2026-10-23 ~05:15 PDT."
     ],
-    "ultatel_source_file": "/home/box/Downloads/Call Details - 09-30-2026, 00-00 - 10-06-2026, 23-59.csv",
-    "window_slug": "2026-09-30_to_2026-10-06"
+    "ultatel_source_file": "call-details-2026-10-15_to_10-21.csv",
+    "window_slug": "2026-10-15_to_2026-10-21"
   },
   "kpis": {
-    "ultatel_inbound": 864,
-    "ultatel_inbound_answered": 667,
-    "ultatel_inbound_no_answer": 197,
-    "ultatel_inbound_no_answer_cleaned": 9,
-    "ultatel_outbound": 380,
-    "ultatel_outbound_answered": 337,
-    "ultatel_outbound_no_answer": 43,
-    "no_callback_24h_unique": 7,
-    "never_company_dialed": 3,
-    "dialed_earlier_only": 4,
-    "dialed_later_after_24h": 0,
-    "super_open_loops": 17,
-    "super_ultatel_overlap": 0,
+    "ultatel_inbound": 2747,
+    "ultatel_inbound_answered": 2471,
+    "ultatel_inbound_no_answer": 276,
+    "ultatel_inbound_no_answer_cleaned": 74,
+    "ultatel_outbound": 484,
+    "ultatel_outbound_answered": 386,
+    "ultatel_outbound_no_answer": 98,
+    "no_callback_24h_unique": 23,
+    "never_company_dialed": 9,
+    "dialed_earlier_only": 10,
+    "dialed_later_after_24h": 4,
+    "super_open_loops": 19,
+    "super_ultatel_overlap": 2,
     "super_only_open_loops": 17,
-    "super_ai_inbound": 1028,
-    "super_transferred": 323,
-    "super_actions": 1388,
-    "super_sms_sessions": 47,
-    "super_ai_talk": "10h 46m",
+    "super_ai_inbound": 990,
+    "super_transferred": 302,
+    "super_actions": 1319,
+    "super_sms_sessions": 37,
+    "super_ai_talk": "10h 21m",
     "super_avg_talk": "39s"
   },
   "miss_by_extension": {
-    "110 \u2014 Mara Pongayan Priagas": 5,
-    "108 \u2014 Mercedes Recio": 2,
-    "601 \u2014 AI Agent Number Ring Group": 2
+    "601 \u2014 AI Agent Number Ring Group": 62,
+    "110 \u2014 Mara Pongayan Priagas": 10,
+    "76001 \u2014 76001": 1,
+    "108 \u2014 Mercedes Recio": 1
   },
   "missed_sample": [
     {
-      "caller": "(650) 463-6868",
-      "when": "2026-10-06 11:42 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(650) 463-6868",
-      "when": "2026-10-06 11:41 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 412-6846",
-      "when": "2026-10-06 8:45 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(402) 429-1385",
-      "when": "2026-10-06 7:53 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 367-1634",
-      "when": "2026-10-05 10:58 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 445-1534",
-      "when": "2026-10-05 7:08 AM",
+      "caller": "(877) 261-0250",
+      "when": "2026-10-21 11:08 AM",
       "who": "601 \u2014 AI Agent Number Ring Group",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
@@ -103,18 +59,351 @@
       "super_note": ""
     },
     {
-      "caller": "(636) 383-8090",
-      "when": "2026-10-02 11:10 AM",
+      "caller": "(314) 448-3641",
+      "when": "2026-10-21 11:04 AM",
       "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": "(Super Action Required)"
+    },
+    {
+      "caller": "(314) 448-3641",
+      "when": "2026-10-21 11:04 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": "(Super Action Required)"
+    },
+    {
+      "caller": "(229) 201-6309",
+      "when": "2026-10-21 7:59 AM",
+      "who": "110 \u2014 Mara Pongayan Priagas",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
       "super_note": ""
     },
     {
-      "caller": "(518) 637-1388",
-      "when": "2026-09-30 1:14 PM",
+      "caller": "(346) 321-1421",
+      "when": "2026-10-20 2:53 PM",
       "who": "108 \u2014 Mercedes Recio",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:36 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:27 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:27 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:27 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:27 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:20 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 2:13 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 1:59 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 12:29 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 12:22 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 12:19 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(636) 459-1686",
+      "when": "2026-10-19 12:10 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(909) 520-7213",
+      "when": "2026-10-19 12:05 PM",
+      "who": "110 \u2014 Mara Pongayan Priagas",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": "(Super Action Required)"
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 12:03 PM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 11:33 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(832) 421-0447",
+      "when": "2026-10-19 11:29 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 11:12 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:48 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:45 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:42 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:40 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:31 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:28 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:25 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:22 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:21 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:21 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:21 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(573) 406-8776",
+      "when": "2026-10-19 10:21 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
