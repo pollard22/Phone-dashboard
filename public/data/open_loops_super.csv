@@ -1,32 +1,34 @@
 Open loops (Super) — Action Required
 "Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).
-Visible feed span (as displayed in Super; newest stamp is later than the pull clock, so the feed may display Central time): Tue Oct 20 5:37 PM (oldest of 50) to Thu Oct 22 7:21 AM (newest).
+Visible feed span (as displayed in Super): Thu Oct 22 7:24 AM (oldest of 50) to Thu Oct 22 4:44 PM (newest).
 Threads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.
-Open-loop count from this scan: 17 (see super-open-loops-2026-10-22.csv)
-Uncertain (not counted, 4): (917) 284-5909 Kevin Cordova; (805) 452-3122; (270) 804-1404 (each failed ring then Accepted, Resolved Yes); Claire Husk (Accepted + Not answered, Resolved No).
-Borderline (not counted, 11): (636) 204-7598; (248) 561-1346; (636) 577-7450; (636) 448-9272; (314) 243-2960; (573) 540-3895; (636) 208-2316; (636) 213-8514; (636) 295-8785; (816) 806-2881; (636) 295-9551 after-hours ""Campbell"" message, no issue given.
-Excluded (18): ~10 hang-ups with no message; 8 accepted handoffs.
-Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 13-Oct 22.
-Errors during scan: no 429/403 seen.
-Safety: none flagged; time-sensitive: Tiffany Cummins locked out of house (Wed 5:56 PM, ring Not answered, Resolved No).
-pull timestamp PT: 2026-10-22 ~05:15 PDT."
-Total: 17 | Overlap with Ultatel no-callback: 0 | Super-only: 17
+Open-loop count from this scan: 19 (see super-open-loops-2026-10-23.csv)
+Uncertain (not counted, 10): (864) 382-7310 Steven Dowling; (314) 338-6534; (817) 929-0370; (573) 577-6597; (916) 616-1021; (810) 908-4670 smoke detector (non-emergency); (631) 552-1318; (573) 540-3895; (636) 493-5737; (314) 280-2206.
+Borderline (not counted, 2): (210) 334-9582; (573) 473-7827.
+Excluded (19): 4 accepted+resolved; 5 hang-ups no message; 3 resolved no ring; 6 no summary/data; 1 ordinary listings inquiry.
+Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 16-Oct 23.
+Errors during scan: 429/403/401 rate limits while opening threads; slowed and re-read failed threads.
+Safety: none urgent; smoke-detector troubleshooting at 221 Yachtsman (non-emergency maintenance).
+pull timestamp PT: 2026-10-23 ~05:15 PDT."
+Total: 19 | Overlap with Ultatel no-callback: 2 | Super-only: 17
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(217) 257-5634,(Super Action Required),No,—,—
-(314) 448-3641,(Super Action Required),No,—,—
-(319) 452-7000,(Super Action Required),No,—,—
-(346) 324-0574,(Super Action Required),No,—,—
+(267) 720-5532,(Super Action Required),No,—,—
+(314) 599-9162,(Super Action Required),No,—,—
 (402) 359-0452,(Super Action Required),No,—,—
-(573) 473-7827,(Super Action Required),No,—,—
-(618) 977-7796,(Super Action Required),No,—,—
-(636) 206-1154,(Super Action Required),No,—,—
+(561) 873-8326,(Super Action Required),No,—,—
+(573) 380-1907,(Super Action Required),No,—,—
+(573) 544-8923,(Super Action Required),No,—,—
+(573) 808-4611,(Super Action Required),No,—,—
+(636) 233-7975,(Super Action Required),No,—,—
+(636) 249-9454,(Super Action Required),No,—,—
 (636) 295-8042,(Super Action Required),No,—,—
-(636) 354-7969,(Super Action Required),No,—,—
-(636) 357-3565,(Super Action Required),No,—,—
-(636) 389-1771,(Super Action Required),No,—,—
-(636) 638-8541,(Super Action Required),No,—,—
-(812) 340-4151,(Super Action Required),No,—,—
-(812) 929-7140,(Super Action Required),No,—,—
-Tiffany Cummins,(Super Action Required),Unknown (no number),—,—
-Abbey Page,(Super Action Required),Unknown (no number),—,—
+(636) 358-4007,(Super Action Required),No,—,—
+(636) 383-3681,(Super Action Required),No,—,—
+(636) 384-9179,(Super Action Required),No,—,—
+(954) 703-1625,(Super Action Required),No,—,—
+Jaamari Mckee,(Super Action Required),Unknown (no number),—,—
+Louise Taylor,(Super Action Required),Unknown (no number),—,—
+Crystal Norman,(Super Action Required),Unknown (no number),—,—
+(314) 448-3641,(Super Action Required),Yes,2,Wed Oct 21 11:04 AM
+(909) 520-7213,(Super Action Required),Yes,1,Mon Oct 19 12:05 PM

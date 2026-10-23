@@ -1,9 +1,73 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
-(650) 463-6868,2026-10-06 11:42 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1791312129.148046
-(650) 463-6868,2026-10-06 11:41 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1791312112.148039
-(314) 412-6846,2026-10-06 8:45 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1791301542.147133
-(402) 429-1385,2026-10-06 7:53 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1791298419.146654
-(636) 367-1634,2026-10-05 10:58 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1791223084.145272
-(314) 445-1534,2026-10-05 7:08 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1791209318.143873
-(636) 383-8090,2026-10-02 11:10 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1790964627.142460
-(518) 637-1388,2026-09-30 1:14 PM,108 — Mercedes Recio,3144391321 / Mercedes Recio,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1790799242.139370
+(877) 261-0250,2026-10-21 11:08 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792606098.185967
+(314) 448-3641,2026-10-21 11:04 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),(Super Action Required),Yes,1792605877.185877
+(314) 448-3641,2026-10-21 11:04 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),(Super Action Required),Yes,1792605840.185841
+(229) 201-6309,2026-10-21 7:59 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792594751.185143
+(346) 321-1421,2026-10-20 2:53 PM,108 — Mercedes Recio,3144391321 / Mercedes Recio,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792533201.184907
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445813.183370
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445809.183364
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445792.183352
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445788.183346
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445785.183340
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445783.183334
+(573) 406-8776,2026-10-19 2:36 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445776.183322
+(573) 406-8776,2026-10-19 2:27 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445261.183238
+(573) 406-8776,2026-10-19 2:27 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445247.183232
+(573) 406-8776,2026-10-19 2:27 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445231.183214
+(573) 406-8776,2026-10-19 2:27 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792445227.183208
+(573) 406-8776,2026-10-19 2:20 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792444836.182985
+(573) 406-8776,2026-10-19 2:13 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792444427.182662
+(573) 406-8776,2026-10-19 1:59 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792443586.182161
+(573) 406-8776,2026-10-19 12:29 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792438172.180978
+(573) 406-8776,2026-10-19 12:22 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792437728.180756
+(573) 406-8776,2026-10-19 12:19 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792437552.180643
+(636) 459-1686,2026-10-19 12:10 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792437052.180352
+(909) 520-7213,2026-10-19 12:05 PM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),(Super Action Required),No,1792436729.180156
+(573) 406-8776,2026-10-19 12:03 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792436602.180035
+(573) 406-8776,2026-10-19 11:33 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792434835.179744
+(832) 421-0447,2026-10-19 11:29 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792434587.179651
+(573) 406-8776,2026-10-19 11:12 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792433539.178945
+(573) 406-8776,2026-10-19 10:48 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792432113.178039
+(573) 406-8776,2026-10-19 10:45 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792431915.177841
+(573) 406-8776,2026-10-19 10:42 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792431723.177599
+(573) 406-8776,2026-10-19 10:40 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792431622.177476
+(573) 406-8776,2026-10-19 10:31 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792431110.176859
+(573) 406-8776,2026-10-19 10:28 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430916.176620
+(573) 406-8776,2026-10-19 10:25 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430732.176388
+(573) 406-8776,2026-10-19 10:22 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430533.176135
+(573) 406-8776,2026-10-19 10:21 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430498.176095
+(573) 406-8776,2026-10-19 10:21 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430485.176077
+(573) 406-8776,2026-10-19 10:21 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430480.176071
+(573) 406-8776,2026-10-19 10:21 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430467.176053
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430452.176031
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430438.176013
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430434.176007
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430426.175994
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430420.175982
+(573) 406-8776,2026-10-19 10:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430412.175970
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430371.175910
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430368.175904
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430365.175898
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430362.175892
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430359.175886
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430352.175880
+(573) 406-8776,2026-10-19 10:19 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792430349.175874
+(573) 406-8776,2026-10-19 10:05 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792429517.174944
+(573) 406-8776,2026-10-19 9:54 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792428887.174342
+(314) 917-1360,2026-10-19 9:28 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792427339.172664
+(409) 587-8176,2026-10-19 7:59 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792421967.170993
+(409) 587-8176,2026-10-19 7:46 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792421162.170939
+(314) 445-1496,2026-10-19 6:57 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792418254.170821
+(406) 788-6475,2026-10-19 5:14 AM,76001 — 76001,3146901210 / Emergency-Main Line,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792412071.170799
+(636) 432-3903,2026-10-17 11:07 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792260471.170601
+(314) 440-6041,2026-10-16 8:01 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792206115.170416
+(314) 440-6041,2026-10-16 1:47 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792183649.169868
+(929) 337-5295,2026-10-16 12:15 PM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792178143.169353
+(314) 379-1772,2026-10-16 12:09 PM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792177791.169331
+(314) 220-0068,2026-10-16 9:59 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792169946.168233
+(636) 751-2106,2026-10-16 9:36 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792168607.168173
+(314) 619-9267,2026-10-16 9:35 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792168536.168101
+(573) 263-5392,2026-10-15 4:32 PM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792107123.167046
+(636) 312-7124,2026-10-15 9:04 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792080242.165200
+(417) 827-0411,2026-10-15 8:06 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1792076793.164957
+(618) 554-5918,2026-10-15 7:30 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1792074652.164795
