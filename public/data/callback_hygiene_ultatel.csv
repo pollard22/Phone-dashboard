@@ -11,15 +11,15 @@ On 24h list but company dialed later than 24h after last miss,4
 
 Action list (23 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
-1,(314) 448-3641,2,Wed Oct 21 11:04 AM,Wed Oct 21 11:04 AM,Yes,(Super Action Required),Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792605877.185877,Already on Super Action Required — confirm callback there first
-2,(909) 520-7213,1,Mon Oct 19 12:05 PM,Mon Oct 19 12:05 PM,Yes,(Super Action Required),Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1792436729.180156,Already on Super Action Required — confirm callback there first
-3,(573) 406-8776,47,Mon Oct 19 2:36 PM,Mon Oct 19 9:54 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792445813.183370,"Review whether Super already messaged; if not, return call"
-4,(409) 587-8176,2,Mon Oct 19 7:59 AM,Mon Oct 19 7:46 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792421967.170993,"Review whether Super already messaged; if not, return call"
-5,(314) 440-6041,2,Fri Oct 16 8:01 PM,Fri Oct 16 1:47 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792206115.170416,"Review whether Super already messaged; if not, return call"
-6,(877) 261-0250,1,Wed Oct 21 11:08 AM,Wed Oct 21 11:08 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792606098.185967,"Review whether Super already messaged; if not, return call"
-7,(229) 201-6309,1,Wed Oct 21 7:59 AM,Wed Oct 21 7:59 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1792594751.185143,Return call — no Ultatel outbound within 24h of last miss
-8,(346) 321-1421,1,Tue Oct 20 2:53 PM,Tue Oct 20 2:53 PM,No,,Other DID / extension path,108 — Mercedes Recio,No,No,No,1792533201.184907,Return call — no Ultatel outbound within 24h of last miss
-9,(636) 459-1686,1,Mon Oct 19 12:10 PM,Mon Oct 19 12:10 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792437052.180352,"Review whether Super already messaged; if not, return call"
+1,(573) 406-8776,47,Mon Oct 19 2:36 PM,Mon Oct 19 9:54 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792445813.183370,"Review whether Super already messaged; if not, return call"
+2,(314) 448-3641,2,Wed Oct 21 11:04 AM,Wed Oct 21 11:04 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792605877.185877,"Review whether Super already messaged; if not, return call"
+3,(409) 587-8176,2,Mon Oct 19 7:59 AM,Mon Oct 19 7:46 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792421967.170993,"Review whether Super already messaged; if not, return call"
+4,(314) 440-6041,2,Fri Oct 16 8:01 PM,Fri Oct 16 1:47 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792206115.170416,"Review whether Super already messaged; if not, return call"
+5,(877) 261-0250,1,Wed Oct 21 11:08 AM,Wed Oct 21 11:08 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792606098.185967,"Review whether Super already messaged; if not, return call"
+6,(229) 201-6309,1,Wed Oct 21 7:59 AM,Wed Oct 21 7:59 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1792594751.185143,Return call — no Ultatel outbound within 24h of last miss
+7,(346) 321-1421,1,Tue Oct 20 2:53 PM,Tue Oct 20 2:53 PM,No,,Other DID / extension path,108 — Mercedes Recio,No,No,No,1792533201.184907,Return call — no Ultatel outbound within 24h of last miss
+8,(636) 459-1686,1,Mon Oct 19 12:10 PM,Mon Oct 19 12:10 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792437052.180352,"Review whether Super already messaged; if not, return call"
+9,(909) 520-7213,1,Mon Oct 19 12:05 PM,Mon Oct 19 12:05 PM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1792436729.180156,Return call — no Ultatel outbound within 24h of last miss
 10,(832) 421-0447,1,Mon Oct 19 11:29 AM,Mon Oct 19 11:29 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792434587.179651,"Review whether Super already messaged; if not, return call"
 11,(314) 917-1360,1,Mon Oct 19 9:28 AM,Mon Oct 19 9:28 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1792427339.172664,Return call — no Ultatel outbound within 24h of last miss
 12,(314) 445-1496,1,Mon Oct 19 6:57 AM,Mon Oct 19 6:57 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1792418254.170821,"Review whether Super already messaged; if not, return call"
@@ -39,7 +39,7 @@ Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open lis
 Note: this is the stricter bar inside the 23. The other 14 were dialed at some other time in the week (too early or >24h late).
 Caller,Missed attempts,Last miss (PT),On Super open list?,Verification
 (573) 406-8776,47,Mon Oct 19 2:36 PM,No,Verified never dialed in this export
-(314) 448-3641,2,Wed Oct 21 11:04 AM,Yes,Verified never dialed in this export
+(314) 448-3641,2,Wed Oct 21 11:04 AM,No,Verified never dialed in this export
 (409) 587-8176,2,Mon Oct 19 7:59 AM,No,Verified never dialed in this export
 (877) 261-0250,1,Wed Oct 21 11:08 AM,No,Verified never dialed in this export
 (832) 421-0447,1,Mon Oct 19 11:29 AM,No,Verified never dialed in this export

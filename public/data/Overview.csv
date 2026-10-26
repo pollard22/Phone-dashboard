@@ -4,17 +4,15 @@ LIVE data from Ultatel Call Details + HireSuper Reporting/Activity. No invented 
 Date windows & sources,,,
 Ultatel Call Details,"Oct 15–21, 2026 (Last 7 Days / export). Source times HQ UTC−5; display PT where converted.",,
 Super Activity open loops,"Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).
-Visible feed span (as displayed in Super): Thu Oct 22 7:24 AM (oldest of 50) to Thu Oct 22 4:44 PM (newest).
-Threads scanned: 50 (Anytime, no filters, no search). Classified by each thread's latest call.
-Open-loop count from this scan: 19 (see super-open-loops-2026-10-23.csv)
-Uncertain (not counted, 10): (864) 382-7310 Steven Dowling; (314) 338-6534; (817) 929-0370; (573) 577-6597; (916) 616-1021; (810) 908-4670 smoke detector (non-emergency); (631) 552-1318; (573) 540-3895; (636) 493-5737; (314) 280-2206.
-Borderline (not counted, 2): (210) 334-9582; (573) 473-7827.
-Excluded (19): 4 accepted+resolved; 5 hang-ups no message; 3 resolved no ring; 6 no summary/data; 1 ordinary listings inquiry.
-Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 16-Oct 23.
-Errors during scan: 429/403/401 rate limits while opening threads; slowed and re-read failed threads.
-Safety: none urgent; smoke-detector troubleshooting at 221 Yachtsman (non-emergency maintenance).
-pull timestamp PT: 2026-10-23 ~05:15 PDT.",,
-Super Reporting,"Last 7 days (Reporting badge: 'Data from Oct 2, 2026'; chart axis Oct 16-Oct 23, Oct 23 partial); Total view; Calls/SMS/Actions tabs",,
+Visible feed span (as displayed in Super): Fri Oct 23 12:01 PM (oldest) to Mon Oct 26 6:35 AM (newest).
+Threads scanned: Anytime, no filters, no search. Classified by each thread's latest call.
+Open-loop count from this scan: 20 (see super-open-loops-2026-10-26.csv; PARTIAL row list - 6 of 20 rows recovered with details after the box Shell outage, the other 14 are counted but not enumerated).
+Uncertain (not counted): 9. Borderline (not counted): 7.
+Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 19-Oct 26 (Oct 26 partial).
+Ultatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login).
+Safety: flood report at 2 Apache unit 2, Sun 10:05 PM, outcome unconfirmed.
+pull timestamp PT: 2026-10-26 morning PDT (scan run earlier today; files written 2026-10-26 after Shell recovered).",,
+Super Reporting,"Last 7 days (Reporting badge: 'Data from Oct 2, 2026'; chart axis Oct 19-Oct 26, Oct 26 partial); Total view; Calls/SMS/Actions tabs",,
 
 Headline metrics (real data only),,,
 Metric,Count,Source / note,
@@ -28,12 +26,12 @@ Unique Ultatel no-callback callers (24h rule),23,Callback hygiene,
 Never company-dialed in export,9,Verification,
 Dialed earlier in week only (not within 24h),10,Verification,
 Dialed later than 24h after last miss,4,Verification,
-Super open loops (Action Required),19,Super Activity,
-Overlap Super × Ultatel no-callback,2,Crosswalk,
-Super-only open loops,14,Crosswalk,
-Super Reporting inbound calls (AI answered),990,HireSuper Reporting this run,
-Super Reporting calls transferred,302,HireSuper Reporting this run,
-Super Reporting actions (automated),1319,HireSuper Reporting this run,
-Super Reporting SMS message sessions,37,HireSuper Reporting this run,
-Super Reporting AI talk time,10h 21m,HireSuper Reporting this run,
-Super Reporting avg call length,39s,HireSuper Reporting this run,
+Super open loops (Action Required),20,Super Activity,
+Overlap Super × Ultatel no-callback,0,Crosswalk,
+Super-only open loops,20,Crosswalk,
+Super Reporting inbound calls (AI answered),961,HireSuper Reporting this run,
+Super Reporting calls transferred,292,HireSuper Reporting this run,
+Super Reporting actions (automated),1301,HireSuper Reporting this run,
+Super Reporting SMS message sessions,57,HireSuper Reporting this run,
+Super Reporting AI talk time,10h 25m,HireSuper Reporting this run,
+Super Reporting avg call length,41s,HireSuper Reporting this run,
