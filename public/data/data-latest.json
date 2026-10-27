@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Oct 15\u201321, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Fri Oct 23 12:01 PM (oldest) to Mon Oct 26 6:35 AM (newest).\nThreads scanned: Anytime, no filters, no search. Classified by each thread's latest call.\nOpen-loop count from this scan: 20 (see super-open-loops-2026-10-26.csv; PARTIAL row list - 6 of 20 rows recovered with details after the box Shell outage, the other 14 are counted but not enumerated).\nUncertain (not counted): 9. Borderline (not counted): 7.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 19-Oct 26 (Oct 26 partial).\nUltatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login).\nSafety: flood report at 2 Apache unit 2, Sun 10:05 PM, outcome unconfirmed.\npull timestamp PT: 2026-10-26 morning PDT (scan run earlier today; files written 2026-10-26 after Shell recovered).",
-    "generated_at": "2026-10-26",
+    "super_open_loops_window": "Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Mon Oct 26 10:43 AM (oldest) to Mon Oct 26 5:35 PM (newest); 50 threads; nothing displayed after Mon 5:35 PM.\nThreads scanned: Anytime, no filters, no search. Classified by each thread's latest call.\nOpen-loop count from this scan: 22 (see super-open-loops-2026-10-27.csv). Uncertain (not counted): 3. Borderline (not counted): 4.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 20-Oct 27 (Oct 27 at 0). Calls card now 'Total Calls' 459 (answered by AI), not comparable 1:1 with prior 'AI-answered' figure.\nUltatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login; MyService signed out Oct 27).\nSafety: water problem (636) 775-5704 Mon 4:07 PM open, no details; smoke alarms room 916 accepted by emergency maintenance; boil-order question accepted by human.\npull timestamp PT: 2026-10-27 ~5:20 AM PDT.",
+    "generated_at": "2026-10-27",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Fri Oct 23 12:01 PM (oldest) to Mon Oct 26 6:35 AM (newest).\nThreads scanned: Anytime, no filters, no search. Classified by each thread's latest call.\nOpen-loop count from this scan: 20 (see super-open-loops-2026-10-26.csv; PARTIAL row list - 6 of 20 rows recovered with details after the box Shell outage, the other 14 are counted but not enumerated).\nUncertain (not counted): 9. Borderline (not counted): 7.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 19-Oct 26 (Oct 26 partial).\nUltatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login).\nSafety: flood report at 2 Apache unit 2, Sun 10:05 PM, outcome unconfirmed.\npull timestamp PT: 2026-10-26 morning PDT (scan run earlier today; files written 2026-10-26 after Shell recovered)."
+      "Super Activity open loops: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).\nVisible feed span (as displayed in Super): Mon Oct 26 10:43 AM (oldest) to Mon Oct 26 5:35 PM (newest); 50 threads; nothing displayed after Mon 5:35 PM.\nThreads scanned: Anytime, no filters, no search. Classified by each thread's latest call.\nOpen-loop count from this scan: 22 (see super-open-loops-2026-10-27.csv). Uncertain (not counted): 3. Borderline (not counted): 4.\nReporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 20-Oct 27 (Oct 27 at 0). Calls card now 'Total Calls' 459 (answered by AI), not comparable 1:1 with prior 'AI-answered' figure.\nUltatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login; MyService signed out Oct 27).\nSafety: water problem (636) 775-5704 Mon 4:07 PM open, no details; smoke alarms room 916 accepted by emergency maintenance; boil-order question accepted by human.\npull timestamp PT: 2026-10-27 ~5:20 AM PDT."
     ],
     "ultatel_source_file": "call-details-2026-10-15_to_10-21.csv",
     "window_slug": "2026-10-15_to_2026-10-21"
@@ -32,15 +32,15 @@
     "never_company_dialed": 9,
     "dialed_earlier_only": 10,
     "dialed_later_after_24h": 4,
-    "super_open_loops": 20,
+    "super_open_loops": 22,
     "super_ultatel_overlap": 0,
-    "super_only_open_loops": 20,
-    "super_ai_inbound": 961,
-    "super_transferred": 292,
-    "super_actions": 1301,
-    "super_sms_sessions": 57,
-    "super_ai_talk": "10h 25m",
-    "super_avg_talk": "41s"
+    "super_only_open_loops": 22,
+    "super_ai_inbound": 459,
+    "super_transferred": 316,
+    "super_actions": 845,
+    "super_sms_sessions": 74,
+    "super_ai_talk": "9h 39m",
+    "super_avg_talk": "1m 16s"
   },
   "miss_by_extension": {
     "601 \u2014 AI Agent Number Ring Group": 62,
