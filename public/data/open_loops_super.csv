@@ -1,34 +1,22 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Definition used: SUPER-OPEN-LOOP-METHOD.md feed-scan (unresolved Action Required after failed ring/transfer or message taken; exclude accepted handoffs, hang-ups w/o message, Resolved=Yes; email-only handoffs w/o ring = BORDERLINE).
-Visible feed span (as displayed in Super): Mon Oct 26 10:43 AM (oldest) to Mon Oct 26 5:35 PM (newest); 50 threads; nothing displayed after Mon 5:35 PM.
-Threads scanned: Anytime, no filters, no search. Classified by each thread's latest call.
-Open-loop count from this scan: 22 (see super-open-loops-2026-10-27.csv). Uncertain (not counted): 3. Borderline (not counted): 4.
-Reporting badge on Calls tab: Data from Oct 2, 2026. Chart x-axis Oct 20-Oct 27 (Oct 27 at 0). Calls card now 'Total Calls' 459 (answered by AI), not comparable 1:1 with prior 'AI-answered' figure.
-Ultatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login; MyService signed out Oct 27).
-Safety: water problem (636) 775-5704 Mon 4:07 PM open, no details; smoke alarms room 916 accepted by emergency maintenance; boil-order question accepted by human.
-pull timestamp PT: 2026-10-27 ~5:20 AM PDT."
-Total: 22 | Overlap with Ultatel no-callback: 0 | Super-only: 22
+"Definition = unresolved Action Required after failed transfer or message-taken. Source: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 17 across Fri Oct 30 10:21 AM–Sun Nov 1 10:19 AM CT (2 uncertain, 4 borderline)."
+Total: 17 | Overlap with Ultatel no-callback: 0 | Super-only: 17
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
-(314) 278-9040,(Super Action Required),No,—,—
-(314) 283-2273,(Super Action Required),No,—,—
-(314) 307-4431,(Super Action Required),No,—,—
-(314) 583-1655,(Super Action Required),No,—,—
-(314) 791-3583,(Super Action Required),No,—,—
-(314) 813-7571,(Super Action Required),No,—,—
-(314) 978-6149,(Super Action Required),No,—,—
-(518) 637-1388,(Super Action Required),No,—,—
-(561) 696-5805,(Super Action Required),No,—,—
-(573) 261-0379,(Super Action Required),No,—,—
-(573) 270-0822,(Super Action Required),No,—,—
-(573) 380-1907,(Super Action Required),No,—,—
-(636) 213-8514,(Super Action Required),No,—,—
-(636) 358-4007,(Super Action Required),No,—,—
-(636) 459-0564,(Super Action Required),No,—,—
-(636) 485-5989,(Super Action Required),No,—,—
-(636) 529-5466,(Super Action Required),No,—,—
-(636) 775-5704,(Super Action Required),No,—,—
-(660) 444-3679,(Super Action Required),No,—,—
-(864) 382-7310,(Super Action Required),No,—,—
-(903) 904-7654,(Super Action Required),No,—,—
-Joseph Pflum,(Super Action Required),Unknown (no number),—,—
+(224) 805-6416,(Super Action Required),No,—,—
+(314) 326-3749,(Super Action Required),No,—,—
+(314) 651-2463,(Super Action Required),No,—,—
+(314) 853-5281,(Super Action Required),No,—,—
+(417) 827-0411,(Super Action Required),No,—,—
+(573) 576-1225,(Super Action Required),No,—,—
+(573) 822-9232,(Super Action Required),No,—,—
+(636) 204-9664,(Super Action Required),No,—,—
+(636) 248-6371,(Super Action Required),No,—,—
+(636) 253-4530,(Super Action Required),No,—,—
+(636) 312-8007,(Super Action Required),No,—,—
+(636) 318-3876,(Super Action Required),No,—,—
+(636) 515-8905,(Super Action Required),No,—,—
+(636) 775-5687,(Super Action Required),No,—,—
+(636) 795-9327,(Super Action Required),No,—,—
+(713) 816-1520,(Super Action Required),No,—,—
+(815) 258-3662,(Super Action Required),No,—,—
