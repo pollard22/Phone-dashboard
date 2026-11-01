@@ -86,6 +86,23 @@ function windowLabel() {
   return state.data?.meta?.window_label || '';
 }
 
+function ultatelCoverageNote(meta) {
+  const label = String(meta?.window_label ?? '').trim();
+  const freshness = String(meta?.data_freshness ?? '').trim();
+  const parts = [];
+  if (label) {
+    const sentence = `Ultatel data covers ${label}`;
+    parts.push(/[.!?]$/.test(sentence) ? sentence : `${sentence}.`);
+  }
+  if (freshness) parts.push(freshness);
+  return parts.join(' ');
+}
+
+function ultatelCoverageNoteHtml(meta) {
+  const note = ultatelCoverageNote(meta);
+  return note ? `<p class="stale-note">${esc(note)}</p>` : '';
+}
+
 function windowShort() {
   const label = windowLabel();
   const cut = label.indexOf(' (');
@@ -301,7 +318,7 @@ function renderOverview() {
     </div>
 
     <h3 style="margin:0 0 0.2rem;font-size:0.85rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;">Ultatel volume</h3>
-    <p class="stale-note">Ultatel data covers Oct 15-21, 2026 (Oct 22 onward pending re-login).</p>
+    ${ultatelCoverageNoteHtml(meta)}
     <div class="kpi-grid">
       ${kpiCard('IN-Bound', kpis.ultatel_inbound, 'Total CDR legs', 'info', 'in-bound')}
       ${kpiCard('IN answered', kpis.ultatel_inbound_answered, '', 'ok', 'in-answered')}
