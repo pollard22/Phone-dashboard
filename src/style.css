@@ -136,7 +136,6 @@ a.phone:hover {
 
 .sub,
 .transfer-note,
-.breakdown,
 .reconcile,
 .showing,
 .fresh,
@@ -215,13 +214,8 @@ a.phone:hover {
   text-underline-offset: 3px;
 }
 
-.breakdown {
-  margin-top: 0.85rem;
-  color: var(--ink);
-  font-size: 1rem;
-}
-
 .reconcile {
+  margin-top: 0.85rem;
   max-width: 68ch;
   font-size: 0.82rem;
   line-height: 1.4;
@@ -351,6 +345,23 @@ table.callers td.empty {
   font-size: 0.82rem;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.tag.ok {
+  background: #f0fdf4;
+  color: var(--green);
+}
+
+.callback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.callback-when {
+  color: var(--muted);
+  font-size: 0.82rem;
 }
 
 .foot {

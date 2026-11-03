@@ -1,7 +1,6 @@
 import {
   answeredSplit,
-  callbackBreakdown,
-  callbackText,
+  callbackStatus,
   callerName,
   definitionEntries,
   displayValue,
@@ -39,18 +38,16 @@ function phoneHtml(row) {
 }
 
 function callbackHtml(row) {
-  const text = callbackText(row);
-  if (text === 'Never called' || text === 'None yet') return `<span class="tag">${esc(text)}</span>`;
-  return esc(text);
+  const { status, when } = callbackStatus(row);
+  const tone = status === 'Called back' ? 'ok' : '';
+  const tag = `<span class="tag ${tone}">${esc(status)}</span>`;
+  if (!when) return tag;
+  return `<div class="callback">${tag}<span class="callback-when">${esc(when)}</span></div>`;
 }
 
 function clockHtml(row) {
   const text = sinceMiss(row);
-  if (!text) return '';
-  if (row?.under_24h_at_export_end === true || /^under 24h$/i.test(text)) {
-    return `<span class="tag">${esc(text)}</span>`;
-  }
-  return esc(text);
+  return text ? esc(text) : '';
 }
 
 function statCard({ label, value, sub, extra = '', tone = '' }) {
@@ -172,7 +169,6 @@ export function renderPage(data, state = {}) {
   const showType = hasMissedType(rows);
   const windowLabel = windowHeading(summary);
   const split = answeredSplit(summary);
-  const breakdown = callbackBreakdown(summary);
   const reconcile = reconcileText(summary);
   const fresh = freshnessText(data);
   const shownLabel = group
@@ -207,7 +203,6 @@ export function renderPage(data, state = {}) {
             <span class="cue">${open ? 'Hide the list' : 'See callers and call groups'}</span>
           </button>
         </h2>
-        ${breakdown ? `<p class="breakdown">${esc(breakdown)}</p>` : ''}
         ${reconcile ? `<p class="reconcile">${esc(reconcile)}</p>` : ''}
         <div id="callback-detail" class="detail" ${open ? '' : 'hidden'}>
           ${groupChips(summary, rows, data.not_called_back_by_group, group)}

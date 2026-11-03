@@ -16,20 +16,15 @@ export function answeredSplit(summary) {
   return `Super ${summary.answered_by_super} · Staff ${summary.answered_by_staff}`;
 }
 
-export function callbackBreakdown(summary) {
-  if (!summary) return '';
-  const parts = [];
-  if (isPresent(summary.never_called)) parts.push(`${summary.never_called} never called`);
-  if (isPresent(summary.called_back_late)) parts.push(`${summary.called_back_late} called back late`);
-  if (isPresent(summary.not_called_back_under_24h)) {
-    parts.push(`${summary.not_called_back_under_24h} still within 24h`);
-  }
-  return parts.join(' · ');
+/** True when copy is about a 24-hour callback window. The page does not show that rule. */
+export function mentionsCallbackWindow(text) {
+  return /called back late|under\s*24|(?:^|[^0-9])24\s*-?\s*h(?:ours?)?(?![a-z])/i.test(String(text ?? ''));
 }
 
 export function reconcileText(summary) {
   const text = summary?.definitions?.reconcile;
-  return isPresent(text) ? String(text).trim() : '';
+  if (!isPresent(text) || mentionsCallbackWindow(text)) return '';
+  return String(text).trim();
 }
 
 /**
@@ -81,19 +76,22 @@ export function callerName(row) {
   return String(row?.caller_name ?? '').trim();
 }
 
-export function callbackText(row) {
+/**
+ * Called back when any company outbound happened after the last miss.
+ * Otherwise the caller has not been called back yet.
+ */
+export function callbackStatus(row) {
   const when = String(row?.first_outbound_after_miss_ct ?? '').trim();
-  if (when) return when;
-  const ever = row?.ever_called_in_window;
-  if (ever === false || String(ever).trim().toLowerCase() === 'false') return 'Never called';
-  return 'None yet';
+  if (when) return { status: 'Called back', when: mentionsCallbackWindow(when) ? '' : when };
+  return { status: 'Not called back yet', when: '' };
 }
 
 export function sinceMiss(row) {
   const clock = String(row?.clock ?? '').trim();
-  if (clock) return clock;
+  if (clock && !mentionsCallbackWindow(clock)) return clock;
   if (!isPresent(row?.hours_since_last_miss)) return '';
-  return String(row.hours_since_last_miss);
+  const hours = String(row.hours_since_last_miss);
+  return mentionsCallbackWindow(hours) ? '' : `${hours}h`;
 }
 
 const DEFINITION_TERMS = {
@@ -101,9 +99,6 @@ const DEFINITION_TERMS = {
   answered_calls: 'Calls answered',
   unanswered_callers: 'Callers not answered',
   not_called_back: 'Not called back yet',
-  never_called: 'Never called',
-  called_back_late: 'Called back late',
-  not_called_back_under_24h: 'Still within 24 hours',
   reconcile: 'How these numbers fit',
   transfer_failed_calls: 'Transfers from Super not answered',
   transfer_failed_callers: 'Callers whose Super transfer was not answered',
@@ -115,15 +110,18 @@ function humanize(key) {
   return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
+const HIDDEN_DEFINITION_KEYS = new Set(['never_called', 'called_back_late', 'not_called_back_under_24h']);
+
 export function definitionEntries(definitions) {
   if (!definitions || typeof definitions !== 'object' || Array.isArray(definitions)) return [];
   return Object.entries(definitions)
-    .filter(([, text]) => isPresent(text))
+    .filter(([key, text]) => isPresent(text) && !HIDDEN_DEFINITION_KEYS.has(key))
     .map(([key, text]) => ({
       key,
       term: DEFINITION_TERMS[key] || humanize(key),
       text: String(text).trim(),
-    }));
+    }))
+    .filter((entry) => !mentionsCallbackWindow(entry.term) && !mentionsCallbackWindow(entry.text));
 }
 
 export function freshnessText(data) {
@@ -131,9 +129,9 @@ export function freshnessText(data) {
   const generated = String(data?.meta?.generated_at ?? '').trim();
   const end = String(data?.summary?.export_end_ct ?? '').trim();
   const source = String(data?.summary?.source ?? '').trim();
-  if (generated) parts.push(`Prepared ${generated}.`);
-  if (end) parts.push(`Export through ${end}.`);
-  if (source) parts.push(source.endsWith('.') ? source : `${source}.`);
+  if (generated && !mentionsCallbackWindow(generated)) parts.push(`Prepared ${generated}.`);
+  if (end && !mentionsCallbackWindow(end)) parts.push(`Export through ${end}.`);
+  if (source && !mentionsCallbackWindow(source)) parts.push(source.endsWith('.') ? source : `${source}.`);
   return parts.join(' ');
 }
 

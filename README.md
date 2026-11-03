@@ -15,12 +15,13 @@ The page reads `public/data/latest.json` only.
 | Window in the header | `summary.window_label` (Central Time) |
 | Calls received, calls answered, callers not answered | `summary.total_calls`, `summary.answered_calls`, `summary.unanswered_callers` |
 | Answered split, when both fields exist | `summary.answered_by_super`, `summary.answered_by_staff` |
-| Not called back yet, plus the short breakdown | `summary.not_called_back`, `summary.never_called`, `summary.called_back_late`, `summary.not_called_back_under_24h` |
-| How the counts relate | `summary.definitions.reconcile` |
+| Not called back yet | `summary.not_called_back` |
+| Callback on each row | Called back when `first_outbound_after_miss_ct` is set, otherwise Not called back yet |
+| How the counts relate | `summary.definitions.reconcile`, when that sentence does not describe a time window |
 | Call-group filters and the caller table | `not_called_back_by_group`, `not_called_back[]` |
 | Footer definitions and freshness | `summary.definitions`, `summary.export_end_ct`, `summary.source`, `meta.generated_at` |
 
-Nothing else in the file is shown. Older CSV packs stay in `public/data/` so existing links do not 404.
+Nothing else in the file is shown. A definition is skipped when its text is about a 24-hour callback window. Older CSV packs stay in `public/data/` so existing links do not 404.
 
 Optional fields render only when this export includes them:
 

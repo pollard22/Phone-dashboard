@@ -2,9 +2,11 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { renderPage } from '../src/render.js';
 import {
-  callbackText,
+  callbackStatus,
   filterRows,
   hasMissedType,
+  mentionsCallbackWindow,
+  sinceMiss,
   transferFailedGroups,
   transferFailedLine,
 } from '../src/format.js';
@@ -40,12 +42,18 @@ assert.equal(transferFailedLine(summary), '');
 assert.deepEqual(transferFailedGroups(data), []);
 assert.equal(hasMissedType(data.not_called_back), false);
 
-const never = data.not_called_back.filter((row) => callbackText(row) === 'Never called');
-const late = data.not_called_back.filter((row) => callbackText(row) !== 'Never called' && callbackText(row) !== 'None yet');
-const noneYet = data.not_called_back.filter((row) => callbackText(row) === 'None yet');
-assert.equal(never.length, summary.never_called);
-assert.equal(late.length, summary.called_back_late);
-assert.equal(noneYet.length, summary.not_called_back - summary.never_called - summary.called_back_late);
+const calledBack = data.not_called_back.filter((row) => callbackStatus(row).status === 'Called back');
+const notYet = data.not_called_back.filter((row) => callbackStatus(row).status === 'Not called back yet');
+assert.equal(calledBack.length, 1);
+assert.equal(calledBack[0].phone, '(636) 221-9737');
+assert.equal(callbackStatus(calledBack[0]).when, 'Fri Oct 30, 2026 12:12 PM CT');
+assert.equal(notYet.length, 9);
+for (const row of data.not_called_back) {
+  assert.equal(mentionsCallbackWindow(sinceMiss(row)), false, row.phone);
+  assert.equal(mentionsCallbackWindow(callbackStatus(row).status), false);
+}
+assert.equal(sinceMiss(data.not_called_back.find((row) => row.phone === '(270) 970-4662')), '10.5h');
+assert.equal(sinceMiss(data.not_called_back.find((row) => row.phone === '(917) 284-5909')), '13.7h');
 
 const closed = renderPage(data, { open: false, group: '' });
 assert.match(closed, /Oct 27–Nov 2, 2026 \(Central Time\)/);
@@ -55,11 +63,11 @@ assert.match(closed, /Super 367 · Staff 84/);
 assert.match(closed, /Callers not answered[\s\S]*?>11</);
 assert.match(closed, /People, not calls/);
 assert.match(closed, /Not called back yet[\s\S]*?>10</);
-assert.match(closed, /5 never called · 1 called back late · 2 still within 24h/);
 assert.match(closed, /total_calls = answered_calls \+ missed_calls/);
 assert.match(closed, /hidden/);
 assert.doesNotMatch(closed, /transfer from Super/);
 assert.doesNotMatch(closed, /Open loops|Ultatel stale|Cleaned|IN no answer|Needs human help|AI talk time/i);
+assert.equal(mentionsCallbackWindow(closed), false, 'closed page');
 
 const open = renderPage(data, { open: true, group: '' });
 for (const row of data.not_called_back) {
@@ -67,9 +75,11 @@ for (const row of data.not_called_back) {
   assert.match(open, new RegExp(row.call_group.replace(/[()]/g, '\\$&')));
 }
 assert.doesNotMatch(open, /What happened/);
+assert.match(open, /Called back/);
 assert.match(open, /Fri Oct 30, 2026 12:12 PM CT/);
-assert.match(open, /Never called/);
-assert.match(open, /None yet/);
+assert.match(open, /Not called back yet/);
+assert.equal(mentionsCallbackWindow(open), false, 'open page');
+assert.doesNotMatch(open, /Never called|None yet/);
 
 const leasing = renderPage(data, { open: true, group: 'Leasing' });
 assert.match(leasing, /5 callers in Leasing/);
@@ -89,6 +99,7 @@ assert.match(transferHtml, /class="chip static">Test Group <strong>9<\/strong>/)
 assert.match(transferHtml, /What happened/);
 assert.match(transferHtml, /Super transfer not answered/);
 assert.match(transferHtml, /Rang, not answered/);
+assert.equal(mentionsCallbackWindow(transferHtml), false);
 assert.equal(transferFailedLine({ transfer_failed_callers: 4 }), 'incl. 4 whose transfer from Super went unanswered');
 assert.equal(transferFailedLine({ transfer_failed_calls: 6 }), 'incl. 6 calls whose transfer from Super went unanswered');
 assert.equal(transferFailedLine({ transfer_failed_callers: 0, transfer_failed_calls: 0 }), 'incl. 0 whose transfer from Super went unanswered (0 calls)');
