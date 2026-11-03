@@ -19,7 +19,7 @@ Term,Meaning,
 Inbound NO ANSWER,Ultatel Call Details Outcome = NO ANSWER on an IN-Bound call.,
 Callback / no-callback,"If any OUT-Bound to that caller’s number occurs within 24 hours after the miss, it counts as called back. Otherwise no-callback.",
 Unique caller (Action list),One row per 10-digit external number with ≥1 no-callback miss.,
-Times (PT),Displayed in America/Los_Angeles. Source timestamps are Ultatel HQ TimeZone (UTC−5).,
+Times (PT),Legacy columns labelled (PT) are America/Los_Angeles. Source Ultatel Call Date is America/Chicago wall-clock (CDT/CST). New summary + not_called_back use CT.,
 
 24h callback join method,,
 "For each inbound NO ANSWER (after excluding company/self From numbers), scan the same Ultatel Call Details export for ANY company OUT-Bound to that caller’s 10-digit number within 24 hours after the miss. If none → no-callback.",,

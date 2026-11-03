@@ -34,9 +34,13 @@ cp "$SRC"/Missed_ownership_*.csv "$SRC"/open_loops_super.csv \
 cd "$SRC/site" && npm run build
 ```
 
+## What the site displays
+
+The live page reads `latest.json`: `summary`, `not_called_back`, `called_back` when present, and `not_called_back_by_group`. It shows what happened (`missed_type`) and a compact Super-transfers section. It does not show a “never called this week” line or a 24-hour split. Legacy CSVs stay in `public/data/` and are not shown.
+
 ## Drill-down contract
 
-The site filters these files in the browser. Do not add placeholder rows.
+These files are still produced for the pack. The owner page does not filter them. Do not add placeholder rows.
 
 - Unique no-callback and never-dialed lists come from `callback_hygiene_ultatel.csv` (Action list, then Never dialed).
 - Dialed-earlier-only and dialed-later-than-24h are verification counts only, unless a future export adds a per-caller bucket column. The UI will not guess the split. Callers on the action list who are absent from never-dialed are shown only as that untagged union.
@@ -45,7 +49,7 @@ The site filters these files in the browser. Do not add placeholder rows.
 - Open loops, overlap, and Super-only are `open_loops_super.csv` filtered by `In Ultatel no-callback list?`.
 - Excluded From numbers stay summary rows in `exclusions_method.csv` (event count, not each leg).
 
-`node scripts/check-drills.mjs` checks those row counts against `latest.json` after a data refresh.
+`node scripts/check-drills.mjs` checks the owner page against `summary`, `not_called_back`, and `not_called_back_by_group`.
 
 ## Caveats to keep in meta
 
