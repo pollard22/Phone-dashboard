@@ -13,9 +13,7 @@ import {
   hasMissedType,
   missedTypeEntries,
   showCalledBack,
-  transferFailedGroups,
   superCallView,
-  unattributedNote,
   voicemailNote,
   waitingText,
   windowHeading,
@@ -175,31 +173,6 @@ function definitionsHtml(summary) {
     </div>`;
 }
 
-function transferSection(data) {
-  const count = data?.summary?.transfer_failed_calls;
-  const groups = transferFailedGroups(data);
-  const note = unattributedNote(data);
-  if (!isPresentSafe(count) && !groups.length && !note) return '';
-  const chips = groups.length
-    ? `<div class="chips" aria-label="Super transfers nobody picked up, by call group">${groups
-        .map(([name, value]) => `<span class="chip static">${esc(name)} <strong>${esc(value)}</strong></span>`)
-        .join('')}</div>`
-    : '';
-  return `
-    <section class="transfers" aria-labelledby="transfers-title">
-      <div class="transfers-head">
-        <h2 id="transfers-title">Super transfers nobody picked up</h2>
-        ${isPresentSafe(count) ? `<p class="transfers-num">${esc(count)}</p>` : ''}
-      </div>
-      ${chips}
-      ${note ? `<p class="sub">${esc(note)}</p>` : ''}
-    </section>`;
-}
-
-function isPresentSafe(value) {
-  return value !== undefined && value !== null && String(value).trim() !== '';
-}
-
 /**
  * Owner page. Numbers come from latest.json summary, not_called_back, called_back, and group counts.
  */
@@ -283,8 +256,6 @@ export function renderPage(data, state = {}) {
           extra: typeChips(missedTypeEntries(data), list === 'missed' ? type : ''),
         })}
       </section>
-
-      ${transferSection(data)}
 
       <section class="followup" id="callback-detail" aria-labelledby="list-title">
         <h2 id="list-title" class="sr-only">${list === 'called' ? 'Called back' : 'Not called back yet'}</h2>

@@ -6,8 +6,6 @@ import {
   mentionsCallbackWindow,
   sinceMiss,
   superCallView,
-  transferFailedGroups,
-  unattributedNote,
 } from '../src/format.js';
 
 const root = new URL('..', import.meta.url);
@@ -42,8 +40,6 @@ for (const [type, count] of Object.entries(summary.not_called_back_by_missed_typ
 }
 assert.equal(filterRows(data.not_called_back, 'Leasing', 'Went to voicemail').length > 0, true);
 
-assert.deepEqual(transferFailedGroups(data)[0], ['Leasing', 102]);
-assert.match(unattributedNote(data), /26 attempts couldn't be tied to a caller/);
 for (const row of data.not_called_back) {
   assert.equal(mentionsCallbackWindow(sinceMiss(row)), false, row.phone);
 }
@@ -76,9 +72,8 @@ assert.match(html, /before the Reporting export window/);
 assert.equal((html.match(/class="super-link-note"/g) || []).length, 20);
 assert.equal(superCallView({ super_link: 'javascript:alert(1)', super_link_status: 'linked' }).kind, 'empty');
 assert.match(html, /Brenden Walker/);
-assert.match(html, /Super transfers nobody picked up/);
-assert.match(html, />117</);
-assert.match(html, /26 attempts couldn't be tied to a caller/);
+assert.doesNotMatch(html, /Super transfers nobody picked up/);
+assert.doesNotMatch(html, /couldn't be tied to a caller/);
 assert.equal(mentionsCallbackWindow(html), false);
 assert.doesNotMatch(html, /Open loops|Ultatel stale|Cleaned|IN no answer|Needs human help|AI talk time/i);
 assert.equal((html.match(/<tr>/g) || []).length, 53);
