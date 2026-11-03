@@ -19,6 +19,7 @@ The page reads `public/data/latest.json` only.
 | Called-back caller list | `called_back[]`, with `callback_ct` |
 | What happened | `summary.not_called_back_by_missed_type` and `missed_type` |
 | Call-group filters and the caller table | `not_called_back_by_group`, `not_called_back[]` |
+| Super call link on a row | `super_link`, `super_summary_title`, `super_summary_text`, `super_link_status` |
 | Super transfers nobody picked up | `summary.transfer_failed_calls` and the per-group transfer counts |
 | Footer definitions and freshness | `summary.definitions`, `summary.export_end_ct`, `summary.source`, `meta.generated_at` |
 

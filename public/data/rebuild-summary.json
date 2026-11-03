@@ -26,15 +26,15 @@
     "super_avg_talk": "1m 2s"
   },
   "paths": {
-    "json": "web-dashboard/deploy-pack-2026-11-03e/public/data/data-latest.json",
-    "a": "web-dashboard/deploy-pack-2026-11-03e/public/data/Missed_ownership_A_no_callback.csv",
-    "b": "web-dashboard/deploy-pack-2026-11-03e/public/data/Missed_ownership_B_called_back.csv",
-    "callback": "web-dashboard/deploy-pack-2026-11-03e/public/data/callback_hygiene_ultatel.csv",
-    "open_loops": "web-dashboard/deploy-pack-2026-11-03e/public/data/open_loops_super.csv",
-    "exclusions": "web-dashboard/deploy-pack-2026-11-03e/public/data/exclusions_method.csv",
-    "overview": "web-dashboard/deploy-pack-2026-11-03e/public/data/Overview.csv",
-    "not_called_back": "web-dashboard/deploy-pack-2026-11-03e/public/data/not_called_back.csv",
-    "called_back": "web-dashboard/deploy-pack-2026-11-03e/public/data/called_back.csv"
+    "json": "web-dashboard/deploy-pack-2026-11-03f/public/data/data-latest.json",
+    "a": "web-dashboard/deploy-pack-2026-11-03f/public/data/Missed_ownership_A_no_callback.csv",
+    "b": "web-dashboard/deploy-pack-2026-11-03f/public/data/Missed_ownership_B_called_back.csv",
+    "callback": "web-dashboard/deploy-pack-2026-11-03f/public/data/callback_hygiene_ultatel.csv",
+    "open_loops": "web-dashboard/deploy-pack-2026-11-03f/public/data/open_loops_super.csv",
+    "exclusions": "web-dashboard/deploy-pack-2026-11-03f/public/data/exclusions_method.csv",
+    "overview": "web-dashboard/deploy-pack-2026-11-03f/public/data/Overview.csv",
+    "not_called_back": "web-dashboard/deploy-pack-2026-11-03f/public/data/not_called_back.csv",
+    "called_back": "web-dashboard/deploy-pack-2026-11-03f/public/data/called_back.csv"
   },
   "summary": {
     "window_label": "Oct 27\u2013Nov 2, 2026 (Central Time)",
@@ -97,7 +97,22 @@
       "anonymous_calls_in_total": 1,
       "note": "Excluded legs are not in total_calls; Super's transfer legs are used only to find failed transfers. Anonymous calls are counted as calls but can't be counted as callers."
     },
-    "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible."
+    "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
+    "super_links": {
+      "source_file": "/workspace/ultatel/super-call-links-latest.csv",
+      "rows_in_file": 52,
+      "not_called_back_with_link": 21,
+      "called_back_with_link": 0,
+      "not_called_back_by_status": {
+        "not found": 26,
+        "linked": 21,
+        "no Super call": 5
+      },
+      "called_back_by_status": {
+        "(no row)": 22
+      },
+      "match_rule": "phone digits + last missed call (CT) within \u00b15 minutes"
+    }
   },
   "not_called_back_by_group": {
     "Leasing": 39,

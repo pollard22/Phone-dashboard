@@ -170,6 +170,28 @@ export function waitingText(row) {
   return mentionsNeverCalled(clock) ? '' : clock;
 }
 
+export function safeHttpUrl(value) {
+  const raw = String(value ?? '').trim();
+  if (!raw) return '';
+  try {
+    const url = new URL(raw);
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return '';
+    return url.href;
+  } catch {
+    return '';
+  }
+}
+
+/** Link, direct-line note, or empty. Empty covers "not found" and a blank status. */
+export function superCallView(row) {
+  const link = safeHttpUrl(row?.super_link);
+  const title = String(row?.super_summary_title ?? '').trim();
+  const text = String(row?.super_summary_text ?? '').trim();
+  if (link) return { kind: 'link', link, title, text };
+  if (String(row?.super_link_status ?? '').trim() === 'no Super call') return { kind: 'direct' };
+  return { kind: 'empty' };
+}
+
 export function calledBackWhen(row) {
   const when = String(row?.callback_ct ?? row?.first_outbound_after_miss_ct ?? '').trim();
   if (!when || mentionsCallbackWindow(when)) return '';

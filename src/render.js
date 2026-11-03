@@ -14,6 +14,7 @@ import {
   missedTypeEntries,
   showCalledBack,
   transferFailedGroups,
+  superCallView,
   unattributedNote,
   voicemailNote,
   waitingText,
@@ -98,8 +99,24 @@ function typeChips(entries, selected) {
     </div>`;
 }
 
-function tableHtml(rows, { showType, showWaiting, showCallback }) {
-  const columns = 4 + (showType ? 1 : 0) + (showWaiting ? 1 : 0) + (showCallback ? 1 : 0);
+function superCell(row) {
+  const view = superCallView(row);
+  if (view.kind === 'link') {
+    const tip = view.title || 'View this call in Super';
+    const title = view.title ? `<span class="super-title">${esc(view.title)}</span>` : '';
+    const more = view.text
+      ? `<details class="super-details"><summary>Summary</summary><p>${esc(view.text)}</p></details>`
+      : '';
+    return `<td class="super-cell"><a class="super-link" href="${esc(view.link)}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">View call ↗</a>${title}${more}</td>`;
+  }
+  if (view.kind === 'direct') {
+    return `<td class="super-cell"><span class="super-muted">Direct line — no Super call</span></td>`;
+  }
+  return `<td class="super-cell"><span class="super-muted">—</span></td>`;
+}
+
+function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {
+  const columns = 4 + (showType ? 1 : 0) + (showWaiting ? 1 : 0) + (showCallback ? 1 : 0) + (showSuper ? 1 : 0);
   if (!rows.length) {
     return `<div class="table-scroll"><table class="callers"><tbody><tr><td class="empty" colspan="${columns}">No callers match.</td></tr></tbody></table></div>`;
   }
@@ -112,12 +129,14 @@ function tableHtml(rows, { showType, showWaiting, showCallback }) {
       ${showType ? '<th scope="col">What happened</th>' : ''}
       ${showWaiting ? '<th scope="col">Waiting</th>' : ''}
       ${showCallback ? '<th scope="col">Called back</th>' : ''}
+      ${showSuper ? '<th scope="col">Super call</th>' : ''}
     </tr>`;
   const body = rows
     .map((row) => {
       const typeCell = showType ? `<td>${esc(row?.missed_type ?? '')}</td>` : '';
       const waitCell = showWaiting ? `<td>${esc(waitingText(row))}</td>` : '';
       const backCell = showCallback ? `<td>${esc(calledBackWhen(row))}</td>` : '';
+      const superHtml = showSuper ? superCell(row) : '';
       return `<tr>
         <td>${phoneHtml(row)}</td>
         <td>${esc(row?.last_missed_ct ?? '')}</td>
@@ -126,6 +145,7 @@ function tableHtml(rows, { showType, showWaiting, showCallback }) {
         ${typeCell}
         ${waitCell}
         ${backCell}
+        ${superHtml}
       </tr>`;
     })
     .join('');
@@ -194,6 +214,7 @@ export function renderPage(data, state = {}) {
   const showType = hasMissedType(list === 'called' ? backRows : missedRows) || missedTypeEntries(data).length > 0;
   const showWaiting = activeRows.some((row) => String(row?.waiting ?? '').trim());
   const showCallback = list === 'called';
+  const showSuper = activeRows.some((row) => superCallView(row).kind !== 'empty');
   const windowLabel = windowHeading(summary);
   const fresh = freshnessText(data);
   const calledValue = calledBackValue(data);
@@ -265,7 +286,8 @@ export function renderPage(data, state = {}) {
         ${tabs}
         ${groupChips(groups, groupTotal, group)}
         <p class="showing">${esc(shownLabel)}</p>
-        ${tableHtml(shown, { showType, showWaiting, showCallback })}
+        ${showSuper ? `<p class="super-note">Super call links open in Super and need you to be signed in.</p>` : ''}
+        ${tableHtml(shown, { showType, showWaiting, showCallback, showSuper })}
       </section>
 
       <footer class="foot">

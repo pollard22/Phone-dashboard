@@ -374,9 +374,49 @@ button.chip[aria-pressed="true"] {
   background: #fff;
 }
 
+.super-note {
+  margin: 0.15rem 0 0.55rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.super-cell {
+  min-width: 11rem;
+}
+
+.super-link {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.super-title,
+.super-muted {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--faint);
+  font-size: 0.82rem;
+}
+
+.super-details {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.super-details summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.super-details p {
+  margin: 0.35rem 0 0;
+  max-width: 28rem;
+  color: var(--ink);
+}
+
 table.callers {
   width: 100%;
-  min-width: 760px;
+  min-width: 860px;
   border-collapse: collapse;
   font-size: 0.95rem;
 }

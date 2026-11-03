@@ -283,7 +283,22 @@
       "anonymous_calls_in_total": 1,
       "note": "Excluded legs are not in total_calls; Super's transfer legs are used only to find failed transfers. Anonymous calls are counted as calls but can't be counted as callers."
     },
-    "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible."
+    "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
+    "super_links": {
+      "source_file": "/workspace/ultatel/super-call-links-latest.csv",
+      "rows_in_file": 52,
+      "not_called_back_with_link": 21,
+      "called_back_with_link": 0,
+      "not_called_back_by_status": {
+        "not found": 26,
+        "linked": 21,
+        "no Super call": 5
+      },
+      "called_back_by_status": {
+        "(no row)": 22
+      },
+      "match_rule": "phone digits + last missed call (CT) within \u00b15 minutes"
+    }
   },
   "not_called_back": [
     {
@@ -313,7 +328,11 @@
       "last_call_id": "1793656084.204367",
       "transfer_leg_call_ids": [
         "1793656118.204371"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmovizf4o048khmsqsnys1i80&messageId=cmvzskdt22oue7u7um5xhlc3l&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Transfer to front desk",
+      "super_summary_text": "Brenden Walker called and asked for the front desk at Pollard Properties, but the assistant said the team is currently unavailable and asked the caller to leave a message with their name and reason for calling.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(615) 648-1504",
@@ -342,7 +361,11 @@
       "last_call_id": "1793645848.203816",
       "transfer_leg_call_ids": [
         "1793645881.203822"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtrgtgay0cjc8kv2sy1fmqbn&messageId=cmvzmh05j2ad87u7ump0k45kr&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing office call connection",
+      "super_summary_text": "A caller reached the leasing office and asked for connection, but the assistant said leasing was unavailable and requested the caller leave their name and call back number. The call was not completed because leasing was busy.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(573) 908-9202",
@@ -371,7 +394,11 @@
       "last_call_id": "1793294795.200543",
       "transfer_leg_call_ids": [
         "1793294834.200547"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvtoe7a20732104zaj9fcf3b&messageId=cmvttgpuf0h8s104z3r22giez&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Removing name from lease",
+      "super_summary_text": "A caller asked to remove their name from a lease. The assistant routed them to the leasing team to handle the request.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(573) 225-0686",
@@ -401,7 +428,11 @@
       "transfer_leg_call_ids": [
         "1793658433.204516",
         "1793658489.204518"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmo3ene1k0wuts5ke84if1g6e&messageId=cmvzu03o82ri77u7uil6mwx66&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Interest in available homes",
+      "super_summary_text": "Melanie Earlbacher called about a text she received saying 2-bedroom homes are available starting at $1,350 per month and requested a callback at 573-225-0686. The call went to a message due to the team being unavailable, so follow-up is required.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(573) 899-3385",
@@ -430,7 +461,11 @@
       "last_call_id": "1793658227.204493",
       "transfer_leg_call_ids": [
         "1793658259.204497"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvztnfwt2qpz7u7ujbwnohrg&messageId=cmvztucx02r4t7u7uitv9nu84&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing inquiry call",
+      "super_summary_text": "A caller asked for leasing support, but the leasing team was unavailable and the caller was instructed to leave a message with their name and call back number.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(314) 303-5300",
@@ -459,7 +494,11 @@
       "last_call_id": "1793655626.204341",
       "transfer_leg_call_ids": [
         "1793655686.204348"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmlbj1qdd02h7at6xbo3n5akc&messageId=cmvzsbh1f2ocw7u7ujuocq78j&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Apartment unit upgrade inquiry",
+      "super_summary_text": "Santiago Sabala called Pollard Properties to discuss upgrading to a new apartment unit, and the assistant attempted to transfer the call to the leasing team. The leasing team was unavailable, so Santiago left a message (earlier 3:38 PM call is a separate call).",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 462-0934",
@@ -487,7 +526,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793644178.203711",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "no Super call"
     },
     {
       "phone": "(314) 486-1315",
@@ -514,7 +557,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793308926.201414",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(573) 941-9941",
@@ -543,7 +590,11 @@
       "last_call_id": "1793286504.199317",
       "transfer_leg_call_ids": [
         "1793286541.199321"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmt215aij0vxiuabgfbpnlkn6&messageId=cmvtoj41507gd104zj40m2rui&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Returning apartment keys",
+      "super_summary_text": "A caller requested to return apartment keys, and the assistant said they would route the request to the front desk. The caller was unable to reach the team at that moment and was asked to leave a message.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(314) 295-4217",
@@ -572,7 +623,11 @@
       "last_call_id": "1793128470.195888",
       "transfer_leg_call_ids": [
         "1793128524.195899"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(631) 552-1318",
@@ -600,7 +655,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793124994.195429",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 443-9354",
@@ -627,7 +686,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793121419.194942",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 358-4007",
@@ -656,7 +719,11 @@
       "last_call_id": "1793660855.204592",
       "transfer_leg_call_ids": [
         "1793660888.204596"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmsxu3at51qrp46b0lkzpoddv&messageId=cmvzvf9k92tuk7u7ugn3f1on0&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Assistance with admin fee payment",
+      "super_summary_text": "Maya G. Roy called with a question about her admin fee and where to go to pay it, requesting a callback at 636-358-4007.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(314) 308-8971",
@@ -685,7 +752,11 @@
       "last_call_id": "1793659875.204562",
       "transfer_leg_call_ids": [
         "1793659928.204566"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtqlbsec02mr8kv2dom00ow8&messageId=cmvzuuhep2sq77u7uklgz68sq&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Tour scheduling for property visit",
+      "super_summary_text": "A caller requested to schedule a tour for 58 Santo Domingo Drive. The leasing team was unavailable, so the assistant asked the caller to leave their name and call back number.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 358-3285",
@@ -714,7 +785,11 @@
       "last_call_id": "1793654832.204299",
       "transfer_leg_call_ids": [
         "1793654884.204303"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmukdlzy53hi2ltrnkp62yltn&messageId=cmvzrufjt2mzm7u7ujyrp3ou9&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing inquiry callback request",
+      "super_summary_text": "A caller asked about setting up electric service for their apartment (leasing-related) and gave callback number 626-358-4285 (as stated in summary). Leasing was unavailable.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 288-3358",
@@ -744,7 +819,11 @@
       "transfer_leg_call_ids": [
         "1793650416.204143",
         "1793650445.204146"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmt36ap8w1eg7uabg4x95j6kl&messageId=cmvzp6sq52hpy7u7ur2ymlphy&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Noise complaint inquiry",
+      "super_summary_text": "Brendan Mercurio called Pollard Properties to speak about a noise complaint but was told the team is currently unavailable and to leave a message with his name and reason for calling.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(314) 280-3848",
@@ -773,7 +852,11 @@
       "last_call_id": "1793649986.204116",
       "transfer_leg_call_ids": [
         "1793650023.204120"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmulg28t10gcdo0ie5eak9r8g&messageId=cmvzoy3ly2h4t7u7ucz6b9a28&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Questions about Obligo services",
+      "super_summary_text": "Amanda Mitchell called with questions about Obligo and provided her phone number (314-280-3848). The team was unavailable, so she left a message and no immediate resolution occurred.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 775-5687",
@@ -802,7 +885,11 @@
       "last_call_id": "1793648809.204062",
       "transfer_leg_call_ids": [
         "1793648858.204075"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmthq8d591nipcqbh496i5u0q&messageId=cmvzo8rxn2et07u7ueflvy8ie&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request for deposit refund",
+      "super_summary_text": "A caller requested a deposit refund and asked to pause the deposit. The agent said the team was unavailable and asked the caller to leave a message with their name and reason for calling.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(832) 421-0447",
@@ -831,7 +918,11 @@
       "last_call_id": "1793648682.204035",
       "transfer_leg_call_ids": [
         "1793648717.204039"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmv164qnx2ycx14i3l3xp621p&messageId=cmvzo5p0r2ek27u7u3atymlmw&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing team transfer request",
+      "super_summary_text": "A caller asked for a representative for leasing at Pollard Properties. The assistant said it would transfer them to the leasing team, but no further outcome was captured.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(270) 970-4662",
@@ -858,7 +949,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793647713.204004",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "no Super call"
     },
     {
       "phone": "(636) 497-2325",
@@ -885,7 +980,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793647493.203972",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "no Super call"
     },
     {
       "phone": "(660) 341-7026",
@@ -912,7 +1011,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793647209.203936",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "no Super call"
     },
     {
       "phone": "(314) 565-0989",
@@ -939,7 +1042,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793647153.203926",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "no Super call"
     },
     {
       "phone": "(636) 679-0211",
@@ -968,7 +1075,11 @@
       "last_call_id": "1793643228.203645",
       "transfer_leg_call_ids": [
         "1793643289.203649"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvfkkpbm2h77arfnd8p1oavi&messageId=cmvzkxbf225sq7u7uk7sq1vum&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request to speak with leasing agent",
+      "super_summary_text": "Sierra Brown requested to speak with a leasing agent, and the assistant said they would connect her with the leasing team. The call status beyond the transfer promise is not provided.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(360) 789-6367",
@@ -998,7 +1109,11 @@
       "transfer_leg_call_ids": [
         "1793640146.203356",
         "1793640202.203358"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmosrmq6y05s5w6yw3xn607aj&messageId=cmvzj3ju220e57u7ur0zu79ag&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Transfer request for Lindsay or Stacy",
+      "super_summary_text": "Paul Smith asked to speak with Lindsay or Stacy, and the assistant said they were unavailable and asked him to leave his name and reason for calling.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(917) 284-5909",
@@ -1025,7 +1140,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793636459.203228",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(660) 342-5252",
@@ -1052,7 +1171,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793399171.202685",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 312-8007",
@@ -1081,7 +1204,11 @@
       "last_call_id": "1793390235.202480",
       "transfer_leg_call_ids": [
         "1793390309.202484"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtad6md00g2s53khjbn2gsya&messageId=cmvvebq80200x104zrp5tys7f&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Inquiry about apartment rental",
+      "super_summary_text": "Rebecca Babin called Pollard Properties to speak with someone at the Boulders of Moscow Mills about an apartment for rent. The leasing team was unavailable, so she left her name and requested a callback.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 204-9664",
@@ -1110,7 +1237,11 @@
       "last_call_id": "1793388660.202395",
       "transfer_leg_call_ids": [
         "1793388719.202401"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmml3eox71603wr2r9fa0topo&messageId=cmvvdctmy1xyf104z21p5ghld&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Email inquiry assistance request",
+      "super_summary_text": "Anisha Bravo called asking to speak with a representative about an email she received. The assistant routed the call to the front desk, and no further details or resolution were provided.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(636) 318-3876",
@@ -1139,7 +1270,11 @@
       "last_call_id": "1793388469.202351",
       "transfer_leg_call_ids": [
         "1793388507.202355"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvmrzszp32lesxrfsi76u4jy&messageId=cmvvd9al11xt4104zvzr1xvzr&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing Team Inquiry",
+      "super_summary_text": "A caller requested to be connected with the leasing team at Pollard Properties. The leasing team was unavailable, and the caller was asked to leave a message with their name and callback number.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(314) 853-5281",
@@ -1168,7 +1303,11 @@
       "last_call_id": "1793386293.202236",
       "transfer_leg_call_ids": [
         "1793386330.202240"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvvbw9db1v6h104z5aqsl508&messageId=cmvvbx8o51v8n104zt4pcp9ro&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Call routed to front desk",
+      "super_summary_text": "A caller asked for the front desk. The call was routed to the front desk, with no further details captured.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(815) 258-3662",
@@ -1197,7 +1336,11 @@
       "last_call_id": "1793382531.202036",
       "transfer_leg_call_ids": [
         "1793382602.202040"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(573) 576-1225",
@@ -1226,7 +1369,11 @@
       "last_call_id": "1793376022.201736",
       "transfer_leg_call_ids": [
         "1793376057.201740"
-      ]
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmqjpsyb3132ydxcah863ivf1&messageId=cmvv5unmi1k8g104z2lwvuyzs&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Billing inquiry for pest control",
+      "super_summary_text": "Amber Langston called about a $150 Orkin bill for 45 Nassau and asked whether it should be handled by Pollard Properties or paid by her, requesting a callback at 573-576-1225.",
+      "super_link_status": "linked"
     },
     {
       "phone": "(717) 919-2157",
@@ -1255,7 +1402,11 @@
       "last_call_id": "1793374078.201643",
       "transfer_leg_call_ids": [
         "1793374130.201647"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(618) 719-7869",
@@ -1282,7 +1433,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793372131.201539",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(219) 730-8181",
@@ -1311,7 +1466,11 @@
       "last_call_id": "1793309256.201427",
       "transfer_leg_call_ids": [
         "1793309305.201431"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(314) 901-3986",
@@ -1338,7 +1497,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793299427.200936",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 900-4236",
@@ -1365,7 +1528,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793287577.199495",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(402) 359-0452",
@@ -1394,7 +1561,11 @@
       "last_call_id": "1793217901.198804",
       "transfer_leg_call_ids": [
         "1793217938.198808"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 358-6481",
@@ -1423,7 +1594,11 @@
       "last_call_id": "1793214458.198172",
       "transfer_leg_call_ids": [
         "1793214508.198205"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 295-8042",
@@ -1452,7 +1627,11 @@
       "last_call_id": "1793214383.198158",
       "transfer_leg_call_ids": [
         "1793214439.198162"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(518) 637-1388",
@@ -1482,7 +1661,11 @@
       "transfer_leg_call_ids": [
         "1793212617.198048",
         "1793212647.198051"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(804) 256-8230",
@@ -1511,7 +1694,11 @@
       "last_call_id": "1793212245.197950",
       "transfer_leg_call_ids": [
         "1793212296.197954"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(314) 625-3038",
@@ -1538,7 +1725,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793202874.197393",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 589-5162",
@@ -1565,7 +1756,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793199837.197025",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 578-0228",
@@ -1592,7 +1787,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793147918.196812",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(573) 516-6444",
@@ -1619,7 +1818,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": true,
       "last_call_id": "1793137208.196763",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 293-3069",
@@ -1648,7 +1851,11 @@
       "last_call_id": "1793134741.196707",
       "transfer_leg_call_ids": [
         "1793134811.196711"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 327-4410",
@@ -1677,7 +1884,11 @@
       "last_call_id": "1793120831.194853",
       "transfer_leg_call_ids": [
         "1793120886.194863"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 384-3557",
@@ -1704,7 +1915,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793120528.194845",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(636) 227-2010",
@@ -1733,7 +1948,11 @@
       "last_call_id": "1793117870.194571",
       "transfer_leg_call_ids": [
         "1793117935.194575"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     },
     {
       "phone": "(314) 339-9585",
@@ -1760,7 +1979,11 @@
       "hours_to_callback": null,
       "ever_called_in_window": false,
       "last_call_id": "1793104336.193703",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "not found"
     }
   ],
   "not_called_back_by_group": {
@@ -1797,7 +2020,11 @@
       "hours_to_callback": 0.2,
       "ever_called_in_window": true,
       "last_call_id": "1793659066.204539",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(812) 340-4151",
@@ -1826,7 +2053,11 @@
       "last_call_id": "1793640782.203383",
       "transfer_leg_call_ids": [
         "1793640842.203387"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 450-7480",
@@ -1855,7 +2086,11 @@
       "last_call_id": "1793638277.203308",
       "transfer_leg_call_ids": [
         "1793638347.203312"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 463-3922",
@@ -1882,7 +2117,11 @@
       "hours_to_callback": 46.2,
       "ever_called_in_window": true,
       "last_call_id": "1793479274.202973",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(573) 822-9232",
@@ -1911,7 +2150,11 @@
       "last_call_id": "1793400390.202705",
       "transfer_leg_call_ids": [
         "1793400463.202709"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(417) 827-0411",
@@ -1940,7 +2183,11 @@
       "last_call_id": "1793395415.202640",
       "transfer_leg_call_ids": [
         "1793395453.202644"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(713) 816-1520",
@@ -1969,7 +2216,11 @@
       "last_call_id": "1793391235.202560",
       "transfer_leg_call_ids": [
         "1793391306.202564"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 515-8905",
@@ -1998,7 +2249,11 @@
       "last_call_id": "1793388559.202372",
       "transfer_leg_call_ids": [
         "1793388613.202378"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 445-6955",
@@ -2025,7 +2280,11 @@
       "hours_to_callback": 22.7,
       "ever_called_in_window": true,
       "last_call_id": "1793311902.201465",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 295-9700",
@@ -2052,7 +2311,11 @@
       "hours_to_callback": 0.3,
       "ever_called_in_window": true,
       "last_call_id": "1793299605.200942",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(314) 363-4118",
@@ -2081,7 +2344,11 @@
       "last_call_id": "1793288884.199647",
       "transfer_leg_call_ids": [
         "1793288926.199652"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 633-4711",
@@ -2110,7 +2377,11 @@
       "last_call_id": "1793223251.198944",
       "transfer_leg_call_ids": [
         "1793223314.198948"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 745-2514",
@@ -2139,7 +2410,11 @@
       "last_call_id": "1793216692.198564",
       "transfer_leg_call_ids": [
         "1793216759.198583"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(314) 278-9040",
@@ -2168,7 +2443,11 @@
       "last_call_id": "1793214034.198101",
       "transfer_leg_call_ids": [
         "1793214093.198108"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(573) 352-0130",
@@ -2198,7 +2477,11 @@
       "transfer_leg_call_ids": [
         "1793213633.198069",
         "1793213689.198071"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 221-9737",
@@ -2226,7 +2509,11 @@
       "hours_to_callback": 47.0,
       "ever_called_in_window": true,
       "last_call_id": "1793211045.197923",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(314) 943-9971",
@@ -2255,7 +2542,11 @@
       "last_call_id": "1793133905.196636",
       "transfer_leg_call_ids": [
         "1793133956.196640"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 295-2184",
@@ -2284,7 +2575,11 @@
       "last_call_id": "1793131483.196408",
       "transfer_leg_call_ids": [
         "1793131526.196426"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 384-9731",
@@ -2313,7 +2608,11 @@
       "last_call_id": "1793130825.196327",
       "transfer_leg_call_ids": [
         "1793130878.196331"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(573) 821-2253",
@@ -2342,7 +2641,11 @@
       "last_call_id": "1793129011.195955",
       "transfer_leg_call_ids": [
         "1793129060.195959"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(636) 204-7203",
@@ -2371,7 +2674,11 @@
       "last_call_id": "1793127960.195829",
       "transfer_leg_call_ids": [
         "1793128001.195833"
-      ]
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     },
     {
       "phone": "(970) 652-5904",
@@ -2398,7 +2705,11 @@
       "hours_to_callback": 23.8,
       "ever_called_in_window": true,
       "last_call_id": "1793112534.193882",
-      "transfer_leg_call_ids": []
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": ""
     }
   ],
   "super_transfers_unanswered": {
