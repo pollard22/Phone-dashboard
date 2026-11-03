@@ -5,6 +5,7 @@ import {
   filterRows,
   mentionsCallbackWindow,
   sinceMiss,
+  superCallView,
   transferFailedGroups,
   unattributedNote,
 } from '../src/format.js';
@@ -64,6 +65,13 @@ assert.match(html, /Super transfer not answered[\s\S]*?<strong>33<\/strong>/);
 assert.match(html, /Went to voicemail[\s\S]*?<strong>10<\/strong>/);
 assert.match(html, /Rang, not answered[\s\S]*?<strong>9<\/strong>/);
 assert.match(html, /What happened/);
+assert.match(html, /Super call links open in Super and need you to be signed in\./);
+assert.equal((html.match(/class="super-link"/g) || []).length, 21);
+assert.equal((html.match(/View call ↗/g) || []).length, 21);
+assert.match(html, /target="_blank" rel="noopener noreferrer"/);
+assert.match(html, /Transfer to front desk/);
+assert.equal((html.match(/Direct line — no Super call/g) || []).length, 5);
+assert.equal(superCallView({ super_link: 'javascript:alert(1)', super_link_status: 'linked' }).kind, 'empty');
 assert.match(html, /Brenden Walker/);
 assert.match(html, /Super transfers nobody picked up/);
 assert.match(html, />117</);
