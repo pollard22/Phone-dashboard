@@ -8,8 +8,9 @@ import {
   displayValue,
   filterRows,
   freshnessText,
+  displayGroupEntries,
   groupDomId,
-  groupEntries,
+  groupLabel,
   hasMissedType,
   missedTypeEntries,
   showCalledBack,
@@ -144,7 +145,7 @@ function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {
         <td>${phoneHtml(row)}</td>
         <td>${esc(row?.last_missed_ct ?? '')}</td>
         <td class="num-cell">${esc(displayValue(row?.missed_calls))}</td>
-        <td>${esc(row?.call_group ?? '')}</td>
+        <td>${esc(groupLabel(row?.call_group))}</td>
         ${typeCell}
         ${waitCell}
         ${backCell}
@@ -198,14 +199,14 @@ export function renderPage(data, state = {}) {
   const calledValue = calledBackValue(data);
   const groups =
     list === 'called'
-      ? groupEntries(
+      ? displayGroupEntries(
           backRows.reduce((counts, row) => {
-            const name = String(row?.call_group ?? '').trim();
+            const name = groupLabel(row?.call_group);
             if (name) counts[name] = (counts[name] || 0) + 1;
             return counts;
           }, {})
         )
-      : groupEntries(data.not_called_back_by_group || summary.not_called_back_by_group);
+      : displayGroupEntries(data.not_called_back_by_group || summary.not_called_back_by_group);
   const groupTotal = list === 'called' ? displayValue(calledValue ?? backRows.length) : displayValue(summary.not_called_back ?? missedRows.length);
   const noun = shown.length === 1 ? 'caller' : 'callers';
   const shownLabel = [group, type].filter(Boolean).length
