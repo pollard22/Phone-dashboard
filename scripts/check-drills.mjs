@@ -2,7 +2,9 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { renderPage } from '../src/render.js';
 import {
+  displayGroupEntries,
   filterRows,
+  groupLabel,
   mentionsCallbackWindow,
   sinceMiss,
   superCallView,
@@ -32,7 +34,32 @@ assert.equal(
   Object.values(summary.not_called_back_by_missed_type).reduce((sum, n) => sum + n, 0),
   52
 );
-for (const [group, count] of Object.entries(data.not_called_back_by_group)) {
+assert.equal(groupLabel('Leasing'), 'Leasing');
+assert.equal(groupLabel('Maintenance or Renewals (Tiffany 100)'), 'Tiffany');
+assert.equal(groupLabel('Tiffany 100'), 'Tiffany');
+assert.equal(groupLabel('Maintenance + Maintenance or Renewals (Tiffany 100)'), 'Maintenance');
+assert.equal(groupLabel('Mel 104 then Tiffany 100'), 'Maintenance');
+assert.equal(groupLabel('Renewals & Current Resident Issues'), 'Renewals');
+assert.equal(groupLabel('Direct line — Rania Lombera (107)'), 'Rania');
+assert.equal(groupLabel('Direct line — Junior Ruiz (112)'), 'Junior');
+assert.equal(groupLabel('Direct line — Mercedes Recio (108)'), 'Renewals');
+assert.equal(groupLabel('Applications (106)'), 'Applications');
+assert.equal(groupLabel('Main line (Super AI receptionist)'), 'Main line');
+assert.equal(groupLabel('Direct line — Alex Example (200)'), 'Alex');
+for (const label of ['Leasing', 'Tiffany', 'Maintenance', 'Renewals', 'Applications', 'Main line', 'Rania', 'Junior', 'Alex']) {
+  assert.equal(/\d/.test(label), false, label);
+}
+const shownGroups = displayGroupEntries(data.not_called_back_by_group);
+assert.deepEqual(Object.fromEntries(shownGroups), {
+  Leasing: 39,
+  Tiffany: 5,
+  'Main line': 3,
+  Maintenance: 2,
+  Rania: 2,
+  Junior: 1,
+});
+assert.equal(shownGroups.reduce((sum, [, n]) => sum + n, 0), 52);
+for (const [group, count] of shownGroups) {
   assert.equal(filterRows(data.not_called_back, group).length, count, group);
 }
 for (const [type, count] of Object.entries(summary.not_called_back_by_missed_type)) {
@@ -61,6 +88,13 @@ assert.match(html, /Super transfer not answered[\s\S]*?<strong>33<\/strong>/);
 assert.match(html, /Went to voicemail[\s\S]*?<strong>10<\/strong>/);
 assert.match(html, /Rang, not answered[\s\S]*?<strong>9<\/strong>/);
 assert.match(html, /What happened/);
+assert.match(html, /Tiffany <strong>5<\/strong>/);
+assert.match(html, /Main line <strong>3<\/strong>/);
+assert.match(html, /Maintenance <strong>2<\/strong>/);
+assert.match(html, /Rania <strong>2<\/strong>/);
+assert.match(html, /Junior <strong>1<\/strong>/);
+assert.match(html, /Leasing <strong>39<\/strong>/);
+assert.doesNotMatch(html, /Tiffany 100|Rania Lombera|Junior Ruiz|Super AI receptionist/);
 assert.match(html, /Super call links open in Super and need you to be signed in\./);
 assert.equal((html.match(/class="super-link"/g) || []).length, 34);
 assert.equal((html.match(/View call ↗/g) || []).length, 34);

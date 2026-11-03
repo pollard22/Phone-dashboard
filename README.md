@@ -32,6 +32,24 @@ Optional fields render only when this export includes them:
 
 Headline numbers are not hardcoded.
 
+## Call group names
+
+The files keep the raw group strings. The page shows a shorter name from `groupLabel()` in `src/format.js`, on the chips, the filters, and the Call group column. Groups that share a name are added together. The counts themselves are not changed.
+
+| In the export | On the page |
+|---|---|
+| Leasing, or extensions 615, 101, 102, 110 | Leasing |
+| Maintenance, extension 104, or Mel 104 then Tiffany 100 | Maintenance |
+| Renewals, or extension 108 | Renewals |
+| Applications, or extension 106 | Applications |
+| Main line, 601, or Super with no transfer target | Main line |
+| Tiffany 100, or Maintenance or Renewals (Tiffany 100) | Tiffany |
+| Rania 107 | Rania |
+| Junior 112 | Junior |
+| Any other direct line, `Direct line — Name (ext)` | That person's first name |
+
+Labels do not include extension numbers.
+
 ## Local preview
 
 ```bash

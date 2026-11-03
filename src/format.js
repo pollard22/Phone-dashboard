@@ -125,10 +125,72 @@ export function groupEntries(byGroup) {
   return chipEntries(byGroup);
 }
 
+function firstName(value) {
+  const name = String(value ?? '')
+    .replace(/\([^)]*\)/g, '')
+    .replace(/\bext\.?\s*\d+\b/gi, '')
+    .replace(/\b\d+\b/g, '')
+    .trim();
+  const word = name.split(/\s+/)[0] || '';
+  return word.replace(/[^A-Za-z'.-]/g, '');
+}
+
+/**
+ * Short call-group label for the page. Counts stay on the underlying rows;
+ * callers of this helper merge groups that share a label.
+ * Leasing (615, 101, 102, 110), Maintenance (104, including Mel 104 then Tiffany),
+ * Renewals (108), Applications (106), Main line (601 / Super with no transfer),
+ * and a direct call to a person as their first name.
+ */
+export function groupLabel(raw) {
+  const text = String(raw ?? '').replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+
+  const direct = text.match(/direct line\s*[—–-]\s*([^()]+)/i);
+  if (direct) {
+    if (/\b108\b/.test(text)) return 'Renewals';
+    if (/\b106\b/.test(text)) return 'Applications';
+    if (/\b104\b/.test(text)) return 'Maintenance';
+    if (/\b(?:615|101|102|110)\b/.test(text)) return 'Leasing';
+    if (/\b100\b/.test(text) || /\bTiffany\b/i.test(text)) return 'Tiffany';
+    if (/\b107\b/.test(text) || /\bRania\b/i.test(text)) return 'Rania';
+    if (/\b112\b/.test(text) || /\bJunior\b/i.test(text)) return 'Junior';
+    return firstName(direct[1]) || 'Direct line';
+  }
+
+  if (/\b104\b/.test(text) || /\b(?:Mel|Jermale)\b/i.test(text) || /maintenance\s*\+/i.test(text)) {
+    return 'Maintenance';
+  }
+  if (/\bTiffany\b/i.test(text) || /\b100\b/.test(text)) return 'Tiffany';
+  if (/\bRania\b/i.test(text) || /\b107\b/.test(text)) return 'Rania';
+  if (/\bJunior\b/i.test(text) || /\b112\b/.test(text)) return 'Junior';
+  if (/\bApplications\b/i.test(text) || /\b106\b/.test(text)) return 'Applications';
+  if (/\b108\b/.test(text) || /\bRenewals\b/i.test(text)) return 'Renewals';
+  if (/\bLeasing\b/i.test(text) || /\b(?:615|101|102|110)\b/.test(text)) return 'Leasing';
+  if (/\bMaintenance\b/i.test(text)) return 'Maintenance';
+  if (/main line/i.test(text) || /\b601\b/.test(text) || /\bSuper\b/.test(text)) return 'Main line';
+
+  const plain = firstName(text);
+  return plain || text;
+}
+
+/** Map raw group counts to display labels and sum counts that share a label. */
+export function displayGroupEntries(byGroup) {
+  const totals = new Map();
+  for (const [raw, count] of groupEntries(byGroup)) {
+    const label = groupLabel(raw);
+    if (!label) continue;
+    const n = Number(count);
+    if (!Number.isFinite(n)) continue;
+    totals.set(label, (totals.get(label) || 0) + n);
+  }
+  return [...totals.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
 export function filterRows(rows, group, type) {
   const list = Array.isArray(rows) ? rows : [];
   return list.filter((row) => {
-    if (group && row?.call_group !== group) return false;
+    if (group && groupLabel(row?.call_group) !== group) return false;
     if (type && row?.missed_type !== type) return false;
     return true;
   });
