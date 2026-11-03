@@ -4,10 +4,8 @@ import { renderPage } from '../src/render.js';
 import {
   filterRows,
   mentionsCallbackWindow,
-  reconcileText,
   sinceMiss,
   transferFailedGroups,
-  transferFailedLine,
   unattributedNote,
 } from '../src/format.js';
 
@@ -43,10 +41,6 @@ for (const [type, count] of Object.entries(summary.not_called_back_by_missed_typ
 }
 assert.equal(filterRows(data.not_called_back, 'Leasing', 'Went to voicemail').length > 0, true);
 
-const reconcile = reconcileText(summary);
-assert.match(reconcile, /22 called back, 52 not called back yet/);
-assert.equal(mentionsCallbackWindow(reconcile), false);
-assert.match(transferFailedLine(summary), /incl\. 75 callers whose transfer from Super went unanswered/);
 assert.deepEqual(transferFailedGroups(data)[0], ['Leasing', 102]);
 assert.match(unattributedNote(data), /26 attempts couldn't be tied to a caller/);
 for (const row of data.not_called_back) {
@@ -60,10 +54,12 @@ assert.match(html, /Super 367 · Staff 26/);
 assert.match(html, /Voicemail is not counted as answered/);
 assert.match(html, /Callers not answered[\s\S]*?>74</);
 assert.match(html, /People, not calls/);
-assert.match(html, /incl\. 75 callers whose transfer from Super went unanswered/);
 assert.match(html, /Called back[\s\S]*?>22</);
 assert.match(html, /Not called back yet[\s\S]*?>52</);
-assert.match(html, /36 never called this week/);
+assert.match(html, /People, not calls/);
+assert.doesNotMatch(html, /never called/i);
+assert.doesNotMatch(html, /incl\. 75 callers whose transfer from Super went unanswered/);
+assert.doesNotMatch(html, /class="reconcile"/);
 assert.match(html, /Super transfer not answered[\s\S]*?<strong>33<\/strong>/);
 assert.match(html, /Went to voicemail[\s\S]*?<strong>10<\/strong>/);
 assert.match(html, /Rang, not answered[\s\S]*?<strong>9<\/strong>/);

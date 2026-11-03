@@ -12,11 +12,8 @@ import {
   groupEntries,
   hasMissedType,
   missedTypeEntries,
-  neverCalledLine,
-  reconcileText,
   showCalledBack,
   transferFailedGroups,
-  transferFailedLine,
   unattributedNote,
   voicemailNote,
   waitingText,
@@ -199,7 +196,6 @@ export function renderPage(data, state = {}) {
   const showCallback = list === 'called';
   const windowLabel = windowHeading(summary);
   const fresh = freshnessText(data);
-  const reconcile = reconcileText(summary);
   const calledValue = calledBackValue(data);
   const groups =
     list === 'called'
@@ -247,7 +243,7 @@ export function renderPage(data, state = {}) {
         ${statCard({
           label: 'Callers not answered',
           value: summary.unanswered_callers,
-          lines: ['People, not calls', transferFailedLine(summary)],
+          lines: ['People, not calls'],
           tone: 'miss',
         })}
       </section>
@@ -257,12 +253,10 @@ export function renderPage(data, state = {}) {
         ${statCard({
           label: 'Not called back yet',
           value: summary.not_called_back,
-          lines: [neverCalledLine(summary)],
           tone: 'miss',
           extra: typeChips(missedTypeEntries(data), list === 'missed' ? type : ''),
         })}
       </section>
-      ${reconcile ? `<p class="reconcile">${esc(reconcile)}</p>` : ''}
 
       ${transferSection(data)}
 
