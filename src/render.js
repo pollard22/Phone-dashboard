@@ -12,6 +12,7 @@ import {
   groupEntries,
   hasMissedType,
   missedTypeEntries,
+  neverCalledLine,
   reconcileText,
   showCalledBack,
   transferFailedGroups,
@@ -194,13 +195,22 @@ export function renderPage(data, state = {}) {
   const activeRows = list === 'called' ? backRows : missedRows;
   const shown = filterRows(activeRows, group, type);
   const showType = hasMissedType(list === 'called' ? backRows : missedRows) || missedTypeEntries(data).length > 0;
-  const showWaiting = activeRows.some((row) => waitingText(row));
+  const showWaiting = activeRows.some((row) => String(row?.waiting ?? '').trim());
   const showCallback = list === 'called';
   const windowLabel = windowHeading(summary);
   const fresh = freshnessText(data);
   const reconcile = reconcileText(summary);
   const calledValue = calledBackValue(data);
-  const groups = groupEntries(data.not_called_back_by_group);
+  const groups =
+    list === 'called'
+      ? groupEntries(
+          backRows.reduce((counts, row) => {
+            const name = String(row?.call_group ?? '').trim();
+            if (name) counts[name] = (counts[name] || 0) + 1;
+            return counts;
+          }, {})
+        )
+      : groupEntries(data.not_called_back_by_group || summary.not_called_back_by_group);
   const groupTotal = list === 'called' ? displayValue(calledValue ?? backRows.length) : displayValue(summary.not_called_back ?? missedRows.length);
   const noun = shown.length === 1 ? 'caller' : 'callers';
   const shownLabel = [group, type].filter(Boolean).length
@@ -247,8 +257,9 @@ export function renderPage(data, state = {}) {
         ${statCard({
           label: 'Not called back yet',
           value: summary.not_called_back,
+          lines: [neverCalledLine(summary)],
           tone: 'miss',
-          extra: typeChips(missedTypeEntries(data), type),
+          extra: typeChips(missedTypeEntries(data), list === 'missed' ? type : ''),
         })}
       </section>
       ${reconcile ? `<p class="reconcile">${esc(reconcile)}</p>` : ''}

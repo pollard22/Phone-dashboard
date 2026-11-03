@@ -26,14 +26,15 @@
     "super_avg_talk": "1m 2s"
   },
   "paths": {
-    "json": "web-dashboard/deploy-pack-2026-11-03d/public/data/data-latest.json",
-    "a": "web-dashboard/deploy-pack-2026-11-03d/public/data/Missed_ownership_A_no_callback.csv",
-    "b": "web-dashboard/deploy-pack-2026-11-03d/public/data/Missed_ownership_B_called_back.csv",
-    "callback": "web-dashboard/deploy-pack-2026-11-03d/public/data/callback_hygiene_ultatel.csv",
-    "open_loops": "web-dashboard/deploy-pack-2026-11-03d/public/data/open_loops_super.csv",
-    "exclusions": "web-dashboard/deploy-pack-2026-11-03d/public/data/exclusions_method.csv",
-    "overview": "web-dashboard/deploy-pack-2026-11-03d/public/data/Overview.csv",
-    "not_called_back": "web-dashboard/deploy-pack-2026-11-03d/public/data/not_called_back.csv"
+    "json": "web-dashboard/deploy-pack-2026-11-03e/public/data/data-latest.json",
+    "a": "web-dashboard/deploy-pack-2026-11-03e/public/data/Missed_ownership_A_no_callback.csv",
+    "b": "web-dashboard/deploy-pack-2026-11-03e/public/data/Missed_ownership_B_called_back.csv",
+    "callback": "web-dashboard/deploy-pack-2026-11-03e/public/data/callback_hygiene_ultatel.csv",
+    "open_loops": "web-dashboard/deploy-pack-2026-11-03e/public/data/open_loops_super.csv",
+    "exclusions": "web-dashboard/deploy-pack-2026-11-03e/public/data/exclusions_method.csv",
+    "overview": "web-dashboard/deploy-pack-2026-11-03e/public/data/Overview.csv",
+    "not_called_back": "web-dashboard/deploy-pack-2026-11-03e/public/data/not_called_back.csv",
+    "called_back": "web-dashboard/deploy-pack-2026-11-03e/public/data/called_back.csv"
   },
   "summary": {
     "window_label": "Oct 27\u2013Nov 2, 2026 (Central Time)",
@@ -52,22 +53,30 @@
     "callers_with_a_missed_call": 103,
     "callers_got_through_later": 29,
     "unanswered_callers": 74,
-    "not_called_back": 56,
+    "called_back": 22,
+    "not_called_back": 52,
     "never_called": 36,
-    "called_back_late": 4,
-    "not_called_back_under_24h": 20,
+    "not_called_back_by_group": {
+      "Leasing": 39,
+      "Maintenance or Renewals (Tiffany 100)": 5,
+      "Main line (Super AI receptionist)": 3,
+      "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
+      "Direct line \u2014 Rania Lombera (107)": 2,
+      "Direct line \u2014 Junior Ruiz (112)": 1
+    },
     "not_called_back_by_missed_type": {
-      "Super transfer not answered": 35,
-      "Went to voicemail": 11,
-      "Rang, not answered": 10
+      "Super transfer not answered": 33,
+      "Went to voicemail": 10,
+      "Rang, not answered": 9
     },
     "labels": {
       "total_calls": "Calls we received",
       "answered_calls": "Calls answered",
       "transfer_failed_calls": "Super tried to transfer, nobody picked up",
       "unanswered_callers": "Callers we didn't answer",
-      "not_called_back": "Not called back within 24 hours",
-      "never_called": "Never called back at all"
+      "called_back": "Called back",
+      "not_called_back": "Not called back yet",
+      "never_called": "Never called this week"
     },
     "definitions": {
       "total_calls": "Inbound calls from outside phone numbers in Ultatel this week (CALL count). Excludes Super's transfer legs into the office (they belong to a call already counted) and Pollard's own numbers.",
@@ -75,9 +84,11 @@
       "missed_calls": "Calls nobody picked up: rang with no answer, or went straight to voicemail.",
       "transfer_failed_calls": "Calls Super answered and then tried to transfer to the team, where no one picked up (ring group and any fallback collapsed into one attempt; voicemail counts as not picked up). These calls are inside answered_calls, because Super did answer.",
       "unanswered_callers": "Different outside callers (PERSON count) whose call was missed or whose Super transfer went unanswered, and who did not get through on a later call this week (a later call counts only if a person picked up, or Super handled it without a failed transfer).",
-      "not_called_back": "Of the callers we didn't answer, how many got no call from our phones within 24 hours of their last unanswered call. Includes callers whose 24 hours had not run out when the export ended (marked 'under 24h'). A message Super took doesn't count as a callback.",
-      "never_called": "Of the not-called-back callers, how many we never dialed at all during the week.",
-      "reconcile": "473 calls = 393 answered (367 by Super + 26 by staff) + 80 missed (23 rang with no answer + 57 went to voicemail). Of the 367 Super answered, 117 ended in a transfer nobody picked up (75 callers). 103 callers had a missed call or failed transfer; 29 got through later, leaving 74 callers we didn't answer; 56 of them weren't called back within 24 hours."
+      "called_back": "Of the callers we didn't answer, how many got a call from our phones at any time after their last unanswered call, up to the end of the export.",
+      "not_called_back": "Of the callers we didn't answer, how many have had no call from our phones since their last unanswered call (through the end of the export). A message Super took doesn't count as a callback.",
+      "never_called": "Of the not-called-back callers, how many we never dialed at all during the week (not even before their missed call).",
+      "waiting": "For not-called-back callers: time from their last unanswered call to the end of the export.",
+      "reconcile": "473 calls = 393 answered (367 by Super + 26 by staff) + 80 missed (23 rang with no answer + 57 went to voicemail). Of the 367 Super answered, 117 ended in a transfer nobody picked up (75 callers). 103 callers had a missed call or failed transfer; 29 got through later, leaving 74 callers we didn't answer: 22 called back, 52 not called back yet (36 of those never called this week)."
     },
     "excluded": {
       "super_transfer_legs": 293,
@@ -89,8 +100,8 @@
     "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible."
   },
   "not_called_back_by_group": {
-    "Leasing": 42,
-    "Maintenance or Renewals (Tiffany 100)": 6,
+    "Leasing": 39,
+    "Maintenance or Renewals (Tiffany 100)": 5,
     "Main line (Super AI receptionist)": 3,
     "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
     "Direct line \u2014 Rania Lombera (107)": 2,

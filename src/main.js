@@ -15,6 +15,7 @@ function onClick(event) {
   const tab = event.target.closest('[data-list]');
   if (tab) {
     state.list = tab.getAttribute('data-list') === 'called' ? 'called' : 'missed';
+    if (state.list === 'called') state.type = '';
     paint(tab.id);
     return;
   }

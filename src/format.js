@@ -25,23 +25,29 @@ function mentionsNeverCalled(text) {
   return /never called/i.test(String(text ?? ''));
 }
 
-/** Keep the reconcile sentence, without a never-called clause or a 24-hour clause. */
+/** Keep the reconcile sentence, dropping any clause that states a 24-hour rule. */
 export function reconcileText(summary) {
   let text = String(summary?.definitions?.reconcile ?? '').trim();
   if (!isPresent(text)) return '';
-  text = text.replace(/\s*\([^)]*(?:never called|24\s*-?\s*h)[^)]*\)/gi, '');
+  text = text.replace(/\s*\([^)]*24\s*-?\s*h[^)]*\)/gi, '');
   const parts = text.split(/(\s*[.;]\s*)/);
   let out = '';
   for (let i = 0; i < parts.length; i += 2) {
     const clause = parts[i] || '';
     const sep = parts[i + 1] || '';
     if (!clause.trim()) continue;
-    if (mentionsCallbackWindow(clause) || mentionsNeverCalled(clause)) continue;
+    if (mentionsCallbackWindow(clause)) continue;
     out += clause + sep;
   }
   out = out.replace(/\s+/g, ' ').replace(/[;,\s]+$/, '').trim();
   if (out && !/[.!?]$/.test(out)) out += '.';
   return out;
+}
+
+export function neverCalledLine(summary) {
+  if (!isPresent(summary?.never_called)) return '';
+  const label = String(summary?.labels?.never_called || 'Never called this week').trim();
+  return `${summary.never_called} ${label.charAt(0).toLowerCase()}${label.slice(1)}`;
 }
 
 export function voicemailNote(summary) {
@@ -155,9 +161,13 @@ export function sinceMiss(row) {
 }
 
 export function waitingText(row) {
-  const waiting = String(row?.waiting ?? '').trim();
-  if (waiting && !mentionsCallbackWindow(waiting) && !mentionsNeverCalled(waiting)) return waiting;
-  return sinceMiss(row);
+  if (row && Object.prototype.hasOwnProperty(row, 'waiting')) {
+    const waiting = String(row.waiting ?? '').trim();
+    if (!waiting || mentionsCallbackWindow(waiting) || mentionsNeverCalled(waiting)) return '';
+    return waiting;
+  }
+  const clock = sinceMiss(row);
+  return mentionsNeverCalled(clock) ? '' : clock;
 }
 
 export function calledBackWhen(row) {
@@ -170,7 +180,10 @@ const DEFINITION_TERMS = {
   total_calls: 'Calls received',
   answered_calls: 'Calls answered',
   unanswered_callers: 'Callers not answered',
+  called_back: 'Called back',
   not_called_back: 'Not called back yet',
+  never_called: 'Never called this week',
+  waiting: 'Waiting',
   reconcile: 'How these numbers fit',
   transfer_failed_calls: 'Transfers from Super not answered',
   transfer_failed_callers: 'Callers whose Super transfer was not answered',
@@ -182,7 +195,7 @@ function humanize(key) {
   return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
-const HIDDEN_DEFINITION_KEYS = new Set(['never_called', 'called_back_late', 'not_called_back_under_24h']);
+const HIDDEN_DEFINITION_KEYS = new Set(['called_back_late', 'not_called_back_under_24h']);
 
 export function definitionEntries(definitions) {
   if (!definitions || typeof definitions !== 'object' || Array.isArray(definitions)) return [];
@@ -197,9 +210,7 @@ export function definitionEntries(definitions) {
       (entry) =>
         entry.key !== 'reconcile' &&
         !mentionsCallbackWindow(entry.term) &&
-        !mentionsCallbackWindow(entry.text) &&
-        !mentionsNeverCalled(entry.term) &&
-        !mentionsNeverCalled(entry.text)
+        !mentionsCallbackWindow(entry.text)
     );
 }
 
@@ -213,7 +224,7 @@ export function freshnessText(data) {
   const sourceSentences = source
     .split(/(?<=\.)\s+/)
     .map((sentence) => sentence.trim())
-    .filter((sentence) => sentence && !mentionsCallbackWindow(sentence) && !/open[- ]loop/i.test(sentence) && !mentionsNeverCalled(sentence));
+    .filter((sentence) => sentence && !mentionsCallbackWindow(sentence) && !/open[- ]loop/i.test(sentence));
   if (sourceSentences.length) {
     const joined = sourceSentences.join(' ');
     parts.push(joined.endsWith('.') ? joined : `${joined}.`);
