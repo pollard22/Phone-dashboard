@@ -187,9 +187,10 @@ export function superCallView(row) {
   const link = safeHttpUrl(row?.super_link);
   const title = String(row?.super_summary_title ?? '').trim();
   const text = String(row?.super_summary_text ?? '').trim();
-  if (link) return { kind: 'link', link, title, text };
-  if (String(row?.super_link_status ?? '').trim() === 'no Super call') return { kind: 'direct' };
-  return { kind: 'empty' };
+  const note = String(row?.super_link_note ?? '').trim();
+  if (link) return { kind: 'link', link, title, text, note };
+  if (String(row?.super_link_status ?? '').trim() === 'no Super call') return { kind: 'direct', note };
+  return { kind: 'empty', note };
 }
 
 export function calledBackWhen(row) {

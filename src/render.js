@@ -99,20 +99,25 @@ function typeChips(entries, selected) {
     </div>`;
 }
 
+function superNote(note) {
+  return note ? `<span class="super-link-note">${esc(note)}</span>` : '';
+}
+
 function superCell(row) {
   const view = superCallView(row);
+  const note = superNote(view.note);
   if (view.kind === 'link') {
     const tip = view.title || 'View this call in Super';
     const title = view.title ? `<span class="super-title">${esc(view.title)}</span>` : '';
     const more = view.text
       ? `<details class="super-details"><summary>Summary</summary><p>${esc(view.text)}</p></details>`
       : '';
-    return `<td class="super-cell"><a class="super-link" href="${esc(view.link)}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">View call ↗</a>${title}${more}</td>`;
+    return `<td class="super-cell"><a class="super-link" href="${esc(view.link)}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}">View call ↗</a>${title}${note}${more}</td>`;
   }
   if (view.kind === 'direct') {
-    return `<td class="super-cell"><span class="super-muted">Direct line — no Super call</span></td>`;
+    return `<td class="super-cell"><span class="super-muted">Direct line — no Super call</span>${note}</td>`;
   }
-  return `<td class="super-cell"><span class="super-muted">—</span></td>`;
+  return `<td class="super-cell"><span class="super-muted">—</span>${note}</td>`;
 }
 
 function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {

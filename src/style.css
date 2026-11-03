@@ -390,11 +390,17 @@ button.chip[aria-pressed="true"] {
 }
 
 .super-title,
-.super-muted {
+.super-muted,
+.super-link-note {
   display: block;
   margin-top: 0.15rem;
   color: var(--faint);
   font-size: 0.82rem;
+}
+
+.super-link-note {
+  max-width: 16rem;
+  line-height: 1.35;
 }
 
 .super-details {
