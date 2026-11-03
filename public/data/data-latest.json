@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
-    "window_label": "Oct 24\u201331, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel MyService signed out; Ultatel figures remain the Oct 25\u201331 pack.",
+    "window_label": "Oct 27\u2013Nov 2, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
+    "super_open_loops_window": "Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel figures are the Oct 27\u2013Nov 2 Call Details export pulled Nov 3.",
     "generated_at": "2026-11-03",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
@@ -15,23 +15,23 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel MyService signed out; Ultatel figures remain the Oct 25\u201331 pack."
+      "Super Activity open loops: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel figures are the Oct 27\u2013Nov 2 Call Details export pulled Nov 3."
     ],
-    "ultatel_source_file": "call-details-2026-10-25_to_10-31.csv",
-    "window_slug": "2026-10-25_to_2026-10-31"
+    "ultatel_source_file": "call-details-2026-10-27_to_11-02.csv",
+    "window_slug": "2026-10-27_to_2026-11-02"
   },
   "kpis": {
-    "ultatel_inbound": 865,
-    "ultatel_inbound_answered": 650,
-    "ultatel_inbound_no_answer": 215,
-    "ultatel_inbound_no_answer_cleaned": 29,
-    "ultatel_outbound": 489,
-    "ultatel_outbound_answered": 354,
-    "ultatel_outbound_no_answer": 135,
-    "no_callback_24h_unique": 18,
+    "ultatel_inbound": 768,
+    "ultatel_inbound_answered": 583,
+    "ultatel_inbound_no_answer": 185,
+    "ultatel_inbound_no_answer_cleaned": 23,
+    "ultatel_outbound": 443,
+    "ultatel_outbound_answered": 322,
+    "ultatel_outbound_no_answer": 121,
+    "no_callback_24h_unique": 15,
     "never_company_dialed": 7,
-    "dialed_earlier_only": 8,
-    "dialed_later_after_24h": 3,
+    "dialed_earlier_only": 7,
+    "dialed_later_after_24h": 1,
     "super_open_loops": 23,
     "super_ultatel_overlap": 0,
     "super_only_open_loops": 23,
@@ -43,13 +43,40 @@
     "super_avg_talk": "1m 2s"
   },
   "miss_by_extension": {
-    "110 \u2014 Mara Pongayan Priagas": 14,
-    "601 \u2014 AI Agent Number Ring Group": 10,
+    "110 \u2014 Mara Pongayan Priagas": 12,
+    "601 \u2014 AI Agent Number Ring Group": 6,
     "112 \u2014 Junior Ruiz": 2,
     "108 \u2014 Mercedes Recio": 2,
     "107 \u2014 Rania Lombera": 1
   },
   "missed_sample": [
+    {
+      "caller": "(270) 970-4662",
+      "when": "2026-11-02 10:28 AM",
+      "who": "110 \u2014 Mara Pongayan Priagas",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(917) 284-5909",
+      "when": "2026-11-02 7:20 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(636) 462-0934",
+      "when": "2026-11-02 6:55 AM",
+      "who": "110 \u2014 Mara Pongayan Priagas",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
     {
       "caller": "(347) 640-7834",
       "when": "2026-10-31 10:00 AM",
@@ -189,69 +216,6 @@
       "caller": "(314) 339-9585",
       "when": "2026-10-27 5:32 AM",
       "who": "107 \u2014 Rania Lombera",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(623) 456-6841",
-      "when": "2026-10-26 1:56 PM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 583-1655",
-      "when": "2026-10-26 11:40 AM",
-      "who": "601 \u2014 AI Agent Number Ring Group",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 235-8244",
-      "when": "2026-10-26 11:01 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(916) 616-1021",
-      "when": "2026-10-26 9:17 AM",
-      "who": "601 \u2014 AI Agent Number Ring Group",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(314) 583-1655",
-      "when": "2026-10-26 8:00 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(636) 459-0564",
-      "when": "2026-10-25 6:45 AM",
-      "who": "601 \u2014 AI Agent Number Ring Group",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(645) 201-3610",
-      "when": "2026-10-24 10:56 PM",
-      "who": "601 \u2014 AI Agent Number Ring Group",
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
