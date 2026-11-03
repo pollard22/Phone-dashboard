@@ -21,10 +21,35 @@ export function mentionsCallbackWindow(text) {
   return /called back late|under\s*24|(?:^|[^0-9])24\s*-?\s*h(?:ours?)?(?![a-z])/i.test(String(text ?? ''));
 }
 
+function mentionsNeverCalled(text) {
+  return /never called/i.test(String(text ?? ''));
+}
+
+/** Keep the reconcile sentence, without a never-called clause or a 24-hour clause. */
 export function reconcileText(summary) {
-  const text = summary?.definitions?.reconcile;
-  if (!isPresent(text) || mentionsCallbackWindow(text)) return '';
-  return String(text).trim();
+  let text = String(summary?.definitions?.reconcile ?? '').trim();
+  if (!isPresent(text)) return '';
+  text = text.replace(/\s*\([^)]*(?:never called|24\s*-?\s*h)[^)]*\)/gi, '');
+  const parts = text.split(/(\s*[.;]\s*)/);
+  let out = '';
+  for (let i = 0; i < parts.length; i += 2) {
+    const clause = parts[i] || '';
+    const sep = parts[i + 1] || '';
+    if (!clause.trim()) continue;
+    if (mentionsCallbackWindow(clause) || mentionsNeverCalled(clause)) continue;
+    out += clause + sep;
+  }
+  out = out.replace(/\s+/g, ' ').replace(/[;,\s]+$/, '').trim();
+  if (out && !/[.!?]$/.test(out)) out += '.';
+  return out;
+}
+
+export function voicemailNote(summary) {
+  const text = String(summary?.definitions?.answered_calls ?? '');
+  if (/voicemail/i.test(text) && /not counted as answered/i.test(text)) {
+    return 'Voicemail is not counted as answered';
+  }
+  return '';
 }
 
 /**
@@ -32,15 +57,12 @@ export function reconcileText(summary) {
  * Callers are the people count; calls are included when that field is present too.
  */
 export function transferFailedLine(summary) {
-  const callers = summary?.transfer_failed_callers;
-  const calls = summary?.transfer_failed_calls;
-  const hasCallers = isPresent(callers);
-  const hasCalls = isPresent(calls);
-  if (hasCallers && hasCalls) {
-    return `incl. ${callers} whose transfer from Super went unanswered (${calls} calls)`;
+  if (isPresent(summary?.transfer_failed_callers)) {
+    return `incl. ${summary.transfer_failed_callers} callers whose transfer from Super went unanswered`;
   }
-  if (hasCallers) return `incl. ${callers} whose transfer from Super went unanswered`;
-  if (hasCalls) return `incl. ${calls} calls whose transfer from Super went unanswered`;
+  if (isPresent(summary?.transfer_failed_calls)) {
+    return `incl. ${summary.transfer_failed_calls} calls whose transfer from Super went unanswered`;
+  }
   return '';
 }
 
@@ -51,21 +73,59 @@ function chipEntries(value) {
   );
 }
 
-/** Prefer summary.transfer_failed_by_group, then a top-level object with the same name. */
+/** Group counts for transfers nobody picked up. First object that has entries wins. */
 export function transferFailedGroups(data) {
-  const fromSummary = chipEntries(data?.summary?.transfer_failed_by_group);
+  const candidates = [
+    data?.summary?.transfer_failed_by_group,
+    data?.transfer_failed_by_group,
+    data?.super_transfers_unanswered?.failed_attempts_by_group,
+    data?.super_transfers_unanswered?.by_group,
+  ];
+  for (const candidate of candidates) {
+    const entries = chipEntries(candidate);
+    if (entries.length) return entries;
+  }
+  return [];
+}
+
+export function missedTypeEntries(data) {
+  const fromSummary = chipEntries(data?.summary?.not_called_back_by_missed_type);
   if (fromSummary.length) return fromSummary;
-  return chipEntries(data?.transfer_failed_by_group);
+  return chipEntries(data?.not_called_back_by_missed_type);
+}
+
+export function unattributedNote(data) {
+  const count = data?.super_transfers_unanswered?.unattributed_failed_attempts;
+  if (!isPresent(count) || Number(count) === 0) return '';
+  const noun = Number(count) === 1 ? 'attempt' : 'attempts';
+  return `${count} ${noun} couldn't be tied to a caller.`;
+}
+
+export function showCalledBack(data) {
+  return isPresent(data?.summary?.called_back) || (Array.isArray(data?.called_back) && data.called_back.length > 0);
+}
+
+export function calledBackValue(data) {
+  if (isPresent(data?.summary?.called_back)) return data.summary.called_back;
+  if (Array.isArray(data?.called_back)) return data.called_back.length;
+  return null;
+}
+
+export function calledBackRows(data) {
+  return Array.isArray(data?.called_back) ? data.called_back : [];
 }
 
 export function groupEntries(byGroup) {
   return chipEntries(byGroup);
 }
 
-export function filterRows(rows, group) {
+export function filterRows(rows, group, type) {
   const list = Array.isArray(rows) ? rows : [];
-  if (!group) return list;
-  return list.filter((row) => row?.call_group === group);
+  return list.filter((row) => {
+    if (group && row?.call_group !== group) return false;
+    if (type && row?.missed_type !== type) return false;
+    return true;
+  });
 }
 
 export function hasMissedType(rows) {
@@ -92,6 +152,18 @@ export function sinceMiss(row) {
   if (!isPresent(row?.hours_since_last_miss)) return '';
   const hours = String(row.hours_since_last_miss);
   return mentionsCallbackWindow(hours) ? '' : `${hours}h`;
+}
+
+export function waitingText(row) {
+  const waiting = String(row?.waiting ?? '').trim();
+  if (waiting && !mentionsCallbackWindow(waiting) && !mentionsNeverCalled(waiting)) return waiting;
+  return sinceMiss(row);
+}
+
+export function calledBackWhen(row) {
+  const when = String(row?.callback_ct ?? row?.first_outbound_after_miss_ct ?? '').trim();
+  if (!when || mentionsCallbackWindow(when)) return '';
+  return when;
 }
 
 const DEFINITION_TERMS = {
@@ -121,7 +193,14 @@ export function definitionEntries(definitions) {
       term: DEFINITION_TERMS[key] || humanize(key),
       text: String(text).trim(),
     }))
-    .filter((entry) => !mentionsCallbackWindow(entry.term) && !mentionsCallbackWindow(entry.text));
+    .filter(
+      (entry) =>
+        entry.key !== 'reconcile' &&
+        !mentionsCallbackWindow(entry.term) &&
+        !mentionsCallbackWindow(entry.text) &&
+        !mentionsNeverCalled(entry.term) &&
+        !mentionsNeverCalled(entry.text)
+    );
 }
 
 export function freshnessText(data) {
@@ -131,7 +210,14 @@ export function freshnessText(data) {
   const source = String(data?.summary?.source ?? '').trim();
   if (generated && !mentionsCallbackWindow(generated)) parts.push(`Prepared ${generated}.`);
   if (end && !mentionsCallbackWindow(end)) parts.push(`Export through ${end}.`);
-  if (source && !mentionsCallbackWindow(source)) parts.push(source.endsWith('.') ? source : `${source}.`);
+  const sourceSentences = source
+    .split(/(?<=\.)\s+/)
+    .map((sentence) => sentence.trim())
+    .filter((sentence) => sentence && !mentionsCallbackWindow(sentence) && !/open[- ]loop/i.test(sentence) && !mentionsNeverCalled(sentence));
+  if (sourceSentences.length) {
+    const joined = sourceSentences.join(' ');
+    parts.push(joined.endsWith('.') ? joined : `${joined}.`);
+  }
   return parts.join(' ');
 }
 

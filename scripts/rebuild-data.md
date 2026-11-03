@@ -36,7 +36,7 @@ cd "$SRC/site" && npm run build
 
 ## What the site displays
 
-The live page reads `latest.json` only: `summary`, `not_called_back`, and `not_called_back_by_group`. Each caller is Called back or Not called back yet, based on any outbound after the last miss. The page does not show a 24-hour split. Optional `summary.transfer_failed_calls`, `summary.transfer_failed_callers`, `transfer_failed_by_group`, and `not_called_back[].missed_type` render when present. Legacy CSVs stay in `public/data/` and are not shown.
+The live page reads `latest.json`: `summary`, `not_called_back`, `called_back` when present, and `not_called_back_by_group`. It shows what happened (`missed_type`) and a compact Super-transfers section. It does not show a “never called this week” line or a 24-hour split. Legacy CSVs stay in `public/data/` and are not shown.
 
 ## Drill-down contract
 

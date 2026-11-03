@@ -1,6 +1,8 @@
 import {
   answeredSplit,
-  callbackStatus,
+  calledBackRows,
+  calledBackValue,
+  calledBackWhen,
   callerName,
   definitionEntries,
   displayValue,
@@ -9,10 +11,14 @@ import {
   groupDomId,
   groupEntries,
   hasMissedType,
+  missedTypeEntries,
   reconcileText,
-  sinceMiss,
+  showCalledBack,
   transferFailedGroups,
   transferFailedLine,
+  unattributedNote,
+  voicemailNote,
+  waitingText,
   windowHeading,
 } from './format.js';
 
@@ -37,97 +43,91 @@ function phoneHtml(row) {
   return `<div class="caller">${phoneCell}${nameCell}</div>`;
 }
 
-function callbackHtml(row) {
-  const { status, when } = callbackStatus(row);
-  const tone = status === 'Called back' ? 'ok' : '';
-  const tag = `<span class="tag ${tone}">${esc(status)}</span>`;
-  if (!when) return tag;
-  return `<div class="callback">${tag}<span class="callback-when">${esc(when)}</span></div>`;
-}
-
-function clockHtml(row) {
-  const text = sinceMiss(row);
-  return text ? esc(text) : '';
-}
-
-function statCard({ label, value, sub, extra = '', tone = '' }) {
-  const subHtml = sub ? `<p class="sub">${esc(sub)}</p>` : '';
+function statCard({ label, value, lines = [], extra = '', tone = '' }) {
+  const lineHtml = lines.filter(Boolean).map((line) => `<p class="sub">${esc(line)}</p>`).join('');
   return `
     <article class="stat ${tone}">
       <p class="label">${esc(label)}</p>
       <p class="num">${esc(displayValue(value))}</p>
-      ${subHtml}
+      ${lineHtml}
       ${extra}
     </article>`;
 }
 
-function transferBlock(data) {
-  const line = transferFailedLine(data?.summary);
-  const groups = transferFailedGroups(data);
-  if (!line && !groups.length) return '';
-  const lineHtml = line ? `<p class="transfer-note">${esc(line)}</p>` : '';
-  const chips = groups.length
-    ? `<div class="transfer-groups">
-        <p class="transfer-kicker">By group</p>
-        <div class="chips" aria-label="Transfers from Super that went unanswered, by call group">
-          ${groups
-            .map(
-              ([name, count]) =>
-                `<span class="chip static">${esc(name)} <strong>${esc(count)}</strong></span>`
-            )
-            .join('')}
-        </div>
-      </div>`
-    : '';
-  return `<div class="transfer-block">${lineHtml}${chips}</div>`;
+function chipButton({ id, pressed, filter, group = '', type = '', label, count = null }) {
+  const groupAttr = group ? ` data-group="${esc(group)}"` : '';
+  const typeAttr = type ? ` data-type="${esc(type)}"` : '';
+  const countHtml = count === null || count === undefined || String(count) === '' ? '' : ` <strong>${esc(count)}</strong>`;
+  return `<button type="button" class="chip" id="${esc(id)}" data-filter="${esc(filter)}"${groupAttr}${typeAttr} aria-pressed="${pressed}">${esc(label)}${countHtml}</button>`;
 }
 
-function groupChips(summary, rows, byGroup, selected) {
-  const entries = groupEntries(byGroup);
-  const total = displayValue(
-    summary?.not_called_back !== undefined && summary?.not_called_back !== null && String(summary.not_called_back).trim() !== ''
-      ? summary.not_called_back
-      : rows.length
-  );
-  const allPressed = !selected;
+function groupChips(entries, total, selected) {
   const chips = [
-    `<button type="button" class="chip" id="group-all" data-filter="all" aria-pressed="${allPressed}">All <strong>${esc(total)}</strong></button>`,
-    ...entries.map(([name, count]) => {
-      const pressed = selected === name;
-      return `<button type="button" class="chip" id="${esc(groupDomId(name))}" data-filter="group" data-group="${esc(name)}" aria-pressed="${pressed}">${esc(name)} <strong>${esc(count)}</strong></button>`;
-    }),
+    chipButton({ id: 'group-all', pressed: !selected, filter: 'all-groups', label: 'All groups', count: total }),
+    ...entries.map(([name, count]) =>
+      chipButton({
+        id: groupDomId(name),
+        pressed: selected === name,
+        filter: 'group',
+        group: name,
+        label: name,
+        count,
+      })
+    ),
   ];
   return `<div class="chips" role="group" aria-label="Filter by call group">${chips.join('')}</div>`;
 }
 
-function tableHtml(rows, showType) {
-  const columns = showType ? 8 : 7;
+function typeChips(entries, selected) {
+  if (!entries.length) return '';
+  const chips = [
+    chipButton({ id: 'type-all', pressed: !selected, filter: 'all-types', label: 'All' }),
+    ...entries.map(([name, count]) =>
+      chipButton({
+        id: `type-${groupDomId(name).slice('group-'.length)}`,
+        pressed: selected === name,
+        filter: 'type',
+        type: name,
+        label: name,
+        count,
+      })
+    ),
+  ];
+  return `
+    <div class="type-block">
+      <p class="transfer-kicker">What happened</p>
+      <div class="chips" role="group" aria-label="Filter by what happened">${chips.join('')}</div>
+    </div>`;
+}
+
+function tableHtml(rows, { showType, showWaiting, showCallback }) {
+  const columns = 4 + (showType ? 1 : 0) + (showWaiting ? 1 : 0) + (showCallback ? 1 : 0);
   if (!rows.length) {
-    return `<div class="table-scroll"><table class="callers"><tbody><tr><td class="empty" colspan="${columns}">No callers in this group.</td></tr></tbody></table></div>`;
+    return `<div class="table-scroll"><table class="callers"><tbody><tr><td class="empty" colspan="${columns}">No callers match.</td></tr></tbody></table></div>`;
   }
   const head = `
     <tr>
       <th scope="col">Caller</th>
       <th scope="col">Last missed</th>
-      <th scope="col">Missed calls</th>
-      ${showType ? '<th scope="col">What happened</th>' : ''}
+      <th scope="col">Misses</th>
       <th scope="col">Call group</th>
-      <th scope="col">Routed to</th>
-      <th scope="col">Time since miss</th>
-      <th scope="col">Callback</th>
+      ${showType ? '<th scope="col">What happened</th>' : ''}
+      ${showWaiting ? '<th scope="col">Waiting</th>' : ''}
+      ${showCallback ? '<th scope="col">Called back</th>' : ''}
     </tr>`;
   const body = rows
     .map((row) => {
       const typeCell = showType ? `<td>${esc(row?.missed_type ?? '')}</td>` : '';
+      const waitCell = showWaiting ? `<td>${esc(waitingText(row))}</td>` : '';
+      const backCell = showCallback ? `<td>${esc(calledBackWhen(row))}</td>` : '';
       return `<tr>
         <td>${phoneHtml(row)}</td>
         <td>${esc(row?.last_missed_ct ?? '')}</td>
         <td class="num-cell">${esc(displayValue(row?.missed_calls))}</td>
-        ${typeCell}
         <td>${esc(row?.call_group ?? '')}</td>
-        <td>${esc(row?.routed_to ?? '')}</td>
-        <td>${clockHtml(row)}</td>
-        <td>${callbackHtml(row)}</td>
+        ${typeCell}
+        ${waitCell}
+        ${backCell}
       </tr>`;
     })
     .join('');
@@ -152,9 +152,33 @@ function definitionsHtml(summary) {
     </div>`;
 }
 
+function transferSection(data) {
+  const count = data?.summary?.transfer_failed_calls;
+  const groups = transferFailedGroups(data);
+  const note = unattributedNote(data);
+  if (!isPresentSafe(count) && !groups.length && !note) return '';
+  const chips = groups.length
+    ? `<div class="chips" aria-label="Super transfers nobody picked up, by call group">${groups
+        .map(([name, value]) => `<span class="chip static">${esc(name)} <strong>${esc(value)}</strong></span>`)
+        .join('')}</div>`
+    : '';
+  return `
+    <section class="transfers" aria-labelledby="transfers-title">
+      <div class="transfers-head">
+        <h2 id="transfers-title">Super transfers nobody picked up</h2>
+        ${isPresentSafe(count) ? `<p class="transfers-num">${esc(count)}</p>` : ''}
+      </div>
+      ${chips}
+      ${note ? `<p class="sub">${esc(note)}</p>` : ''}
+    </section>`;
+}
+
+function isPresentSafe(value) {
+  return value !== undefined && value !== null && String(value).trim() !== '';
+}
+
 /**
- * Owner page. Binds to summary, not_called_back, and not_called_back_by_group.
- * Optional transfer fields and missed_type render only when the export includes them.
+ * Owner page. Numbers come from latest.json summary, not_called_back, called_back, and group counts.
  */
 export function renderPage(data, state = {}) {
   const summary = data?.summary;
@@ -162,18 +186,37 @@ export function renderPage(data, state = {}) {
     return `<div class="error-box"><strong>This export has no summary.</strong><p>The page needs the summary in the latest call file.</p></div>`;
   }
 
-  const open = Boolean(state.open);
+  const list = state.list === 'called' && showCalledBack(data) ? 'called' : 'missed';
   const group = state.group || '';
-  const rows = Array.isArray(data.not_called_back) ? data.not_called_back : [];
-  const shown = filterRows(rows, group);
-  const showType = hasMissedType(rows);
+  const type = state.type || '';
+  const missedRows = Array.isArray(data.not_called_back) ? data.not_called_back : [];
+  const backRows = calledBackRows(data);
+  const activeRows = list === 'called' ? backRows : missedRows;
+  const shown = filterRows(activeRows, group, type);
+  const showType = hasMissedType(list === 'called' ? backRows : missedRows) || missedTypeEntries(data).length > 0;
+  const showWaiting = activeRows.some((row) => waitingText(row));
+  const showCallback = list === 'called';
   const windowLabel = windowHeading(summary);
-  const split = answeredSplit(summary);
-  const reconcile = reconcileText(summary);
   const fresh = freshnessText(data);
-  const shownLabel = group
-    ? `${shown.length} ${shown.length === 1 ? 'caller' : 'callers'} in ${group}`
-    : `${shown.length} ${shown.length === 1 ? 'caller' : 'callers'}`;
+  const reconcile = reconcileText(summary);
+  const calledValue = calledBackValue(data);
+  const groups = groupEntries(data.not_called_back_by_group);
+  const groupTotal = list === 'called' ? displayValue(calledValue ?? backRows.length) : displayValue(summary.not_called_back ?? missedRows.length);
+  const noun = shown.length === 1 ? 'caller' : 'callers';
+  const shownLabel = [group, type].filter(Boolean).length
+    ? `${shown.length} ${noun}`
+    : `${shown.length} ${noun}`;
+
+  const calledCard = showCalledBack(data)
+    ? statCard({ label: 'Called back', value: calledValue, tone: 'ok' })
+    : '';
+
+  const tabs = showCalledBack(data)
+    ? `<div class="tabs" role="tablist" aria-label="Which callers">
+        <button type="button" class="tab" id="tab-missed" data-list="missed" aria-selected="${list === 'missed'}">Not called back yet</button>
+        <button type="button" class="tab" id="tab-called" data-list="called" aria-selected="${list === 'called'}">Called back</button>
+      </div>`
+    : '';
 
   return `
     <div class="page">
@@ -185,30 +228,39 @@ export function renderPage(data, state = {}) {
 
       <section class="stats" aria-label="This period">
         ${statCard({ label: 'Calls received', value: summary.total_calls })}
-        ${statCard({ label: 'Calls answered', value: summary.answered_calls, sub: split, tone: 'ok' })}
+        ${statCard({
+          label: 'Calls answered',
+          value: summary.answered_calls,
+          lines: [answeredSplit(summary), voicemailNote(summary)],
+          tone: 'ok',
+        })}
         ${statCard({
           label: 'Callers not answered',
           value: summary.unanswered_callers,
-          sub: 'People, not calls',
-          extra: transferBlock(data),
+          lines: ['People, not calls', transferFailedLine(summary)],
           tone: 'miss',
         })}
       </section>
 
-      <section class="followup" aria-labelledby="followup-title">
-        <h2 id="followup-title">
-          <button type="button" class="followup-toggle" id="followup-toggle" data-action="toggle" aria-expanded="${open}" aria-controls="callback-detail">
-            <span class="label">Not called back yet</span>
-            <span class="num">${esc(displayValue(summary.not_called_back))}</span>
-            <span class="cue">${open ? 'Hide the list' : 'See callers and call groups'}</span>
-          </button>
-        </h2>
-        ${reconcile ? `<p class="reconcile">${esc(reconcile)}</p>` : ''}
-        <div id="callback-detail" class="detail" ${open ? '' : 'hidden'}>
-          ${groupChips(summary, rows, data.not_called_back_by_group, group)}
-          <p class="showing">${esc(shownLabel)}</p>
-          ${tableHtml(shown, showType)}
-        </div>
+      <section class="outcomes" aria-label="Callbacks">
+        ${calledCard}
+        ${statCard({
+          label: 'Not called back yet',
+          value: summary.not_called_back,
+          tone: 'miss',
+          extra: typeChips(missedTypeEntries(data), type),
+        })}
+      </section>
+      ${reconcile ? `<p class="reconcile">${esc(reconcile)}</p>` : ''}
+
+      ${transferSection(data)}
+
+      <section class="followup" id="callback-detail" aria-labelledby="list-title">
+        <h2 id="list-title" class="sr-only">${list === 'called' ? 'Called back' : 'Not called back yet'}</h2>
+        ${tabs}
+        ${groupChips(groups, groupTotal, group)}
+        <p class="showing">${esc(shownLabel)}</p>
+        ${tableHtml(shown, { showType, showWaiting, showCallback })}
       </section>
 
       <footer class="foot">

@@ -1,8 +1,9 @@
 import './style.css';
 import { esc, renderPage } from './render.js';
+import { groupDomId } from './format.js';
 
 const app = document.querySelector('#app');
-const state = { open: false, group: '' };
+const state = { list: 'missed', group: '', type: '' };
 let data = null;
 
 function paint(focusId) {
@@ -11,26 +12,37 @@ function paint(focusId) {
 }
 
 function onClick(event) {
-  const toggle = event.target.closest('[data-action="toggle"]');
-  if (toggle) {
-    state.open = !state.open;
-    paint('followup-toggle');
-    if (state.open) document.getElementById('callback-detail')?.scrollIntoView({ block: 'nearest' });
+  const tab = event.target.closest('[data-list]');
+  if (tab) {
+    state.list = tab.getAttribute('data-list') === 'called' ? 'called' : 'missed';
+    paint(tab.id);
     return;
   }
-  const all = event.target.closest('[data-filter="all"]');
-  if (all) {
+  if (event.target.closest('[data-filter="all-groups"]')) {
     state.group = '';
-    state.open = true;
     paint('group-all');
     return;
   }
-  const chip = event.target.closest('[data-filter="group"]');
-  if (chip) {
-    const next = chip.getAttribute('data-group') || '';
+  const group = event.target.closest('[data-filter="group"]');
+  if (group) {
+    const next = group.getAttribute('data-group') || '';
     state.group = state.group === next ? '' : next;
-    state.open = true;
-    paint(state.group ? chip.id : 'group-all');
+    paint(state.group ? groupDomId(next) : 'group-all');
+    return;
+  }
+  if (event.target.closest('[data-filter="all-types"]')) {
+    state.type = '';
+    state.list = 'missed';
+    paint('type-all');
+    return;
+  }
+  const type = event.target.closest('[data-filter="type"]');
+  if (type) {
+    const next = type.getAttribute('data-type') || '';
+    state.type = state.type === next ? '' : next;
+    state.list = 'missed';
+    const id = type.id;
+    paint(state.type ? id : 'type-all');
   }
 }
 

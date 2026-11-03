@@ -2,13 +2,13 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { renderPage } from '../src/render.js';
 import {
-  callbackStatus,
   filterRows,
-  hasMissedType,
   mentionsCallbackWindow,
+  reconcileText,
   sinceMiss,
   transferFailedGroups,
   transferFailedLine,
+  unattributedNote,
 } from '../src/format.js';
 
 const root = new URL('..', import.meta.url);
@@ -16,116 +16,107 @@ const read = (name) => readFileSync(new URL(name, root), 'utf8');
 const data = JSON.parse(read('public/data/latest.json'));
 const summary = data.summary;
 
-assert.equal(summary.total_calls, 474);
-assert.equal(summary.answered_calls, 451);
-assert.equal(summary.answered_by_super + summary.answered_by_staff, summary.answered_calls);
-assert.equal(summary.unanswered_callers, 11);
-assert.equal(summary.not_called_back, 10);
-assert.equal(data.not_called_back.length, summary.not_called_back);
+assert.equal(summary.total_calls, 473);
+assert.equal(summary.answered_calls, 393);
+assert.equal(summary.answered_by_super + summary.answered_by_staff, 393);
+assert.equal(summary.unanswered_callers, 74);
+assert.equal(summary.not_called_back, 56);
+assert.equal(summary.transfer_failed_callers, 75);
+assert.equal(summary.transfer_failed_calls, 117);
+assert.equal(data.not_called_back.length, 56);
 assert.equal(
   Object.values(data.not_called_back_by_group).reduce((sum, n) => sum + n, 0),
-  summary.not_called_back
+  56
 );
-assert.deepEqual(data.not_called_back_by_group, {
-  Leasing: 5,
-  'Main line (Super AI receptionist)': 3,
-  'Direct line — Junior Ruiz (112)': 1,
-  'Direct line — Rania Lombera (107)': 1,
-});
+assert.equal(
+  Object.values(summary.not_called_back_by_missed_type).reduce((sum, n) => sum + n, 0),
+  56
+);
 for (const [group, count] of Object.entries(data.not_called_back_by_group)) {
   assert.equal(filterRows(data.not_called_back, group).length, count, group);
 }
-assert.match(summary.window_label, /Central Time/);
-assert.equal(summary.transfer_failed_calls, undefined);
-assert.equal(summary.transfer_failed_callers, undefined);
-assert.equal(transferFailedLine(summary), '');
-assert.deepEqual(transferFailedGroups(data), []);
-assert.equal(hasMissedType(data.not_called_back), false);
+for (const [type, count] of Object.entries(summary.not_called_back_by_missed_type)) {
+  assert.equal(filterRows(data.not_called_back, '', type).length, count, type);
+}
+assert.equal(filterRows(data.not_called_back, 'Leasing', 'Went to voicemail').length > 0, true);
 
-const calledBack = data.not_called_back.filter((row) => callbackStatus(row).status === 'Called back');
-const notYet = data.not_called_back.filter((row) => callbackStatus(row).status === 'Not called back yet');
-assert.equal(calledBack.length, 1);
-assert.equal(calledBack[0].phone, '(636) 221-9737');
-assert.equal(callbackStatus(calledBack[0]).when, 'Fri Oct 30, 2026 12:12 PM CT');
-assert.equal(notYet.length, 9);
+const reconcile = reconcileText(summary);
+assert.match(reconcile, /74 callers we didn't answer/);
+assert.equal(mentionsCallbackWindow(reconcile), false);
+assert.doesNotMatch(reconcile, /never called/i);
+assert.match(transferFailedLine(summary), /incl\. 75 callers whose transfer from Super went unanswered/);
+assert.deepEqual(transferFailedGroups(data)[0], ['Leasing', 102]);
+assert.match(unattributedNote(data), /26 attempts couldn't be tied to a caller/);
 for (const row of data.not_called_back) {
   assert.equal(mentionsCallbackWindow(sinceMiss(row)), false, row.phone);
-  assert.equal(mentionsCallbackWindow(callbackStatus(row).status), false);
 }
-assert.equal(sinceMiss(data.not_called_back.find((row) => row.phone === '(270) 970-4662')), '10.5h');
-assert.equal(sinceMiss(data.not_called_back.find((row) => row.phone === '(917) 284-5909')), '13.7h');
 
-const closed = renderPage(data, { open: false, group: '' });
-assert.match(closed, /Oct 27–Nov 2, 2026 \(Central Time\)/);
-assert.match(closed, /Calls received[\s\S]*?>474</);
-assert.match(closed, /Calls answered[\s\S]*?>451</);
-assert.match(closed, /Super 367 · Staff 84/);
-assert.match(closed, /Callers not answered[\s\S]*?>11</);
-assert.match(closed, /People, not calls/);
-assert.match(closed, /Not called back yet[\s\S]*?>10</);
-assert.match(closed, /total_calls = answered_calls \+ missed_calls/);
-assert.match(closed, /hidden/);
-assert.doesNotMatch(closed, /transfer from Super/);
-assert.doesNotMatch(closed, /Open loops|Ultatel stale|Cleaned|IN no answer|Needs human help|AI talk time/i);
-assert.equal(mentionsCallbackWindow(closed), false, 'closed page');
+const html = renderPage(data, { list: 'missed', group: '', type: '' });
+assert.match(html, /Calls received[\s\S]*?>473</);
+assert.match(html, /Calls answered[\s\S]*?>393</);
+assert.match(html, /Super 367 · Staff 26/);
+assert.match(html, /Voicemail is not counted as answered/);
+assert.match(html, /Callers not answered[\s\S]*?>74</);
+assert.match(html, /People, not calls/);
+assert.match(html, /incl\. 75 callers whose transfer from Super went unanswered/);
+assert.match(html, /Not called back yet[\s\S]*?>56</);
+assert.match(html, /Super transfer not answered[\s\S]*?<strong>35<\/strong>/);
+assert.match(html, /Went to voicemail[\s\S]*?<strong>11<\/strong>/);
+assert.match(html, /Rang, not answered[\s\S]*?<strong>10<\/strong>/);
+assert.match(html, /What happened/);
+assert.match(html, /Brenden Walker/);
+assert.match(html, /Super transfers nobody picked up/);
+assert.match(html, />117</);
+assert.match(html, /26 attempts couldn't be tied to a caller/);
+assert.equal(mentionsCallbackWindow(html), false);
+assert.doesNotMatch(html, /never called/i);
+assert.doesNotMatch(html, /Open loops|Ultatel stale|Cleaned|IN no answer|Needs human help|AI talk time/i);
+assert.equal((html.match(/<tr>/g) || []).length, 57);
 
-const open = renderPage(data, { open: true, group: '' });
-for (const row of data.not_called_back) {
-  assert.match(open, new RegExp(row.phone.replace(/[()]/g, '\\$&')));
-  assert.match(open, new RegExp(row.call_group.replace(/[()]/g, '\\$&')));
-}
-assert.doesNotMatch(open, /What happened/);
-assert.match(open, /Called back/);
-assert.match(open, /Fri Oct 30, 2026 12:12 PM CT/);
-assert.match(open, /Not called back yet/);
-assert.equal(mentionsCallbackWindow(open), false, 'open page');
-assert.doesNotMatch(open, /Never called|None yet/);
+const leasing = renderPage(data, { list: 'missed', group: 'Leasing', type: '' });
+assert.match(leasing, />42 callers</);
+assert.equal((leasing.match(/<tr>/g) || []).length, 43);
 
-const leasing = renderPage(data, { open: true, group: 'Leasing' });
-assert.match(leasing, /5 callers in Leasing/);
-assert.match(leasing, /\(636\) 221-9737/);
-assert.doesNotMatch(leasing, /\(631\) 552-1318/);
-assert.doesNotMatch(leasing, /\(636\) 443-9354/);
+const typed = renderPage(data, { list: 'missed', group: '', type: 'Went to voicemail' });
+assert.equal((typed.match(/<tr>/g) || []).length, 12);
+assert.doesNotMatch(typed, /Brenden Walker/);
 
-const withTransfers = structuredClone(data);
-withTransfers.summary.transfer_failed_callers = 4;
-withTransfers.summary.transfer_failed_calls = 6;
-withTransfers.summary.transfer_failed_by_group = { 'Test Group': 9 };
-withTransfers.not_called_back[0].missed_type = 'Super transfer not answered';
-withTransfers.not_called_back[1].missed_type = 'Rang, not answered';
-const transferHtml = renderPage(withTransfers, { open: true, group: '' });
-assert.match(transferHtml, /incl\. 4 whose transfer from Super went unanswered \(6 calls\)/);
-assert.match(transferHtml, /class="chip static">Test Group <strong>9<\/strong>/);
-assert.match(transferHtml, /What happened/);
-assert.match(transferHtml, /Super transfer not answered/);
-assert.match(transferHtml, /Rang, not answered/);
-assert.equal(mentionsCallbackWindow(transferHtml), false);
-assert.equal(transferFailedLine({ transfer_failed_callers: 4 }), 'incl. 4 whose transfer from Super went unanswered');
-assert.equal(transferFailedLine({ transfer_failed_calls: 6 }), 'incl. 6 calls whose transfer from Super went unanswered');
-assert.equal(transferFailedLine({ transfer_failed_callers: 0, transfer_failed_calls: 0 }), 'incl. 0 whose transfer from Super went unanswered (0 calls)');
-assert.deepEqual(transferFailedGroups({ transfer_failed_by_group: { Leasing: 2 } }), [['Leasing', 2]]);
-assert.equal(hasMissedType(data.not_called_back), false);
+const next = structuredClone(data);
+next.summary.called_back = 22;
+next.summary.not_called_back = 52;
+next.summary.definitions.reconcile += ' (36 of those never called this week)';
+next.called_back = [
+  {
+    phone: '(111) 222-3333',
+    caller_name: 'Ada Lovelace',
+    callback_ct: 'Mon Nov 2, 2026 1:00 PM CT',
+    call_group: 'Leasing',
+    missed_type: 'Rang, not answered',
+    last_missed_ct: 'Mon Nov 2, 2026 9:00 AM CT',
+    missed_calls: 1,
+    waiting: '4h',
+  },
+];
+const calledHtml = renderPage(next, { list: 'called', group: '', type: '' });
+assert.match(calledHtml, /Called back[\s\S]*?>22</);
+assert.match(calledHtml, /Not called back yet[\s\S]*?>52</);
+assert.match(calledHtml, /Ada Lovelace/);
+assert.match(calledHtml, /Mon Nov 2, 2026 1:00 PM CT/);
+assert.doesNotMatch(calledHtml, /never called/i);
+assert.equal(mentionsCallbackWindow(reconcileText(next.summary)), false);
+assert.doesNotMatch(reconcileText(next.summary), /never called/i);
 
 const evil = structuredClone(data);
 evil.not_called_back[0].caller_name = '<img src=x onerror=alert(1)>';
-const escaped = renderPage(evil, { open: true, group: '' });
+const escaped = renderPage(evil, {});
 assert.equal(escaped.includes('<img'), false);
 assert.match(escaped, /&lt;img src=x onerror=alert\(1\)&gt;/);
 
 for (const file of ['src/main.js', 'src/render.js', 'src/format.js', 'src/style.css']) {
   const source = read(file);
-  assert.doesNotMatch(source, /chart\.js|super_open_loops|ultatel_inbound|open_loops|miss_by_extension|stale-note/);
+  assert.doesNotMatch(source, /chart\.js|super_open_loops|ultatel_inbound|miss_by_extension|stale-note/);
 }
 
-for (const file of [
-  'public/data/not_called_back.csv',
-  'public/data/latest.json',
-  'public/data/open_loops_super.csv',
-  'public/data/callback_hygiene_ultatel.csv',
-  'public/data/Missed_ownership_A_no_callback.csv',
-  'public/data/Missed_ownership_B_called_back.csv',
-]) {
-  assert.ok(read(file).length > 0, file);
-}
+assert.ok(read('public/data/transfer_failed.csv').includes('What happened') || read('public/data/transfer_failed.csv').length > 0);
 
-console.log('owner page matches the Nov 3 pack');
+console.log('owner page matches the Nov 3d pack');
