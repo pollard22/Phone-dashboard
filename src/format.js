@@ -195,7 +195,7 @@ function humanize(key) {
   return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
-const HIDDEN_DEFINITION_KEYS = new Set(['called_back_late', 'not_called_back_under_24h']);
+const HIDDEN_DEFINITION_KEYS = new Set(['never_called', 'called_back_late', 'not_called_back_under_24h']);
 
 export function definitionEntries(definitions) {
   if (!definitions || typeof definitions !== 'object' || Array.isArray(definitions)) return [];
@@ -210,7 +210,9 @@ export function definitionEntries(definitions) {
       (entry) =>
         entry.key !== 'reconcile' &&
         !mentionsCallbackWindow(entry.term) &&
-        !mentionsCallbackWindow(entry.text)
+        !mentionsCallbackWindow(entry.text) &&
+        !mentionsNeverCalled(entry.term) &&
+        !mentionsNeverCalled(entry.text)
     );
 }
 

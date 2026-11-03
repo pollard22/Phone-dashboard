@@ -15,10 +15,9 @@ The page reads `public/data/latest.json` only.
 | Window in the header | `summary.window_label` (Central Time) |
 | Calls received, calls answered, callers not answered | `summary.total_calls`, `summary.answered_calls`, `summary.unanswered_callers` |
 | Answered split, when both fields exist | `summary.answered_by_super`, `summary.answered_by_staff` |
-| Called back and not called back yet | `summary.called_back`, `summary.not_called_back`, `summary.never_called` |
+| Called back and not called back yet | `summary.called_back`, `summary.not_called_back` |
 | Called-back caller list | `called_back[]`, with `callback_ct` |
 | What happened | `summary.not_called_back_by_missed_type` and `missed_type` |
-| How the counts relate | `summary.definitions.reconcile`, with any never-called or 24-hour clause removed |
 | Call-group filters and the caller table | `not_called_back_by_group`, `not_called_back[]` |
 | Super transfers nobody picked up | `summary.transfer_failed_calls` and the per-group transfer counts |
 | Footer definitions and freshness | `summary.definitions`, `summary.export_end_ct`, `summary.source`, `meta.generated_at` |
