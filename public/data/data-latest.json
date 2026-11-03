@@ -2,8 +2,8 @@
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
     "window_label": "Oct 24\u201331, 2026 (Ultatel HQ UTC-5 \u2192 PT)",
-    "super_open_loops_window": "Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 22 across Fri Oct 30 11:46 AM\u2013Mon Nov 2 4:52 AM CT (44 of 59 loaded threads scanned; 9 uncertain, 1 borderline; Fri 12:29\u201312:46 PM leasing pair and Dustin Stillman insurance follow-up also borderline, not listed). Safety: power outage at 43 Santo Domingo Dr (Fri 4:26 PM).",
-    "generated_at": "2026-11-02",
+    "super_open_loops_window": "Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel MyService signed out; Ultatel figures remain the Oct 25\u201331 pack.",
+    "generated_at": "2026-11-03",
     "timezone_note": "America/Los_Angeles for display; Ultatel CDR timestamps converted from HQ",
     "sources": [
       "Ultatel Call Details CSV",
@@ -15,7 +15,7 @@
       "Personal cell, AppFolio notes, and Super SMS/email are not in Ultatel CDRs.",
       "Super inbound volume is not 1:1 with Ultatel CDR legs.",
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
-      "Super Activity open loops: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 22 across Fri Oct 30 11:46 AM\u2013Mon Nov 2 4:52 AM CT (44 of 59 loaded threads scanned; 9 uncertain, 1 borderline; Fri 12:29\u201312:46 PM leasing pair and Dustin Stillman insurance follow-up also borderline, not listed). Safety: power outage at 43 Santo Domingo Dr (Fri 4:26 PM)."
+      "Super Activity open loops: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM\u2013Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27\u2013Nov 3). Ultatel MyService signed out; Ultatel figures remain the Oct 25\u201331 pack."
     ],
     "ultatel_source_file": "call-details-2026-10-25_to_10-31.csv",
     "window_slug": "2026-10-25_to_2026-10-31"
@@ -32,15 +32,15 @@
     "never_company_dialed": 7,
     "dialed_earlier_only": 8,
     "dialed_later_after_24h": 3,
-    "super_open_loops": 22,
-    "super_ultatel_overlap": 1,
-    "super_only_open_loops": 21,
-    "super_ai_inbound": 373,
-    "super_transferred": 266,
-    "super_actions": 701,
-    "super_sms_sessions": 68,
-    "super_ai_talk": "6h 32m",
-    "super_avg_talk": "1m 4s"
+    "super_open_loops": 23,
+    "super_ultatel_overlap": 0,
+    "super_only_open_loops": 23,
+    "super_ai_inbound": 352,
+    "super_transferred": 243,
+    "super_actions": 633,
+    "super_sms_sessions": 51,
+    "super_ai_talk": "5h 58m",
+    "super_avg_talk": "1m 2s"
   },
   "miss_by_extension": {
     "110 \u2014 Mara Pongayan Priagas": 14,
@@ -57,7 +57,7 @@
       "outcome": "NO ANSWER",
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": "(Super Action Required)"
+      "super_note": ""
     },
     {
       "caller": "(660) 342-5252",
