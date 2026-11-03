@@ -1,190 +1,120 @@
 import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
-import { parsePack } from '../src/data.js';
-import { buildDrill, dialedOtherRows } from '../src/drills.js';
+import { renderPage } from '../src/render.js';
 import {
-  NOT_IN_EXPORT,
-  callbackFields,
-  exportYear,
-  indexActionByCaller,
-  missedFields,
-  neverFields,
-  openLoopFields,
-  splitWhen,
-} from '../src/callFields.js';
+  callbackText,
+  filterRows,
+  hasMissedType,
+  transferFailedGroups,
+  transferFailedLine,
+} from '../src/format.js';
 
-const read = (name) => readFileSync(new URL(`../public/data/${name}`, import.meta.url), 'utf8');
-const pack = parsePack({
-  jsonText: read('latest.json'),
-  aText: read('Missed_ownership_A_no_callback.csv'),
-  bText: read('Missed_ownership_B_called_back.csv'),
-  olText: read('open_loops_super.csv'),
-  cbText: read('callback_hygiene_ultatel.csv'),
-  exText: read('exclusions_method.csv'),
-});
+const root = new URL('..', import.meta.url);
+const read = (name) => readFileSync(new URL(name, root), 'utf8');
+const data = JSON.parse(read('public/data/latest.json'));
+const summary = data.summary;
 
-const k = pack.data.kpis;
-assert.equal(pack.missedA.length, 347);
-assert.equal(pack.missedB.length, 100);
-assert.equal(pack.callbackAction.length, k.no_callback_24h_unique);
-assert.equal(pack.callbackNever.length, k.never_company_dialed);
-assert.equal(pack.openLoops.length, k.super_open_loops);
-assert.equal(dialedOtherRows(pack).length, k.dialed_earlier_only + k.dialed_later_after_24h);
-
-function expectRows(id, n) {
-  const spec = buildDrill(id, pack);
-  assert.ok(spec, id);
-  assert.equal(spec.unavailable, undefined);
-  assert.equal(spec.rows.length, n, id);
-  if (spec.warnMismatch !== false) assert.equal(Number(spec.headline), spec.rows.length, id);
-}
-
-function expectUnavailable(id) {
-  const spec = buildDrill(id, pack);
-  assert.ok(spec, id);
-  assert.equal(spec.unavailable, true, id);
-  assert.ok(!spec.rows || spec.table === 'exclusion', `${id} should not invent call rows`);
-  assert.match(spec.reason, /not in this export/i, id);
-}
-
-expectRows('no-callback', 141);
-expectRows('never-dialed', 98);
-expectRows('cleaned-na', 447);
-expectRows('open-loops', 15);
-expectRows('open-overlap', 7);
-expectRows('open-super-only', 8);
-expectRows('dialed-other', 43);
-
-const raw = buildDrill('in-no-answer', pack);
-assert.equal(raw.rows.length, 447);
-assert.equal(raw.warnMismatch, false);
-assert.equal(Number(raw.headline), 472);
-
-for (const id of ['outbound', 'out-answered', 'out-na']) {
-  assert.equal(buildDrill(id, pack), null, id);
-}
-
-for (const id of [
-  'in-bound',
-  'in-answered',
-  'dialed-earlier',
-  'dialed-later',
-  'super-inbound',
-  'super-transferred',
-  'super-help',
-  'super-talk',
-  'super-avg',
-  'super-actions',
-  'super-sms',
-  'super-activity',
-]) {
-  expectUnavailable(id);
-}
-
-const self = buildDrill('self-events', pack, { selfNumber: '(314) 665-2265' });
-assert.equal(self.unavailable, true);
-assert.equal(self.rows.length, 1);
-assert.equal(Number(self.headline), 25);
-assert.match(self.reason, /not in this export/i);
-
-const ext = {};
-for (const row of [...pack.missedA, ...pack.missedB]) {
-  const key = row['Who should have taken it'];
-  ext[key] = (ext[key] || 0) + 1;
-}
-assert.deepEqual(ext, pack.data.miss_by_extension);
-
-const year = exportYear(pack.data.meta.window_label);
-assert.equal(year, 2026);
-const byCaller = indexActionByCaller(pack.callbackAction);
-
-const firstMiss = missedFields(pack.missedA[0]);
-assert.deepEqual(firstMiss, {
-  caller: '(618) 823-2480',
-  who: '76001 — 76001',
-  date: 'Sat, Sep 26, 2026',
-  time: '6:17 PM',
-  yearInferred: false,
-});
-
-for (const row of [...pack.missedA, ...pack.missedB]) {
-  const fields = missedFields(row);
-  assert.ok(fields.caller.startsWith('('), row.Caller);
-  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
-  assert.equal(fields.who, row['Who should have taken it']);
-  assert.match(fields.date, /^[A-Z][a-z]{2}, [A-Z][a-z]{2} \d{1,2}, 2026$/, row['Miss datetime (PT)']);
-  assert.match(fields.time, /^\d{1,2}:\d{2} [AP]M$/, row['Miss datetime (PT)']);
-  assert.equal(fields.yearInferred, false);
-  const parsed = splitWhen(row['Miss datetime (PT)']);
-  const iso = row['Miss datetime (PT)'].match(/^(\d{4})-(\d{2})-(\d{2})/);
-  const utc = new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])));
-  const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][utc.getUTCDay()];
-  assert.equal(parsed.date.slice(0, 3), weekday, row['Miss datetime (PT)']);
-}
-
-const firstCallback = callbackFields(pack.callbackAction[0], year);
-assert.deepEqual(firstCallback, {
-  caller: '(636) 875-9696',
-  who: '110 — Mara Pongayan Priagas',
-  date: 'Fri, Sep 25, 2026',
-  time: '12:10 PM',
-  yearInferred: true,
-});
-
-for (const row of pack.callbackAction) {
-  const fields = callbackFields(row, year);
-  assert.equal(fields.who, row['Last extension tried'], row.Caller);
-  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
-  assert.equal(fields.date.slice(0, 3), row['Last miss (PT)'].slice(0, 3), row.Caller);
-  assert.equal(fields.yearInferred, true);
-  assert.match(fields.date, /, 2026$/);
-}
-
-for (const row of pack.callbackNever) {
-  const fields = neverFields(row, byCaller, year);
-  assert.equal(fields.who, byCaller.get(row.Caller)['Last extension tried'], row.Caller);
-  assert.equal(fields.date.slice(0, 3), row['Last miss (PT)'].slice(0, 3), row.Caller);
-  assert.notEqual(fields.time, NOT_IN_EXPORT, row.Caller);
-}
-
-for (const row of dialedOtherRows(pack)) {
-  const fields = callbackFields(row, year);
-  assert.notEqual(fields.who, NOT_IN_EXPORT, row.Caller);
-  assert.equal(fields.yearInferred, true);
-}
-
-const loopFields = pack.openLoops.map((row) => openLoopFields(row, byCaller, year));
-const superOnly = loopFields.filter((fields) => fields.who === NOT_IN_EXPORT);
-const overlap = loopFields.filter((fields) => fields.who !== NOT_IN_EXPORT);
-assert.equal(superOnly.length, 8);
-assert.equal(overlap.length, 7);
-for (const fields of superOnly) {
-  assert.equal(fields.date, NOT_IN_EXPORT);
-  assert.equal(fields.time, NOT_IN_EXPORT);
-  assert.equal(fields.yearInferred, false);
-  assert.ok(fields.caller.startsWith('('));
-}
-for (const fields of overlap) {
-  assert.notEqual(fields.date, NOT_IN_EXPORT);
-  assert.notEqual(fields.time, NOT_IN_EXPORT);
-  assert.equal(fields.yearInferred, true);
-}
-
-const jacob = openLoopFields(
-  pack.openLoops.find((row) => row.Caller === '(636) 875-9696'),
-  byCaller,
-  year
+assert.equal(summary.total_calls, 474);
+assert.equal(summary.answered_calls, 451);
+assert.equal(summary.answered_by_super + summary.answered_by_staff, summary.answered_calls);
+assert.equal(summary.unanswered_callers, 11);
+assert.equal(summary.not_called_back, 10);
+assert.equal(data.not_called_back.length, summary.not_called_back);
+assert.equal(
+  Object.values(data.not_called_back_by_group).reduce((sum, n) => sum + n, 0),
+  summary.not_called_back
 );
-assert.deepEqual(jacob, {
-  caller: '(636) 875-9696',
-  who: '110 — Mara Pongayan Priagas',
-  date: 'Fri, Sep 25, 2026',
-  time: '12:10 PM',
-  yearInferred: true,
+assert.deepEqual(data.not_called_back_by_group, {
+  Leasing: 5,
+  'Main line (Super AI receptionist)': 3,
+  'Direct line — Junior Ruiz (112)': 1,
+  'Direct line — Rania Lombera (107)': 1,
 });
+for (const [group, count] of Object.entries(data.not_called_back_by_group)) {
+  assert.equal(filterRows(data.not_called_back, group).length, count, group);
+}
+assert.match(summary.window_label, /Central Time/);
+assert.equal(summary.transfer_failed_calls, undefined);
+assert.equal(summary.transfer_failed_callers, undefined);
+assert.equal(transferFailedLine(summary), '');
+assert.deepEqual(transferFailedGroups(data), []);
+assert.equal(hasMissedType(data.not_called_back), false);
 
-assert.equal(splitWhen('Thu Sep 24 8:30 AM', year).date, 'Thu, Sep 24, 2026');
-assert.equal(splitWhen('Thu Sep 24 8:30 AM', year).time, '8:30 AM');
-assert.equal(splitWhen('—', year).date, NOT_IN_EXPORT);
+const never = data.not_called_back.filter((row) => callbackText(row) === 'Never called');
+const late = data.not_called_back.filter((row) => callbackText(row) !== 'Never called' && callbackText(row) !== 'None yet');
+const noneYet = data.not_called_back.filter((row) => callbackText(row) === 'None yet');
+assert.equal(never.length, summary.never_called);
+assert.equal(late.length, summary.called_back_late);
+assert.equal(noneYet.length, summary.not_called_back - summary.never_called - summary.called_back_late);
 
-console.log('drill counts match the export');
+const closed = renderPage(data, { open: false, group: '' });
+assert.match(closed, /Oct 27–Nov 2, 2026 \(Central Time\)/);
+assert.match(closed, /Calls received[\s\S]*?>474</);
+assert.match(closed, /Calls answered[\s\S]*?>451</);
+assert.match(closed, /Super 367 · Staff 84/);
+assert.match(closed, /Callers not answered[\s\S]*?>11</);
+assert.match(closed, /People, not calls/);
+assert.match(closed, /Not called back yet[\s\S]*?>10</);
+assert.match(closed, /5 never called · 1 called back late · 2 still within 24h/);
+assert.match(closed, /total_calls = answered_calls \+ missed_calls/);
+assert.match(closed, /hidden/);
+assert.doesNotMatch(closed, /transfer from Super/);
+assert.doesNotMatch(closed, /Open loops|Ultatel stale|Cleaned|IN no answer|Needs human help|AI talk time/i);
+
+const open = renderPage(data, { open: true, group: '' });
+for (const row of data.not_called_back) {
+  assert.match(open, new RegExp(row.phone.replace(/[()]/g, '\\$&')));
+  assert.match(open, new RegExp(row.call_group.replace(/[()]/g, '\\$&')));
+}
+assert.doesNotMatch(open, /What happened/);
+assert.match(open, /Fri Oct 30, 2026 12:12 PM CT/);
+assert.match(open, /Never called/);
+assert.match(open, /None yet/);
+
+const leasing = renderPage(data, { open: true, group: 'Leasing' });
+assert.match(leasing, /5 callers in Leasing/);
+assert.match(leasing, /\(636\) 221-9737/);
+assert.doesNotMatch(leasing, /\(631\) 552-1318/);
+assert.doesNotMatch(leasing, /\(636\) 443-9354/);
+
+const withTransfers = structuredClone(data);
+withTransfers.summary.transfer_failed_callers = 4;
+withTransfers.summary.transfer_failed_calls = 6;
+withTransfers.summary.transfer_failed_by_group = { 'Test Group': 9 };
+withTransfers.not_called_back[0].missed_type = 'Super transfer not answered';
+withTransfers.not_called_back[1].missed_type = 'Rang, not answered';
+const transferHtml = renderPage(withTransfers, { open: true, group: '' });
+assert.match(transferHtml, /incl\. 4 whose transfer from Super went unanswered \(6 calls\)/);
+assert.match(transferHtml, /class="chip static">Test Group <strong>9<\/strong>/);
+assert.match(transferHtml, /What happened/);
+assert.match(transferHtml, /Super transfer not answered/);
+assert.match(transferHtml, /Rang, not answered/);
+assert.equal(transferFailedLine({ transfer_failed_callers: 4 }), 'incl. 4 whose transfer from Super went unanswered');
+assert.equal(transferFailedLine({ transfer_failed_calls: 6 }), 'incl. 6 calls whose transfer from Super went unanswered');
+assert.equal(transferFailedLine({ transfer_failed_callers: 0, transfer_failed_calls: 0 }), 'incl. 0 whose transfer from Super went unanswered (0 calls)');
+assert.deepEqual(transferFailedGroups({ transfer_failed_by_group: { Leasing: 2 } }), [['Leasing', 2]]);
+assert.equal(hasMissedType(data.not_called_back), false);
+
+const evil = structuredClone(data);
+evil.not_called_back[0].caller_name = '<img src=x onerror=alert(1)>';
+const escaped = renderPage(evil, { open: true, group: '' });
+assert.equal(escaped.includes('<img'), false);
+assert.match(escaped, /&lt;img src=x onerror=alert\(1\)&gt;/);
+
+for (const file of ['src/main.js', 'src/render.js', 'src/format.js', 'src/style.css']) {
+  const source = read(file);
+  assert.doesNotMatch(source, /chart\.js|super_open_loops|ultatel_inbound|open_loops|miss_by_extension|stale-note/);
+}
+
+for (const file of [
+  'public/data/not_called_back.csv',
+  'public/data/latest.json',
+  'public/data/open_loops_super.csv',
+  'public/data/callback_hygiene_ultatel.csv',
+  'public/data/Missed_ownership_A_no_callback.csv',
+  'public/data/Missed_ownership_B_called_back.csv',
+]) {
+  assert.ok(read(file).length > 0, file);
+}
+
+console.log('owner page matches the Nov 3 pack');

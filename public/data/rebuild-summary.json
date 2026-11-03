@@ -2,7 +2,7 @@
   "window_short": "Oct 27\u2013Nov 2, 2026",
   "window_slug": "2026-10-27_to_2026-11-02",
   "dmin": "2026-10-27T07:32:16-05:00",
-  "dmax": "2026-11-02T23:03:28-05:00",
+  "dmax": "2026-11-02T23:03:28-06:00",
   "kpis": {
     "ultatel_inbound": 768,
     "ultatel_inbound_answered": 583,
@@ -26,12 +26,57 @@
     "super_avg_talk": "1m 2s"
   },
   "paths": {
-    "json": "/workspace/ultatel/web-dashboard/data-latest.json",
-    "a": "/workspace/ultatel/web-dashboard/Missed_ownership_A_no_callback.csv",
-    "b": "/workspace/ultatel/web-dashboard/Missed_ownership_B_called_back.csv",
-    "callback": "/workspace/ultatel/web-dashboard/callback_hygiene_ultatel.csv",
-    "open_loops": "/workspace/ultatel/web-dashboard/open_loops_super.csv",
-    "exclusions": "/workspace/ultatel/web-dashboard/exclusions_method.csv",
-    "overview": "/workspace/ultatel/web-dashboard/Overview.csv"
+    "json": "web-dashboard/deploy-pack-2026-11-03c/public/data/data-latest.json",
+    "a": "web-dashboard/deploy-pack-2026-11-03c/public/data/Missed_ownership_A_no_callback.csv",
+    "b": "web-dashboard/deploy-pack-2026-11-03c/public/data/Missed_ownership_B_called_back.csv",
+    "callback": "web-dashboard/deploy-pack-2026-11-03c/public/data/callback_hygiene_ultatel.csv",
+    "open_loops": "web-dashboard/deploy-pack-2026-11-03c/public/data/open_loops_super.csv",
+    "exclusions": "web-dashboard/deploy-pack-2026-11-03c/public/data/exclusions_method.csv",
+    "overview": "web-dashboard/deploy-pack-2026-11-03c/public/data/Overview.csv",
+    "not_called_back": "web-dashboard/deploy-pack-2026-11-03c/public/data/not_called_back.csv"
+  },
+  "summary": {
+    "window_label": "Oct 27\u2013Nov 2, 2026 (Central Time)",
+    "export_end_ct": "Mon Nov 2, 2026 11:59 PM CT",
+    "total_calls": 474,
+    "answered_calls": 451,
+    "answered_by_super": 367,
+    "answered_by_staff": 84,
+    "missed_calls": 23,
+    "callers_with_a_missed_call": 19,
+    "callers_got_through_later": 8,
+    "unanswered_callers": 11,
+    "not_called_back": 10,
+    "never_called": 5,
+    "called_back_late": 1,
+    "not_called_back_under_24h": 2,
+    "labels": {
+      "total_calls": "Calls we received",
+      "answered_calls": "Calls answered",
+      "unanswered_callers": "Callers we didn't answer",
+      "not_called_back": "Not called back within 24 hours",
+      "never_called": "Never called back at all"
+    },
+    "definitions": {
+      "total_calls": "Inbound calls from outside phone numbers in Ultatel this week (CALL count). Excludes Super's transfer legs into the office (they repeat a call already counted) and Pollard's own numbers.",
+      "answered_calls": "Of those calls, how many were picked up \u2014 by Super on the main line or by staff on a direct line (CALL count).",
+      "unanswered_callers": "Different outside callers (PERSON count, not calls) who had a call go unanswered and did not get through on a later call this week.",
+      "not_called_back": "Of the callers we didn't answer, how many got no call from our phones within 24 hours of their last unanswered call. Includes callers whose 24 hours had not run out when the export ended (marked 'under 24h').",
+      "never_called": "Of the not-called-back callers, how many we never dialed at all during the week.",
+      "reconcile": "total_calls = answered_calls + missed_calls (calls). unanswered_callers = callers_with_a_missed_call \u2212 callers_got_through_later (people). not_called_back \u2264 unanswered_callers."
+    },
+    "excluded": {
+      "super_transfer_legs": 293,
+      "company_number_legs": 1,
+      "anonymous_calls_in_total": 1,
+      "note": "Excluded legs are not in total_calls. Anonymous calls are counted as calls but can't be counted as callers."
+    },
+    "source": "Ultatel Call Details CSV only; callback = any company OUT-Bound to the caller's number. Personal cells, texts, and Super messages are not visible."
+  },
+  "not_called_back_by_group": {
+    "Leasing": 5,
+    "Main line (Super AI receptionist)": 3,
+    "Direct line \u2014 Junior Ruiz (112)": 1,
+    "Direct line \u2014 Rania Lombera (107)": 1
   }
 }

@@ -2,7 +2,7 @@ Pollard Properties — Call Hygiene Dashboard,,,
 LIVE data from Ultatel Call Details + HireSuper Reporting/Activity. No invented metrics.,,,
 
 Date windows & sources,,,
-Ultatel Call Details,"Oct 27–Nov 2, 2026 (Last 7 Days / export). Source times HQ UTC−5; display PT where converted.",,
+Ultatel Call Details,"Oct 27–Nov 2, 2026 (Last 7 Days / export). Source times America/Chicago; legacy tabs display PT, new summary displays CT.",,
 Super Activity open loops,"Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM–Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27–Nov 3). Ultatel figures are the Oct 27–Nov 2 Call Details export pulled Nov 3.",,
 Super Reporting,"Last 7 days (Reporting badge 'Data from Oct 2, 2026'; chart axis Oct 27-Nov 3); Total view. Calls card = 'Total Calls' (total calls answered by AI); talk time based on 348 of 352 calls.",,
 

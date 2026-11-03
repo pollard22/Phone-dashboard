@@ -11,8 +11,5 @@
   "devDependencies": {
     "vite": "^8.3.0"
   },
-  "dependencies": {
-    "chart.js": "^4.5.1"
-  },
-  "description": "Pollard Properties Call Hygiene Dashboard"
+  "description": "Pollard Properties call hygiene page"
 }
