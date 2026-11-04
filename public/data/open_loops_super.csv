@@ -1,5 +1,5 @@
 Open loops (Super) — Action Required
-"Definition = unresolved Action Required after failed transfer or message-taken. Source: Super open loops (feed-scan, definition: unresolved Action Required after failed transfer or message-taken; excludes accepted handoffs and hang-ups with no message): 23 across Mon Nov 2 10:44 AM–Tue Nov 3 7:08 AM CT (50 threads scanned; 5 certain, 15 borderline, 3 uncertain). No safety items among counted loops; water on bathroom floor apt 621, Sierra Bennett (636) 377-6692, accepted by maintenance (confirm visit). Super Reporting Last 7 days (chart Oct 27–Nov 3). Ultatel figures are the Oct 27–Nov 2 Call Details export pulled Nov 3."
+Definition = unresolved Action Required after failed transfer or message-taken. Source: web-dashboard/deploy-pack-2026-11-03g/super-window-note.txt
 Total: 23 | Overlap with Ultatel no-callback: 0 | Super-only: 23
 
 Caller,Super open-loop note / handoff scenario,In Ultatel no-callback list?,Ultatel miss attempts,Last Ultatel miss (PT)
