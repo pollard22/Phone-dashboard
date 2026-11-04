@@ -138,9 +138,10 @@ function firstName(value) {
 /**
  * Short call-group label for the page. Counts stay on the underlying rows;
  * callers of this helper merge groups that share a label.
- * Leasing (615, 101, 102, 110), Maintenance (104, including Mel 104 then Tiffany),
- * Renewals (108), Applications (106), Main line (601 / Super with no transfer),
- * and a direct call to a person as their first name.
+ * Leasing (615, 101, 102, 110), Maintenance (104, including "Maintenance + Tiffany 100"
+ * and Mel 104 then Tiffany), Renewals (108), Applications (106),
+ * Main line (601 / Super with no transfer), "Junior + Leasing" as Junior,
+ * "Emergency line" unchanged, and a direct call to a person as their first name.
  */
 export function groupLabel(raw) {
   const text = String(raw ?? '').replace(/\s+/g, ' ').trim();
@@ -169,9 +170,9 @@ export function groupLabel(raw) {
   if (/\bLeasing\b/i.test(text) || /\b(?:615|101|102|110)\b/.test(text)) return 'Leasing';
   if (/\bMaintenance\b/i.test(text)) return 'Maintenance';
   if (/main line/i.test(text) || /\b601\b/.test(text) || /\bSuper\b/.test(text)) return 'Main line';
+  if (/^emergency line$/i.test(text)) return 'Emergency line';
 
-  const plain = firstName(text);
-  return plain || text;
+  return text;
 }
 
 /** Map raw group counts to display labels and sum counts that share a label. */
@@ -223,11 +224,8 @@ export function sinceMiss(row) {
 }
 
 export function waitingText(row) {
-  if (row && Object.prototype.hasOwnProperty(row, 'waiting')) {
-    const waiting = String(row.waiting ?? '').trim();
-    if (!waiting || mentionsCallbackWindow(waiting) || mentionsNeverCalled(waiting)) return '';
-    return waiting;
-  }
+  const waiting = String(row?.waiting ?? '').trim();
+  if (waiting && !mentionsCallbackWindow(waiting) && !mentionsNeverCalled(waiting)) return waiting;
   const clock = sinceMiss(row);
   return mentionsNeverCalled(clock) ? '' : clock;
 }

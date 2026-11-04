@@ -39,13 +39,14 @@ The files keep the raw group strings. The page shows a shorter name from `groupL
 | In the export | On the page |
 |---|---|
 | Leasing, or extensions 615, 101, 102, 110 | Leasing |
-| Maintenance, extension 104, or Mel 104 then Tiffany 100 | Maintenance |
+| Maintenance, extension 104, Mel 104 then Tiffany, or Maintenance + Tiffany 100 | Maintenance |
 | Renewals, or extension 108 | Renewals |
 | Applications, or extension 106 | Applications |
 | Main line, 601, or Super with no transfer target | Main line |
 | Tiffany 100, or Maintenance or Renewals (Tiffany 100) | Tiffany |
 | Rania 107 | Rania |
-| Junior 112 | Junior |
+| Junior 112, or Junior + Leasing | Junior |
+| Emergency line | Emergency line |
 | Any other direct line, `Direct line — Name (ext)` | That person's first name |
 
 Labels do not include extension numbers.
