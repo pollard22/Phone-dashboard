@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Pollard Properties \u2014 Call Hygiene Dashboard",
-    "window_label": "Oct 29\u2013Nov 4, 2026 (Central Time)",
+    "window_label": "Oct 30\u2013Nov 5, 2026 (Central Time)",
     "super_open_loops_window": "web-dashboard/deploy-pack-2026-11-03g/super-window-note.txt",
-    "generated_at": "2026-11-05",
+    "generated_at": "2026-11-06",
     "timezone_note": "America/Chicago (CT) for summary / not_called_back. Ultatel Call Date is already CT wall-clock. Legacy CSVs keep their '(PT)' columns for the old UI.",
     "sources": [
       "Ultatel Call Details CSV",
@@ -17,19 +17,19 @@
       "Callback rule: unanswered/missed inbound counts as no-callback if no matching company OUT within 24 hours.",
       "Super Activity open loops: web-dashboard/deploy-pack-2026-11-03g/super-window-note.txt"
     ],
-    "ultatel_source_file": "call-details-2026-10-29_to_11-04.csv",
-    "window_slug": "2026-10-29_to_2026-11-04"
+    "ultatel_source_file": "call-details-2026-10-30_to_11-05.csv",
+    "window_slug": "2026-10-30_to_2026-11-05"
   },
   "kpis": {
-    "ultatel_inbound": 701,
-    "ultatel_inbound_answered": 539,
-    "ultatel_inbound_no_answer": 162,
-    "ultatel_inbound_no_answer_cleaned": 18,
-    "ultatel_outbound": 442,
-    "ultatel_outbound_answered": 357,
-    "ultatel_outbound_no_answer": 85,
-    "no_callback_24h_unique": 12,
-    "never_company_dialed": 7,
+    "ultatel_inbound": 650,
+    "ultatel_inbound_answered": 510,
+    "ultatel_inbound_no_answer": 140,
+    "ultatel_inbound_no_answer_cleaned": 15,
+    "ultatel_outbound": 455,
+    "ultatel_outbound_answered": 360,
+    "ultatel_outbound_no_answer": 95,
+    "no_callback_24h_unique": 11,
+    "never_company_dialed": 6,
     "dialed_earlier_only": 3,
     "dialed_later_after_24h": 2,
     "super_open_loops": 23,
@@ -44,11 +44,29 @@
   },
   "miss_by_extension": {
     "601 \u2014 AI Agent Number Ring Group": 8,
-    "110 \u2014 Mara Pongayan Priagas": 6,
-    "108 \u2014 Mercedes Recio": 3,
+    "110 \u2014 Mara Pongayan Priagas": 4,
+    "108 \u2014 Mercedes Recio": 2,
     "104 \u2014 Jermale(Mel) Stovall": 1
   },
   "missed_sample": [
+    {
+      "caller": "(636) 383-2392",
+      "when": "2026-11-05 10:17 AM",
+      "who": "110 \u2014 Mara Pongayan Priagas",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
+    {
+      "caller": "(417) 218-1875",
+      "when": "2026-11-05 6:27 AM",
+      "who": "601 \u2014 AI Agent Number Ring Group",
+      "outcome": "NO ANSWER",
+      "called_back_24h": "No",
+      "message_taken": "Unknown (Ultatel has no message flag)",
+      "super_note": ""
+    },
     {
       "caller": "(573) 821-2253",
       "when": "2026-11-03 4:00 PM",
@@ -129,69 +147,42 @@
       "called_back_24h": "No",
       "message_taken": "Unknown (Ultatel has no message flag)",
       "super_note": ""
-    },
-    {
-      "caller": "(314) 901-3986",
-      "when": "2026-10-29 11:43 AM",
-      "who": "601 \u2014 AI Agent Number Ring Group",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(480) 568-9164",
-      "when": "2026-10-29 10:27 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
-    },
-    {
-      "caller": "(423) 544-1946",
-      "when": "2026-10-29 9:33 AM",
-      "who": "110 \u2014 Mara Pongayan Priagas",
-      "outcome": "NO ANSWER",
-      "called_back_24h": "No",
-      "message_taken": "Unknown (Ultatel has no message flag)",
-      "super_note": ""
     }
   ],
   "summary": {
-    "window_label": "Oct 29\u2013Nov 4, 2026 (Central Time)",
-    "export_end_ct": "Wed Nov 4, 2026 11:59 PM CT",
-    "total_calls": 420,
-    "answered_calls": 370,
-    "answered_by_super": 353,
-    "answered_by_staff": 17,
-    "missed_calls": 50,
-    "missed_rang_not_answered": 18,
-    "missed_went_to_voicemail": 32,
-    "transfer_failed_calls": 101,
-    "transfer_failed_callers": 67,
+    "window_label": "Oct 30\u2013Nov 5, 2026 (Central Time)",
+    "export_end_ct": "Thu Nov 5, 2026 11:59 PM CT",
+    "total_calls": 392,
+    "answered_calls": 352,
+    "answered_by_super": 337,
+    "answered_by_staff": 15,
+    "missed_calls": 40,
+    "missed_rang_not_answered": 15,
+    "missed_went_to_voicemail": 25,
+    "transfer_failed_calls": 91,
+    "transfer_failed_callers": 62,
     "transfer_failed_anonymous_calls": 0,
-    "transfer_retried_and_answered_calls": 10,
-    "callers_with_a_missed_call": 95,
-    "callers_got_through_later": 33,
-    "unanswered_callers": 62,
-    "called_back": 26,
-    "not_called_back": 36,
-    "never_called": 26,
+    "transfer_retried_and_answered_calls": 9,
+    "callers_with_a_missed_call": 88,
+    "callers_got_through_later": 29,
+    "unanswered_callers": 59,
+    "called_back": 24,
+    "not_called_back": 35,
+    "never_called": 23,
     "not_called_back_by_group": {
-      "Leasing": 22,
-      "Maintenance or Renewals (Tiffany 100)": 5,
+      "Leasing": 20,
       "Main line (Super AI receptionist)": 4,
+      "Maintenance or Renewals (Tiffany 100)": 4,
+      "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
+      "Direct line \u2014 Rania Lombera (107)": 2,
       "Direct line \u2014 Junior Ruiz (112) + Leasing": 1,
-      "Direct line \u2014 Rania Lombera (107)": 1,
       "Maintenance": 1,
-      "Emergency line": 1,
-      "Maintenance + Maintenance or Renewals (Tiffany 100)": 1
+      "Emergency line": 1
     },
     "not_called_back_by_missed_type": {
-      "Super transfer not answered": 23,
+      "Super transfer not answered": 21,
       "Went to voicemail": 8,
-      "Rang, not answered": 5
+      "Rang, not answered": 6
     },
     "labels": {
       "total_calls": "Calls we received",
@@ -212,29 +203,28 @@
       "not_called_back": "Of the callers we didn't answer, how many have had no call from our phones since their last unanswered call (through the end of the export). A message Super took doesn't count as a callback.",
       "never_called": "Of the not-called-back callers, how many we never dialed at all during the week (not even before their missed call).",
       "waiting": "For not-called-back callers: time from their last unanswered call to the end of the export.",
-      "reconcile": "420 calls = 370 answered (353 by Super + 17 by staff) + 50 missed (18 rang with no answer + 32 went to voicemail). Of the 353 Super answered, 101 ended in a transfer nobody picked up (67 callers). 95 callers had a missed call or failed transfer; 33 got through later, leaving 62 callers we didn't answer: 26 called back, 36 not called back yet (26 of those never called this week)."
+      "reconcile": "392 calls = 352 answered (337 by Super + 15 by staff) + 40 missed (15 rang with no answer + 25 went to voicemail). Of the 337 Super answered, 91 ended in a transfer nobody picked up (62 callers). 88 callers had a missed call or failed transfer; 29 got through later, leaving 59 callers we didn't answer: 24 called back, 35 not called back yet (23 of those never called this week)."
     },
     "excluded": {
-      "super_transfer_legs": 280,
+      "super_transfer_legs": 257,
       "company_number_legs": 1,
       "duplicate_rows_same_call_id": 0,
-      "anonymous_calls_in_total": 1,
+      "anonymous_calls_in_total": 0,
       "note": "Excluded legs are not in total_calls; Super's transfer legs are used only to find failed transfers. Anonymous calls are counted as calls but can't be counted as callers."
     },
     "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
     "super_links": {
-      "source_file": "super-call-links-latest.csv",
+      "source_file": "/workspace/ultatel/super-call-links-latest.csv",
       "rows_in_file": 52,
-      "not_called_back_with_link": 17,
-      "called_back_with_link": 4,
+      "not_called_back_with_link": 12,
+      "called_back_with_link": 5,
       "not_called_back_by_status": {
-        "linked": 17,
-        "(no row)": 17,
-        "no Super call": 2
+        "(no row)": 23,
+        "linked": 12
       },
       "called_back_by_status": {
-        "(no row)": 18,
-        "linked": 4,
+        "(no row)": 15,
+        "linked": 5,
         "no Super call": 4
       },
       "match_rule": "phone digits + last missed call (CT) within \u00b15 minutes"
@@ -242,65 +232,34 @@
   },
   "not_called_back": [
     {
-      "phone": "(573) 908-9202",
-      "phone_digits": "5739089202",
+      "phone": "(314) 714-8234",
+      "phone_digits": "3147148234",
       "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 12:26 PM CT",
-      "last_missed_iso": "2026-10-29T12:26:35-05:00",
-      "missed_calls": 3,
+      "last_missed_ct": "Thu Nov 5, 2026 2:49 PM CT",
+      "last_missed_iso": "2026-11-05T14:49:28-06:00",
+      "missed_calls": 2,
       "missed_type": "Super transfer not answered",
       "missed_types_all": [
         "Super transfer not answered"
       ],
-      "transfer_failed_calls": 3,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
+      "transfer_failed_calls": 2,
+      "call_group": "Maintenance + Maintenance or Renewals (Tiffany 100)",
+      "routed_to": "Main line (Super) \u2192 transfer: Jermale(Mel) Stovall 104 (no answer) \u2192 Tiffany Recktenwald 100 (no answer)",
+      "extension": "104, 100",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 155.6,
-      "waiting": "6d 11h",
+      "hours_since_last_miss": 9.2,
+      "waiting": "9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
       "hours_to_callback": null,
       "ever_called_in_window": false,
-      "last_call_id": "1793294795.200543",
+      "last_call_id": "1793911768.210347",
       "transfer_leg_call_ids": [
-        "1793294834.200547"
+        "1793911821.210351",
+        "1793911849.210354"
       ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvtoe7a20732104zaj9fcf3b&messageId=cmvttgpuf0h8s104z3r22giez&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Removing name from lease",
-      "super_summary_text": "A caller asked to remove their name from a lease. The assistant routed them to the leasing team to handle the request.",
-      "super_link_status": "linked",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(314) 486-1315",
-      "phone_digits": "3144861315",
-      "caller_name": "",
-      "last_missed_ct": "Wed Nov 4, 2026 5:46 PM CT",
-      "last_missed_iso": "2026-11-04T17:46:19-06:00",
-      "missed_calls": 2,
-      "missed_type": "Went to voicemail",
-      "missed_types_all": [
-        "Went to voicemail"
-      ],
-      "transfer_failed_calls": 0,
-      "call_group": "Maintenance or Renewals (Tiffany 100)",
-      "routed_to": "Direct line to Tiffany Recktenwald (ext 100)",
-      "extension": "100",
-      "agent": "Tiffany Recktenwald",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 6.2,
-      "waiting": "6h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": true,
-      "last_call_id": "1793835949.209224",
-      "transfer_leg_call_ids": [],
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
@@ -324,8 +283,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 11.4,
-      "waiting": "11h",
+      "hours_since_last_miss": 35.4,
+      "waiting": "1d 11h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -358,8 +317,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 12.0,
-      "waiting": "12h",
+      "hours_since_last_miss": 36.0,
+      "waiting": "1d 12h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -392,8 +351,8 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 30.8,
-      "waiting": "1d 6h",
+      "hours_since_last_miss": 54.8,
+      "waiting": "2d 6h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -425,8 +384,8 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 32.1,
-      "waiting": "1d 8h",
+      "hours_since_last_miss": 56.1,
+      "waiting": "2d 8h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -458,8 +417,8 @@
       "extension": "112, 615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 35.3,
-      "waiting": "1d 11h",
+      "hours_since_last_miss": 59.3,
+      "waiting": "2d 11h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -494,8 +453,8 @@
       "extension": "601",
       "agent": "Super (AI receptionist)",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 35.4,
-      "waiting": "1d 11h",
+      "hours_since_last_miss": 59.4,
+      "waiting": "2d 11h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -526,8 +485,8 @@
       "extension": "107",
       "agent": "Rania Lombera",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 37.0,
-      "waiting": "1d 13h",
+      "hours_since_last_miss": 61.0,
+      "waiting": "2d 13h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -542,113 +501,11 @@
       "super_link_note": ""
     },
     {
-      "phone": "(573) 899-3385",
-      "phone_digits": "5738993385",
-      "caller_name": "",
-      "last_missed_ct": "Mon Nov 2, 2026 4:23 PM CT",
-      "last_missed_iso": "2026-11-02T16:23:47-06:00",
-      "missed_calls": 2,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 2,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 55.6,
-      "waiting": "2d 7h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793658227.204493",
-      "transfer_leg_call_ids": [
-        "1793658259.204497"
-      ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvztnfwt2qpz7u7ujbwnohrg&messageId=cmvztucx02r4t7u7uitv9nu84&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Leasing inquiry call",
-      "super_summary_text": "A caller asked for leasing support, but the leasing team was unavailable and the caller was instructed to leave a message with their name and call back number.",
-      "super_link_status": "linked",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(615) 648-1504",
-      "phone_digits": "6156481504",
-      "caller_name": "",
-      "last_missed_ct": "Mon Nov 2, 2026 12:57 PM CT",
-      "last_missed_iso": "2026-11-02T12:57:28-06:00",
-      "missed_calls": 2,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 2,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 59.0,
-      "waiting": "2d 11h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793645848.203816",
-      "transfer_leg_call_ids": [
-        "1793645881.203822"
-      ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtrgtgay0cjc8kv2sy1fmqbn&messageId=cmvzmh05j2ad87u7ump0k45kr&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Leasing office call connection",
-      "super_summary_text": "A caller reached the leasing office and asked for connection, but the assistant said leasing was unavailable and requested the caller leave their name and call back number. The call was not completed because leasing was busy.",
-      "super_link_status": "linked",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(573) 941-9941",
-      "phone_digits": "5739419941",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 10:08 AM CT",
-      "last_missed_iso": "2026-10-29T10:08:24-05:00",
-      "missed_calls": 2,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 2,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 157.9,
-      "waiting": "6d 13h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793286504.199317",
-      "transfer_leg_call_ids": [
-        "1793286541.199321"
-      ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmt215aij0vxiuabgfbpnlkn6&messageId=cmvtoj41507gd104zj40m2rui&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Returning apartment keys",
-      "super_summary_text": "A caller requested to return apartment keys, and the assistant said they would route the request to the front desk. The caller was unable to reach the team at that moment and was asked to leave a message.",
-      "super_link_status": "linked",
-      "super_link_note": "another call from same number at 10:07 AM (Transfer to front desk requested)"
-    },
-    {
-      "phone": "(636) 673-2359",
-      "phone_digits": "6366732359",
-      "caller_name": "",
-      "last_missed_ct": "Wed Nov 4, 2026 4:19 PM CT",
-      "last_missed_iso": "2026-11-04T16:19:41-06:00",
+      "phone": "(812) 340-4151",
+      "phone_digits": "8123404151",
+      "caller_name": "Cole Prather",
+      "last_missed_ct": "Thu Nov 5, 2026 3:46 PM CT",
+      "last_missed_iso": "2026-11-05T15:46:51-06:00",
       "missed_calls": 1,
       "missed_type": "Super transfer not answered",
       "missed_types_all": [
@@ -660,17 +517,213 @@
       "extension": "100",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 7.7,
-      "waiting": "7h",
+      "hours_since_last_miss": 8.2,
+      "waiting": "8h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": true,
+      "last_call_id": "1793915211.210436",
+      "transfer_leg_call_ids": [
+        "1793915261.210440"
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(636) 233-4998",
+      "phone_digits": "6362334998",
+      "caller_name": "",
+      "last_missed_ct": "Thu Nov 5, 2026 2:58 PM CT",
+      "last_missed_iso": "2026-11-05T14:58:59-06:00",
+      "missed_calls": 1,
+      "missed_type": "Super transfer not answered",
+      "missed_types_all": [
+        "Super transfer not answered"
+      ],
+      "transfer_failed_calls": 1,
+      "call_group": "Leasing",
+      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "extension": "615",
+      "agent": "Super (AI receptionist) \u2192 staff",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 9.0,
+      "waiting": "9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
       "hours_to_callback": null,
       "ever_called_in_window": false,
-      "last_call_id": "1793830781.209077",
+      "last_call_id": "1793912339.210359",
       "transfer_leg_call_ids": [
-        "1793830834.209081"
+        "1793912401.210363"
       ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(636) 383-2392",
+      "phone_digits": "6363832392",
+      "caller_name": "",
+      "last_missed_ct": "Thu Nov 5, 2026 12:17 PM CT",
+      "last_missed_iso": "2026-11-05T12:17:00-06:00",
+      "missed_calls": 1,
+      "missed_type": "Rang, not answered",
+      "missed_types_all": [
+        "Rang, not answered"
+      ],
+      "transfer_failed_calls": 0,
+      "call_group": "Leasing",
+      "routed_to": "Direct line to Mara Pongayan Priagas (ext 110)",
+      "extension": "110",
+      "agent": "Mara Pongayan Priagas",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 11.7,
+      "waiting": "11h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": true,
+      "last_call_id": "1793902620.209772",
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(781) 614-0913",
+      "phone_digits": "7816140913",
+      "caller_name": "",
+      "last_missed_ct": "Thu Nov 5, 2026 10:29 AM CT",
+      "last_missed_iso": "2026-11-05T10:29:08-06:00",
+      "missed_calls": 1,
+      "missed_type": "Super transfer not answered",
+      "missed_types_all": [
+        "Super transfer not answered"
+      ],
+      "transfer_failed_calls": 1,
+      "call_group": "Direct line \u2014 Rania Lombera (107)",
+      "routed_to": "Main line (Super) \u2192 transfer: Rania Lombera 107 (no answer)",
+      "extension": "107",
+      "agent": "Super (AI receptionist) \u2192 staff",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 13.5,
+      "waiting": "13h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": true,
+      "last_call_id": "1793896148.209508",
+      "transfer_leg_call_ids": [
+        "1793896200.209512"
+      ],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(636) 589-5459",
+      "phone_digits": "6365895459",
+      "caller_name": "",
+      "last_missed_ct": "Thu Nov 5, 2026 9:53 AM CT",
+      "last_missed_iso": "2026-11-05T09:53:45-06:00",
+      "missed_calls": 1,
+      "missed_type": "Went to voicemail",
+      "missed_types_all": [
+        "Went to voicemail"
+      ],
+      "transfer_failed_calls": 0,
+      "call_group": "Leasing",
+      "routed_to": "Direct line to Mara Pongayan Priagas (ext 110)",
+      "extension": "110",
+      "agent": "Mara Pongayan Priagas",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 14.1,
+      "waiting": "14h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": true,
+      "last_call_id": "1793893995.209332",
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(417) 218-1875",
+      "phone_digits": "4172181875",
+      "caller_name": "",
+      "last_missed_ct": "Thu Nov 5, 2026 8:27 AM CT",
+      "last_missed_iso": "2026-11-05T08:27:54-06:00",
+      "missed_calls": 1,
+      "missed_type": "Rang, not answered",
+      "missed_types_all": [
+        "Rang, not answered"
+      ],
+      "transfer_failed_calls": 0,
+      "call_group": "Main line (Super AI receptionist)",
+      "routed_to": "Main number \u2192 AI ring group 601 (Super)",
+      "extension": "601",
+      "agent": "Super (AI receptionist)",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 15.5,
+      "waiting": "15h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": false,
+      "last_call_id": "1793888874.209245",
+      "transfer_leg_call_ids": [],
+      "super_link": "",
+      "super_summary_title": "",
+      "super_summary_text": "",
+      "super_link_status": "",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(314) 486-1315",
+      "phone_digits": "3144861315",
+      "caller_name": "",
+      "last_missed_ct": "Wed Nov 4, 2026 5:46 PM CT",
+      "last_missed_iso": "2026-11-04T17:46:19-06:00",
+      "missed_calls": 1,
+      "missed_type": "Went to voicemail",
+      "missed_types_all": [
+        "Went to voicemail"
+      ],
+      "transfer_failed_calls": 0,
+      "call_group": "Maintenance or Renewals (Tiffany 100)",
+      "routed_to": "Direct line to Tiffany Recktenwald (ext 100)",
+      "extension": "100",
+      "agent": "Tiffany Recktenwald",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 30.2,
+      "waiting": "1d 6h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": true,
+      "last_call_id": "1793835949.209224",
+      "transfer_leg_call_ids": [],
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
@@ -694,8 +747,8 @@
       "extension": "104",
       "agent": "Jermale(Mel) Stovall",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 31.3,
-      "waiting": "1d 7h",
+      "hours_since_last_miss": 55.3,
+      "waiting": "2d 7h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -726,13 +779,13 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 32.8,
-      "waiting": "1d 8h",
+      "hours_since_last_miss": 56.8,
+      "waiting": "2d 8h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
       "hours_to_callback": null,
-      "ever_called_in_window": true,
+      "ever_called_in_window": false,
       "last_call_id": "1793740184.206260",
       "transfer_leg_call_ids": [
         "1793740227.206264"
@@ -760,8 +813,8 @@
       "extension": "601",
       "agent": "Super (AI receptionist)",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 33.7,
-      "waiting": "1d 9h",
+      "hours_since_last_miss": 57.7,
+      "waiting": "2d 9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -792,8 +845,8 @@
       "extension": "104",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 34.6,
-      "waiting": "1d 10h",
+      "hours_since_last_miss": 58.6,
+      "waiting": "2d 10h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -826,8 +879,8 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 34.9,
-      "waiting": "1d 10h",
+      "hours_since_last_miss": 58.9,
+      "waiting": "2d 10h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -858,8 +911,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 35.9,
-      "waiting": "1d 11h",
+      "hours_since_last_miss": 59.9,
+      "waiting": "2d 11h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -892,8 +945,8 @@
       "extension": "100",
       "agent": "Tiffany Recktenwald",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 37.1,
-      "waiting": "1d 13h",
+      "hours_since_last_miss": 61.1,
+      "waiting": "2d 13h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -924,8 +977,8 @@
       "extension": "100",
       "agent": "Tiffany Recktenwald",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 39.6,
-      "waiting": "1d 15h",
+      "hours_since_last_miss": 63.6,
+      "waiting": "2d 15h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -956,8 +1009,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 55.1,
-      "waiting": "2d 7h",
+      "hours_since_last_miss": 79.1,
+      "waiting": "3d 7h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -990,8 +1043,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 56.5,
-      "waiting": "2d 8h",
+      "hours_since_last_miss": 80.5,
+      "waiting": "3d 8h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1024,8 +1077,8 @@
       "extension": "104, 100",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 57.8,
-      "waiting": "2d 9h",
+      "hours_since_last_miss": 81.8,
+      "waiting": "3d 9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1039,40 +1092,6 @@
       "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmt36ap8w1eg7uabg4x95j6kl&messageId=cmvzp6sq52hpy7u7ur2ymlphy&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
       "super_summary_title": "Noise complaint inquiry",
       "super_summary_text": "Brendan Mercurio called Pollard Properties to speak about a noise complaint but was told the team is currently unavailable and to leave a message with his name and reason for calling.",
-      "super_link_status": "linked",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(314) 280-3848",
-      "phone_digits": "3142803848",
-      "caller_name": "Amanda Mitchell",
-      "last_missed_ct": "Mon Nov 2, 2026 2:06 PM CT",
-      "last_missed_iso": "2026-11-02T14:06:26-06:00",
-      "missed_calls": 1,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 1,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 57.9,
-      "waiting": "2d 9h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793649986.204116",
-      "transfer_leg_call_ids": [
-        "1793650023.204120"
-      ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmulg28t10gcdo0ie5eak9r8g&messageId=cmvzoy3ly2h4t7u7ucz6b9a28&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Questions about Obligo services",
-      "super_summary_text": "Amanda Mitchell called with questions about Obligo and provided her phone number (314-280-3848). The team was unavailable, so she left a message and no immediate resolution occurred.",
       "super_link_status": "linked",
       "super_link_note": ""
     },
@@ -1093,8 +1112,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 58.2,
-      "waiting": "2d 10h",
+      "hours_since_last_miss": 82.2,
+      "waiting": "3d 10h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1107,6 +1126,40 @@
       "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmthq8d591nipcqbh496i5u0q&messageId=cmvzo8rxn2et07u7ueflvy8ie&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
       "super_summary_title": "Request for deposit refund",
       "super_summary_text": "A caller requested a deposit refund and asked to pause the deposit. The agent said the team was unavailable and asked the caller to leave a message with their name and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(615) 648-1504",
+      "phone_digits": "6156481504",
+      "caller_name": "",
+      "last_missed_ct": "Mon Nov 2, 2026 12:57 PM CT",
+      "last_missed_iso": "2026-11-02T12:57:28-06:00",
+      "missed_calls": 1,
+      "missed_type": "Super transfer not answered",
+      "missed_types_all": [
+        "Super transfer not answered"
+      ],
+      "transfer_failed_calls": 1,
+      "call_group": "Leasing",
+      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "extension": "615",
+      "agent": "Super (AI receptionist) \u2192 staff",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 83.0,
+      "waiting": "3d 11h",
+      "called_back": false,
+      "callback_ct": "",
+      "callback_iso": "",
+      "hours_to_callback": null,
+      "ever_called_in_window": false,
+      "last_call_id": "1793645848.203816",
+      "transfer_leg_call_ids": [
+        "1793645881.203822"
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtrgtgay0cjc8kv2sy1fmqbn&messageId=cmvzmh05j2ad87u7ump0k45kr&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing office call connection",
+      "super_summary_text": "A caller reached the leasing office and asked for connection, but the assistant said leasing was unavailable and requested the caller leave their name and call back number. The call was not completed because leasing was busy.",
       "super_link_status": "linked",
       "super_link_note": ""
     },
@@ -1127,8 +1180,8 @@
       "extension": "101, 615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": true,
-      "hours_since_last_miss": 60.6,
-      "waiting": "2d 12h",
+      "hours_since_last_miss": 84.6,
+      "waiting": "3d 12h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1162,8 +1215,8 @@
       "extension": "601",
       "agent": "Super (AI receptionist)",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 61.6,
-      "waiting": "2d 13h",
+      "hours_since_last_miss": 85.7,
+      "waiting": "3d 13h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1194,8 +1247,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 129.0,
-      "waiting": "5d 9h",
+      "hours_since_last_miss": 153.0,
+      "waiting": "6d 9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1228,8 +1281,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 129.5,
-      "waiting": "5d 9h",
+      "hours_since_last_miss": 153.5,
+      "waiting": "6d 9h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1262,8 +1315,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 130.1,
-      "waiting": "5d 10h",
+      "hours_since_last_miss": 154.1,
+      "waiting": "6d 10h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1296,8 +1349,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 131.2,
-      "waiting": "5d 11h",
+      "hours_since_last_miss": 155.2,
+      "waiting": "6d 11h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1330,8 +1383,8 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 133.0,
-      "waiting": "5d 12h",
+      "hours_since_last_miss": 157.0,
+      "waiting": "6d 12h",
       "called_back": false,
       "callback_ct": "",
       "callback_iso": "",
@@ -1346,123 +1399,25 @@
       "super_summary_text": "Amber Langston called about a $150 Orkin bill for 45 Nassau and asked whether it should be handled by Pollard Properties or paid by her, requesting a callback at 573-576-1225.",
       "super_link_status": "linked",
       "super_link_note": ""
-    },
-    {
-      "phone": "(219) 730-8181",
-      "phone_digits": "2197308181",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 4:27 PM CT",
-      "last_missed_iso": "2026-10-29T16:27:36-05:00",
-      "missed_calls": 1,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 1,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 151.5,
-      "waiting": "6d 7h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": true,
-      "last_call_id": "1793309256.201427",
-      "transfer_leg_call_ids": [
-        "1793309305.201431"
-      ],
-      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvfr9qk52y6narfnbyj8f8bt&messageId=cmvu22wco0w28104z0q1rtlgv&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
-      "super_summary_title": "Inquiry about move-in process",
-      "super_summary_text": "A caller requested to speak to the front office regarding their move-in, and the assistant said it would connect them. The call outcome was not completed in the transcript.",
-      "super_link_status": "linked",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(314) 901-3986",
-      "phone_digits": "3149013986",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 1:43 PM CT",
-      "last_missed_iso": "2026-10-29T13:43:47-05:00",
-      "missed_calls": 1,
-      "missed_type": "Rang, not answered",
-      "missed_types_all": [
-        "Rang, not answered"
-      ],
-      "transfer_failed_calls": 0,
-      "call_group": "Main line (Super AI receptionist)",
-      "routed_to": "Main number \u2192 AI ring group 601 (Super)",
-      "extension": "601",
-      "agent": "Super (AI receptionist)",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 154.3,
-      "waiting": "6d 10h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793299427.200936",
-      "transfer_leg_call_ids": [],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "no Super call",
-      "super_link_note": "No call from this number within +-10 min in Super Reporting individual-calls export (7 days, 345 calls); direct-line call"
-    },
-    {
-      "phone": "(636) 900-4236",
-      "phone_digits": "6369004236",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 10:26 AM CT",
-      "last_missed_iso": "2026-10-29T10:26:47-05:00",
-      "missed_calls": 1,
-      "missed_type": "Went to voicemail",
-      "missed_types_all": [
-        "Went to voicemail"
-      ],
-      "transfer_failed_calls": 0,
-      "call_group": "Maintenance or Renewals (Tiffany 100)",
-      "routed_to": "Direct line to Tiffany Recktenwald (ext 100)",
-      "extension": "100",
-      "agent": "Tiffany Recktenwald",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 157.6,
-      "waiting": "6d 13h",
-      "called_back": false,
-      "callback_ct": "",
-      "callback_iso": "",
-      "hours_to_callback": null,
-      "ever_called_in_window": false,
-      "last_call_id": "1793287577.199495",
-      "transfer_leg_call_ids": [],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "no Super call",
-      "super_link_note": "No call from this number within +-10 min in Super Reporting individual-calls export (7 days, 345 calls); direct-line call"
     }
   ],
   "not_called_back_by_group": {
-    "Leasing": 22,
-    "Maintenance or Renewals (Tiffany 100)": 5,
+    "Leasing": 20,
     "Main line (Super AI receptionist)": 4,
+    "Maintenance or Renewals (Tiffany 100)": 4,
+    "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
+    "Direct line \u2014 Rania Lombera (107)": 2,
     "Direct line \u2014 Junior Ruiz (112) + Leasing": 1,
-    "Direct line \u2014 Rania Lombera (107)": 1,
     "Maintenance": 1,
-    "Emergency line": 1,
-    "Maintenance + Maintenance or Renewals (Tiffany 100)": 1
+    "Emergency line": 1
   },
   "called_back": [
     {
-      "phone": "(636) 384-9797",
-      "phone_digits": "6363849797",
+      "phone": "(636) 673-2359",
+      "phone_digits": "6366732359",
       "caller_name": "",
-      "last_missed_ct": "Wed Nov 4, 2026 3:24 PM CT",
-      "last_missed_iso": "2026-11-04T15:24:08-06:00",
+      "last_missed_ct": "Wed Nov 4, 2026 4:19 PM CT",
+      "last_missed_iso": "2026-11-04T16:19:41-06:00",
       "missed_calls": 1,
       "missed_type": "Super transfer not answered",
       "missed_types_all": [
@@ -1474,16 +1429,16 @@
       "extension": "100",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 8.6,
+      "hours_since_last_miss": 31.7,
       "waiting": "",
       "called_back": true,
-      "callback_ct": "Wed Nov 4, 2026 3:25 PM CT",
-      "callback_iso": "2026-11-04T15:25:23-06:00",
-      "hours_to_callback": 0.0,
+      "callback_ct": "Thu Nov 5, 2026 12:15 PM CT",
+      "callback_iso": "2026-11-05T12:15:07-06:00",
+      "hours_to_callback": 19.9,
       "ever_called_in_window": true,
-      "last_call_id": "1793827448.208872",
+      "last_call_id": "1793830781.209077",
       "transfer_leg_call_ids": [
-        "1793827496.208876"
+        "1793830834.209081"
       ],
       "super_link": "",
       "super_summary_title": "",
@@ -1508,7 +1463,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 10.6,
+      "hours_since_last_miss": 34.6,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 2:54 PM CT",
@@ -1544,7 +1499,7 @@
       "extension": "108",
       "agent": "Mercedes Recio",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 11.6,
+      "hours_since_last_miss": 35.6,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 12:44 PM CT",
@@ -1576,7 +1531,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 12.2,
+      "hours_since_last_miss": 36.2,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 1:18 PM CT",
@@ -1608,7 +1563,7 @@
       "extension": "108",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 32.4,
+      "hours_since_last_miss": 56.4,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 4:06 PM CT",
@@ -1642,7 +1597,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 34.9,
+      "hours_since_last_miss": 58.9,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 2:51 PM CT",
@@ -1674,7 +1629,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 35.0,
+      "hours_since_last_miss": 59.0,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 9:36 AM CT",
@@ -1708,7 +1663,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 37.9,
+      "hours_since_last_miss": 61.9,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 3:07 PM CT",
@@ -1740,7 +1695,7 @@
       "extension": "108",
       "agent": "Mercedes Recio",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 55.4,
+      "hours_since_last_miss": 79.4,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Mon Nov 2, 2026 4:50 PM CT",
@@ -1772,7 +1727,7 @@
       "extension": "101, 615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": true,
-      "hours_since_last_miss": 55.6,
+      "hours_since_last_miss": 79.6,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 9:40 AM CT",
@@ -1787,6 +1742,40 @@
       "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmo3ene1k0wuts5ke84if1g6e&messageId=cmvzu03o82ri77u7uil6mwx66&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
       "super_summary_title": "Interest in available homes",
       "super_summary_text": "Melanie Earlbacher called about a text she received saying 2-bedroom homes are available starting at $1,350 per month and requested a callback at 573-225-0686. The call went to a message due to the team being unavailable, so follow-up is required.",
+      "super_link_status": "linked",
+      "super_link_note": ""
+    },
+    {
+      "phone": "(573) 899-3385",
+      "phone_digits": "5738993385",
+      "caller_name": "",
+      "last_missed_ct": "Mon Nov 2, 2026 4:23 PM CT",
+      "last_missed_iso": "2026-11-02T16:23:47-06:00",
+      "missed_calls": 2,
+      "missed_type": "Super transfer not answered",
+      "missed_types_all": [
+        "Super transfer not answered"
+      ],
+      "transfer_failed_calls": 2,
+      "call_group": "Leasing",
+      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "extension": "615",
+      "agent": "Super (AI receptionist) \u2192 staff",
+      "transfer_went_to_voicemail": false,
+      "hours_since_last_miss": 79.6,
+      "waiting": "",
+      "called_back": true,
+      "callback_ct": "Thu Nov 5, 2026 12:07 PM CT",
+      "callback_iso": "2026-11-05T12:07:28-06:00",
+      "hours_to_callback": 67.7,
+      "ever_called_in_window": true,
+      "last_call_id": "1793658227.204493",
+      "transfer_leg_call_ids": [
+        "1793658259.204497"
+      ],
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvztnfwt2qpz7u7ujbwnohrg&messageId=cmvztucx02r4t7u7uitv9nu84&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing inquiry call",
+      "super_summary_text": "A caller asked for leasing support, but the leasing team was unavailable and the caller was instructed to leave a message with their name and call back number.",
       "super_link_status": "linked",
       "super_link_note": ""
     },
@@ -1807,7 +1796,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 56.3,
+      "hours_since_last_miss": 80.3,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 4:46 PM CT",
@@ -1841,7 +1830,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 58.5,
+      "hours_since_last_miss": 82.5,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 10:09 AM CT",
@@ -1873,7 +1862,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 58.6,
+      "hours_since_last_miss": 82.6,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 9:45 AM CT",
@@ -1906,7 +1895,7 @@
       "extension": "110",
       "agent": "Mara Pongayan Priagas",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 59.5,
+      "hours_since_last_miss": 83.5,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 10:13 AM CT",
@@ -1938,7 +1927,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 61.1,
+      "hours_since_last_miss": 85.1,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Mon Nov 2, 2026 12:57 PM CT",
@@ -1972,7 +1961,7 @@
       "extension": "100",
       "agent": "Tiffany Recktenwald",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 104.3,
+      "hours_since_last_miss": 128.3,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Mon Nov 2, 2026 1:53 PM CT",
@@ -2004,7 +1993,7 @@
       "extension": "100",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 126.2,
+      "hours_since_last_miss": 150.2,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Sat Oct 31, 2026 11:55 AM CT",
@@ -2038,7 +2027,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 127.6,
+      "hours_since_last_miss": 151.6,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Fri Oct 30, 2026 5:35 PM CT",
@@ -2072,7 +2061,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 128.8,
+      "hours_since_last_miss": 152.8,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Sat Oct 31, 2026 2:00 PM CT",
@@ -2106,7 +2095,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 129.5,
+      "hours_since_last_miss": 153.5,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 2:32 PM CT",
@@ -2140,7 +2129,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 129.5,
+      "hours_since_last_miss": 153.5,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Mon Nov 2, 2026 1:26 PM CT",
@@ -2174,7 +2163,7 @@
       "extension": "615",
       "agent": "Super (AI receptionist) \u2192 staff",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 133.5,
+      "hours_since_last_miss": 157.5,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Tue Nov 3, 2026 12:40 PM CT",
@@ -2208,7 +2197,7 @@
       "extension": "100",
       "agent": "Tiffany Recktenwald",
       "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 134.1,
+      "hours_since_last_miss": 158.1,
       "waiting": "",
       "called_back": true,
       "callback_ct": "Wed Nov 4, 2026 3:23 PM CT",
@@ -2222,238 +2211,51 @@
       "super_summary_text": "",
       "super_link_status": "no Super call",
       "super_link_note": "No call from this number within +-10 min in Super Reporting individual-calls export (7 days, 345 calls); direct-line call"
-    },
-    {
-      "phone": "(636) 445-6955",
-      "phone_digits": "6364456955",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 5:11 PM CT",
-      "last_missed_iso": "2026-10-29T17:11:42-05:00",
-      "missed_calls": 1,
-      "missed_type": "Rang, not answered",
-      "missed_types_all": [
-        "Rang, not answered"
-      ],
-      "transfer_failed_calls": 0,
-      "call_group": "Renewals & Current Resident Issues",
-      "routed_to": "Direct line to Mercedes Recio (ext 108)",
-      "extension": "108",
-      "agent": "Mercedes Recio",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 150.8,
-      "waiting": "",
-      "called_back": true,
-      "callback_ct": "Fri Oct 30, 2026 3:51 PM CT",
-      "callback_iso": "2026-10-30T15:51:30-05:00",
-      "hours_to_callback": 22.7,
-      "ever_called_in_window": true,
-      "last_call_id": "1793311902.201465",
-      "transfer_leg_call_ids": [],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(636) 295-9700",
-      "phone_digits": "6362959700",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 1:47 PM CT",
-      "last_missed_iso": "2026-10-29T13:47:15-05:00",
-      "missed_calls": 1,
-      "missed_type": "Went to voicemail",
-      "missed_types_all": [
-        "Went to voicemail"
-      ],
-      "transfer_failed_calls": 0,
-      "call_group": "Maintenance or Renewals (Tiffany 100)",
-      "routed_to": "Direct line to Tiffany Recktenwald (ext 100)",
-      "extension": "100",
-      "agent": "Tiffany Recktenwald",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 154.2,
-      "waiting": "",
-      "called_back": true,
-      "callback_ct": "Thu Oct 29, 2026 2:03 PM CT",
-      "callback_iso": "2026-10-29T14:03:06-05:00",
-      "hours_to_callback": 0.3,
-      "ever_called_in_window": true,
-      "last_call_id": "1793299605.200942",
-      "transfer_leg_call_ids": [],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
-    },
-    {
-      "phone": "(314) 363-4118",
-      "phone_digits": "3143634118",
-      "caller_name": "",
-      "last_missed_ct": "Thu Oct 29, 2026 10:48 AM CT",
-      "last_missed_iso": "2026-10-29T10:48:04-05:00",
-      "missed_calls": 2,
-      "missed_type": "Super transfer not answered",
-      "missed_types_all": [
-        "Super transfer not answered"
-      ],
-      "transfer_failed_calls": 2,
-      "call_group": "Leasing",
-      "routed_to": "Main line (Super) \u2192 transfer: Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "extension": "615",
-      "agent": "Super (AI receptionist) \u2192 staff",
-      "transfer_went_to_voicemail": false,
-      "hours_since_last_miss": 157.2,
-      "waiting": "",
-      "called_back": true,
-      "callback_ct": "Thu Oct 29, 2026 10:59 AM CT",
-      "callback_iso": "2026-10-29T10:59:11-05:00",
-      "hours_to_callback": 0.2,
-      "ever_called_in_window": true,
-      "last_call_id": "1793288884.199647",
-      "transfer_leg_call_ids": [
-        "1793288926.199652"
-      ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
     }
   ],
   "super_transfers_unanswered": {
     "attribution_rule": "Ultatel has no field linking a transfer leg to the caller's call, so each leg from Super's number (314) 665-2265 is matched to the answered main-line (601) call it sits inside (leg starts after the call starts and ends no more than 3 seconds after the call ends). If more than one call fits, Super's own log (caller phone + CT time) breaks the tie; otherwise the leg is left unattributed. Legs within one call are collapsed into one transfer attempt; it failed if no person picked up any leg.",
-    "legs_total": 266,
-    "legs_matched": 222,
-    "legs_match_rate_pct": 83.5,
+    "legs_total": 245,
+    "legs_matched": 210,
+    "legs_match_rate_pct": 85.7,
     "legs_by_method": {
-      "time containment (single call)": 211,
-      "ambiguous": 32,
-      "unmatched": 12,
-      "time containment + Super log phone/time": 11
+      "time containment (single call)": 199,
+      "ambiguous": 29,
+      "time containment + Super log phone/time": 11,
+      "unmatched": 6
     },
-    "not_answered_legs": 150,
-    "not_answered_legs_matched": 122,
-    "not_answered_legs_match_rate_pct": 81.3,
-    "attempts_matched": 200,
-    "failed_attempts_matched": 101,
+    "not_answered_legs": 131,
+    "not_answered_legs_matched": 109,
+    "not_answered_legs_match_rate_pct": 83.2,
+    "attempts_matched": 191,
+    "failed_attempts_matched": 91,
     "failed_attempts_by_group": {
-      "Leasing": 82,
-      "Maintenance or Renewals (Tiffany 100)": 11,
-      "Renewals & Current Resident Issues": 5,
-      "Direct line \u2014 Junior Ruiz (112)": 3,
-      "Direct line \u2014 Rania Lombera (107)": 3,
-      "Maintenance": 1,
+      "Leasing": 74,
+      "Maintenance or Renewals (Tiffany 100)": 10,
+      "Direct line \u2014 Rania Lombera (107)": 4,
+      "Maintenance": 2,
+      "Renewals & Current Resident Issues": 2,
+      "Direct line \u2014 Junior Ruiz (112)": 2,
       "Emergency line": 1
     },
     "failed_attempts_by_groups_tried": {
-      "Leasing": 79,
-      "Maintenance or Renewals (Tiffany 100)": 9,
-      "Renewals & Current Resident Issues": 4,
-      "Direct line \u2014 Junior Ruiz (112) + Leasing": 3,
-      "Direct line \u2014 Rania Lombera (107)": 3,
-      "Renewals & Current Resident Issues + Maintenance or Renewals (Tiffany 100)": 1,
-      "Maintenance + Maintenance or Renewals (Tiffany 100)": 1,
+      "Leasing": 72,
+      "Maintenance or Renewals (Tiffany 100)": 8,
+      "Direct line \u2014 Rania Lombera (107)": 4,
+      "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
+      "Renewals & Current Resident Issues": 2,
+      "Direct line \u2014 Junior Ruiz (112) + Leasing": 2,
       "Emergency line": 1
     },
     "failed_attempts_to_voicemail": 4,
-    "retried_and_answered": 10,
-    "unattributed_failed_attempts": 20,
+    "retried_and_answered": 9,
+    "unattributed_failed_attempts": 17,
     "unattributed_failed_by_group": {
-      "Leasing": 18,
+      "Leasing": 14,
       "Maintenance or Renewals (Tiffany 100)": 3,
       "Maintenance": 1
     },
     "unattributed_failed_attempts_list": [
-      {
-        "first_leg_ct": "Thu Oct 29, 2026 10:06 AM CT",
-        "first_leg_iso": "2026-10-29T10:06:04-05:00",
-        "legs": 3,
-        "failed": true,
-        "why": "ambiguous",
-        "groups_tried": [
-          "Leasing",
-          "Maintenance or Renewals (Tiffany 100)"
-        ],
-        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer) \u2192 Tiffany Recktenwald 100 (no answer) \u2192 Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-        "possible_callers": [
-          "(419) 786-9279",
-          "(573) 908-9202",
-          "(573) 941-9941"
-        ],
-        "call_ids": [
-          "1793286364.199106",
-          "1793286437.199180",
-          "1793286440.199182"
-        ]
-      },
-      {
-        "first_leg_ct": "Thu Oct 29, 2026 11:01 AM CT",
-        "first_leg_iso": "2026-10-29T11:01:01-05:00",
-        "legs": 1,
-        "failed": true,
-        "why": "ambiguous",
-        "groups_tried": [
-          "Leasing"
-        ],
-        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-        "possible_callers": [
-          "(816) 446-9884",
-          "(636) 575-3057"
-        ],
-        "call_ids": [
-          "1793289661.199762"
-        ]
-      },
-      {
-        "first_leg_ct": "Thu Oct 29, 2026 11:23 AM CT",
-        "first_leg_iso": "2026-10-29T11:23:15-05:00",
-        "legs": 1,
-        "failed": true,
-        "why": "ambiguous",
-        "groups_tried": [
-          "Leasing"
-        ],
-        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-        "possible_callers": [
-          "(573) 789-9934",
-          "(636) 795-9327"
-        ],
-        "call_ids": [
-          "1793290995.199868"
-        ]
-      },
-      {
-        "first_leg_ct": "Thu Oct 29, 2026 12:17 PM CT",
-        "first_leg_iso": "2026-10-29T12:17:08-05:00",
-        "legs": 1,
-        "failed": true,
-        "why": "unmatched",
-        "groups_tried": [
-          "Leasing"
-        ],
-        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-        "possible_callers": [],
-        "call_ids": [
-          "1793294228.200427"
-        ]
-      },
-      {
-        "first_leg_ct": "Thu Oct 29, 2026 12:49 PM CT",
-        "first_leg_iso": "2026-10-29T12:49:44-05:00",
-        "legs": 1,
-        "failed": true,
-        "why": "unmatched",
-        "groups_tried": [
-          "Leasing"
-        ],
-        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-        "possible_callers": [],
-        "call_ids": [
-          "1793296184.200743"
-        ]
-      },
       {
         "first_leg_ct": "Fri Oct 30, 2026 2:17 PM CT",
         "first_leg_iso": "2026-10-30T14:17:30-05:00",
@@ -2730,6 +2532,43 @@
         "call_ids": [
           "1793833793.209182"
         ]
+      },
+      {
+        "first_leg_ct": "Thu Nov 5, 2026 10:10 AM CT",
+        "first_leg_iso": "2026-11-05T10:10:41-06:00",
+        "legs": 1,
+        "failed": true,
+        "why": "ambiguous",
+        "groups_tried": [
+          "Maintenance or Renewals (Tiffany 100)"
+        ],
+        "tried": "Tiffany Recktenwald 100 (no answer)",
+        "possible_callers": [
+          "(314) 915-1034",
+          "(317) 384-5773",
+          "(812) 340-4151"
+        ],
+        "call_ids": [
+          "1793895041.209458"
+        ]
+      },
+      {
+        "first_leg_ct": "Thu Nov 5, 2026 2:46 PM CT",
+        "first_leg_iso": "2026-11-05T14:46:32-06:00",
+        "legs": 1,
+        "failed": true,
+        "why": "ambiguous",
+        "groups_tried": [
+          "Leasing"
+        ],
+        "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+        "possible_callers": [
+          "(636) 213-8514",
+          "(314) 714-8234"
+        ],
+        "call_ids": [
+          "1793911592.210213"
+        ]
       }
     ],
     "super_log_cross_check": {
@@ -2740,296 +2579,21 @@
       "matched_to_answered_transfer": 11,
       "no_transfer_leg_matched": 10
     },
-    "count": 150,
-    "answered": 116,
+    "count": 131,
+    "answered": 114,
     "by_group": {
-      "Leasing": 115,
-      "Maintenance or Renewals (Tiffany 100)": 16,
-      "Direct line \u2014 Junior Ruiz (112)": 6,
-      "Renewals & Current Resident Issues": 5,
-      "Maintenance": 3,
-      "Direct line \u2014 Rania Lombera (107)": 3,
+      "Leasing": 100,
+      "Maintenance or Renewals (Tiffany 100)": 15,
+      "Direct line \u2014 Junior Ruiz (112)": 4,
+      "Maintenance": 4,
+      "Direct line \u2014 Rania Lombera (107)": 4,
+      "Renewals & Current Resident Issues": 2,
       "Emergency line": 1,
       "Applications": 1
     },
     "note": "Failed transfers we could match are in the caller list. Unattributed ones are listed separately because Ultatel only shows Super's number on them."
   },
   "transfer_failed_attempts": [
-    {
-      "caller": "(573) 908-9202",
-      "call_ct": "Thu Oct 29, 2026 10:05 AM CT",
-      "call_iso": "2026-10-29T10:05:53-05:00",
-      "main_call_id": "1793286353.199102",
-      "main_duration": "02:05",
-      "groups_tried": [
-        "Renewals & Current Resident Issues"
-      ],
-      "tried": "Mercedes Recio 108 (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793286407.199171"
-      ]
-    },
-    {
-      "caller": "(573) 941-9941",
-      "call_ct": "Thu Oct 29, 2026 10:07 AM CT",
-      "call_iso": "2026-10-29T10:07:12-05:00",
-      "main_call_id": "1793286432.199176",
-      "main_duration": "01:07",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793286471.199248"
-      ]
-    },
-    {
-      "caller": "(573) 941-9941",
-      "call_ct": "Thu Oct 29, 2026 10:08 AM CT",
-      "call_iso": "2026-10-29T10:08:24-05:00",
-      "main_call_id": "1793286504.199317",
-      "main_duration": "01:08",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793286541.199321"
-      ]
-    },
-    {
-      "caller": "(573) 908-9202",
-      "call_ct": "Thu Oct 29, 2026 10:44 AM CT",
-      "call_iso": "2026-10-29T10:44:23-05:00",
-      "main_call_id": "1793288663.199564",
-      "main_duration": "01:35",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793288710.199568"
-      ]
-    },
-    {
-      "caller": "(314) 363-4118",
-      "call_ct": "Thu Oct 29, 2026 10:46 AM CT",
-      "call_iso": "2026-10-29T10:46:01-05:00",
-      "main_call_id": "1793288761.199635",
-      "main_duration": "01:45",
-      "groups_tried": [
-        "Maintenance or Renewals (Tiffany 100)"
-      ],
-      "tried": "Tiffany Recktenwald 100 (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793288810.199639"
-      ]
-    },
-    {
-      "caller": "(314) 363-4118",
-      "call_ct": "Thu Oct 29, 2026 10:48 AM CT",
-      "call_iso": "2026-10-29T10:48:04-05:00",
-      "main_call_id": "1793288884.199647",
-      "main_duration": "01:14",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793288926.199652"
-      ]
-    },
-    {
-      "caller": "(636) 795-9327",
-      "call_ct": "Thu Oct 29, 2026 11:23 AM CT",
-      "call_iso": "2026-10-29T11:23:02-05:00",
-      "main_call_id": "1793290982.199862",
-      "main_duration": "01:41",
-      "groups_tried": [
-        "Renewals & Current Resident Issues",
-        "Maintenance or Renewals (Tiffany 100)"
-      ],
-      "tried": "Mercedes Recio 108 (no answer) \u2192 Tiffany Recktenwald 100 (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793291021.199933",
-        "1793291051.199940"
-      ]
-    },
-    {
-      "caller": "(423) 544-1946",
-      "call_ct": "Thu Oct 29, 2026 11:46 AM CT",
-      "call_iso": "2026-10-29T11:46:38-05:00",
-      "main_call_id": "1793292398.200006",
-      "main_duration": "01:50",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793292443.200012"
-      ]
-    },
-    {
-      "caller": "(423) 544-1946",
-      "call_ct": "Thu Oct 29, 2026 11:48 AM CT",
-      "call_iso": "2026-10-29T11:48:47-05:00",
-      "main_call_id": "1793292527.200101",
-      "main_duration": "01:19",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793292572.200127"
-      ]
-    },
-    {
-      "caller": "(636) 249-9454",
-      "call_ct": "Thu Oct 29, 2026 11:55 AM CT",
-      "call_iso": "2026-10-29T11:55:37-05:00",
-      "main_call_id": "1793292937.200195",
-      "main_duration": "02:21",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Stacey Demos 102 (no answer) \u2192 Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793292992.200199",
-        "1793293020.200202"
-      ]
-    },
-    {
-      "caller": "(573) 908-9202",
-      "call_ct": "Thu Oct 29, 2026 12:26 PM CT",
-      "call_iso": "2026-10-29T12:26:35-05:00",
-      "main_call_id": "1793294795.200543",
-      "main_duration": "01:07",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793294834.200547"
-      ]
-    },
-    {
-      "caller": "(480) 568-9164",
-      "call_ct": "Thu Oct 29, 2026 12:30 PM CT",
-      "call_iso": "2026-10-29T12:30:36-05:00",
-      "main_call_id": "1793295036.200657",
-      "main_duration": "01:34",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793295101.200661"
-      ]
-    },
-    {
-      "caller": "(636) 384-9797",
-      "call_ct": "Thu Oct 29, 2026 1:17 PM CT",
-      "call_iso": "2026-10-29T13:17:01-05:00",
-      "main_call_id": "1793297821.200814",
-      "main_duration": "01:24",
-      "groups_tried": [
-        "Maintenance or Renewals (Tiffany 100)"
-      ],
-      "tried": "Tiffany Recktenwald 100 (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793297872.200818"
-      ]
-    },
-    {
-      "caller": "(615) 648-1504",
-      "call_ct": "Thu Oct 29, 2026 2:41 PM CT",
-      "call_iso": "2026-10-29T14:41:12-05:00",
-      "main_call_id": "1793302872.201101",
-      "main_duration": "01:13",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793302918.201105"
-      ]
-    },
-    {
-      "caller": "(636) 297-2587",
-      "call_ct": "Thu Oct 29, 2026 4:05 PM CT",
-      "call_iso": "2026-10-29T16:05:17-05:00",
-      "main_call_id": "1793307917.201365",
-      "main_duration": "01:59",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793307979.201369"
-      ]
-    },
-    {
-      "caller": "(210) 334-9582",
-      "call_ct": "Thu Oct 29, 2026 4:08 PM CT",
-      "call_iso": "2026-10-29T16:08:56-05:00",
-      "main_call_id": "1793308136.201384",
-      "main_duration": "02:23",
-      "groups_tried": [
-        "Direct line \u2014 Junior Ruiz (112)",
-        "Leasing"
-      ],
-      "tried": "Junior Ruiz 112 (no answer) \u2192 Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793308194.201388",
-        "1793308224.201393"
-      ]
-    },
-    {
-      "caller": "(219) 730-8181",
-      "call_ct": "Thu Oct 29, 2026 4:27 PM CT",
-      "call_iso": "2026-10-29T16:27:36-05:00",
-      "main_call_id": "1793309256.201427",
-      "main_duration": "01:16",
-      "groups_tried": [
-        "Leasing"
-      ],
-      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793309305.201431"
-      ]
-    },
-    {
-      "caller": "(217) 257-6622",
-      "call_ct": "Thu Oct 29, 2026 4:37 PM CT",
-      "call_iso": "2026-10-29T16:37:16-05:00",
-      "main_call_id": "1793309836.201449",
-      "main_duration": "01:49",
-      "groups_tried": [
-        "Renewals & Current Resident Issues"
-      ],
-      "tried": "Mercedes Recio 108 (no answer)",
-      "went_to_voicemail": false,
-      "leg_call_ids": [
-        "1793309886.201453"
-      ]
-    },
     {
       "caller": "(717) 919-2157",
       "call_ct": "Fri Oct 30, 2026 10:27 AM CT",
@@ -4284,6 +3848,128 @@
       "went_to_voicemail": false,
       "leg_call_ids": [
         "1793830834.209081"
+      ]
+    },
+    {
+      "caller": "(781) 614-0913",
+      "call_ct": "Thu Nov 5, 2026 10:29 AM CT",
+      "call_iso": "2026-11-05T10:29:08-06:00",
+      "main_call_id": "1793896148.209508",
+      "main_duration": "01:42",
+      "groups_tried": [
+        "Direct line \u2014 Rania Lombera (107)"
+      ],
+      "tried": "Rania Lombera 107 (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793896200.209512"
+      ]
+    },
+    {
+      "caller": "(636) 213-8514",
+      "call_ct": "Thu Nov 5, 2026 2:40 PM CT",
+      "call_iso": "2026-11-05T14:40:54-06:00",
+      "main_call_id": "1793911254.210063",
+      "main_duration": "01:46",
+      "groups_tried": [
+        "Leasing"
+      ],
+      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793911324.210067"
+      ]
+    },
+    {
+      "caller": "(636) 213-8514",
+      "call_ct": "Thu Nov 5, 2026 2:42 PM CT",
+      "call_iso": "2026-11-05T14:42:43-06:00",
+      "main_call_id": "1793911363.210134",
+      "main_duration": "02:02",
+      "groups_tried": [
+        "Leasing"
+      ],
+      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793911449.210138"
+      ]
+    },
+    {
+      "caller": "(314) 714-8234",
+      "call_ct": "Thu Nov 5, 2026 2:46 PM CT",
+      "call_iso": "2026-11-05T14:46:12-06:00",
+      "main_call_id": "1793911572.210209",
+      "main_duration": "01:39",
+      "groups_tried": [
+        "Leasing"
+      ],
+      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793911613.210246"
+      ]
+    },
+    {
+      "caller": "(314) 714-8234",
+      "call_ct": "Thu Nov 5, 2026 2:49 PM CT",
+      "call_iso": "2026-11-05T14:49:28-06:00",
+      "main_call_id": "1793911768.210347",
+      "main_duration": "02:57",
+      "groups_tried": [
+        "Maintenance",
+        "Maintenance or Renewals (Tiffany 100)"
+      ],
+      "tried": "Jermale(Mel) Stovall 104 (no answer) \u2192 Tiffany Recktenwald 100 (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793911821.210351",
+        "1793911849.210354"
+      ]
+    },
+    {
+      "caller": "(636) 233-4998",
+      "call_ct": "Thu Nov 5, 2026 2:58 PM CT",
+      "call_iso": "2026-11-05T14:58:59-06:00",
+      "main_call_id": "1793912339.210359",
+      "main_duration": "01:52",
+      "groups_tried": [
+        "Leasing"
+      ],
+      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793912401.210363"
+      ]
+    },
+    {
+      "caller": "(812) 340-4151",
+      "call_ct": "Thu Nov 5, 2026 3:46 PM CT",
+      "call_iso": "2026-11-05T15:46:51-06:00",
+      "main_call_id": "1793915211.210436",
+      "main_duration": "01:39",
+      "groups_tried": [
+        "Maintenance or Renewals (Tiffany 100)"
+      ],
+      "tried": "Tiffany Recktenwald 100 (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793915261.210440"
+      ]
+    },
+    {
+      "caller": "(210) 334-9582",
+      "call_ct": "Thu Nov 5, 2026 5:22 PM CT",
+      "call_iso": "2026-11-05T17:22:20-06:00",
+      "main_call_id": "1793920940.210519",
+      "main_duration": "01:21",
+      "groups_tried": [
+        "Leasing"
+      ],
+      "tried": "Leasing ring group 615 (rang 101, 102, 110) (no answer)",
+      "went_to_voicemail": false,
+      "leg_call_ids": [
+        "1793920985.210523"
       ]
     }
   ]

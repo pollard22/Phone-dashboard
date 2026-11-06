@@ -1,4 +1,6 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
+(636) 383-2392,2026-11-05 10:17 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793902620.209772
+(417) 218-1875,2026-11-05 6:27 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793888874.209245
 (573) 821-2253,2026-11-03 4:00 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793750456.206598
 (314) 299-2689,2026-11-03 2:41 PM,104 — Jermale(Mel) Stovall,3146901027 / Jermale(Mel) Stovall,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793745714.206555
 (573) 416-6048,2026-11-03 12:20 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793737224.206247
@@ -8,6 +10,3 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (636) 462-0934,2026-11-02 7:55 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793634943.203175
 (347) 640-7834,2026-10-31 10:00 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793466038.202809
 (660) 342-5252,2026-10-30 3:26 PM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793399171.202685
-(314) 901-3986,2026-10-29 11:43 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793299427.200936
-(480) 568-9164,2026-10-29 10:27 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793294843.200564
-(423) 544-1946,2026-10-29 9:33 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793291602.199951
