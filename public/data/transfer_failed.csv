@@ -1,30 +1,4 @@
 Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call ID,Transfer leg Call IDs,Attributed
-(717) 919-2157,"Fri Oct 30, 2026 10:27 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793374078.201643,1793374130.201647,Yes
-(636) 775-5687,"Fri Oct 30, 2026 10:47 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793375238.201696,1793375284.201700,Yes
-(573) 576-1225,"Fri Oct 30, 2026 11:00 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793376022.201736,1793376057.201740,Yes
-(641) 680-9058,"Fri Oct 30, 2026 12:19 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793380779.201975,1793380819.201979,Yes
-(815) 258-3662,"Fri Oct 30, 2026 12:48 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793382531.202036,1793382602.202040,Yes
-(636) 253-4530,"Fri Oct 30, 2026 12:58 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793383117.202059,1793383168.202063,Yes
-(636) 253-4530,"Fri Oct 30, 2026 1:00 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793383202.202082,1793383240.202086,Yes
-(636) 775-5687,"Fri Oct 30, 2026 1:00 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793383251.202091,1793383297.202109,Yes
-(641) 680-9058,"Fri Oct 30, 2026 1:34 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793385298.202157,1793385345.202161,Yes
-(641) 680-9058,"Fri Oct 30, 2026 1:41 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793385716.202180,1793385756.202184,Yes
-(314) 853-5281,"Fri Oct 30, 2026 1:51 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793386293.202236,1793386330.202240,Yes
-(713) 816-1520,"Fri Oct 30, 2026 2:22 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793388147.202303,1793388220.202307,Yes
-(636) 213-1519,"Fri Oct 30, 2026 2:23 PM CT",Leasing,"Lindsay Smith 101 → voicemail → Leasing ring group 615 (rang 101, 102, 110) (no answer)",Yes,1793388224.202312,"1793388274.202330,1793388329.202332",Yes
-(636) 318-3876,"Fri Oct 30, 2026 2:27 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793388469.202351,1793388507.202355,Yes
-(636) 515-8905,"Fri Oct 30, 2026 2:29 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793388559.202372,1793388613.202378,Yes
-(636) 204-9664,"Fri Oct 30, 2026 2:31 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793388660.202395,1793388719.202401,Yes
-(314) 651-2463,"Fri Oct 30, 2026 2:39 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793389193.202422,1793389239.202426,Yes
-(636) 312-8007,"Fri Oct 30, 2026 2:57 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793390235.202480,1793390309.202484,Yes
-(713) 816-1520,"Fri Oct 30, 2026 3:06 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793390767.202509,1793390854.202513,Yes
-(713) 816-1520,"Fri Oct 30, 2026 3:12 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793391122.202535,1793391174.202539,Yes
-(713) 816-1520,"Fri Oct 30, 2026 3:13 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793391235.202560,1793391306.202564,Yes
-(417) 827-0411,"Fri Oct 30, 2026 4:23 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793395415.202640,1793395453.202644,Yes
-(573) 822-9232,"Fri Oct 30, 2026 5:46 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793400390.202705,1793400463.202709,Yes
-(636) 589-5382,"Sat Oct 31, 2026 11:07 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793462842.202759,1793462905.202763,Yes
-(267) 720-5532,"Sat Oct 31, 2026 2:59 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793476777.202921,1793476833.202925,Yes
-(636) 248-6371,"Sat Oct 31, 2026 3:05 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793477121.202944,1793477177.202948,Yes
 (636) 450-7480,"Mon Nov 2, 2026 10:51 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793638277.203308,1793638347.203312,Yes
 (360) 789-6367,"Mon Nov 2, 2026 11:21 AM CT",Leasing,"Lindsay Smith 101 → voicemail → Leasing ring group 615 (rang 101, 102, 110) (no answer)",Yes,1793640101.203352,"1793640146.203356,1793640202.203358",Yes
 (812) 340-4151,"Mon Nov 2, 2026 11:33 AM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793640782.203383,1793640842.203387,Yes
@@ -90,3 +64,33 @@ Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call 
 (636) 233-4998,"Thu Nov 5, 2026 2:58 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793912339.210359,1793912401.210363,Yes
 (812) 340-4151,"Thu Nov 5, 2026 3:46 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793915211.210436,1793915261.210440,Yes
 (210) 334-9582,"Thu Nov 5, 2026 5:22 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793920940.210519,1793920985.210523,Yes
+(636) 251-9593,"Fri Nov 6, 2026 10:49 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793983767.210836,1793983856.210846,Yes
+(314) 440-9309,"Fri Nov 6, 2026 10:53 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793983994.210868,1793984047.210872,Yes
+(314) 308-8971,"Fri Nov 6, 2026 10:58 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793984287.210901,1793984338.210916,Yes
+(636) 466-3832,"Fri Nov 6, 2026 11:24 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793985861.210978,1793985908.210982,Yes
+(765) 400-2080,"Fri Nov 6, 2026 11:37 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793986653.211003,1793986760.211007,Yes
+(812) 340-4151,"Fri Nov 6, 2026 11:45 AM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793987129.211044,1793987182.211048,Yes
+(816) 745-8880,"Fri Nov 6, 2026 12:09 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793988571.211062,1793988639.211066,Yes
+(805) 452-3122,"Fri Nov 6, 2026 12:53 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793991236.211128,1793991283.211132,Yes
+(636) 875-9696,"Fri Nov 6, 2026 1:18 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793992706.211155,1793992743.211159,Yes
+(314) 915-1034,"Fri Nov 6, 2026 2:21 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793996494.211367,1793996558.211373,Yes
+(972) 979-0645,"Fri Nov 6, 2026 2:35 PM CT",Direct line — Rania Lombera (107),Rania Lombera 107 (no answer),No,1793997332.211414,1793997382.211419,Yes
+(765) 400-2080,"Fri Nov 6, 2026 2:52 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793998348.211469,1793998402.211473,Yes
+(636) 359-6744,"Fri Nov 6, 2026 3:07 PM CT",Maintenance,Jermale(Mel) Stovall 104 (no answer),No,1793999221.211492,1793999265.211496,Yes
+(636) 466-3832,"Fri Nov 6, 2026 3:20 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794000042.211531,1794000096.211535,Yes
+(636) 297-7370,"Fri Nov 6, 2026 3:56 PM CT",Direct line — Junior Ruiz (112),Junior Ruiz 112 (no answer),No,1794002201.211595,1794002266.211599,Yes
+(636) 213-8514,"Fri Nov 6, 2026 4:12 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794003153.211619,1794003212.211623,Yes
+(636) 213-8514,"Fri Nov 6, 2026 4:16 PM CT",Leasing,"Lindsay Smith 101 → voicemail → Leasing ring group 615 (rang 101, 102, 110) (no answer)",Yes,1794003397.211676,"1794003450.211680,1794003504.211684",Yes
+(480) 568-9164,"Fri Nov 6, 2026 4:22 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794003744.211702,1794003823.211706,Yes
+(480) 568-9164,"Fri Nov 6, 2026 4:24 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794003858.211721,1794003937.211725,Yes
+(913) 680-5126,"Sat Nov 7, 2026 11:07 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794071239.211840,1794071317.211844,Yes
+(314) 398-3053,"Sat Nov 7, 2026 11:11 AM CT","Maintenance, Maintenance or Renewals (Tiffany 100)",Jermale(Mel) Stovall 104 (no answer) → Tiffany Recktenwald 100 (no answer),No,1794071514.211859,"1794071547.211863,1794071576.211866",Yes
+(561) 772-1763,"Sat Nov 7, 2026 11:28 AM CT","Direct line — Junior Ruiz (112), Leasing","Junior Ruiz 112 (no answer) → Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794072539.211883,"1794072595.211887,1794072626.211892",Yes
+(573) 552-2405,"Sat Nov 7, 2026 12:40 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794076845.211907,1794076878.211911,Yes
+(573) 941-9941,"Sat Nov 7, 2026 12:48 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794077297.211926,1794077327.211930,Yes
+(573) 941-9941,"Sat Nov 7, 2026 12:49 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794077375.211945,1794077431.211949,Yes
+(573) 941-9941,"Sat Nov 7, 2026 12:51 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794077476.211964,1794077523.211968,Yes
+(440) 307-0129,"Sat Nov 7, 2026 1:01 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794078111.211983,1794078153.211987,Yes
+(573) 941-9941,"Sat Nov 7, 2026 1:08 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794078518.212002,1794078558.212006,Yes
+(618) 472-4267,"Sat Nov 7, 2026 1:27 PM CT","Direct line — Junior Ruiz (112), Leasing","Junior Ruiz 112 (no answer) → Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794079631.212021,"1794079671.212025,1794079700.212030",Yes
+(573) 552-2405,"Sat Nov 7, 2026 2:50 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794084628.212058,1794084667.212062,Yes
