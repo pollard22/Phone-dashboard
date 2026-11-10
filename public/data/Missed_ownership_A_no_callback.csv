@@ -1,4 +1,7 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
+(307) 321-7772,2026-11-09 9:24 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794245041.212570
+(235) 202-2194,2026-11-09 8:51 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794243066.212388
+(636) 459-7409,2026-11-09 6:57 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794236242.212134
 (636) 459-7409,2026-11-06 8:04 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794024253.211834
 (573) 476-5334,2026-11-06 2:54 PM,100 — Tiffany Recktenwald,3146901018 / Tiffany Recktenwald,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794005659.211757
 (314) 701-2710,2026-11-06 8:50 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793983827.210841
@@ -10,5 +13,3 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (573) 416-6048,2026-11-03 12:20 PM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793737224.206247
 (945) 253-4992,2026-11-03 10:40 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793731253.205763
 (636) 515-5198,2026-11-03 10:36 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793730984.205739
-(917) 284-5909,2026-11-02 8:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1793636459.203228
-(636) 462-0934,2026-11-02 7:55 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1793634943.203175
