@@ -3,31 +3,39 @@ Unique callers with ≥1 inbound NO ANSWER and no company OUT-Bound within 24h (
 
 Verification summary (exact from this rebuild)
 Check,Count
-Unique no-callback callers (24h rule) / Action-list callers checked,12
+Unique no-callback callers (24h rule) / Action-list callers checked,18
 False positives (had outbound within 24h) — should be 0,0
-Never dialed by company in this export,7
-On 24h list but company dialed earlier in the week only,2
-On 24h list but company dialed later than 24h after last miss,3
+Never dialed by company in this export,9
+On 24h list but company dialed earlier in the week only,5
+On 24h list but company dialed later than 24h after last miss,4
 
-Action list (12 unique no-callback callers)
+Action list (18 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
-1,(636) 459-7409,2,Mon Nov 9 6:57 AM,Fri Nov 6 8:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794236242.212134,"Review whether Super already messaged; if not, return call"
-2,(314) 347-7763,1,Tue Nov 10 2:11 PM,Tue Nov 10 2:11 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794348680.215091,"Review whether Super already messaged; if not, return call"
-3,(314) 304-8986,1,Tue Nov 10 12:19 PM,Tue Nov 10 12:19 PM,No,,Other DID / extension path,108 — Mercedes Recio,No,No,No,1794341996.214804,Return call — no Ultatel outbound within 24h of last miss
-4,(401) 256-9800,1,Tue Nov 10 10:33 AM,Tue Nov 10 10:33 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794335620.214228,Return call — no Ultatel outbound within 24h of last miss
-5,(314) 286-3665,1,Tue Nov 10 7:08 AM,Tue Nov 10 7:08 AM,No,,Other DID / extension path,107 — Rania Lombera,No,No,No,1794323292.213613,Return call — no Ultatel outbound within 24h of last miss
-6,(307) 321-7772,1,Mon Nov 9 9:24 AM,Mon Nov 9 9:24 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794245041.212570,Return call — no Ultatel outbound within 24h of last miss
-7,(235) 202-2194,1,Mon Nov 9 8:51 AM,Mon Nov 9 8:51 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794243066.212388,"Review whether Super already messaged; if not, return call"
-8,(573) 476-5334,1,Fri Nov 6 2:54 PM,Fri Nov 6 2:54 PM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794005659.211757,Return call — no Ultatel outbound within 24h of last miss
-9,(314) 701-2710,1,Fri Nov 6 8:50 AM,Fri Nov 6 8:50 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1793983827.210841,Return call — no Ultatel outbound within 24h of last miss
-10,(314) 365-3070,1,Fri Nov 6 7:45 AM,Fri Nov 6 7:45 AM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1793979931.210635,Return call — no Ultatel outbound within 24h of last miss
-11,(636) 383-2392,1,Thu Nov 5 10:17 AM,Thu Nov 5 10:17 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1793902620.209772,Return call — no Ultatel outbound within 24h of last miss
-12,(417) 218-1875,1,Thu Nov 5 6:27 AM,Thu Nov 5 6:27 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1793888874.209245,"Review whether Super already messaged; if not, return call"
+1,(636) 262-1916,2,Wed Nov 11 6:27 PM,Wed Nov 11 6:26 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794450441.216683,"Review whether Super already messaged; if not, return call"
+2,(636) 459-7409,2,Mon Nov 9 6:57 AM,Fri Nov 6 8:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794236242.212134,"Review whether Super already messaged; if not, return call"
+3,(636) 673-4554,1,Wed Nov 11 12:55 PM,Wed Nov 11 12:55 PM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794430536.216517,Return call — no Ultatel outbound within 24h of last miss
+4,(308) 991-3900,1,Wed Nov 11 12:20 PM,Wed Nov 11 12:20 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794428436.216386,"Review whether Super already messaged; if not, return call"
+5,(636) 201-5442,1,Wed Nov 11 10:22 AM,Wed Nov 11 10:22 AM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794421358.216229,Return call — no Ultatel outbound within 24h of last miss
+6,(816) 806-2881,1,Wed Nov 11 8:13 AM,Wed Nov 11 8:13 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794413593.215524,Return call — no Ultatel outbound within 24h of last miss
+7,(217) 503-7890,1,Wed Nov 11 7:38 AM,Wed Nov 11 7:38 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794411521.215405,Return call — no Ultatel outbound within 24h of last miss
+8,(314) 347-7763,1,Tue Nov 10 2:11 PM,Tue Nov 10 2:11 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794348680.215091,"Review whether Super already messaged; if not, return call"
+9,(314) 304-8986,1,Tue Nov 10 12:19 PM,Tue Nov 10 12:19 PM,No,,Other DID / extension path,108 — Mercedes Recio,No,No,No,1794341996.214804,Return call — no Ultatel outbound within 24h of last miss
+10,(401) 256-9800,1,Tue Nov 10 10:33 AM,Tue Nov 10 10:33 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794335620.214228,Return call — no Ultatel outbound within 24h of last miss
+11,(314) 286-3665,1,Tue Nov 10 7:08 AM,Tue Nov 10 7:08 AM,No,,Other DID / extension path,107 — Rania Lombera,No,No,No,1794323292.213613,Return call — no Ultatel outbound within 24h of last miss
+12,(307) 321-7772,1,Mon Nov 9 9:24 AM,Mon Nov 9 9:24 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794245041.212570,Return call — no Ultatel outbound within 24h of last miss
+13,(235) 202-2194,1,Mon Nov 9 8:51 AM,Mon Nov 9 8:51 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794243066.212388,"Review whether Super already messaged; if not, return call"
+14,(573) 476-5334,1,Fri Nov 6 2:54 PM,Fri Nov 6 2:54 PM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794005659.211757,Return call — no Ultatel outbound within 24h of last miss
+15,(314) 701-2710,1,Fri Nov 6 8:50 AM,Fri Nov 6 8:50 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1793983827.210841,Return call — no Ultatel outbound within 24h of last miss
+16,(314) 365-3070,1,Fri Nov 6 7:45 AM,Fri Nov 6 7:45 AM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1793979931.210635,Return call — no Ultatel outbound within 24h of last miss
+17,(636) 383-2392,1,Thu Nov 5 10:17 AM,Thu Nov 5 10:17 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1793902620.209772,Return call — no Ultatel outbound within 24h of last miss
+18,(417) 218-1875,1,Thu Nov 5 6:27 AM,Thu Nov 5 6:27 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1793888874.209245,"Review whether Super already messaged; if not, return call"
 
-"Never dialed (verified) — 7 callers with zero company OUT-Bound in the Nov 4–10, 2026 Ultatel export"
-Note: this is the stricter bar inside the 12. The other 5 were dialed at some other time in the week (too early or >24h late).
+"Never dialed (verified) — 9 callers with zero company OUT-Bound in the Nov 5–11, 2026 Ultatel export"
+Note: this is the stricter bar inside the 18. The other 9 were dialed at some other time in the week (too early or >24h late).
 Caller,Missed attempts,Last miss (PT),On Super open list?,Verification
-(636) 459-7409,2,Mon Nov 9 6:57 AM,No,Verified never dialed in this export
+(636) 262-1916,2,Wed Nov 11 6:27 PM,No,Verified never dialed in this export
+(308) 991-3900,1,Wed Nov 11 12:20 PM,No,Verified never dialed in this export
+(636) 201-5442,1,Wed Nov 11 10:22 AM,No,Verified never dialed in this export
 (314) 347-7763,1,Tue Nov 10 2:11 PM,No,Verified never dialed in this export
 (314) 304-8986,1,Tue Nov 10 12:19 PM,No,Verified never dialed in this export
 (314) 286-3665,1,Tue Nov 10 7:08 AM,No,Verified never dialed in this export
