@@ -1,19 +1,4 @@
 Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call ID,Transfer leg Call IDs,Attributed
-(253) 294-4820,"Wed Nov 4, 2026 11:31 AM CT",Direct line — Rania Lombera (107),Rania Lombera 107 (no answer),No,1793813467.207148,1793813513.207152,Yes
-(314) 280-2206,"Wed Nov 4, 2026 11:56 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793814977.207250,1793815042.207254,Yes
-(314) 280-2206,"Wed Nov 4, 2026 11:58 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793815119.207321,1793815218.207325,Yes
-(708) 412-0850,"Wed Nov 4, 2026 12:08 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793815703.207361,1793815745.207365,Yes
-(574) 440-6150,"Wed Nov 4, 2026 12:14 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793816068.207438,1793816120.207442,Yes
-(574) 440-6150,"Wed Nov 4, 2026 12:36 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793817399.207539,1793817433.207543,Yes
-(636) 297-7240,"Wed Nov 4, 2026 12:55 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer) → Tiffany Recktenwald 100 (no answer),No,1793818510.207670,"1793818556.207676,1793818581.207679",Yes
-(615) 521-3049,"Wed Nov 4, 2026 1:21 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793820118.207913,1793820167.207917,Yes
-(636) 297-0893,"Wed Nov 4, 2026 1:45 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793821554.208048,1793821619.208052,Yes
-(314) 356-3806,"Wed Nov 4, 2026 2:03 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793822637.208237,1793822683.208291,Yes
-(314) 356-3806,"Wed Nov 4, 2026 2:06 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793822793.208366,1793822842.208371,Yes
-(636) 679-0211,"Wed Nov 4, 2026 2:13 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793823184.208446,1793823233.208450,Yes
-(636) 679-0211,"Wed Nov 4, 2026 2:14 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793823283.208517,1793823365.208521,Yes
-(636) 384-9797,"Wed Nov 4, 2026 3:24 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793827448.208872,1793827496.208876,Yes
-(636) 673-2359,"Wed Nov 4, 2026 4:19 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1793830781.209077,1793830834.209081,Yes
 (781) 614-0913,"Thu Nov 5, 2026 10:29 AM CT",Direct line — Rania Lombera (107),Rania Lombera 107 (no answer),No,1793896148.209508,1793896200.209512,Yes
 (636) 213-8514,"Thu Nov 5, 2026 2:40 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793911254.210063,1793911324.210067,Yes
 (636) 213-8514,"Thu Nov 5, 2026 2:42 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1793911363.210134,1793911449.210138,Yes
@@ -77,3 +62,9 @@ Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call 
 (816) 806-2881,"Tue Nov 10, 2026 4:56 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794351406.215164,1794351467.215168,Yes
 (636) 675-1734,"Tue Nov 10, 2026 5:35 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794353735.215234,1794353794.215238,Yes
 (757) 621-1102,"Tue Nov 10, 2026 5:42 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1794354179.215303,1794354226.215307,Yes
+(636) 673-4554,"Wed Nov 11, 2026 12:57 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794423448.216275,1794423497.216279,Yes
+(917) 283-8718,"Wed Nov 11, 2026 1:06 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794424002.216310,1794424073.216318,Yes
+(314) 497-7867,"Wed Nov 11, 2026 1:32 PM CT","Maintenance, Maintenance or Renewals (Tiffany 100)",Jermale(Mel) Stovall 104 (no answer) → Tiffany Recktenwald 100 (no answer),No,1794425522.216358,"1794425558.216362,1794425589.216365",Yes
+(314) 570-8748,"Wed Nov 11, 2026 2:38 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794429532.216456,1794429570.216463,Yes
+(314) 570-8748,"Wed Nov 11, 2026 2:40 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794429620.216482,1794429651.216486,Yes
+(636) 887-6893,"Wed Nov 11, 2026 5:28 PM CT","Maintenance, Maintenance or Renewals (Tiffany 100)",Jermale(Mel) Stovall 104 (no answer) → Tiffany Recktenwald 100 (no answer),No,1794439709.216641,"1794439750.216645,1794439780.216648",Yes
