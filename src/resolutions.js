@@ -149,11 +149,15 @@ export function writeLocalResolutions(id, map) {
   }
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function fetchJson(url) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 8000);
+  const timer = setTimeout(() => controller.abort(), 15000);
   try {
-    const res = await fetch(url, { signal: controller.signal, cache: 'no-store' });
+    const res = await fetch(url, { signal: controller.signal, cache: 'no-store', redirect: 'follow' });
     if (!res.ok) throw new Error(`Could not load resolutions (${res.status}).`);
     const data = await res.json();
     if (!data || !Array.isArray(data.resolutions)) throw new Error('Resolution list was not valid.');
@@ -172,7 +176,7 @@ function fetchJsonp(url) {
     const timer = setTimeout(() => {
       cleanup();
       reject(new Error('Resolution list timed out.'));
-    }, 8000);
+    }, 15000);
     function cleanup() {
       clearTimeout(timer);
       delete window[callback];
@@ -198,6 +202,7 @@ function fetchJsonp(url) {
 export async function loadSharedResolutions(endpoint, id) {
   const url = new URL(endpoint);
   url.searchParams.set('pack_id', id);
+  url.searchParams.set('_', String(Date.now()));
   try {
     return await fetchJson(url);
   } catch {
@@ -205,23 +210,61 @@ export async function loadSharedResolutions(endpoint, id) {
   }
 }
 
+function listMatchesPost(list, payload) {
+  const want = payload.resolved === true;
+  const note = String(payload.note || '').trim().slice(0, NOTE_MAX);
+  const resolvedBy = String(payload.resolved_by || '').trim().slice(0, NAME_MAX);
+  const item = (Array.isArray(list) ? list : [])
+    .map((row) => normalizeResolution(row))
+    .filter((row) => row.row_key === payload.row_key)
+    .pop();
+  if (!item) return !want;
+  if (item.resolved !== want) return false;
+  if (!want) return true;
+  return item.note === note && item.resolved_by === resolvedBy;
+}
+
 export async function postResolution(endpoint, payload) {
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify(payload),
+  const body = JSON.stringify({
+    pack_id: payload.pack_id,
+    row_key: payload.row_key,
+    resolved: payload.resolved === true,
+    note: String(payload.note || ''),
+    resolved_by: String(payload.resolved_by || ''),
   });
-  if (res.type === 'opaque') return;
-  if (!res.ok) throw new Error(`Could not save the resolution (${res.status}).`);
-  const text = await res.text();
-  if (!text) return;
-  let data;
+  const init = {
+    method: 'POST',
+    redirect: 'follow',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body,
+  };
+  let accepted = false;
   try {
-    data = JSON.parse(text);
-  } catch {
-    return;
+    const res = await fetch(endpoint, init);
+    if (res.type !== 'opaque' && res.ok) {
+      const text = await res.text();
+      if (text) {
+        try {
+          const data = JSON.parse(text);
+          if (data && data.ok === false) throw new Error(data.error || 'Could not save the resolution.');
+        } catch (err) {
+          if (!(err instanceof SyntaxError)) throw err;
+        }
+      }
+      accepted = true;
+    }
+  } catch (err) {
+    if (String(err?.message || '').startsWith('Could not save')) throw err;
   }
-  if (data && data.ok === false) throw new Error(data.error || 'Could not save the resolution.');
+  if (!accepted) {
+    await fetch(endpoint, { ...init, mode: 'no-cors' });
+  }
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const list = await loadSharedResolutions(endpoint, payload.pack_id);
+    if (listMatchesPost(list, payload)) return list;
+    await sleep(400);
+  }
+  throw new Error('The shared list did not show that update.');
 }
 
 export async function loadEndpoint() {
@@ -252,6 +295,15 @@ export function createResolutionStore() {
 
   function rememberLocal() {
     if (!shared) writeLocalResolutions(id, map);
+  }
+
+  function applyConfirmed(list, key) {
+    const rest = { ...pending };
+    delete rest[key];
+    const merged = mergeResolutions(rest, list);
+    pending = merged.pending;
+    map = merged.map;
+    publish();
   }
 
   async function refresh() {
@@ -308,15 +360,22 @@ export function createResolutionStore() {
       if (shared) {
         pending = { ...pending, [item.row_key]: { item, since: Date.now() } };
         try {
-          await postResolution(endpoint, {
+          const list = await postResolution(endpoint, {
             pack_id: id,
             row_key: item.row_key,
             resolved: true,
             note: item.note,
             resolved_by: item.resolved_by,
           });
+          applyConfirmed(list, item.row_key);
         } catch {
-          /* optimistic until the next poll confirms or expires */
+          const rest = { ...pending };
+          delete rest[item.row_key];
+          pending = rest;
+          const next = { ...map };
+          delete next[item.row_key];
+          map = next;
+          publish();
         }
         return;
       }
@@ -332,15 +391,20 @@ export function createResolutionStore() {
       if (shared) {
         pending = { ...pending, [rowKeyValue]: { item, since: Date.now() } };
         try {
-          await postResolution(endpoint, {
+          const list = await postResolution(endpoint, {
             pack_id: id,
             row_key: rowKeyValue,
             resolved: false,
             note: item.note,
             resolved_by: item.resolved_by,
           });
+          applyConfirmed(list, rowKeyValue);
         } catch {
-          /* poll will restore the row if the undo never landed */
+          const rest = { ...pending };
+          delete rest[rowKeyValue];
+          pending = rest;
+          map = { ...map, [rowKeyValue]: previous };
+          publish();
         }
         return;
       }
