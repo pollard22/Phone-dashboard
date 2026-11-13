@@ -11,7 +11,6 @@ const state = {
   resolutions: {},
   draftKey: '',
   draftNote: '',
-  hideResolved: false,
   shared: false,
   name: '',
 };
@@ -22,7 +21,6 @@ function paint(focusId) {
   if (!data) return;
   state.resolutions = store.map;
   state.shared = store.shared;
-  if (!Object.values(state.resolutions).some((item) => item?.resolved)) state.hideResolved = false;
   app.innerHTML = renderPage(data, state);
   if (focusId) document.getElementById(focusId)?.focus();
 }
@@ -42,11 +40,6 @@ function rowFrom(button) {
 
 async function onResolve(button) {
   const action = button.getAttribute('data-resolve');
-  if (action === 'hide') {
-    state.hideResolved = !state.hideResolved;
-    paint('hide-resolved');
-    return;
-  }
   if (action === 'open') {
     state.draftKey = rowFrom(button);
     state.draftNote = '';

@@ -2,7 +2,7 @@
 
 The call hygiene page stores “Mark resolved” for the whole team in a Google Sheet. `public/config.json` points `resolutionsEndpoint` at the deployed web app. If that URL is empty or the sheet cannot be reached, the page saves marks in the browser only and says so above the table.
 
-A new daily data pack uses a new `pack_id` (the data window plus `meta.generated_at` from `latest.json`). Older rows stay in the sheet for history and no longer show on the page.
+The page always reads and writes `pack_id` `global`. A resolution stays in effect across daily refreshes until that caller has a newer missed call, or someone undoes it.
 
 ## Sheet
 
@@ -10,8 +10,8 @@ Create a Google Sheet. The script adds a tab named `resolutions` on the first wr
 
 | Column | Meaning |
 |---|---|
-| `pack_id` | Window label and generated timestamp, joined with `\|` |
-| `row_key` | Caller phone digits and last-missed ISO time, joined with `\|` |
+| `pack_id` | Always `global` for this page |
+| `row_key` | Caller phone digits, last 10 digits |
 | `resolved` | `TRUE` or `FALSE` (an undo appends `FALSE`) |
 | `note` | Optional, at most 500 characters |
 | `resolved_by` | Optional name from the page, at most 80 characters |

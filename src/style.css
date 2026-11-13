@@ -437,6 +437,46 @@ table.callers.has-resolve {
   font-size: 0.88rem;
 }
 
+.prior-resolve {
+  color: var(--faint);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.resolved-team {
+  margin-top: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 0.75rem 0.9rem 0.4rem;
+}
+
+.resolved-team summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.resolved-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+}
+
+.resolved-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.resolved-item .caller {
+  min-width: 8rem;
+}
+
 .resolve-bar {
   display: flex;
   flex-wrap: wrap;

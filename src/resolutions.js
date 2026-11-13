@@ -1,23 +1,35 @@
-/** Shared "Mark resolved" state. The sheet is used when config.json has a URL. */
+/** Shared "Mark resolved" state. Marks stay with the phone number across daily packs. */
 
 export const NOTE_MAX = 500;
 export const NAME_MAX = 80;
+export const GLOBAL_PACK_ID = 'global';
 const NAME_KEY = 'pollard-resolver-name';
 const STORAGE_PREFIX = 'pollard-resolutions:';
 const PENDING_MS = 90000;
 const POLL_MS = 60000;
 
-export function packId(data) {
-  const windowLabel = String(data?.summary?.window_label || data?.meta?.window_label || '').trim();
-  const generated = String(data?.meta?.generated_at || '').trim();
-  return [windowLabel, generated].filter(Boolean).join('|');
-}
-
+/** Last 10 dial digits. The same caller keeps one resolution across data packs. */
 export function rowKey(row) {
   const digits = String(row?.phone_digits ?? '').replace(/\D/g, '');
-  const when = String(row?.last_missed_iso ?? '').trim();
-  if (!digits || !when) return '';
-  return `${digits}|${when}`;
+  if (digits.length < 10) return '';
+  return digits.slice(-10);
+}
+
+export function missedInstant(row) {
+  const parsed = Date.parse(String(row?.last_missed_iso ?? '').trim());
+  return Number.isNaN(parsed) ? NaN : parsed;
+}
+
+/**
+ * 'resolved' when the latest mark is true and after this miss.
+ * 'earlier' when that mark is older than this miss, so the caller is missed again.
+ */
+export function resolutionKind(row, item) {
+  if (!item || item.resolved !== true) return 'open';
+  const missed = missedInstant(row);
+  const marked = Date.parse(String(item.resolved_at_iso || '').trim());
+  if (Number.isNaN(missed) || Number.isNaN(marked)) return 'open';
+  return marked > missed ? 'resolved' : 'earlier';
 }
 
 export function formatCentral(iso) {
@@ -36,6 +48,26 @@ export function formatCentral(iso) {
   const get = (type) => parts.find((part) => part.type === type)?.value || '';
   const clock = `${get('hour')}:${get('minute')} ${get('dayPeriod')}`.trim();
   return `${get('weekday')} ${get('month')} ${get('day')}, ${get('year')} ${clock} CT`.replace(/\s+/g, ' ').trim();
+}
+
+export function formatCentralDate(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return '';
+  return new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+
+/** "Previously resolved Nov 12, 2026: note" for a mark older than the latest miss. */
+export function earlierLine(item) {
+  const when = formatCentralDate(item?.resolved_at_iso);
+  const note = String(item?.note || '').trim();
+  if (!when && !note) return '';
+  const detail = note && when ? `${when}: ${note}` : (when || note);
+  return `Previously resolved ${detail}`;
 }
 
 /** "Resolved by X · time CT · note" with the empty pieces left out. */
@@ -328,7 +360,7 @@ export function createResolutionStore() {
     },
     async start(data, notify) {
       onChange = typeof notify === 'function' ? notify : () => {};
-      id = packId(data);
+      id = GLOBAL_PACK_ID;
       endpoint = await loadEndpoint();
       if (!endpoint) {
         shared = false;
