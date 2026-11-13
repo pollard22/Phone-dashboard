@@ -19,6 +19,7 @@ import {
   waitingText,
   windowHeading,
 } from './format.js';
+import { resolvedSummary, rowKey } from './resolutions.js';
 
 export function esc(value) {
   return String(value ?? '')
@@ -119,10 +120,75 @@ function superCell(row) {
   return `<td class="super-cell"><span class="super-muted">—</span>${note}</td>`;
 }
 
-function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {
-  const columns = 4 + (showType ? 1 : 0) + (showWaiting ? 1 : 0) + (showCallback ? 1 : 0) + (showSuper ? 1 : 0);
+function markedCount(rows, resolutions) {
+  return rows.filter((row) => {
+    const key = rowKey(row);
+    return key && resolutions?.[key]?.resolved;
+  }).length;
+}
+
+function orderRows(rows, resolutions, hideResolved) {
+  const open = [];
+  const done = [];
+  for (const row of rows) {
+    const key = rowKey(row);
+    if (key && resolutions?.[key]?.resolved) done.push(row);
+    else open.push(row);
+  }
+  return hideResolved ? open : open.concat(done);
+}
+
+function resolveCell(row, index, state) {
+  const key = rowKey(row);
+  if (!key) return '<td class="resolve-cell"></td>';
+  const attr = esc(encodeURIComponent(key));
+  const saved = state.resolutions?.[key];
+  if (saved?.resolved) {
+    return `<td class="resolve-cell">
+      <span class="tag ok">Resolved</span>
+      <p class="resolve-meta">${esc(resolvedSummary(saved))}</p>
+      <button type="button" class="linkish" data-resolve="undo" data-row="${attr}">Undo</button>
+    </td>`;
+  }
+  if (state.draftKey === key) {
+    return `<td class="resolve-cell">
+      <div class="resolve-form">
+        <label class="sr-only" for="resolve-note">How this was resolved</label>
+        <textarea id="resolve-note" maxlength="500" placeholder="How was this resolved? e.g. texted back, handled in AppFolio">${esc(state.draftNote || '')}</textarea>
+        <div class="resolve-actions">
+          <button type="button" class="btn primary" data-resolve="save" data-row="${attr}">Save</button>
+          <button type="button" class="btn" data-resolve="cancel">Cancel</button>
+        </div>
+      </div>
+    </td>`;
+  }
+  return `<td class="resolve-cell"><button type="button" class="btn resolve-btn" id="resolve-open-${index}" data-resolve="open" data-row="${attr}">Mark resolved</button></td>`;
+}
+
+function resolveTools(state, count) {
+  const hint = state.shared
+    ? 'Resolved marks are shared with everyone using this page and reset at the next daily refresh.'
+    : 'Shared resolve not connected — saving on this browser only';
+  const countHtml = count > 0 ? `<p class="resolve-count" aria-live="polite">${count} marked resolved</p>` : '';
+  const hide = count > 0
+    ? `<button type="button" class="btn" id="hide-resolved" data-resolve="hide" aria-pressed="${state.hideResolved ? 'true' : 'false'}">${state.hideResolved ? 'Show resolved' : 'Hide resolved'}</button>`
+    : '';
+  return `
+    <p class="resolve-hint">${esc(hint)}</p>
+    <div class="resolve-bar">
+      <label class="resolver-name">Your name
+        <input id="resolver-name" type="text" maxlength="80" autocomplete="name" placeholder="Optional" value="${esc(state.name || '')}">
+      </label>
+      ${countHtml}
+      ${hide}
+    </div>`;
+}
+
+function tableHtml(rows, { showType, showWaiting, showCallback, showSuper, showResolve, resolutions, draftKey, draftNote }) {
+  const resolveState = { resolutions, draftKey, draftNote };
+  const columns = 4 + (showType ? 1 : 0) + (showWaiting ? 1 : 0) + (showCallback ? 1 : 0) + (showSuper ? 1 : 0) + (showResolve ? 1 : 0);
   if (!rows.length) {
-    return `<div class="table-scroll"><table class="callers"><tbody><tr><td class="empty" colspan="${columns}">No callers match.</td></tr></tbody></table></div>`;
+    return `<div class="table-scroll"><table class="callers${showResolve ? ' has-resolve' : ''}"><tbody><tr><td class="empty" colspan="${columns}">No callers match.</td></tr></tbody></table></div>`;
   }
   const head = `
     <tr>
@@ -134,14 +200,17 @@ function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {
       ${showWaiting ? '<th scope="col">Waiting</th>' : ''}
       ${showCallback ? '<th scope="col">Called back</th>' : ''}
       ${showSuper ? '<th scope="col">Super call</th>' : ''}
+      ${showResolve ? '<th scope="col">Resolved</th>' : ''}
     </tr>`;
   const body = rows
-    .map((row) => {
+    .map((row, index) => {
       const typeCell = showType ? `<td>${esc(row?.missed_type ?? '')}</td>` : '';
       const waitCell = showWaiting ? `<td>${esc(waitingText(row))}</td>` : '';
       const backCell = showCallback ? `<td>${esc(calledBackWhen(row))}</td>` : '';
       const superHtml = showSuper ? superCell(row) : '';
-      return `<tr>
+      const resolveHtml = showResolve ? resolveCell(row, index, resolveState) : '';
+      const resolved = showResolve && resolutions?.[rowKey(row)]?.resolved;
+      return `<tr class="${resolved ? 'is-resolved' : ''}">
         <td>${phoneHtml(row)}</td>
         <td>${esc(row?.last_missed_ct ?? '')}</td>
         <td class="num-cell">${esc(displayValue(row?.missed_calls))}</td>
@@ -150,12 +219,13 @@ function tableHtml(rows, { showType, showWaiting, showCallback, showSuper }) {
         ${waitCell}
         ${backCell}
         ${superHtml}
+        ${resolveHtml}
       </tr>`;
     })
     .join('');
   return `
     <div class="table-scroll">
-      <table class="callers">
+      <table class="callers${showResolve ? ' has-resolve' : ''}">
         <thead>${head}</thead>
         <tbody>${body}</tbody>
       </table>
@@ -190,6 +260,10 @@ export function renderPage(data, state = {}) {
   const backRows = calledBackRows(data);
   const activeRows = list === 'called' ? backRows : missedRows;
   const shown = filterRows(activeRows, group, type);
+  const resolutions = state.resolutions && typeof state.resolutions === 'object' ? state.resolutions : {};
+  const showResolve = list !== 'called';
+  const resolvedTotal = showResolve ? markedCount(shown, resolutions) : 0;
+  const tableRows = showResolve ? orderRows(shown, resolutions, !!state.hideResolved) : shown;
   const showType = hasMissedType(list === 'called' ? backRows : missedRows) || missedTypeEntries(data).length > 0;
   const showWaiting = activeRows.some((row) => String(row?.waiting ?? '').trim());
   const showCallback = list === 'called';
@@ -263,8 +337,18 @@ export function renderPage(data, state = {}) {
         ${tabs}
         ${groupChips(groups, groupTotal, group)}
         <p class="showing">${esc(shownLabel)}</p>
+        ${showResolve ? resolveTools({ ...state, resolutions }, resolvedTotal) : ''}
         ${showSuper ? `<p class="super-note">Super call links open in Super and need you to be signed in.</p>` : ''}
-        ${tableHtml(shown, { showType, showWaiting, showCallback, showSuper })}
+        ${tableHtml(tableRows, {
+          showType,
+          showWaiting,
+          showCallback,
+          showSuper,
+          showResolve,
+          resolutions,
+          draftKey: state.draftKey || '',
+          draftNote: state.draftNote || '',
+        })}
       </section>
 
       <footer class="foot">

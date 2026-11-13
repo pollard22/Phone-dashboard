@@ -427,6 +427,132 @@ table.callers {
   font-size: 0.95rem;
 }
 
+table.callers.has-resolve {
+  min-width: 1040px;
+}
+
+.resolve-hint {
+  margin: 0.15rem 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.resolve-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.65rem 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+.resolver-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.resolver-name input,
+.resolve-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
+}
+
+.resolver-name input {
+  min-width: 12rem;
+  min-height: 40px;
+  padding: 0.35rem 0.65rem;
+}
+
+.resolve-count {
+  margin: 0;
+  color: var(--green);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.resolve-cell {
+  min-width: 12.5rem;
+  max-width: 18rem;
+}
+
+tr.is-resolved td:not(.resolve-cell) {
+  color: var(--faint);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #c4bfb8;
+}
+
+tr.is-resolved a.phone {
+  color: var(--faint);
+}
+
+.resolve-meta {
+  margin: 0.35rem 0 0.2rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.resolve-form textarea {
+  display: block;
+  width: 16rem;
+  max-width: 100%;
+  min-height: 4.6rem;
+  padding: 0.5rem 0.65rem;
+  resize: vertical;
+}
+
+.resolve-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+}
+
+.btn {
+  appearance: none;
+  min-height: 36px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #f0fdfa;
+}
+
+.linkish {
+  appearance: none;
+  margin-top: 0.15rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--teal);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
 table.callers th,
 table.callers td {
   padding: 0.7rem 0.75rem;
@@ -581,6 +707,27 @@ a:focus-visible {
   .stat .num,
   .followup-toggle .num {
     font-size: 3rem;
+  }
+
+  .resolver-name {
+    flex: 1 1 100%;
+  }
+
+  .resolver-name input,
+  .resolve-btn,
+  .resolve-actions .btn,
+  .linkish {
+    min-height: 44px;
+  }
+
+  .resolver-name input,
+  .resolve-form textarea {
+    font-size: 16px;
+  }
+
+  .linkish {
+    display: inline-flex;
+    align-items: center;
   }
 }
 
