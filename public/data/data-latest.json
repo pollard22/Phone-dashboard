@@ -317,13 +317,12 @@
     "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
     "super_links": {
       "source_file": "/workspace/ultatel/super-call-links-latest.csv",
-      "rows_in_file": 87,
-      "not_called_back_with_link": 14,
+      "rows_in_file": 103,
+      "not_called_back_with_link": 22,
       "called_back_with_link": 0,
       "not_called_back_by_status": {
-        "(no row)": 16,
-        "linked": 14,
-        "no Super call": 13
+        "linked": 22,
+        "no Super call": 21
       },
       "called_back_by_status": {
         "(no row)": 22
@@ -361,8 +360,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call within \u00b115 min. Closest call was 180 min earlier (Thu Nov 12, 2026 10:29:36 AM CT)."
     },
     {
       "phone": "(636) 673-4554",
@@ -396,7 +395,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 117 min earlier."
+      "super_link_note": "No Super call within \u00b115 min. Closest call was 118 min earlier (Wed Nov 11, 2026 12:57:31 PM CT)."
     },
     {
       "phone": "(225) 538-1615",
@@ -427,8 +426,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(636) 262-1916",
@@ -460,7 +459,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(314) 570-8748",
@@ -526,7 +525,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(573) 552-2405",
@@ -622,10 +621,10 @@
       "ever_called_in_window": false,
       "last_call_id": "1794531198.217754",
       "transfer_leg_call_ids": [],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmo3cxz110uirs5kesswcio57&messageId=cmwe9if090azgorgnm96d5fkc&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Pest control treatment rescheduling",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -656,10 +655,10 @@
       "transfer_leg_call_ids": [
         "1794527303.217723"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmux2f0rt4t81lrg95cn8e5a0&messageId=cmwe79sbr08z1orgnjzopz2pu&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Section 8 three-bedroom inquiry",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -691,10 +690,10 @@
         "1794516738.217563",
         "1794516791.217568"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmwb9vhds1xnk8p6bzlc4bwyy&messageId=cmwe10ufl0a2j3ez9axkfkvle&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Income verification portal access issue",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -725,10 +724,10 @@
       "transfer_leg_call_ids": [
         "1794515796.217494"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmwe0c48c08nl3ez9oms1jxqg&messageId=cmwe0enxo08re3ez9vrpxrij2&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Inquiry about 2-bedroom rental",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -759,10 +758,10 @@
       "transfer_leg_call_ids": [
         "1794515379.217471"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmv9v29zy3ty7m9fkvopl3mu8&messageId=cmwe075df08g23ez9bwoszzvt&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Deposit payment inquiry",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -794,8 +793,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(636) 706-3225",
@@ -826,8 +825,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call within \u00b115 min. Closest call was 1308 min earlier (Wed Nov 11, 2026 3:57:04 PM CT)."
     },
     {
       "phone": "(314) 486-1315",
@@ -858,8 +857,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(573) 380-1907",
@@ -889,10 +888,10 @@
       "transfer_leg_call_ids": [
         "1794507375.217225"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmtbmkece0bjrc8x3tfo3xqwb&messageId=cmwdvdtcx25ajfa5ygqzp931s&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Call transfer to Tiffany",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -923,10 +922,10 @@
       "transfer_leg_call_ids": [
         "1794505579.217178"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvfkkpbm2h77arfnd8p1oavi&messageId=cmwdubmwm23b1fa5yms8xipw8&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing agent call transfer",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -958,8 +957,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(636) 295-2001",
@@ -990,8 +989,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(314) 901-7274",
@@ -1021,10 +1020,10 @@
       "transfer_leg_call_ids": [
         "1794499909.216801"
       ],
-      "super_link": "",
-      "super_summary_title": "",
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmwdq44a81uptfa5ybsa6a0t0&messageId=cmwdqxrzj1wnrfa5ybjdznk7r&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request to transfer call",
       "super_summary_text": "",
-      "super_link_status": "",
+      "super_link_status": "linked",
       "super_link_note": ""
     },
     {
@@ -1056,8 +1055,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(308) 991-3900",
@@ -1089,7 +1088,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(314) 497-7867",
@@ -1190,7 +1189,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(217) 503-7890",
@@ -1222,7 +1221,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 1056 min earlier."
+      "super_link_note": "No Super call within \u00b115 min. Closest call was 1056 min earlier (Tue Nov 10, 2026 4:02:14 PM CT)."
     },
     {
       "phone": "(314) 347-7763",
@@ -1254,7 +1253,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(314) 304-8986",
@@ -1286,7 +1285,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(636) 391-8684",
@@ -1321,7 +1320,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(314) 286-3665",
@@ -1353,7 +1352,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(618) 801-7707",
@@ -1385,7 +1384,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call within \u00b115 min. Closest call was 5711 min earlier (Thu Nov 5, 2026 3:31:24 PM CT)."
     },
     {
       "phone": "(618) 224-1008",
@@ -1451,7 +1450,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     },
     {
       "phone": "(656) 600-5006",
@@ -1757,7 +1756,7 @@
       "super_summary_title": "",
       "super_summary_text": "",
       "super_link_status": "no Super call",
-      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
+      "super_link_note": "No Super call from this number in the 30-day individual call metrics export."
     }
   ],
   "not_called_back_by_group": {
