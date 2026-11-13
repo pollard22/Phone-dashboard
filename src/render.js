@@ -19,7 +19,7 @@ import {
   waitingText,
   windowHeading,
 } from './format.js';
-import { resolvedSummary, rowKey } from './resolutions.js';
+import { earlierLine, resolutionKind, resolvedSummary, rowKey } from './resolutions.js';
 
 export function esc(value) {
   return String(value ?? '')
@@ -29,7 +29,7 @@ export function esc(value) {
     .replace(/"/g, '&quot;');
 }
 
-function phoneHtml(row) {
+function phoneHtml(row, prior = '') {
   const phone = String(row?.phone ?? '').trim();
   const digits = String(row?.phone_digits ?? '').replace(/\D/g, '');
   const name = callerName(row);
@@ -39,7 +39,8 @@ function phoneHtml(row) {
     phoneCell = `<a class="phone" href="tel:${href}">${esc(phone || digits)}</a>`;
   }
   const nameCell = name ? `<span class="caller-name">${esc(name)}</span>` : '';
-  return `<div class="caller">${phoneCell}${nameCell}</div>`;
+  const priorCell = prior ? `<span class="prior-resolve">${esc(prior)}</span>` : '';
+  return `<div class="caller">${phoneCell}${nameCell}${priorCell}</div>`;
 }
 
 function statCard({ label, value, lines = [], extra = '', tone = '' }) {
@@ -120,36 +121,31 @@ function superCell(row) {
   return `<td class="super-cell"><span class="super-muted">—</span>${note}</td>`;
 }
 
-function markedCount(rows, resolutions) {
-  return rows.filter((row) => {
-    const key = rowKey(row);
-    return key && resolutions?.[key]?.resolved;
-  }).length;
-}
-
-function orderRows(rows, resolutions, hideResolved) {
+function splitMissed(rows, resolutions) {
   const open = [];
-  const done = [];
+  const resolved = [];
   for (const row of rows) {
-    const key = rowKey(row);
-    if (key && resolutions?.[key]?.resolved) done.push(row);
+    const item = resolutions?.[rowKey(row)];
+    if (resolutionKind(row, item) === 'resolved') resolved.push(row);
     else open.push(row);
   }
-  return hideResolved ? open : open.concat(done);
+  return { open, resolved };
+}
+
+function countEntries(rows, labelOf) {
+  const counts = {};
+  for (const row of rows) {
+    const label = labelOf(row);
+    if (!label) continue;
+    counts[label] = (counts[label] || 0) + 1;
+  }
+  return Object.entries(counts).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0])));
 }
 
 function resolveCell(row, index, state) {
   const key = rowKey(row);
   if (!key) return '<td class="resolve-cell"></td>';
   const attr = esc(encodeURIComponent(key));
-  const saved = state.resolutions?.[key];
-  if (saved?.resolved) {
-    return `<td class="resolve-cell">
-      <span class="tag ok">Resolved</span>
-      <p class="resolve-meta">${esc(resolvedSummary(saved))}</p>
-      <button type="button" class="linkish" data-resolve="undo" data-row="${attr}">Undo</button>
-    </td>`;
-  }
   if (state.draftKey === key) {
     return `<td class="resolve-cell">
       <div class="resolve-form">
@@ -165,23 +161,35 @@ function resolveCell(row, index, state) {
   return `<td class="resolve-cell"><button type="button" class="btn resolve-btn" id="resolve-open-${index}" data-resolve="open" data-row="${attr}">Mark resolved</button></td>`;
 }
 
-function resolveTools(state, count) {
+function resolveTools(state) {
   const hint = state.shared
-    ? 'Resolved marks are shared with everyone using this page and reset at the next daily refresh.'
+    ? 'Resolved marks are shared with everyone using this page and stay resolved unless the caller is missed again.'
     : 'Shared resolve not connected — saving on this browser only';
-  const countHtml = count > 0 ? `<p class="resolve-count" aria-live="polite">${count} marked resolved</p>` : '';
-  const hide = count > 0
-    ? `<button type="button" class="btn" id="hide-resolved" data-resolve="hide" aria-pressed="${state.hideResolved ? 'true' : 'false'}">${state.hideResolved ? 'Show resolved' : 'Hide resolved'}</button>`
-    : '';
   return `
     <p class="resolve-hint">${esc(hint)}</p>
     <div class="resolve-bar">
       <label class="resolver-name">Your name
         <input id="resolver-name" type="text" maxlength="80" autocomplete="name" placeholder="Optional" value="${esc(state.name || '')}">
       </label>
-      ${countHtml}
-      ${hide}
     </div>`;
+}
+
+function resolvedSection(rows, resolutions) {
+  if (!rows.length) return '';
+  const items = rows.map((row) => {
+    const key = rowKey(row);
+    const item = resolutions?.[key];
+    const attr = esc(encodeURIComponent(key));
+    return `<li class="resolved-item">
+      ${phoneHtml(row)}
+      <p class="resolve-meta">${esc(resolvedSummary(item))}</p>
+      <button type="button" class="linkish" data-resolve="undo" data-row="${attr}">Undo</button>
+    </li>`;
+  }).join('');
+  return `<details class="resolved-team" open>
+    <summary>Resolved by team (${rows.length})</summary>
+    <ul class="resolved-list">${items}</ul>
+  </details>`;
 }
 
 function tableHtml(rows, { showType, showWaiting, showCallback, showSuper, showResolve, resolutions, draftKey, draftNote }) {
@@ -209,9 +217,10 @@ function tableHtml(rows, { showType, showWaiting, showCallback, showSuper, showR
       const backCell = showCallback ? `<td>${esc(calledBackWhen(row))}</td>` : '';
       const superHtml = showSuper ? superCell(row) : '';
       const resolveHtml = showResolve ? resolveCell(row, index, resolveState) : '';
-      const resolved = showResolve && resolutions?.[rowKey(row)]?.resolved;
-      return `<tr class="${resolved ? 'is-resolved' : ''}">
-        <td>${phoneHtml(row)}</td>
+      const item = resolutions?.[rowKey(row)];
+      const prior = showResolve && resolutionKind(row, item) === 'earlier' ? earlierLine(item) : '';
+      return `<tr>
+        <td>${phoneHtml(row, prior)}</td>
         <td>${esc(row?.last_missed_ct ?? '')}</td>
         <td class="num-cell">${esc(displayValue(row?.missed_calls))}</td>
         <td>${esc(groupLabel(row?.call_group))}</td>
@@ -258,12 +267,12 @@ export function renderPage(data, state = {}) {
   const type = state.type || '';
   const missedRows = Array.isArray(data.not_called_back) ? data.not_called_back : [];
   const backRows = calledBackRows(data);
-  const activeRows = list === 'called' ? backRows : missedRows;
-  const shown = filterRows(activeRows, group, type);
   const resolutions = state.resolutions && typeof state.resolutions === 'object' ? state.resolutions : {};
+  const { open: openMissed, resolved: resolvedMissed } = splitMissed(missedRows, resolutions);
+  const activeRows = list === 'called' ? backRows : openMissed;
+  const shown = filterRows(activeRows, group, type);
   const showResolve = list !== 'called';
-  const resolvedTotal = showResolve ? markedCount(shown, resolutions) : 0;
-  const tableRows = showResolve ? orderRows(shown, resolutions, !!state.hideResolved) : shown;
+  const tableRows = shown;
   const showType = hasMissedType(list === 'called' ? backRows : missedRows) || missedTypeEntries(data).length > 0;
   const showWaiting = activeRows.some((row) => String(row?.waiting ?? '').trim());
   const showCallback = list === 'called';
@@ -271,17 +280,25 @@ export function renderPage(data, state = {}) {
   const windowLabel = windowHeading(summary);
   const fresh = freshnessText(data);
   const calledValue = calledBackValue(data);
-  const groups =
-    list === 'called'
-      ? displayGroupEntries(
-          backRows.reduce((counts, row) => {
-            const name = groupLabel(row?.call_group);
-            if (name) counts[name] = (counts[name] || 0) + 1;
-            return counts;
-          }, {})
-        )
-      : displayGroupEntries(data.not_called_back_by_group || summary.not_called_back_by_group);
-  const groupTotal = list === 'called' ? displayValue(calledValue ?? backRows.length) : displayValue(summary.not_called_back ?? missedRows.length);
+  const groups = list === 'called'
+    ? displayGroupEntries(
+        backRows.reduce((counts, row) => {
+          const name = groupLabel(row?.call_group);
+          if (name) counts[name] = (counts[name] || 0) + 1;
+          return counts;
+        }, {})
+      )
+    : displayGroupEntries(
+        openMissed.reduce((counts, row) => {
+          const name = groupLabel(row?.call_group);
+          if (name) counts[name] = (counts[name] || 0) + 1;
+          return counts;
+        }, {})
+      );
+  const openTypeEntries = countEntries(openMissed, (row) => String(row?.missed_type ?? '').trim());
+  const typeSource = openTypeEntries.length ? openTypeEntries : missedTypeEntries(data);
+  const notCalledValue = openMissed.length;
+  const groupTotal = list === 'called' ? displayValue(calledValue ?? backRows.length) : displayValue(notCalledValue);
   const noun = shown.length === 1 ? 'caller' : 'callers';
   const shownLabel = [group, type].filter(Boolean).length
     ? `${shown.length} ${noun}`
@@ -326,9 +343,10 @@ export function renderPage(data, state = {}) {
         ${calledCard}
         ${statCard({
           label: 'Not called back yet',
-          value: summary.not_called_back,
+          value: notCalledValue,
+          lines: resolvedMissed.length ? [`${resolvedMissed.length} resolved by team`] : [],
           tone: 'miss',
-          extra: typeChips(missedTypeEntries(data), list === 'missed' ? type : ''),
+          extra: typeChips(typeSource, list === 'missed' ? type : ''),
         })}
       </section>
 
@@ -337,7 +355,7 @@ export function renderPage(data, state = {}) {
         ${tabs}
         ${groupChips(groups, groupTotal, group)}
         <p class="showing">${esc(shownLabel)}</p>
-        ${showResolve ? resolveTools({ ...state, resolutions }, resolvedTotal) : ''}
+        ${showResolve ? resolveTools(state) : ''}
         ${showSuper ? `<p class="super-note">Super call links open in Super and need you to be signed in.</p>` : ''}
         ${tableHtml(tableRows, {
           showType,
@@ -349,6 +367,7 @@ export function renderPage(data, state = {}) {
           draftKey: state.draftKey || '',
           draftNote: state.draftNote || '',
         })}
+        ${showResolve ? resolvedSection(resolvedMissed, resolutions) : ''}
       </section>
 
       <footer class="foot">
