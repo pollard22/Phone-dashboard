@@ -1,6 +1,6 @@
 # Shared resolutions (Google Sheet)
 
-The call hygiene page can store “Mark resolved” for the whole team in a Google Sheet. Until `resolutionsEndpoint` in `public/config.json` is a deployed web app URL, the page saves marks in the browser only and says so above the table.
+The call hygiene page stores “Mark resolved” for the whole team in a Google Sheet. `public/config.json` points `resolutionsEndpoint` at the deployed web app. If that URL is empty or the sheet cannot be reached, the page saves marks in the browser only and says so above the table.
 
 A new daily data pack uses a new `pack_id` (the data window plus `meta.generated_at` from `latest.json`). Older rows stay in the sheet for history and no longer show on the page.
 
