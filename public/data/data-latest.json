@@ -299,11 +299,12 @@
     "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
     "super_links": {
       "source_file": "/workspace/ultatel/super-call-links-latest.csv",
-      "rows_in_file": 52,
-      "not_called_back_with_link": 0,
+      "rows_in_file": 87,
+      "not_called_back_with_link": 17,
       "called_back_with_link": 0,
       "not_called_back_by_status": {
-        "(no row)": 35
+        "no Super call": 18,
+        "linked": 17
       },
       "called_back_by_status": {
         "(no row)": 22
@@ -343,8 +344,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 117 min earlier."
     },
     {
       "phone": "(636) 262-1916",
@@ -375,8 +376,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(314) 570-8748",
@@ -406,11 +407,11 @@
       "transfer_leg_call_ids": [
         "1794429651.216486"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmokf6u3b1mscg99izufz0lp8&messageId=cmwcl4uas0zssfa5yjxdprzfh&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request for callback from resident",
+      "super_summary_text": "Christina Dinkins called to reach the front desk for apartment 606 Parkview and asked for a callback at 314-570-8748. The front desk was unavailable, and Christina left a message with her details and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": "Two calls within two minutes; linked call starting closest to missed time. Link copied from summary."
     },
     {
       "phone": "(816) 806-2881",
@@ -442,8 +443,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 1036 min earlier."
     },
     {
       "phone": "(225) 615-4279",
@@ -474,8 +475,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(573) 552-2405",
@@ -505,11 +506,11 @@
       "transfer_leg_call_ids": [
         "1794084667.212062"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw6r16kp0ob3kg1fempqrhm8&messageId=cmw6vq7tu0sfbkg1f2i1ac8ad&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Leasing inquiry for apartment",
+      "super_summary_text": "Charity Benefiel called about leasing an apartment and left her name and callback number (573-552-2405) because the team was unavailable. She requested a call back.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 466-3832",
@@ -539,11 +540,11 @@
       "transfer_leg_call_ids": [
         "1794000096.211535"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmmmjovci1qzvwr2r4ezg0fqb&messageId=cmw5hdt9t1c7fh9fhcfi2sfqq&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request to speak with representative",
+      "super_summary_text": "Tristan West called requesting to speak to a representative, but the assistant said the team was unavailable and asked him to leave a message with his name and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(314) 714-8234",
@@ -574,11 +575,11 @@
         "1793911821.210351",
         "1793911849.210354"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw40mt4301ztrxaruo541tcc&messageId=cmw40v0zw02m8rxarm1k9uhl4&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Apartment cleanout and landscaping services",
+      "super_summary_text": "A caller reported a central beam issue and also requested potential bidding for apartment cleanout and landscaping services. The call was transferred to the right team, but the agent did not confirm the final resolution.",
+      "super_link_status": "linked",
+      "super_link_note": "Two calls within three minutes; linked closest start. Link copied from summary."
     },
     {
       "phone": "(308) 991-3900",
@@ -609,8 +610,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(314) 497-7867",
@@ -641,11 +642,11 @@
         "1794425558.216362",
         "1794425589.216365"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmokbcms21h6ug99ikafb1hh4&messageId=cmwciqeiu0uzyfa5ydw89rzs4&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Follow-up on toilet maintenance request",
+      "super_summary_text": "Terry Mathis called to follow up on a clogged toilet maintenance request he submitted about an hour and a half earlier for 74 Santo Domingo Drive, asking for confirmation someone will respond today. The call ended without the agent confirming availability or scheduling.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(917) 283-8718",
@@ -675,11 +676,11 @@
       "transfer_leg_call_ids": [
         "1794424073.216318"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmwchpzfj0sx8fa5y6eus9hzr&messageId=cmwcht8zv0t7kfa5yzb7dj14l&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Inquiry About Current Rent",
+      "super_summary_text": "A caller asked to speak with someone about rent for their current apartment at \u201cKarazaka,\u201d but the leasing team was unavailable, so the agent asked them to leave a message with their name and call back number. The call did not complete fully due to the team being busy/unavailable.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 201-5442",
@@ -710,8 +711,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(217) 503-7890",
@@ -742,8 +743,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 1056 min earlier."
     },
     {
       "phone": "(314) 347-7763",
@@ -774,8 +775,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(314) 304-8986",
@@ -806,8 +807,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(281) 317-7356",
@@ -838,8 +839,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(636) 391-8684",
@@ -873,8 +874,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(314) 286-3665",
@@ -905,8 +906,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(618) 801-7707",
@@ -937,8 +938,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(618) 224-1008",
@@ -968,11 +969,11 @@
       "transfer_leg_call_ids": [
         "1794254707.213124"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw9owge2011o8p6bzxpd16g6&messageId=cmw9oyab4015n8p6bymhxy3a4&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Call about equipment issues",
+      "super_summary_text": "A caller requested help with \u201cequipment,\u201d but the assistant said the team was unavailable and asked the caller to leave a message with their name and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 673-4824",
@@ -1003,8 +1004,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(656) 600-5006",
@@ -1034,11 +1035,11 @@
       "transfer_leg_call_ids": [
         "1794250356.212766"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw9mawbe2l5dkg1fubl1uzr6&messageId=cmw9md1hp2lfukg1fr93qx89e&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Transfer request to Terry Ballard",
+      "super_summary_text": "Alex requested to be transferred to Terry Ballard, but the assistant said the team member was unavailable and asked Alex to leave a message with their name and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(618) 472-4267",
@@ -1069,11 +1070,11 @@
         "1794079671.212025",
         "1794079700.212030"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw0v8mvu0g4j7oxpdye88qpu&messageId=cmw6srm250q08kg1fu5klfjks&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Application inquiry from caller",
+      "super_summary_text": "Chris Bryan called about an application and provided his name and callback number (618-472-4267). The applications team was unavailable, and the assistant asked him to leave a message for follow-up.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(440) 307-0129",
@@ -1103,11 +1104,11 @@
       "transfer_leg_call_ids": [
         "1794078153.211987"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw6rsbi70p6xkg1fqhlzme5a&messageId=cmw6ru2r60p9ckg1f9li03fbm&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Tenant move-out inquiry",
+      "super_summary_text": "A caller asked to set up a move-out, but the assistant said the team was unavailable and asked the caller to leave a message with their name and reason for calling.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(561) 772-1763",
@@ -1138,11 +1139,11 @@
         "1794072595.211887",
         "1794072626.211892"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvzezmr41pb57u7uf8kk6o5k&messageId=cmw6ok8og0mgrkg1fij9r9pc2&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Application approval status inquiry",
+      "super_summary_text": "Alida Guillaume called to ask whether her rental application is approved, saying she submitted everything and has been waiting longer than three to four business days. She was not connected to the applications team and was asked to leave a message with her name and callback number.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(913) 680-5126",
@@ -1172,11 +1173,11 @@
       "transfer_leg_call_ids": [
         "1794071317.211844"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmv5hc55i1ll081r1cdsxc16e&messageId=cmw6ns6lj0m1mkg1fasi8i9dv&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Inquiry about 3-bedroom leasing",
+      "super_summary_text": "Pedro Chalamantes Gonzalez asked to speak with a representative about leasing a 3-bedroom apartment, and the agent offered an option at 118 Rose Ann Avenue in Moscow Mills for $1,650. The leasing team was unavailable, so Pedro left his name and callback number in a message.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 297-7370",
@@ -1206,11 +1207,11 @@
       "transfer_leg_call_ids": [
         "1794002266.211599"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvzevsya1p0d7u7u0isspu7x&messageId=cmw5ixpy6005tkg1fv6ivomz0&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Application denial income verification issue",
+      "super_summary_text": "Sandra Brown called to discuss her denied rental application due to income verification and outstanding collections. She decided to withdraw her application after learning the required gross income threshold.",
+      "super_link_status": "linked",
+      "super_link_note": "Super shows eventual transfer accepted by staff; link copied from summary."
     },
     {
       "phone": "(972) 979-0645",
@@ -1240,11 +1241,11 @@
       "transfer_leg_call_ids": [
         "1793997382.211419"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw5foytu194xh9fhaktv3gq2&messageId=cmw5ftaqb19cxh9fh24n0vvfp&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Message for Rania Lombera",
+      "super_summary_text": "Joy (at 972-979-0645) called to leave a message for Rania Lombera, identifying as Joey Melton with ePremium Insurance, and offering an email follow-up. The agent took the voicemail message; no direct connection to Rania occurred.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(805) 452-3122",
@@ -1274,11 +1275,11 @@
       "transfer_leg_call_ids": [
         "1793991283.211132"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmvbb8nkv56ljm9fked5k3kdu&messageId=cmw5c4ntm114ch9fhq7gtytmf&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Occupancy check update request",
+      "super_summary_text": "Anna Cable asked Tiffany Rechtenwald for an update on the occupancy check they discussed the previous day, and requested a callback. The call ended with Tiffany\u2019s team unavailable and voicemail requested.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(305) 778-5778",
@@ -1309,8 +1310,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(636) 233-4998",
@@ -1340,11 +1341,11 @@
       "transfer_leg_call_ids": [
         "1793912401.210363"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw41396y03czrxar53i7qjux&messageId=cmw415wpl03morxar8njgwi3q&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Call inquiry about rental options",
+      "super_summary_text": "Matthew Price called about upcoming 2-bedroom rentals and was informed the leasing team was unavailable, so he provided his name and call back number for follow-up. The call ended without confirming availability details.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 383-2392",
@@ -1375,8 +1376,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     },
     {
       "phone": "(781) 614-0913",
@@ -1406,11 +1407,11 @@
       "transfer_leg_call_ids": [
         "1793896200.209512"
       ],
-      "super_link": "",
-      "super_summary_title": "",
-      "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link": "https://ai.hiresuper.com/dashboard/activity?threadId=cmw12uv880x2o7oxpifbdg4vl&messageId=cmw3rik0s0j0sd4hkyym2pkmm&companyId=55270964-b8a2-422b-bf44-a37f4563d239",
+      "super_summary_title": "Request to speak with Rania",
+      "super_summary_text": "Dave called to speak with Rania, but the assistant said Rania\u2019s team is currently unavailable and asked Dave to leave his name and reason for the call. The call was not completed with Rania.",
+      "super_link_status": "linked",
+      "super_link_note": "Link copied from summary; call start time shown."
     },
     {
       "phone": "(636) 589-5459",
@@ -1441,8 +1442,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export. Closest call was 56 min earlier."
     },
     {
       "phone": "(417) 218-1875",
@@ -1473,8 +1474,8 @@
       "super_link": "",
       "super_summary_title": "",
       "super_summary_text": "",
-      "super_link_status": "",
-      "super_link_note": ""
+      "super_link_status": "no Super call",
+      "super_link_note": "No call near this time in Super 30-day individual call metrics export."
     }
   ],
   "not_called_back_by_group": {
