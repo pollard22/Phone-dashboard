@@ -3,19 +3,19 @@ Unique callers with ≥1 inbound NO ANSWER and no company OUT-Bound within 24h (
 
 Verification summary (exact from this rebuild)
 Check,Count
-Unique no-callback callers (24h rule) / Action-list callers checked,20
+Unique no-callback callers (24h rule) / Action-list callers checked,18
 False positives (had outbound within 24h) — should be 0,0
-Never dialed by company in this export,10
+Never dialed by company in this export,11
 On 24h list but company dialed earlier in the week only,5
-On 24h list but company dialed later than 24h after last miss,5
+On 24h list but company dialed later than 24h after last miss,2
 
-Action list (20 unique no-callback callers)
+Action list (18 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
 1,(636) 262-1916,2,Wed Nov 11 6:27 PM,Wed Nov 11 6:26 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794450441.216683,"Review whether Super already messaged; if not, return call"
-2,(636) 459-7409,2,Mon Nov 9 6:57 AM,Fri Nov 6 8:04 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794236242.212134,"Review whether Super already messaged; if not, return call"
-3,(620) 765-9335,1,Thu Nov 12 11:50 AM,Thu Nov 12 11:50 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794513041.217343,"Review whether Super already messaged; if not, return call"
-4,(573) 673-1652,1,Thu Nov 12 8:27 AM,Thu Nov 12 8:27 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794500849.216912,Return call — no Ultatel outbound within 24h of last miss
-5,(636) 295-2001,1,Thu Nov 12 8:24 AM,Thu Nov 12 8:24 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794500671.216883,Return call — no Ultatel outbound within 24h of last miss
+2,(417) 291-0802,1,Sat Nov 14 9:20 AM,Sat Nov 14 9:20 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794676814.219369,"Review whether Super already messaged; if not, return call"
+3,(314) 209-9868,1,Fri Nov 13 9:17 AM,Fri Nov 13 9:17 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794590252.218366,Return call — no Ultatel outbound within 24h of last miss
+4,(636) 204-9664,1,Fri Nov 13 7:38 AM,Fri Nov 13 7:38 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794584288.217934,"Review whether Super already messaged; if not, return call"
+5,(620) 765-9335,1,Thu Nov 12 11:50 AM,Thu Nov 12 11:50 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794513041.217343,"Review whether Super already messaged; if not, return call"
 6,(636) 775-2274,1,Thu Nov 12 8:02 AM,Thu Nov 12 8:02 AM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794499338.216776,Return call — no Ultatel outbound within 24h of last miss
 7,(636) 673-4554,1,Wed Nov 11 12:55 PM,Wed Nov 11 12:55 PM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794430536.216517,Return call — no Ultatel outbound within 24h of last miss
 8,(308) 991-3900,1,Wed Nov 11 12:20 PM,Wed Nov 11 12:20 PM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794428436.216386,"Review whether Super already messaged; if not, return call"
@@ -28,14 +28,13 @@ Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open lis
 15,(314) 286-3665,1,Tue Nov 10 7:08 AM,Tue Nov 10 7:08 AM,No,,Other DID / extension path,107 — Rania Lombera,No,No,No,1794323292.213613,Return call — no Ultatel outbound within 24h of last miss
 16,(307) 321-7772,1,Mon Nov 9 9:24 AM,Mon Nov 9 9:24 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1794245041.212570,Return call — no Ultatel outbound within 24h of last miss
 17,(235) 202-2194,1,Mon Nov 9 8:51 AM,Mon Nov 9 8:51 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794243066.212388,"Review whether Super already messaged; if not, return call"
-18,(573) 476-5334,1,Fri Nov 6 2:54 PM,Fri Nov 6 2:54 PM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1794005659.211757,Return call — no Ultatel outbound within 24h of last miss
-19,(314) 701-2710,1,Fri Nov 6 8:50 AM,Fri Nov 6 8:50 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1793983827.210841,Return call — no Ultatel outbound within 24h of last miss
-20,(314) 365-3070,1,Fri Nov 6 7:45 AM,Fri Nov 6 7:45 AM,No,,Other DID / extension path,100 — Tiffany Recktenwald,No,No,No,1793979931.210635,Return call — no Ultatel outbound within 24h of last miss
+18,(636) 459-7409,1,Mon Nov 9 6:57 AM,Mon Nov 9 6:57 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1794236242.212134,"Review whether Super already messaged; if not, return call"
 
-"Never dialed (verified) — 10 callers with zero company OUT-Bound in the Nov 6–12, 2026 Ultatel export"
-Note: this is the stricter bar inside the 20. The other 10 were dialed at some other time in the week (too early or >24h late).
+"Never dialed (verified) — 11 callers with zero company OUT-Bound in the Nov 9–15, 2026 Ultatel export"
+Note: this is the stricter bar inside the 18. The other 7 were dialed at some other time in the week (too early or >24h late).
 Caller,Missed attempts,Last miss (PT),On Super open list?,Verification
 (636) 262-1916,2,Wed Nov 11 6:27 PM,No,Verified never dialed in this export
+(417) 291-0802,1,Sat Nov 14 9:20 AM,No,Verified never dialed in this export
 (620) 765-9335,1,Thu Nov 12 11:50 AM,No,Verified never dialed in this export
 (636) 775-2274,1,Thu Nov 12 8:02 AM,No,Verified never dialed in this export
 (308) 991-3900,1,Wed Nov 11 12:20 PM,No,Verified never dialed in this export
