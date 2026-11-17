@@ -1,4 +1,5 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
+(314) 704-5370,2026-11-16 10:15 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794852905.220040
 (417) 291-0802,2026-11-14 9:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794676814.219369
 (314) 209-9868,2026-11-13 9:17 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794590252.218366
 (636) 204-9664,2026-11-13 7:38 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794584288.217934
@@ -15,6 +16,3 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (314) 304-8986,2026-11-10 12:19 PM,108 — Mercedes Recio,3144391321 / Mercedes Recio,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794341996.214804
 (401) 256-9800,2026-11-10 10:33 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794335620.214228
 (314) 286-3665,2026-11-10 7:08 AM,107 — Rania Lombera,3146901040 / Rania Lombera,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794323292.213613
-(307) 321-7772,2026-11-09 9:24 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794245041.212570
-(235) 202-2194,2026-11-09 8:51 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794243066.212388
-(636) 459-7409,2026-11-09 6:57 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794236242.212134
