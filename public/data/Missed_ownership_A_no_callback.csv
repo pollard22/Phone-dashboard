@@ -1,4 +1,7 @@
 Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Description,Outcome,Called back in 24h?,Message taken?,Super handoff / open-loop note,AI path?,Call ID
+(314) 898-6083,2026-11-22 7:36 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1795361795.225916
+(253) 294-4820,2026-11-20 3:23 PM,108 — Mercedes Recio,3144391321 / Mercedes Recio,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1795217012.225731
+(307) 321-7772,2026-11-20 7:18 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1795187903.224693
 (573) 600-4204,2026-11-19 9:55 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1795110935.224100
 (314) 780-3181,2026-11-18 10:09 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1795025363.223469
 (636) 459-5307,2026-11-18 8:49 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1795020596.223178
@@ -9,6 +12,3 @@ Caller,Miss datetime (PT),Who should have taken it,Ring group / DID / Descriptio
 (573) 673-1652,2026-11-17 9:26 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794936398.221339
 (409) 212-5000,2026-11-17 6:50 AM,104 — Jermale(Mel) Stovall,3146901027 / Jermale(Mel) Stovall,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794927008.220714
 (314) 704-5370,2026-11-16 10:15 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794852905.220040
-(417) 291-0802,2026-11-14 9:20 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794676814.219369
-(314) 209-9868,2026-11-13 9:17 AM,110 — Mara Pongayan Priagas,3146903389 / Mara Pongayan Priagas,NO ANSWER,No,Unknown (Ultatel has no message flag),,No,1794590252.218366
-(636) 204-9664,2026-11-13 7:38 AM,601 — AI Agent Number Ring Group,3146908561 / Main Number,NO ANSWER,No,Unknown (Ultatel has no message flag),,Yes,1794584288.217934
