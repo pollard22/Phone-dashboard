@@ -1,18 +1,4 @@
 Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call ID,Transfer leg Call IDs,Attributed
-(636) 255-4624,"Mon Nov 16, 2026 10:56 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794848219.219720,1794848257.219726,Yes
-(636) 318-3876,"Mon Nov 16, 2026 11:17 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794849458.219798,1794849495.219802,Yes
-(636) 213-1519,"Mon Nov 16, 2026 11:22 AM CT",Leasing,"Lindsay Smith 101 → voicemail → Leasing ring group 615 (rang 101, 102, 110) (no answer)",Yes,1794849769.219825,"1794849815.219831,1794849870.219836",Yes
-(949) 633-5449,"Mon Nov 16, 2026 12:07 PM CT","Maintenance, Maintenance or Renewals (Tiffany 100)",Jermale(Mel) Stovall 104 (no answer) → Tiffany Recktenwald 100 (no answer),No,1794852423.220000,"1794852473.220004,1794852501.220008",Yes
-(573) 822-7991,"Mon Nov 16, 2026 12:57 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794855448.220169,1794855493.220173,Yes
-(573) 822-7991,"Mon Nov 16, 2026 12:58 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794855537.220192,1794855585.220196,Yes
-(910) 674-8438,"Mon Nov 16, 2026 2:58 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794862707.220315,1794862757.220322,Yes
-(636) 357-1597,"Mon Nov 16, 2026 3:05 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794863139.220344,1794863212.220348,Yes
-(314) 229-8782,"Mon Nov 16, 2026 3:36 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794865018.220415,1794865069.220419,Yes
-(314) 477-2807,"Mon Nov 16, 2026 4:40 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794868806.220529,1794868857.220533,Yes
-(636) 445-4346,"Mon Nov 16, 2026 4:49 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794869393.220558,1794869441.220562,Yes
-(402) 359-0452,"Mon Nov 16, 2026 5:06 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794870363.220598,1794870405.220602,Yes
-(402) 359-0452,"Mon Nov 16, 2026 5:08 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794870487.220621,1794870528.220625,Yes
-(636) 734-7555,"Mon Nov 16, 2026 5:11 PM CT","Maintenance, Maintenance or Renewals (Tiffany 100)",Jermale(Mel) Stovall 104 (no answer) → Tiffany Recktenwald 100 (no answer),No,1794870697.220647,"1794870734.220651,1794870762.220654",Yes
 (913) 450-1926,"Tue Nov 17, 2026 10:54 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794934480.221165,1794934526.221169,Yes
 (925) 241-0391,"Tue Nov 17, 2026 12:35 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794940512.221677,1794940563.221681,Yes
 (623) 278-1919,"Tue Nov 17, 2026 12:53 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1794941589.221785,1794941619.221789,Yes
@@ -34,3 +20,13 @@ Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call 
 (800) 432-2737,"Fri Nov 20, 2026 4:24 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795213497.225633,1795213530.225637,Yes
 (636) 235-2230,"Sat Nov 21, 2026 12:53 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795287232.225847,1795287292.225851,Yes
 (636) 375-0880,"Sat Nov 21, 2026 1:13 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795288390.225866,1795288440.225870,Yes
+(515) 330-7703,"Mon Nov 23, 2026 10:21 AM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795450878.226591,1795450923.226595,Yes
+(636) 318-3731,"Mon Nov 23, 2026 12:34 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795458860.227161,1795458913.227165,Yes
+(913) 680-5126,"Mon Nov 23, 2026 2:21 PM CT",Renewals & Current Resident Issues,Mercedes Recio 108 (no answer),No,1795465261.227390,1795465308.227394,Yes
+(636) 213-1519,"Mon Nov 23, 2026 2:40 PM CT",Renewals & Current Resident Issues,Mercedes Recio 108 (no answer),No,1795466424.227401,1795466473.227405,Yes
+(623) 278-1919,"Mon Nov 23, 2026 3:14 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795468464.227418,1795468502.227422,Yes
+(812) 371-0750,"Mon Nov 23, 2026 3:22 PM CT",Leasing,"Lindsay Smith 101 → voicemail → Leasing ring group 615 (rang 101, 102, 110) (no answer)",Yes,1795468927.227441,"1795468967.227445,1795469021.227450",Yes
+(623) 278-1919,"Mon Nov 23, 2026 3:47 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795470432.227481,1795470471.227485,Yes
+(812) 371-0750,"Mon Nov 23, 2026 4:05 PM CT",Leasing,Lindsay Smith 101 → voicemail,Yes,1795471535.227519,1795471583.227523,Yes
+(636) 706-3225,"Mon Nov 23, 2026 4:30 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795473006.227608,1795473055.227612,Yes
+(239) 699-2818,"Mon Nov 23, 2026 4:35 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795473344.227637,1795473404.227641,Yes
