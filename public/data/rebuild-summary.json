@@ -1,19 +1,19 @@
 {
-  "window_short": "Nov 17\u201323, 2026",
-  "window_slug": "2026-11-17_to_2026-11-23",
-  "dmin": "2026-11-17T06:19:59-06:00",
-  "dmax": "2026-11-23T18:53:14-06:00",
+  "window_short": "Nov 18\u201324, 2026",
+  "window_slug": "2026-11-18_to_2026-11-24",
+  "dmin": "2026-11-18T08:48:51-06:00",
+  "dmax": "2026-11-24T18:34:14-06:00",
   "kpis": {
-    "ultatel_inbound": 574,
-    "ultatel_inbound_answered": 485,
-    "ultatel_inbound_no_answer": 89,
-    "ultatel_inbound_no_answer_cleaned": 15,
-    "ultatel_outbound": 454,
-    "ultatel_outbound_answered": 352,
-    "ultatel_outbound_no_answer": 102,
-    "no_callback_24h_unique": 14,
-    "never_company_dialed": 5,
-    "dialed_earlier_only": 8,
+    "ultatel_inbound": 524,
+    "ultatel_inbound_answered": 438,
+    "ultatel_inbound_no_answer": 86,
+    "ultatel_inbound_no_answer_cleaned": 9,
+    "ultatel_outbound": 378,
+    "ultatel_outbound_answered": 279,
+    "ultatel_outbound_no_answer": 99,
+    "no_callback_24h_unique": 8,
+    "never_company_dialed": 3,
+    "dialed_earlier_only": 4,
     "dialed_later_after_24h": 1,
     "super_open_loops": 23,
     "super_ultatel_overlap": 0,
@@ -26,49 +26,48 @@
     "super_avg_talk": "1m 2s"
   },
   "paths": {
-    "json": "web-dashboard/deploy-pack-2026-11-24b/public/data/data-latest.json",
-    "a": "web-dashboard/deploy-pack-2026-11-24b/public/data/Missed_ownership_A_no_callback.csv",
-    "b": "web-dashboard/deploy-pack-2026-11-24b/public/data/Missed_ownership_B_called_back.csv",
-    "callback": "web-dashboard/deploy-pack-2026-11-24b/public/data/callback_hygiene_ultatel.csv",
-    "open_loops": "web-dashboard/deploy-pack-2026-11-24b/public/data/open_loops_super.csv",
-    "exclusions": "web-dashboard/deploy-pack-2026-11-24b/public/data/exclusions_method.csv",
-    "overview": "web-dashboard/deploy-pack-2026-11-24b/public/data/Overview.csv",
-    "not_called_back": "web-dashboard/deploy-pack-2026-11-24b/public/data/not_called_back.csv",
-    "called_back": "web-dashboard/deploy-pack-2026-11-24b/public/data/called_back.csv"
+    "json": "web-dashboard/deploy-pack-2026-11-25b/public/data/data-latest.json",
+    "a": "web-dashboard/deploy-pack-2026-11-25b/public/data/Missed_ownership_A_no_callback.csv",
+    "b": "web-dashboard/deploy-pack-2026-11-25b/public/data/Missed_ownership_B_called_back.csv",
+    "callback": "web-dashboard/deploy-pack-2026-11-25b/public/data/callback_hygiene_ultatel.csv",
+    "open_loops": "web-dashboard/deploy-pack-2026-11-25b/public/data/open_loops_super.csv",
+    "exclusions": "web-dashboard/deploy-pack-2026-11-25b/public/data/exclusions_method.csv",
+    "overview": "web-dashboard/deploy-pack-2026-11-25b/public/data/Overview.csv",
+    "not_called_back": "web-dashboard/deploy-pack-2026-11-25b/public/data/not_called_back.csv",
+    "called_back": "web-dashboard/deploy-pack-2026-11-25b/public/data/called_back.csv"
   },
   "summary": {
-    "window_label": "Nov 17\u201323, 2026 (Central Time)",
-    "export_end_ct": "Mon Nov 23, 2026 11:59 PM CT",
-    "total_calls": 351,
-    "answered_calls": 309,
-    "answered_by_super": 283,
-    "answered_by_staff": 26,
-    "missed_calls": 42,
-    "missed_rang_not_answered": 15,
-    "missed_went_to_voicemail": 27,
-    "transfer_failed_calls": 31,
-    "transfer_failed_callers": 22,
+    "window_label": "Nov 18\u201324, 2026 (Central Time)",
+    "export_end_ct": "Tue Nov 24, 2026 11:59 PM CT",
+    "total_calls": 319,
+    "answered_calls": 292,
+    "answered_by_super": 268,
+    "answered_by_staff": 24,
+    "missed_calls": 27,
+    "missed_rang_not_answered": 9,
+    "missed_went_to_voicemail": 18,
+    "transfer_failed_calls": 36,
+    "transfer_failed_callers": 28,
     "transfer_failed_anonymous_calls": 0,
-    "transfer_retried_and_answered_calls": 8,
+    "transfer_retried_and_answered_calls": 6,
     "callers_with_a_missed_call": 50,
     "callers_got_through_later": 15,
     "unanswered_callers": 35,
-    "called_back": 9,
-    "not_called_back": 26,
-    "never_called": 11,
+    "called_back": 8,
+    "not_called_back": 27,
+    "never_called": 16,
     "not_called_back_by_group": {
-      "Leasing": 18,
+      "Leasing": 20,
       "Maintenance or Renewals (Tiffany 100)": 2,
       "Main line (Super AI receptionist)": 2,
+      "Maintenance": 1,
       "Direct line \u2014 Junior Ruiz (112)": 1,
-      "Direct line \u2014 Rania Lombera (107)": 1,
-      "Renewals & Current Resident Issues": 1,
-      "Maintenance": 1
+      "Direct line \u2014 Rania Lombera (107)": 1
     },
     "not_called_back_by_missed_type": {
-      "Rang, not answered": 11,
-      "Super transfer not answered": 8,
-      "Went to voicemail": 7
+      "Super transfer not answered": 14,
+      "Went to voicemail": 7,
+      "Rang, not answered": 6
     },
     "labels": {
       "total_calls": "Calls we received",
@@ -89,10 +88,10 @@
       "not_called_back": "Of the callers we didn't answer, how many have had no call from our phones since their last unanswered call (through the end of the export). A message Super took doesn't count as a callback.",
       "never_called": "Of the not-called-back callers, how many we never dialed at all during the week (not even before their missed call).",
       "waiting": "For not-called-back callers: time from their last unanswered call to the end of the export.",
-      "reconcile": "351 calls = 309 answered (283 by Super + 26 by staff) + 42 missed (15 rang with no answer + 27 went to voicemail). Of the 283 Super answered, 31 ended in a transfer nobody picked up (22 callers). 50 callers had a missed call or failed transfer; 15 got through later, leaving 35 callers we didn't answer: 9 called back, 26 not called back yet (11 of those never called this week)."
+      "reconcile": "319 calls = 292 answered (268 by Super + 24 by staff) + 27 missed (9 rang with no answer + 18 went to voicemail). Of the 268 Super answered, 36 ended in a transfer nobody picked up (28 callers). 50 callers had a missed call or failed transfer; 15 got through later, leaving 35 callers we didn't answer: 8 called back, 27 not called back yet (16 of those never called this week)."
     },
     "excluded": {
-      "super_transfer_legs": 222,
+      "super_transfer_legs": 204,
       "company_number_legs": 0,
       "duplicate_rows_same_call_id": 1,
       "anonymous_calls_in_total": 0,
@@ -101,65 +100,65 @@
     "source": "Ultatel Call Details CSV; callback = any company OUT-Bound to the caller's number. Super open-loop logs used only to break ties when matching transfers. Personal cells, texts, and Super messages are not visible.",
     "super_links": {
       "source_file": "/workspace/ultatel/super-call-links-latest.csv",
-      "rows_in_file": 168,
-      "not_called_back_with_link": 8,
-      "called_back_with_link": 3,
+      "rows_in_file": 178,
+      "not_called_back_with_link": 14,
+      "called_back_with_link": 2,
       "not_called_back_by_status": {
-        "no Super call": 18,
-        "linked": 8
+        "linked": 14,
+        "no Super call": 13
       },
       "called_back_by_status": {
         "(no row)": 5,
-        "linked": 3,
+        "linked": 2,
         "no Super call": 1
       },
       "match_rule": "phone digits + last missed call (CT) within \u00b15 minutes"
     }
   },
   "not_called_back_by_group": {
-    "Leasing": 18,
+    "Leasing": 20,
     "Maintenance or Renewals (Tiffany 100)": 2,
     "Main line (Super AI receptionist)": 2,
+    "Maintenance": 1,
     "Direct line \u2014 Junior Ruiz (112)": 1,
-    "Direct line \u2014 Rania Lombera (107)": 1,
-    "Renewals & Current Resident Issues": 1,
-    "Maintenance": 1
+    "Direct line \u2014 Rania Lombera (107)": 1
   },
   "transfer_attribution": {
     "attribution_rule": "Ultatel has no field linking a transfer leg to the caller's call, so each leg from Super's number (314) 665-2265 is matched to the answered main-line (601) call it sits inside (leg starts after the call starts and ends no more than 3 seconds after the call ends). If more than one call fits, Super's own log (caller phone + CT time) breaks the tie; otherwise the leg is left unattributed. Legs within one call are collapsed into one transfer attempt; it failed if no person picked up any leg.",
-    "legs_total": 205,
-    "legs_matched": 145,
-    "legs_match_rate_pct": 70.7,
+    "legs_total": 193,
+    "legs_matched": 134,
+    "legs_match_rate_pct": 69.4,
     "legs_by_method": {
-      "time containment (single call)": 145,
-      "ambiguous": 48,
-      "unmatched": 12
+      "time containment (single call)": 134,
+      "ambiguous": 52,
+      "unmatched": 7
     },
-    "not_answered_legs": 79,
-    "not_answered_legs_matched": 43,
-    "not_answered_legs_match_rate_pct": 54.4,
-    "attempts_matched": 131,
-    "failed_attempts_matched": 31,
+    "not_answered_legs": 82,
+    "not_answered_legs_matched": 46,
+    "not_answered_legs_match_rate_pct": 56.1,
+    "attempts_matched": 124,
+    "failed_attempts_matched": 36,
     "failed_attempts_by_group": {
-      "Leasing": 25,
+      "Leasing": 30,
       "Maintenance or Renewals (Tiffany 100)": 4,
       "Maintenance": 2,
       "Renewals & Current Resident Issues": 2
     },
     "failed_attempts_by_groups_tried": {
-      "Leasing": 25,
+      "Leasing": 30,
       "Maintenance + Maintenance or Renewals (Tiffany 100)": 2,
       "Maintenance or Renewals (Tiffany 100)": 2,
       "Renewals & Current Resident Issues": 2
     },
-    "failed_attempts_to_voicemail": 2,
-    "retried_and_answered": 8,
-    "unattributed_failed_attempts": 25,
+    "failed_attempts_to_voicemail": 3,
+    "retried_and_answered": 6,
+    "unattributed_failed_attempts": 23,
     "unattributed_failed_by_group": {
-      "Leasing": 22,
+      "Leasing": 20,
       "Maintenance or Renewals (Tiffany 100)": 2,
       "Renewals & Current Resident Issues": 1,
-      "Direct line \u2014 Junior Ruiz (112)": 1
+      "Direct line \u2014 Junior Ruiz (112)": 1,
+      "Maintenance": 1
     },
     "super_log_cross_check": {
       "log_rows": 54,
@@ -169,10 +168,10 @@
       "matched_to_answered_transfer": 0,
       "no_transfer_leg_matched": 0
     },
-    "count": 79,
-    "answered": 126,
+    "count": 82,
+    "answered": 111,
     "by_group": {
-      "Leasing": 62,
+      "Leasing": 65,
       "Maintenance or Renewals (Tiffany 100)": 6,
       "Maintenance": 4,
       "Direct line \u2014 Junior Ruiz (112)": 4,
