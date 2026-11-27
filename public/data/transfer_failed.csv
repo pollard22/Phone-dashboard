@@ -1,6 +1,4 @@
 Caller,Call time (CT),Groups tried,What Super tried,Went to voicemail,Main Call ID,Transfer leg Call IDs,Attributed
-(636) 295-9905,"Thu Nov 19, 2026 1:40 PM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1795117223.224268,1795117260.224272,Yes
-(307) 321-7772,"Thu Nov 19, 2026 3:29 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795123759.224382,1795123828.224392,Yes
 (314) 780-7021,"Fri Nov 20, 2026 11:44 AM CT",Maintenance or Renewals (Tiffany 100),Tiffany Recktenwald 100 (no answer),No,1795196696.224938,1795196735.224942,Yes
 (270) 938-7141,"Fri Nov 20, 2026 12:32 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer) → Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795199530.225044,"1795199593.225048,1795199595.225053",Yes
 (636) 515-9527,"Fri Nov 20, 2026 2:32 PM CT",Leasing,"Leasing ring group 615 (rang 101, 102, 110) (no answer)",No,1795206767.225380,1795206823.225384,Yes

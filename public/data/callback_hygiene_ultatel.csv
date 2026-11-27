@@ -3,13 +3,13 @@ Unique callers with ≥1 inbound NO ANSWER and no company OUT-Bound within 24h (
 
 Verification summary (exact from this rebuild)
 Check,Count
-Unique no-callback callers (24h rule) / Action-list callers checked,9
+Unique no-callback callers (24h rule) / Action-list callers checked,8
 False positives (had outbound within 24h) — should be 0,0
 Never dialed by company in this export,2
-On 24h list but company dialed earlier in the week only,6
+On 24h list but company dialed earlier in the week only,5
 On 24h list but company dialed later than 24h after last miss,1
 
-Action list (9 unique no-callback callers)
+Action list (8 unique no-callback callers)
 Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open list?,Super note,Likely path,Last extension tried,Main number DID?,AI ring group in path?,Window still open?,Last Call ID,What to do
 1,(636) 378-8014,1,Wed Nov 25 2:02 PM,Wed Nov 25 2:02 PM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1795644173.229441,Return call — no Ultatel outbound within 24h of last miss
 2,(557) 214-7463,1,Wed Nov 25 11:30 AM,Wed Nov 25 11:30 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1795635046.229200,Return call — no Ultatel outbound within 24h of last miss
@@ -19,10 +19,9 @@ Priority,Caller,Missed attempts,Last miss (PT),First miss (PT),On Super open lis
 6,(314) 898-6083,1,Sun Nov 22 7:36 AM,Sun Nov 22 7:36 AM,No,,Main line → AI ring group 601 (then human miss or abandon),601 — AI Agent Number Ring Group,Yes,Yes,No,1795361795.225916,"Review whether Super already messaged; if not, return call"
 7,(253) 294-4820,1,Fri Nov 20 3:23 PM,Fri Nov 20 3:23 PM,No,,Other DID / extension path,108 — Mercedes Recio,No,No,No,1795217012.225731,Return call — no Ultatel outbound within 24h of last miss
 8,(307) 321-7772,1,Fri Nov 20 7:18 AM,Fri Nov 20 7:18 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1795187903.224693,Return call — no Ultatel outbound within 24h of last miss
-9,(573) 600-4204,1,Thu Nov 19 9:55 AM,Thu Nov 19 9:55 AM,No,,Other DID / extension path,110 — Mara Pongayan Priagas,No,No,No,1795110935.224100,Return call — no Ultatel outbound within 24h of last miss
 
-"Never dialed (verified) — 2 callers with zero company OUT-Bound in the Nov 19–25, 2026 Ultatel export"
-Note: this is the stricter bar inside the 9. The other 7 were dialed at some other time in the week (too early or >24h late).
+"Never dialed (verified) — 2 callers with zero company OUT-Bound in the Nov 20–26, 2026 Ultatel export"
+Note: this is the stricter bar inside the 8. The other 6 were dialed at some other time in the week (too early or >24h late).
 Caller,Missed attempts,Last miss (PT),On Super open list?,Verification
 (636) 589-1868,1,Mon Nov 23 7:53 AM,No,Verified never dialed in this export
 (314) 898-6083,1,Sun Nov 22 7:36 AM,No,Verified never dialed in this export
